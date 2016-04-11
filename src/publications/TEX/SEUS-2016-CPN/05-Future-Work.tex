@@ -1,0 +1,9 @@
+\section{Future Work}
+\label{sec:Future-Work}
+
+All of the results presented in this paper make an important assumption about the network -- the network resources available to each component is much larger than the requirements of the application i.e. there is no buffering delays on the network queues when components periodically produce data. We are currently working on integrating Network Calculus-based analysis methods \cite{ISIS_F6_CYPHY:14} into our CPN analysis for a more accurate profile of the analyzed application. This way, we can also model the system network profile (available bandwidth as a function of time) and realize the application data production profile, accounting for network delays caused by buffering. 
+
+\section{Conclusions}
+\label{sec:Conclusions}
+
+In this paper, we have presented experimental validation for our Colored Petri net-based timing analysis methods for component-based distributed real-time systems. The validation covers a variety of component assemblies, interaction patterns and concepts, including publish subscribe-style messaging, client server-style querying, time-triggered interactions and long running operations. The results show close but conservative estimates from state space analysis and validate the utility of our tools and methods. 

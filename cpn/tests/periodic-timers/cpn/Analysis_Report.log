@@ -1,0 +1,112 @@
+
+ALL DEADLINE VIOLATIONS:
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 0 us; Completion Time: 25000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 500000 us; Completion Time: 525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 1000000 us; Completion Time: 1025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 1500000 us; Completion Time: 1525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 2000000 us; Completion Time: 2025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 2500000 us; Completion Time: 2525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 3000000 us; Completion Time: 3025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 3500000 us; Completion Time: 3525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 4000000 us; Completion Time: 4025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 4500000 us; Completion Time: 4525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 5000000 us; Completion Time: 5025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 5500000 us; Completion Time: 5525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 6000000 us; Completion Time: 6025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 6500000 us; Completion Time: 6525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 7000000 us; Completion Time: 7025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 7500000 us; Completion Time: 7525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 8000000 us; Completion Time: 8025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 8500000 us; Completion Time: 8525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 9000000 us; Completion Time: 9025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 9500000 us; Completion Time: 9525000 us; Execution Time: 25000 us; Deadline: 20000 us
+
+FIRST DEADLINE VIOLATION:
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 0 us; Completion Time: 25000 us; Execution Time: 25000 us; Deadline: 20000 us
+
+TRIGGER TO RESPONSE TIME ESTIMATION: 
+Trigger Operation: sensor_timer_operation; Reponse Operation: planner_server_operation; Trigger to Response Time:  24000 us
+ALL DEADLINE VIOLATIONS:
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 0 us; Completion Time: 25000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 500000 us; Completion Time: 525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 1000000 us; Completion Time: 1025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 1500000 us; Completion Time: 1525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 2000000 us; Completion Time: 2025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 2500000 us; Completion Time: 2525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 3000000 us; Completion Time: 3025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 3500000 us; Completion Time: 3525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 4000000 us; Completion Time: 4025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 4500000 us; Completion Time: 4525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 5000000 us; Completion Time: 5025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 5500000 us; Completion Time: 5525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 6000000 us; Completion Time: 6025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 6500000 us; Completion Time: 6525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 7000000 us; Completion Time: 7025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 7500000 us; Completion Time: 7525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 8000000 us; Completion Time: 8025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 8500000 us; Completion Time: 8525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 9000000 us; Completion Time: 9025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 9500000 us; Completion Time: 9525000 us; Execution Time: 25000 us; Deadline: 20000 us
+
+FIRST DEADLINE VIOLATION:
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 0 us; Completion Time: 25000 us; Execution Time: 25000 us; Deadline: 20000 us
+
+TRIGGER TO RESPONSE TIME ESTIMATION: 
+Trigger Operation: sensor_timer_operation; Reponse Operation: planner_server_operation; Trigger to Response Time:  24000 us
+ALL DEADLINE VIOLATIONS:
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 0 us; Completion Time: 25000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 500000 us; Completion Time: 525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 1000000 us; Completion Time: 1025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 1500000 us; Completion Time: 1525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 2000000 us; Completion Time: 2025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 2500000 us; Completion Time: 2525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 3000000 us; Completion Time: 3025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 3500000 us; Completion Time: 3525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 4000000 us; Completion Time: 4025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 4500000 us; Completion Time: 4525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 5000000 us; Completion Time: 5025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 5500000 us; Completion Time: 5525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 6000000 us; Completion Time: 6025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 6500000 us; Completion Time: 6525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 7000000 us; Completion Time: 7025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 7500000 us; Completion Time: 7525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 8000000 us; Completion Time: 8025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 8500000 us; Completion Time: 8525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 9000000 us; Completion Time: 9025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 9500000 us; Completion Time: 9525000 us; Execution Time: 25000 us; Deadline: 20000 us
+
+FIRST DEADLINE VIOLATION:
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 0 us; Completion Time: 25000 us; Execution Time: 25000 us; Deadline: 20000 us
+
+TRIGGER TO RESPONSE TIME ESTIMATION: 
+Trigger Operation: sensor_timer_operation; Reponse Operation: planner_server_operation; Trigger to Response Time:  24000 us
+ALL DEADLINE VIOLATIONS:
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 0 us; Completion Time: 25000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 500000 us; Completion Time: 525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 1000000 us; Completion Time: 1025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 1500000 us; Completion Time: 1525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 2000000 us; Completion Time: 2025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 2500000 us; Completion Time: 2525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 3000000 us; Completion Time: 3025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 3500000 us; Completion Time: 3525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 4000000 us; Completion Time: 4025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 4500000 us; Completion Time: 4525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 5000000 us; Completion Time: 5025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 5500000 us; Completion Time: 5525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 6000000 us; Completion Time: 6025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 6500000 us; Completion Time: 6525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 7000000 us; Completion Time: 7025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 7500000 us; Completion Time: 7525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 8000000 us; Completion Time: 8025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 8500000 us; Completion Time: 8525000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 9000000 us; Completion Time: 9025000 us; Execution Time: 25000 us; Deadline: 20000 us
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 9500000 us; Completion Time: 9525000 us; Execution Time: 25000 us; Deadline: 20000 us
+
+FIRST DEADLINE VIOLATION:
+Node: BBB_111; Component: Sensor_Component; Operation: sensor_timer_operation; Enqueue Time: 0 us; Completion Time: 25000 us; Execution Time: 25000 us; Deadline: 20000 us
+
+TRIGGER TO RESPONSE TIME ESTIMATION: 
+Trigger Operation: sensor_timer_operation; Reponse Operation: planner_server_operation; Trigger to Response Time:  24000 us
+ALL DEADLINE VIOLATIONS:
+ALL DEADLINE VIOLATIONS:
+ALL DEADLINE VIOLATIONS:

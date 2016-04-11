@@ -1,0 +1,19 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: 00-SEUS.aux
+The style file: IEEEtran.bst
+Database file #1: dissertation.bib
+Repeated entry---line 6665 of file dissertation.bib
+ : @article{peterson1977petri
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 6796 of file dissertation.bib
+ : @conference {ROS
+ :                 ,
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in de2001object
+Warning--edition ordinal word "{OMG Document realtime/05-02-06}" may be too high (or improper) for conversion in MARTE:05
+
+Done.
+(There were 2 error messages)

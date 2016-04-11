@@ -1,0 +1,80 @@
+\documentclass[conference]{IEEEtran}
+
+% correct bad hyphenation here
+%\hyphenation{op-tical net-works semi-conduc-tor}
+\newcommand{\ENABLECOMMENTS}{}
+\usepackage{listings}
+\usepackage{ifpdf}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{subcaption}
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\newcommand{\iap}{\textit{DREMS}\ }
+%\newcommand{\iapfull}{\textbf{D}istributed \textbf{S}oftware \textbf{P}latform }
+\newcommand{\iapfull}{\textbf{D}istributed \textbf{RE}altime \textbf{M}anaged \textbf{S}ystem}
+
+
+\usepackage{color}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,circuits.ee,circuits.ee.IEC,shapes.geometric,shapes.misc}
+\ifdefined\ENABLECOMMENTS
+\newcommand{\comment}[2]{{\texttt{\color{red}#1:#2}}}
+\else
+\newcommand{\comment}[2]{}
+\fi
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{ROSMOD: A Toolsuite for Modeling, Generating, Deploying, and Managing Distributed Real-time Component-based Software using ROS}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Pranav Srinivas Kumar, William Emfinger, \\
+Amogh Kulkarni and Gabor Karsai\IEEEauthorrefmark{1}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}
+Institute for Software Integrated Systems,\\ Electrical Engineering and Computer Science, Vanderbilt University,\\
+%  1025 16th Ave S, \\
+Nashville, TN 37235, USA \\
+Email:\{pkumar, emfinger, kulkaras, gabor\}@isis.vanderbilt.edu}
+\and
+\IEEEauthorblockN{Dexter Watkins, Benjamin Gasser, \\ 
+Cameron Ridgewell and Amrutur Anilkumar\IEEEauthorrefmark{2}}
+\IEEEauthorblockA{\IEEEauthorrefmark{2}
+Mechanical Engineering, Vanderbilt University\\
+Nashville, TN 37235, USA \\
+Email:\{dexter.a.watkins, benjamin.w.gasser, \\ cameron.p.ridgewell, amrutur.v.anilkumar\}@vanderbilt.edu}
+}
+
+
+% make the title area
+\maketitle
+
+\input{Abstract}
+\input{Introduction}
+\input{ROSMOD}
+\input{Case_Study}
+\input{Future_Work}
+\input{Related_Research}
+\input{Conclusions}
+
+% Acknowledgement
+\section*{Acknowledgment}
+
+This work was supported by DARPA under contract NNA11AB14C and USAF/AFRL under Cooperative Agreement FA8750-13-2-0050, and by the National Science Foundation (CNS-1035655). The activities of the 2014-15 Vanderbilt Aerospace Club were sponsored by the Department of Mechanical Engineering and the Boeing Corporation. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of DARPA, USAF/AFRL, NSF, or the Boeing Corporation. Lastly, the authors would also like to thank the following undergraduate students on the AGSE design team for their invaluable work: Connor Caldwell, Frederick Folz, Alex Goodman, Christopher Lyne, Jacob Moore and Cameron Ridgewell.
+
+
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{rosmod}
+
+\end{document}

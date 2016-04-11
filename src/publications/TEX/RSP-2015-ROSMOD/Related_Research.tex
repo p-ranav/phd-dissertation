@@ -1,0 +1,8 @@
+\section{Related Efforts}
+\label{sec:Related_Research}
+
+ROS has seen rapid development in the last few years and the number of tools/packages released with ROS grows with every release. In the recent past, several projects and tool suites have established an integration with ROS. We discuss two such infrastructures.
+
+The current version of Matlab's Simulink \cite{Simulink} supports the \emph{Robotics System Toolbox} \cite{Simulink_robotics_toolbox} (RST), using which ROS developers can model ROS workspaces as Simulink blocks, generate executable code, while also exploiting Matlab's large suite of simulation and analysis tools. Unfortunately, the RST was not available to us under our existing academic license. Aside from the costs, our experience shows that it is fairly difficult to modify the Matlab generated code, as well as the modeling language (Simulink), or, for instance, enforce specific scheduling policies, or support the component model constructs that are possible in ROSMOD. 
+
+Some infrastructures, like OPRoS \cite{OPRoS}, provide model transformations and integration tools to couple existing component models and suites with ROS. In case of OPRoS, the framework enables development of OPRoS applications that can communicate with ROS applications. The model transformations help users use the OPRoS platform to develop ROS applications but the expected semantic behavior of the applications, as seen in these models, may not necessarily match the runtime system. Also, such tool suites are relevant to ROS users only if they are also interested in using OPRoS and do not directly focus on ROS development.

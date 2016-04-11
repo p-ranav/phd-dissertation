@@ -1,0 +1,108 @@
+\begin{thebibliography}{-------}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[Brown and Eremenko(2006)]{brown2006fractionated}
+Brown, O.; Eremenko, P.
+\newblock Fractionated space architectures: a vision for responsive space.
+\newblock Technical report, DTIC Document,  2006.
+
+\bibitem[{Autosar GbR}()]{autosar}
+{Autosar GbR}.
+\newblock {AUTomotive Open System ARchitecture}.
+\newblock \url{http://www.autosar.org/}.
+
+\bibitem[Quigley \em{et~al.}(2009)Quigley, Conley, Gerkey, Faust, Foote, Leibs,
+  Wheeler, and Ng]{ROS}
+Quigley, M.; Conley, K.; Gerkey, B.P.; Faust, J.; Foote, T.; Leibs, J.;
+  Wheeler, R.; Ng, A.Y.
+\newblock ROS: an open-source Robot Operating System.
+\newblock  ICRA Workshop on Open Source Software,  2009.
+
+\bibitem[DAR()]{DARPA_Robotics_Challenge}
+{DARPA Robotics Challenge}.
+\newblock \url{http://www.theroboticschallenge.org//}.
+
+\bibitem[ROS()]{ROSMOD}
+{ROSMOD Repository}.
+\newblock \url{https://github.com/rosmod/rosmod}.
+
+\bibitem[NAS()]{NASA_SL}
+{NASA Student Launch}.
+\newblock \url{http://www.nasa.gov/audience/forstudents/studentlaunch/home/}.
+
+\bibitem[Sztipanovits and Karsai(1997)]{sztipanovits1997model}
+Sztipanovits, J.; Karsai, G.
+\newblock Model-integrated computing.
+\newblock {\em Computer} {\bf 1997}, {\em 30},~110--111.
+
+\bibitem[Crnkovic \em{et~al.}(2006)Crnkovic, Chaudron, and Larsson]{CBSE}
+Crnkovic, I.; Chaudron, M.; Larsson, S.
+\newblock Component-based development process and component lifecycle.
+\newblock  Software Engineering Advances, International Conference on. IEEE,
+  2006, pp. 44--44.
+
+\bibitem[Heineman and Councill(2001)]{Heineman:01}
+Heineman, G.T.; Councill, B.T.
+\newblock {\em Component-Based Software Engineering: Putting the Pieces
+  Together}; Addison-Wesley: Reading, Massachusetts,  2001.
+
+\bibitem[Otte \em{et~al.}(2013)Otte, DUBEY, Pradhan, Patil, Gokhale, Karsai,
+  and Willemsen]{DREMS_CM}
+Otte, W.R.; DUBEY, A.; Pradhan, S.; Patil, P.; Gokhale, A.; Karsai, G.;
+  Willemsen, J.
+\newblock F6com: A component model for resource-constrained and dynamic
+  space-based computing environments.
+\newblock  Object/Component/Service-Oriented Real-Time Distributed Computing
+  (ISORC), 2013 IEEE 16th International Symposium on. IEEE,  2013, pp. 1--8.
+
+\bibitem[Eugster \em{et~al.}(2003)Eugster, Felber, Guerraoui, and
+  Kermarrec]{Eugster:2003:MFP:857076.857078}
+Eugster, P.T.; Felber, P.A.; Guerraoui, R.; Kermarrec, A.M.
+\newblock The Many Faces of Publish/Subscribe.
+\newblock {\em ACM Comput. Surv.} {\bf 2003}, {\em 35},~114--131.
+
+\bibitem[Emmerich and Kaveh(2002)]{1008032}
+Emmerich, W.; Kaveh, N.
+\newblock Component technologies: Java beans, COM, CORBA, RMI, EJB and the
+  CORBA component model.
+\newblock  Software Engineering, 2002. ICSE 2002. Proceedings of the 24rd
+  International Conference on,  2002, pp. 691--692.
+
+\bibitem[Lehoczky(1990)]{lehoczky1990fixed}
+Lehoczky, J.P.
+\newblock Fixed Priority Scheduling of Periodic Task Sets with Arbitrary
+  Deadlines.
+\newblock  RTSS,  1990, Vol.~90, pp. 201--209.
+
+\bibitem[Liu and Layland(1973)]{liu1973scheduling}
+Liu, C.L.; Layland, J.W.
+\newblock Scheduling algorithms for multiprogramming in a hard-real-time
+  environment.
+\newblock {\em Journal of the ACM (JACM)} {\bf 1973}, {\em 20},~46--61.
+
+\bibitem[AGS({\natexlab{a}})]{AGSE2015}
+{AGSE 2015 Competition Repository}.
+\newblock \url{https://github.com/finger563/agse2015}.
+
+\bibitem[AGS({\natexlab{b}})]{AGSE}
+{AGSE Repository}.
+\newblock \url{https://github.com/vadl/agse}.
+
+\bibitem[ROS({\natexlab{a}})]{ROSMOD_ORG}
+{ROSMOD Organization}.
+\newblock \url{https://github.com/rosmod}.
+
+\bibitem[ROS({\natexlab{b}})]{ROSMOD_WEBGME}
+{ROSMOD Tool Suite Repository}.
+\newblock \url{https://github.com/rosmod/webgme-rosmod}.
+
+\bibitem[Mar{\'o}ti \em{et~al.}(2014)Mar{\'o}ti, Kecsk{\'e}s, Keresk{\'e}nyi,
+  Broll, V{\"o}lgyesi, Jur{\'a}cz, Levendovszky, and
+  L{\'e}deczi]{maroti2014next}
+Mar{\'o}ti, M.; Kecsk{\'e}s, T.; Keresk{\'e}nyi, R.; Broll, B.; V{\"o}lgyesi,
+  P.; Jur{\'a}cz, L.; Levendovszky, T.; L{\'e}deczi, {\'A}.
+\newblock Next Generation (Meta) Modeling: Web-and Cloud-based Collaborative
+  Tool Infrastructure.
+\newblock  MPM@ MoDELS,  2014, pp. 41--60.
+
+\end{thebibliography}

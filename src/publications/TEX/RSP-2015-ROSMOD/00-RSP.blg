@@ -1,0 +1,14 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: 00-RSP.aux
+The style file: IEEEtran.bst
+Database file #1: rosmod.bib
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--missing publisher in ANTLR_BOOK
+Warning--empty journal in UML
+Warning--empty booktitle in MoDeVVa
+Warning--empty booktitle in SEUS
+Warning--empty booktitle in OPRoS
+
+Done.
+(There were 5 warnings)

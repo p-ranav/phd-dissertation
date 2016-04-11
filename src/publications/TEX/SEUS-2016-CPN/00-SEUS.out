@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Related Research}{}% 2
+\BOOKMARK [1][-]{section.3}{Component Execution Semantics}{}% 3
+\BOOKMARK [1][-]{section.4}{CPN Analysis Model}{}% 4
+\BOOKMARK [1][-]{section.5}{Experimental Setup}{}% 5
+\BOOKMARK [1][-]{section.6}{Experimental Evaluation}{}% 6
+\BOOKMARK [2][-]{subsection.6.1}{Time-triggered Operations}{section.6}% 7
+\BOOKMARK [2][-]{subsection.6.2}{Long-Running Operations}{section.6}% 8
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Challenges}{subsection.6.2}% 9
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Implementation and Results}{subsection.6.2}% 10
+\BOOKMARK [1][-]{section.7}{Future Work}{}% 11
+\BOOKMARK [1][-]{section.8}{Conclusions}{}% 12
+\BOOKMARK [1][-]{section*.9}{References}{}% 13

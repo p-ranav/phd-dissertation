@@ -1,0 +1,1278 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.10)  31 MAR 2016 23:20
+entering extended mode
+**./JoE2016-Special-Issue-ROSMOD.tex
+(JoE2016-Special-Issue-ROSMOD.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+(mdpi.cls
+Document Class: mdpi 2015/03/03 MDPI paper class
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+)) ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count87
+\calc@Bcount=\count88
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count89
+\calc@Cskip=\skip45
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\indentfirst.
+sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
+sty"
+\fancy@headwidth=\skip46
+\f@ncyO@elh=\skip47
+\f@ncyO@erh=\skip48
+\f@ncyO@olh=\skip49
+\f@ncyO@orh=\skip50
+\f@ncyO@elf=\skip51
+\f@ncyO@erf=\skip52
+\f@ncyO@olf=\skip53
+\f@ncyO@orf=\skip54
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+y"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\graphics.
+cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.
+def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.
+sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefin
+ekeys.sty"
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
+mds.sty"
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lastpage\lastpage.
+sty"
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lineno\lineno.sty"
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count91
+\output=\toks17
+\linenoprevgraf=\count92
+\linenumbersep=\dimen107
+\linenumberwidth=\dimen108
+\c@linenumber=\count93
+\c@pagewiselinenumber=\count94
+\c@LN@truepage=\count95
+\c@internallinenumber=\count96
+\c@internallinenumbers=\count97
+\quotelinenumbersep=\dimen109
+\bframerule=\dimen110
+\bframesep=\dimen111
+\bframebox=\box26
+LaTeX Info: Redefining \\ on input line 3056.
+) ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count98
+\float@exts=\toks18
+\float@box=\box27
+\@float@everytoks=\toks19
+\@floatcapt=\box28
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
+y"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip55
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
+y"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks20
+\ex@=\dimen112
+))
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen113
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count99
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count100
+\leftroot@=\count101
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count102
+\DOTSCASE@=\count103
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen114
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count104
+\c@MaxMatrixCols=\count105
+\dotsspace@=\muskip10
+\c@parentequation=\count106
+\dspbrk@lvl=\count107
+\tag@help=\toks21
+\row@=\count108
+\column@=\count109
+\maxfields@=\count110
+\andhelp@=\toks22
+\eqnshift@=\dimen115
+\alignsep@=\dimen116
+\tagshift@=\dimen117
+\tagwidth@=\dimen118
+\totwidth@=\dimen119
+\lineht@=\dimen120
+\@envbody=\toks23
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace.
+sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
+sty"
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip58
+\enit@outerparindent=\dimen121
+\enit@toks=\toks25
+\enit@inbox=\box31
+\enitdp@description=\count111
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\mathpazo.st
+y"
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.
+sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen122
+\lightrulewidth=\dimen123
+\cmidrulewidth=\dimen124
+\belowrulesep=\dimen125
+\belowbottomsep=\dimen126
+\aboverulesep=\dimen127
+\abovetopsep=\dimen128
+\cmidrulesep=\dimen129
+\cmidrulekern=\dimen130
+\defaultaddspace=\dimen131
+\@cmidla=\count112
+\@cmidlb=\count113
+\@aboverulesep=\dimen132
+\@belowrulesep=\dimen133
+\@thisruleclass=\count114
+\@lastruleclass=\count115
+\@thisrulewidth=\dimen134
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\titlesec.
+sty"
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box32
+\beforetitleunit=\skip59
+\aftertitleunit=\skip60
+\ttl@plus=\dimen135
+\ttl@minus=\dimen136
+\ttl@toksa=\toks26
+\titlewidth=\dimen137
+\titlewidthlast=\dimen138
+\titlewidthfirst=\dimen139
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
+sty"
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count116
+)
+
+Class mdpi Warning: You have not specified the journal. The first class option 
+of the document class mdpi specifies the journal. The word journal should be re
+placed by one of the following journal names: actuators, admsci, aerospace, agr
+iculture, agronomy, algorithms, animals, antibiotics, antibodies, antioxidants,
+ applsci, arts, atmosphere, atoms, axioms, batteries, behavsci, beverages, bioe
+ngineering, biology, biomedicines, biomimetics, biomolecules, biosensors, brain
+sci, buildings, carbon, cancers, catalysts, cells, challenges, chemosensors, ch
+ildren, chromatography, climate, coatings, computation, computers, condensedmat
+ter, cosmetics, cryptography, crystals, data, dentistry, designs, diagnostics, 
+diseases, diversity, econometrics, economies, education, electronics, energies,
+ entropy, environments, epigenomes, fermentation, fibers, fishes, fluids, foods
+, forests, futureinternet, galaxies, games, gels, genealogy, genes, geosciences
+, geriatrics, healthcare, horticulturae, humanities, hydrology, informatics, in
+formation, infrastructures, inorganics, insects, instruments, ijerph, ijfs, ijm
+s, ijgi, inventions, jcdd, jcm, jdb, jfb, jfmk, jimaging, jof, jintelligence, j
+lpea, jmse, jpm, jrfm, jsan, land, languages, laws, life, literature, lubricant
+s, machines, magnetochemistry, marinedrugs, materials, mathematics, mca, medsci
+, medicines, membranes, metabolites, metals, microarrays, micromachines, microo
+rganisms, minerals, molbank, molecules, mps, nanomaterials, ncrna, neonatalscre
+ening, nutrients, particles, pathogens, pharmaceuticals, pharmaceutics, pharmac
+y, philosophies, photonics, plants, polymers, processes, proteomes, publication
+s, recycling, religions, remotesensing, resources, risks, robotics, safety, sen
+sors, sexes, sinusitis, socsci, societies, soils, sports, standards, sustainabi
+lity, symmetry, systems, technologies, toxics, toxins, universe, urbansci, vacc
+ines, vetsci, viruses, visions, water on input line 450.
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks27
+\thm@bodyfont=\toks28
+\thm@headfont=\toks29
+\thm@notefont=\toks30
+\thm@headpunct=\toks31
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
+\dth@everypar=\toks32
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyphenat\hyphenat.
+sty"
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language70
+LaTeX Info: Redefining \_ on input line 43.
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip64
+\bibsep=\skip65
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count117
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
+sty"
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
+sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
+ty"
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen140
+\Hy@linkcounter=\count118
+\Hy@pagecounter=\count119
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
+f"
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count120
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
+cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4319.
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\puenc.def
+"
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4319.
+Package hyperref Info: Option `pdffitwindow' set `true' on input line 4319.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line 4319.
+
+
+Package hyperref Warning: Values of option `pdfpagemode':
+(hyperref)                * `UseNone'
+(hyperref)                * `UseOutlines'
+(hyperref)                * `UseThumbs'
+(hyperref)                * `FullScreen'
+(hyperref)                * `UseOC' (PDF 1.5)
+(hyperref)                * `UseAttachments' (PDF 1.6)
+(hyperref)                * An empty value disables the option.
+(hyperref)                Unknown value `None' on input line 4319.
+
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count121
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen141
+\Fld@menulength=\count122
+\Field@Width=\dimen142
+\Fld@charsize=\dimen143
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count123
+\c@Item=\count124
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
+ef"
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count125
+\c@bookmark@seq@number=\count126
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
+check.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip66
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\footmisc\footmisc.
+sty"
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks33
+\footnotemargin=\dimen144
+\c@pp@next@reset=\count127
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\block.tss
+"
+File: block.tss 2011/12/15
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count128
+\Gm@cntv=\count129
+\c@Gm@tempcnt=\count130
+\Gm@bindingoffset=\dimen145
+\Gm@wd@mp=\dimen146
+\Gm@odd@mp=\dimen147
+\Gm@even@mp=\dimen148
+\Gm@layoutwidth=\dimen149
+\Gm@layoutheight=\dimen150
+\Gm@layouthoffset=\dimen151
+\Gm@layoutvoffset=\dimen152
+\Gm@dimlist=\toks34
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+cfg"))
+\@float@every@boxenv=\toks35
+\c@boxenv=\count131
+\@float@every@figure=\toks36
+\@float@every@table=\toks37
+\@float@every@scheme=\toks38
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
+y"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
+ty"
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen153
+\captionmargin@=\dimen154
+\captionwidth=\dimen155
+\caption@tempdima=\dimen156
+\caption@indent=\dimen157
+\caption@parindent=\dimen158
+\caption@hangindent=\dimen159
+)
+\c@ContinuedFloat=\count132
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+\@justcentbox=\box33
+\wideitemsep=\skip67
+)
+\c@thm=\count133
+\c@ex=\count134
+\c@re=\count135
+ (JoE2016-Special-Issue-ROSMOD.aux)
+\openout1 = `JoE2016-Special-Issue-ROSMOD.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 134.
+LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 134.
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count136
+\scratchdimen=\dimen160
+\scratchbox=\box34
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen161
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
+\everyMPtoPDFconversion=\toks40
+)
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 134.
+\AtBeginShipoutBox=\box35
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty
+"
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\color.cfg
+"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+)
+Package hyperref Info: Link coloring ON on input line 134.
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
+ty"
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
+estring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count142
+)
+LaTeX Info: Redefining \ref on input line 134.
+LaTeX Info: Redefining \pageref on input line 134.
+LaTeX Info: Redefining \nameref on input line 134.
+ (JoE2016-Special-Issue-ROSMOD.out)
+(JoE2016-Special-Issue-ROSMOD.out)
+\@outlinefile=\write3
+\openout3 = `JoE2016-Special-Issue-ROSMOD.out'.
+
+\symAMSb=\mathgroup5
+
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(76.82234pt, 443.86319pt, 76.82234pt)
+* v-part:(T,H,B)=(51.21504pt, 751.15268pt, 42.67912pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=443.86319pt
+* \textheight=684.15268pt
+* \oddsidemargin=4.55235pt
+* \evensidemargin=4.55235pt
+* \topmargin=-21.05495pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=34.14322pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 134.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 134.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 134.
+
+Package epstopdf Info: Source file: <logo-mdpi.eps>
+(epstopdf)                    date: 2016-03-15 13:29:50
+(epstopdf)                    size: 736786 bytes
+(epstopdf)             Output file: <logo-mdpi-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-31 10:54:39
+(epstopdf)                    size: 557351 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo-mdpi-eps-converted-to.
+pdf logo-mdpi.eps>
+(epstopdf)             \includegraphics on input line 134.
+Package epstopdf Info: Output file is already uptodate.
+<logo-mdpi-eps-converted-to.pdf, id=124, 88.33pt x 58.2175pt>
+File: logo-mdpi-eps-converted-to.pdf Graphic file (type pdf)
+
+<use logo-mdpi-eps-converted-to.pdf>
+Package pdftex.def Info: logo-mdpi-eps-converted-to.pdf used on input line 134.
+
+(pdftex.def)             Requested size: 43.16885pt x 28.45274pt.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <18> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 134.
+LaTeX Font Info:    Calculating math sizes for size <18> on input line 134.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 134.
+
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 134
+.
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 134
+.
+ ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd
+"
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 134
+.
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 134
+.
+ ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd
+"
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 18.75613pt on input line 134.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 14.25455pt on input line 134.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.25378pt on input line 134.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 134.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 134.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 134.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 134.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 134.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 134.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 134.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 134.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 134.
+
+ ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 3364) in paragraph at lines 134--134
+ \T1/ppl/b/n/10 Keywords: \T1/ppl/m/n/10 robotics; dis-tributed; real-time; em-
+bed-ded; cyber-physical; tim-ing; anal-y-sis;
+ []
+
+(01-Introduction.tex
+Underfull \hbox (badness 3492) in paragraph at lines 17--24
+[]\T1/ppl/m/n/10 Developing sys-tems in a design-test-integrate-iterate method-
+ol-ogy is stan-dard prac-tice
+ []
+
+[1
+
+{C:/Users/prana/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo-mdpi
+-eps-converted-to.pdf>]
+Underfull \hbox (badness 1014) in paragraph at lines 70--85
+\T1/ppl/m/n/10 soft-ware with ROS. The util-ity of ROS-MOD is demon-strated us-
+ing a real-world case study:
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 108--132
+[]\T1/ppl/m/n/10 Here, ROS-MOD is fo-cused on im-prov-ing the soft-ware de-vel-
+op-ment work-flow for ROS
+ []
+
+[2] <Figures/ROSMOD_Component.png, id=168, 1288.815pt x 649.67719pt>
+File: Figures/ROSMOD_Component.png Graphic file (type png)
+
+<use Figures/ROSMOD_Component.png>
+Package pdftex.def Info: Figures/ROSMOD_Component.png used on input line 155.
+(pdftex.def)             Requested size: 355.0919pt x 178.99387pt.
+ [3 <./Figures/ROSMOD_Component.png>]
+<./Figures/ROSMOD-Meta2.png, id=180, 1169.87062pt x 1382.16376pt>
+File: ./Figures/ROSMOD-Meta2.png Graphic file (type png)
+
+<use ./Figures/ROSMOD-Meta2.png>
+Package pdftex.def Info: ./Figures/ROSMOD-Meta2.png used on input line 191.
+(pdftex.def)             Requested size: 363.97105pt x 430.02701pt.
+ [4 <./Figures/ROSMOD-Meta2.png>] [5]
+<./Figures/Code_Generation.png, id=198, 3645.11812pt x 2213.26875pt>
+File: ./Figures/Code_Generation.png Graphic file (type png)
+
+<use ./Figures/Code_Generation.png>
+Package pdftex.def Info: ./Figures/Code_Generation.png used on input line 345.
+(pdftex.def)             Requested size: 443.86319pt x 269.4983pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] [7 <./Figures/Code_Generation.png>]
+Underfull \hbox (badness 1014) in paragraph at lines 427--454
+\T1/ppl/m/n/10 ROS-MOD first gen-er-ates the ROS-MOD pack-ages in-clud-ing C++ 
+classes for each com-po-nent,
+ []
+
+<./Figures/DeploymentInfrastructure.png, id=211, 652.839pt x 530.4618pt>
+File: ./Figures/DeploymentInfrastructure.png Graphic file (type png)
+
+<use ./Figures/DeploymentInfrastructure.png>
+Package pdftex.def Info: ./Figures/DeploymentInfrastructure.png used on input l
+ine 457.
+(pdftex.def)             Requested size: 443.86319pt x 360.66878pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8]
+Underfull \hbox (badness 6477) in paragraph at lines 493--501
+[]\T1/ppl/m/n/10 Along with the source code, ROS-MOD also sup-ports gen-er-a-ti
+on of Doxygen-style
+ []
+
+[9 <./Figures/DeploymentInfrastructure.png>]) (02-Experimental-Section.tex
+[10] <Figures/AGSE-FlowChart.png, id=231, 4775.08969pt x 5573.07094pt>
+File: Figures/AGSE-FlowChart.png Graphic file (type png)
+
+<use Figures/AGSE-FlowChart.png>
+Package pdftex.def Info: Figures/AGSE-FlowChart.png used on input line 75.
+(pdftex.def)             Requested size: 355.0919pt x 414.39069pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11] <Figures/AGSE_Deployment.png, id=239, 730.22812pt x 408.77719pt>
+File: Figures/AGSE_Deployment.png Graphic file (type png)
+
+<use Figures/AGSE_Deployment.png>
+Package pdftex.def Info: Figures/AGSE_Deployment.png used on input line 135.
+(pdftex.def)             Requested size: 443.86319pt x 248.47424pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./Figures/AGSE-FlowChart.png>]
+<Figures/AGSE-Deployment.png, id=245, 5490.26157pt x 4950.495pt>
+File: Figures/AGSE-Deployment.png Graphic file (type png)
+
+<use Figures/AGSE-Deployment.png>
+Package pdftex.def Info: Figures/AGSE-Deployment.png used on input line 158.
+(pdftex.def)             Requested size: 443.86319pt x 400.2023pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13 <./Figures/AGSE_Deployment.png>]
+<./Figures/AGSE_Render.png, id=256, 2789.92313pt x 2277.25781pt>
+File: ./Figures/AGSE_Render.png Graphic file (type png)
+
+<use ./Figures/AGSE_Render.png>
+Package pdftex.def Info: ./Figures/AGSE_Render.png used on input line 210.
+(pdftex.def)             Requested size: 443.86319pt x 362.28381pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (03-Results.tex
+<Figures/AGSE_Operation.png, id=258, 998.22937pt x 962.09438pt>
+File: Figures/AGSE_Operation.png Graphic file (type png)
+
+<use Figures/AGSE_Operation.png>
+Package pdftex.def Info: Figures/AGSE_Operation.png used on input line 97.
+(pdftex.def)             Requested size: 332.89738pt x 320.83925pt.
+ [14 <./Figures/AGSE-Deployment.png>])
+(04-Discussion.tex
+Underfull \hbox (badness 2237) in paragraph at lines 17--32
+[]\T1/ppl/m/n/10 The goal of ROS-MOD is to be a model-driven, component-based r
+apid de-vel-op-ment,
+ []
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 17--32
+\T1/ppl/m/n/10 en-gi-neer-ing cou-pled with component-based soft-ware de-sign p
+rin-ci-ples en-abling an it-er-a-tive
+ []
+
+[15 <./Figures/AGSE_Render.png>]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 37.
+
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsppl.fd"
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+
+Underfull \hbox (badness 3281) in paragraph at lines 47--49
+[]\T1/ppl/m/n/10 importance of mean-ing-ful feed-back es-pe-cially with re-spec
+t to er-rors and fail-ures in
+ []
+
+[16 <./Figures/AGSE_Operation.png>]
+<Figures/ExecPlot-armTimer.png, id=281, 775.89874pt x 189.70876pt>
+File: Figures/ExecPlot-armTimer.png Graphic file (type png)
+
+<use Figures/ExecPlot-armTimer.png>
+Package pdftex.def Info: Figures/ExecPlot-armTimer.png used on input line 85.
+(pdftex.def)             Requested size: 443.86319pt x 108.5259pt.
+
+<Figures/ExecPlot-sample-Bay-DetectionStateFromImageServer.png, id=282, 773.389
+37pt x 257.46187pt>
+File: Figures/ExecPlot-sample-Bay-DetectionStateFromImageServer.png Graphic fil
+e (type png)
+
+<use Figures/ExecPlot-sample-Bay-DetectionStateFromImageServer.png>
+Package pdftex.def Info: Figures/ExecPlot-sample-Bay-DetectionStateFromImageSer
+ver.png used on input line 92.
+(pdftex.def)             Requested size: 443.86319pt x 147.76442pt.
+ [17 <./Figures/ExecPlot-armTimer.png>]
+<Figures/ExecPlot-captureImage.png, id=293, 772.38562pt x 183.68625pt>
+File: Figures/ExecPlot-captureImage.png Graphic file (type png)
+
+<use Figures/ExecPlot-captureImage.png>
+Package pdftex.def Info: Figures/ExecPlot-captureImage.png used on input line 1
+01.
+(pdftex.def)             Requested size: 443.86319pt x 105.5571pt.
+
+Underfull \hbox (badness 1558) in paragraph at lines 131--139
+[]\T1/ppl/m/n/10 The rapid pro-to-typ-ing fa-cil-i-tated by ROS-MOD and the ROS
+ in-fras-truc-ture en-abled the
+ []
+
+) (05-Materials-and-Methods.tex [18 <./Figures/ExecPlot-sample-Bay-DetectionSta
+teFromImageServer.png> <./Figures/ExecPlot-captureImage.png>]
+<./Figures/AGSE_Mechanical_Design_Figure.png, id=304, 2295.32532pt x 1569.61406
+pt>
+File: ./Figures/AGSE_Mechanical_Design_Figure.png Graphic file (type png)
+ <use ./Figures/AGSE_Mechanical_Design_Figure.png>
+Package pdftex.def Info: ./Figures/AGSE_Mechanical_Design_Figure.png used on in
+put line 43.
+(pdftex.def)             Requested size: 443.86319pt x 303.5228pt.
+ [19 <./Figures/AGSE_Mechanical_Design_Figure.png>] [20]
+<Figures/Sample_Image_Processing_2.png, id=321, 607.068pt x 427.8384pt>
+File: Figures/Sample_Image_Processing_2.png Graphic file (type png)
+
+<use Figures/Sample_Image_Processing_2.png>
+Package pdftex.def Info: Figures/Sample_Image_Processing_2.png used on input li
+ne 150.
+(pdftex.def)             Requested size: 332.89738pt x 234.61331pt.
+
+<Figures/Payloadbay_Detection.png, id=324, 706.89093pt x 396.7322pt>
+File: Figures/Payloadbay_Detection.png Graphic file (type png)
+
+<use Figures/Payloadbay_Detection.png>
+Package pdftex.def Info: Figures/Payloadbay_Detection.png used on input line 17
+8.
+(pdftex.def)             Requested size: 332.89738pt x 186.83342pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21 <./Figures/Sample_Image_Processing_2.png>]
+Underfull \hbox (badness 7203) in paragraph at lines 218--226
+[]\T1/ppl/m/n/10 ROSMOD ex-ists as two sep-a-rate code-bases: 1) the ROS-MOD co
+m-po-nent model
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 218--226
+\T1/ppl/m/n/10 mod-el-ing, gen-er-a-tion, and de-ploy-ment tool suite. These tw
+o code-bases are re-ferred to as
+ []
+
+[22 <./Figures/Payloadbay_Detection.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+
+ []
+
+[23] (JoE2016-Special-Issue-ROSMOD.bbl
+Underfull \hbox (badness 2351) in paragraph at lines 51--57
+\T1/ppl/m/n/9 Object/Component/Service-Oriented Real-Time Dis-tributed Com-put-
+ing (ISORC), 2013 IEEE 16th
+ []
+
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 247.
+ 
+AED: lastpage setting LastPage
+[24]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 247.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
+ (JoE2016-Special-Issue-ROSMOD.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 247.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 247.
+Package rerunfilecheck Info: File `JoE2016-Special-Issue-ROSMOD.out' has not ch
+anged.
+(rerunfilecheck)             Checksum: 156F0479FB99AD4EE6C7066DFE013CF7;5006.
+ ) 
+Here is how much of TeX's memory you used:
+ 13842 strings out of 493634
+ 200280 string characters out of 3135239
+ 288612 words of memory out of 3000000
+ 16870 multiletter control sequences out of 15000+200000
+ 55222 words of font info for 130 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 49i,12n,45p,2190b,457s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\prana\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecss0500.pk>{C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/f
+ontname/8r.enc}<C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/prana/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/prana/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/pran
+a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmbi.pfb><C:/
+Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.p
+fb><C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/u
+plr8a.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/pal
+atino/uplri8a.pfb>
+Output written on JoE2016-Special-Issue-ROSMOD.pdf (24 pages, 28700328 bytes).
+PDF statistics:
+ 422 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 321 words of extra memory for PDF output out of 10000 (max. 10000000)
+

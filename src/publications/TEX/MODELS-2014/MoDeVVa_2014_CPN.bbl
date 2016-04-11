@@ -1,0 +1,94 @@
+\begin{thebibliography}{10}
+
+\bibitem{ISIS_F6_Aerospace:12}
+Dubey, A., Emfinger, W., Gokhale, A., Karsai, G., Otte, W., Parsons, J., Szabo,
+  C., Coglio, A., Smith, E., Bose, P.:
+\newblock {A Software Platform for Fractionated Spacecraft}.
+\newblock In: Proceedings of the IEEE Aerospace Conference, 2012, Big Sky, MT,
+  USA, IEEE (2012)  1--20
+
+\bibitem{DREMS13Software}
+et~al., T.L.:
+\newblock Distributed real-time managed systems: A model-driven distributed
+  secure information architecture platform for managed embedded systems.
+\newblock IEEE Software \textbf{31} (2014)  62--69
+
+\bibitem{ISIS_F6_SFFMT:13}
+Dubey, A., Gokhale, A., Karsai, G., Otte, W., Willemsen, J.:
+\newblock {A Model-Driven Software Component Framework for Fractionated
+  Spacecraft}.
+\newblock In: Proceedings of the 5th International Conference on Spacecraft
+  Formation Flying Missions and Technologies (SFFMT), Munich, Germany, IEEE
+  (2013)
+
+\bibitem{ISIS_F6_ISORC:13}
+Otte, W.R., Dubey, A., Pradhan, S., Patil, P., Gokhale, A., Karsai, G.,
+  Willemsen, J.:
+\newblock {F6COM: A Component Model for Resource-Constrained and Dynamic
+  Space-Based Computing Environment}.
+\newblock In: Proceedings of the 16th IEEE International Symposium on
+  Object-oriented Real-time Distributed Computing (ISORC '13), Paderborn,
+  Germany (2013)
+
+\bibitem{CPN}
+Jensen, K., Kristensen, L.M.:
+\newblock Coloured Petri Nets - Modelling and Validation of Concurrent Systems.
+\newblock Springer (2009)
+
+\bibitem{kordon_sn}
+Renault, X., Kordon, F., Hugues, J.:
+\newblock From aadl architectural models to petri nets: Checking model
+  viability.
+\newblock In: Object/Component/Service-Oriented Real-Time Distributed
+  Computing, 2009. ISORC '09. IEEE International Symposium on. (2009)  313--320
+
+\bibitem{kordon2009}
+Renault, X., Kordon, F., Hugues, J.:
+\newblock Adapting models to model checkers, a case study : Analysing aadl
+  using time or colored petri nets.
+\newblock In: Rapid System Prototyping, 2009. RSP '09. IEEE/IFIP International
+  Symposium on. (2009)  26--33
+
+\bibitem{Alpern1989}
+Alpern, B., Schneider, F.B.:
+\newblock Verifying temporal properties without temporal logic.
+\newblock ACM Trans. Program. Lang. Syst. \textbf{11} (1989)  147--167
+
+\bibitem{Lopez2006}
+Lopez, P., Medina, J., Drake, J.:
+\newblock Real-time modelling of distributed component-based applications.
+\newblock In: Software Engineering and Advanced Applications, 2006. SEAA '06.
+  32nd EUROMICRO Conference on. (2006)  92--99
+
+\bibitem{MAST1}
+Harbour, M.G., Garcia, J.J.G., Gutierrez, J.C.P., Moyano, J.M.D.:
+\newblock Mast: Modeling and analysis suite for real time applications.
+\newblock In: In 13th Euromicro Conference on Real-Time Systems. (2001)  125
+
+\bibitem{johnson2013}
+Johnson, K., Calinescu, R., Kikuchi, S.:
+\newblock An incremental verification framework for component-based software
+  systems.
+\newblock In: Proceedings of the 16th International ACM Sigsoft Symposium on
+  Component-based Software Engineering. CBSE '13, New York, NY, USA, ACM (2013)
+   33--42
+
+\bibitem{ARINC-653}
+{ARINC Incorporated} Annapolis, Maryland, USA:
+\newblock {Document No. 653: Avionics Application Software Standard Inteface
+  (Draft 15)}. (1997)
+
+\bibitem{Murata1989}
+Murata, T.:
+\newblock Petri nets: Properties, analysis and applications.
+\newblock Proceedings of the IEEE \textbf{77} (1989)  541--580
+
+\bibitem{CPNTools}
+Ratzer, A.V., Wells, L., Lassen, H.M., Laursen, M., Qvortrup, J.F., Stissing,
+  M.S., Westergaard, M., Christensen, S., Jensen, K.:
+\newblock Cpn tools for editing, simulating, and analysing coloured petri nets.
+\newblock In: Proceedings of the 24th International Conference on Applications
+  and Theory of Petri Nets. ICATPN'03, Berlin, Heidelberg, Springer-Verlag
+  (2003)  450--462
+
+\end{thebibliography}

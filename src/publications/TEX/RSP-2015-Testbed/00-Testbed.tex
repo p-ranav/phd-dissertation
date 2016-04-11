@@ -1,0 +1,62 @@
+\documentclass[conference]{IEEEtran}
+
+% correct bad hyphenation here
+%\hyphenation{op-tical net-works semi-conduc-tor}
+\newcommand{\ENABLECOMMENTS}{}
+\usepackage{listings}
+\usepackage{ifpdf}
+\usepackage{url}
+\usepackage{subcaption}
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+\newcommand{\iap}{\textit{DREMS}\ }
+%\newcommand{\iapfull}{\textbf{D}istributed \textbf{S}oftware \textbf{P}latform }
+\newcommand{\iapfull}{\textbf{D}istributed \textbf{RE}altime \textbf{M}anaged \textbf{S}ystem}
+
+
+\usepackage{color}
+
+\ifdefined\ENABLECOMMENTS
+\newcommand{\comment}[2]{{\texttt{\color{red}#1:#2}}}
+\else
+\newcommand{\comment}[2]{}
+\fi
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{A Testbed to Simulate and Analyze Resilient Cyber-Physical Systems}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{ Pranav Srinivas Kumar, William Emfinger and Gabor Karsai \\
+Institute for Software Integrated Systems,\\ Dept. of EECS, Vanderbilt University,\\
+%  1025 16th Ave S, \\
+Nashville, TN 37235, USA \\
+Email:\{pkumar, emfinger, gabor\}@isis.vanderbilt.edu}
+
+
+% make the title area
+\maketitle
+
+\input{Abstract}
+\input{Introduction}
+\input{Problem_Statement}
+\input{Testbed}
+\input{Related_Research}
+\input{Conclusions}
+
+% Acknowledgement
+\section*{Acknowledgment}
+This work was supported by DARPA under contract NNA11AB14C and USAF/AFRL under Cooperative Agreement FA8750-13-2-0050, and by the National Science Foundation (CNS-1035655). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of DARPA, USAF/AFRL, or NSF.
+
+\bibliographystyle{IEEEtran}
+\bibliography{testbed}
+
+\end{document}
