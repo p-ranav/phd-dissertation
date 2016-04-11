@@ -1,0 +1,88 @@
+
+\hfill Page
+
+\contentsline {chapter}{\listtablename }{v}{chapter*.2}
+\contentsline {chapter}{\listfigurename }{vi}{chapter*.3}
+\flushleft Chapter
+\contentsline {chapter}{\numberline {I}Introduction}{1}{chapter.I}
+\contentsline {chapter}{\numberline {II}Fundamentals}{6}{chapter.II}
+\contentsline {chapter}{\numberline {III}Related Research}{11}{chapter.III}
+\contentsline {section}{\numberline {3.1}General Analysis Methodologies}{11}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Testing and Evaluation}{11}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Simulation}{14}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Formal Analysis Methods}{16}{subsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.3.1}Model Checking}{18}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.2}Theorem Proving}{20}{subsubsection.3.1.3.2}
+\contentsline {subsection}{\numberline {3.1.4}Static Code Analysis}{21}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Fundamental Timing Analysis Tools}{24}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Cheddar Real-Time Scheduling Framework}{24}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}UPPAAL}{25}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}TIMES}{26}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}System-level Timing Analysis Methodologies}{27}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Petri net-based Timing Analysis for Concurrent Systems}{27}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Example High-level Petri net Tool: CPN Tools}{29}{subsubsection.3.3.1.1}
+\contentsline {subsection}{\numberline {3.3.2}Analyzing AADL models with Petri nets}{30}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Translating AADL models to Petri nets: }{31}{subsubsection.3.3.2.1}
+\contentsline {subsection}{\numberline {3.3.3}Analyzing AADL Models with Timed Petri nets}{33}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Mapping AADL Models to Analysis Repository - MoSaRT Framework}{34}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}MAST: Modeling and Analysis Suite}{35}{subsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.5.1}MAST Modeling Methodology}{36}{subsubsection.3.3.5.1}
+\contentsline {subsection}{\numberline {3.3.6}Verification in AutoFocus 3}{38}{subsection.3.3.6}
+\contentsline {chapter}{\numberline {IV}Proposed Work: Design-time Timing Analysis of Component-based Distributed Real-time Embedded Systems}{41}{chapter.IV}
+\contentsline {section}{\numberline {4.1}Colored Petri net-based Modeling and Analysis Methodology}{41}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Design Model: Distributed Managed Systems (DREMS)}{41}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}Component Operations}{43}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}Temporal Partition Scheduler}{46}{subsubsection.4.1.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Problem Statement}{49}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Challenges}{51}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}Modeling Component-based Applications}{51}{subsubsection.4.1.3.1}
+\contentsline {subsubsection}{\numberline {4.1.3.2}Analysis Challenges}{51}{subsubsection.4.1.3.2}
+\contentsline {subsubsection}{\numberline {4.1.3.3}Generating CPN Analysis Model from System Design Model}{53}{subsubsection.4.1.3.3}
+\contentsline {subsection}{\numberline {4.1.4}The Choice of Colored Petri Nets}{53}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Outline of Solution}{54}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Evaluation of Solution}{55}{subsection.4.1.6}
+\contentsline {subsection}{\numberline {4.1.7}Contributions}{56}{subsection.4.1.7}
+\contentsline {subsubsection}{\numberline {4.1.7.1}Colored Petri Net-based Model}{56}{subsubsection.4.1.7.1}
+\contentsline {subsubsection}{\numberline {4.1.7.2}State Space Analysis and Verification of Safety-critical System Properties}{56}{subsubsection.4.1.7.2}
+\contentsline {subsubsection}{\numberline {4.1.7.3}Design Model to Analysis Model Translation}{57}{subsubsection.4.1.7.3}
+\contentsline {section}{\numberline {4.2}Modeling Component Operation Business Logic}{58}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Problem Statement}{58}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Challenges}{58}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Outline of Solution}{59}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Evaluation of Solution}{59}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Contributions}{60}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Modeling and Analysis Improvements}{61}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Problem Statement}{61}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Outline of Solution}{61}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Evaluation of Solution}{62}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Contributions}{62}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Investigating Advanced State Space Analysis Methods}{64}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Problem Statement}{64}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Outline of Solution}{64}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Evaluation of Solution}{65}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Contributions}{66}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}Experimental Validation of Timing Analysis Results}{67}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Problem Statement}{67}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Challenges}{67}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Evaluation of Solution}{68}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Proposed Contributions}{69}{subsection.4.5.4}
+\contentsline {section}{\numberline {4.6}Modeling and Analysis of Long-Running Component Operations}{70}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Problem Statement}{70}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Challenges}{70}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Outline of Solution}{71}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Evaluation of Solution}{71}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}Proposed Contributions}{72}{subsection.4.6.5}
+\contentsline {section}{\numberline {4.7}Modeling and Analysis of Cyber-Physical Systems (CPS)}{73}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Problem Statement}{73}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Challenges}{73}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Outline of Solution}{74}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.4}Evaluation of Solution}{74}{subsection.4.7.4}
+\contentsline {subsection}{\numberline {4.7.5}Proposed Contributions}{75}{subsection.4.7.5}
+\contentsline {chapter}{\numberline {V}Conclusions}{76}{chapter.V}
+\contentsline {chapter}{Appendices}{77}{section*.5}
+\contentsline {chapter}{\numberline {A}Publications}{78}{APPENDIX.A}
+\contentsline {section}{\numberline {1.1}Workshop Papers}{78}{section.1.1}
+\contentsline {section}{\numberline {1.2}Conference Papers}{78}{section.1.2}
+\contentsline {section}{\numberline {1.3}Journal Papers}{79}{section.1.3}
+\contentsline {section}{\numberline {1.4}Book Chapters - Awaiting Reviews}{79}{section.1.4}
+\contentsline {chapter}{REFERENCES}{80}{chapter*.6}

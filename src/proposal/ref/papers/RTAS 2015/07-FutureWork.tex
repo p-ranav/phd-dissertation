@@ -1,0 +1,6 @@
+\section{Future Work}
+\label{sec:Future_Work}
+
+DREMS component communication is facilitated by a time-varying network. The bandwidth provided by the system therefore predictably fluctuates between a minimum and a maximum during the orbital period of the satellites. Currently, our analysis associates each operational step with a fixed worst-case network delay. We are working on introducing places in the CPN model that capture the \emph{network profile} of a deployment so that the communication delays during queries vary with time leading to tighter bounds on predicted response times. 
+
+Secondly, we are also investigating the utility of this approach for fault-tolerant and self-adaptive systems. Remote systems like DREMS require autonomous resilience and design-time verification of system configurations. Challenges in this domain include formal modeling and analysis of faults in the component behavior and timing verification of configuration points identified by some resilience engine to stabilize a faulty system. 

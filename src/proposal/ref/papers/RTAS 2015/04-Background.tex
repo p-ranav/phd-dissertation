@@ -1,0 +1,27 @@
+\section{Target System Architecture}
+\label{sec:Target_System_Architecture}
+The target architecture for timing analysis is \emph{DREMS} \cite{ISIS_F6_Aerospace:12,DREMS13Software}. DREMS is a software infrastructure for the design, implementation, deployment, and management of component-based real-time embedded systems. The infrastructure includes (1) design-time modeling tools \cite{ISIS_F6_SFFMT:13} that integrate with a well-defined (2) component model \cite{ISIS_F6_ISORC:13, MoDeVVa} used to build component-based applications. Rapid prototyping and code generation features coupled with a modular run-time platform automate tedious aspects of software development and enable robust deployment and operation of mixed-criticality distributed applications. The formal modeling and analysis method presented in this paper focuses on applications built using this foundational architecture. 
+
+\subsection{Component Operations Scheduler}
+
+DREMS applications are built by assembling and composing re-useable units of functionality called \emph{Components}. Each component is characterized by a (1) set of communication ports, a (2) set of interfaces (accessed through ports), a (3) message queue, (4) timers and state variables. Each component interface exposes one or more \emph{operations} that can be invoked. Each operation contains \emph{business logic} code written by a developer to implement its function. Every operation request coming from an external entity reaches the component through its message queue. This is a priority-FIFO queue maintained by a component-level scheduler that schedules operations for execution. When ready, a single \emph{component executor thread} per component will be scheduled by the operating system to execute the operation requested by the front of the component's message queue. The operation runs to completion, hence component execution is always single-threaded. 
+
+
+\subsection{Operating System Scheduler}
+DREMS components are grouped into processes that are assigned to temporal partitions, implemented by the DREMS OS scheduler. This scheduler was built by modifying the behavior of the standard Linux scheduler, introducing an ARINC-653 \cite{ARINC-653} style temporal and spatial partitioning scheme. 
+
+Temporal partitions are periodic, fixed intervals of the CPU's time. Threads associated with a partition are scheduled only when the partition is active. This enforces a temporal isolation between threads assigned to different partitions. The repeating partition windows are called \emph{minor frames}. The aggregate of minor frames is called a \emph{major frame}. The duration of each major frame is called the \emph{hyperperiod}, which is typically the lowest common multiple of the partition periods. Each minor frame is characterized by a period and a duration. The duration of a partition dictates the amount of time available per hyperperiod to schedule all threads assigned to that partition.
+
+\section{Motivation}
+\label{sec:Motivation}
+
+There are certain implicit design complexities in DREMS that motivate our modeling and analysis approach.
+\subsection{Operation Deadlines}
+\label{subsec:Operation_Deadlines}
+For each component, the OS scheduler schedules a component executor thread to execute operations scheduled by the component-level scheduler. Each component executor thread has a fixed-priority assigned at design-time. However, the deadline for a scheduled component thread is inherited from the operation it executes, maintained at a higher level of abstraction. Therefore, depending on the operation executed by a component thread, its timing requirements vary.
+
+\subsection{WCET of Operations}
+The execution of component operations serve the various periodic or aperiodic interaction requests from either the underlying framework or other connected (possibly distributed) components. The business logic of each operation is written by an application developer as a sequence of execution \emph{steps}. Each step could execute a unique set of tasks e.g. perform a local function call, initiate an interaction with another component, process a response from external entities,  data-dependent control statements and loops etc. The behavior that is derived by the combination of these steps dictates the WCET of the component operation. This behavior includes non-deterministic delays that are caused by components communicating through a (1) time-varying network (2) with novel interaction patterns and (3) within the constraints of temporal partitioning. 
+
+System architectures like DREMS require an analysis tool with an expressive language that is tightly coupled with the target software platform (like our component model) to efficiently model and verify behavioral aspects of the system such as operational modes, the OS scheduling and distributed communication. Another crucial need for safety-critical systems is incorporating the timing analysis in every stage of the design. This firstly requires an analysis tool that can work with the non-determinism realized by incomplete designs. Secondly, this also requires the timing specifications and model transformations to be integrated into the design-time modeling. All of these aspects motivated us to choose colored Petri nets as the formalism to capture the various domain-specific properties and perform efficient timing analysis.
+

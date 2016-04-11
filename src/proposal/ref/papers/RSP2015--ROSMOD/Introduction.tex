@@ -1,0 +1,16 @@
+\section{Introduction}
+
+% What is ROS?
+Robot Operating System (ROS) \cite{ROS} is a meta-operating system framework that facilitates robotic system development. ROS is widely used in various fields of robotics including industrial robotics, UAV swarms and low-power image processing devices. The open source multi-platform support of ROS has made it a requirement in several DARPA robotics projects including the \emph{DARPA Robotics Challenge} \cite{DARPA_Robotics_Challenge}.   
+
+% What does ROS provide
+ROS enables the deployment of a network of interacting ROS \emph{nodes}, that communicate using the ROS middleware infrastructure. ROS nodes can contact each other using different types of interaction patterns including synchronous remote method invocation (RMI) and asynchronous message passing publish-subscribe interactions. A ROS application is a packaged set of ROS nodes that communicate through a ROS Master, where a ROS Master is a single discovery and communications broker that facilitates node-node flow setup.
+
+% What is ROSMOD
+This paper describes ROSMOD \cite{ROSMOD}, an open source development tool suite and run-time software platform for rapid prototyping component-based software applications using ROS. Using ROSMOD, an application developer can create, deploy and manage ROS applications for distributed real-time embedded systems. We define a strict component model, a model-driven development workflow and run-time management tools to build and deploy component-based software with ROS. 
+
+% AGSE - Tell readers about how ROSMOD is used
+The utility of ROSMOD is described using a real-world case study - An Autonomous Ground Support Equipment (AGSE) robot that was designed, prototyped and deployed for the NASA Student Launch Competition \cite{NASA_SL} 2014-2015. We describe the challenges and requirements, the robotic design, the software prototyping and the overall performance that lead us to winning this competition.
+
+% Following sections 
+The sections in this paper are organized as follows. Section \ref{sec:ROSMOD} describes the ROSMOD tool suite: The component model, modeling language, graphical user interface, code generators and deployment infrastructure. Section \ref{sec:Case_Study} describes our AGSE robot and evaluates ROSMOD. Section \ref{sec:Future_Work} describes our current efforts to improving ROSMOD support with analysis tools and run-time reconfiguration solutions. Section \ref{sec:Related_Research} presents related efforts in the field of robotics, both using ROS and other similar middleware platforms. Finally, Section \ref{sec:Conclusions} presents concluding remarks.

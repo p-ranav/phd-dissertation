@@ -1,0 +1,13 @@
+\section{Future Work}
+\label{sec:Future_Work}
+
+In order to generalize this analysis model and provide flexibility, one possible extension to this approach is to cater to other commonly used scheduling schemes such as EDF, RMS etc. for component operation scheduling; and novel interaction patterns (e.g. reliable broadcast). Since the analysis model is a composition of sub-nets that are not tightly coupled, this extension would provide reusable, self-contained functional modules. 
+
+The current analysis approach inherits the benefits and the drawbacks of using pessimistic estimates for execution times. Another possible extension to this approach would be to provide a stochastic schedulability analysis allowing for a trade-off between reliability and cost of resources required by the system. However, describing execution times for software using probability distribution functions is not trivial and would require significant effort.
+
+\section{Conclusions}
+\label{sec:Conclusions}
+
+Mobile, distributed real-time systems operating in dynamic environments, and running mission-critical applications face strict timing requirements to operate safely. To reduce the development and integration complexity for such systems, component-based design models are being increasingly used. Appropriate analysis models are required to study the structural and behavioral complexity in such designs. 
+
+This paper presents a Colored Petri net-based approach to capture the architecture and temporal behavior of such component-based applications for both qualitative and quantitative schedulability analysis. This analysis model includes a compact, scalable representation of high-level design, accounting for the dynamics of real-time thread execution while exploiting knowledge of component execution code. Exhaustive state space search enables verification and validation of useful and necessary system properties, reducing development costs and increasing reliability for such time-critical systems. The utility of this tool has been illustrated with several examples. 

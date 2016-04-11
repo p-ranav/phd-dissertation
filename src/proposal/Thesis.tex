@@ -1,0 +1,121 @@
+\documentclass[12pt]{vuthesis}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[scaled=0.92]{helvet}
+\usepackage{courier}
+\usepackage{ifpdf}
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\graphicspath{{figures/}}
+\else
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\fi
+
+\usepackage[numbers]{natbib}
+\usepackage{bibentry}
+
+\usepackage[toc,page]{appendix}
+
+\newcommand{\ignore}[1]{}
+\newcommand{\nobibentry}[1]{{\let\nocite\ignore\bibentry{#1}}}
+% apsrev entries in the text need definitions of these commands
+\newcommand{\bibfnamefont}[1]{#1}
+\newcommand{\bibnamefont}[1]{#1}
+
+\usepackage{float}
+\usepackage{amsfonts,amssymb,amsmath, amsthm}
+\usepackage{tabulary}
+\usepackage{setspace}
+\setlength\tymin{30pt}
+\setlength\tymax{\linewidth}
+\usepackage[font={bf,sf}]{caption}
+%\usepackage[format=hang,margin=10pt,font={bf,sf}]{caption}
+\usepackage{url}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{colortbl}
+\usepackage{textcomp}
+\usepackage{relsize,fancyvrb}
+%\usepackage[ruled,noline]{algorithm2e}
+\usepackage{subcaption}
+\usepackage{rotating}
+\usepackage{tocvsec2}
+\usepackage{chngcntr}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+% algorithm & algorithmic  OR  algorithm, algorithmcx, & algpseudocode
+%\usepackage{algorithm}
+%\usepackage{algorithmicx}
+%\usepackage{algpseudocode}
+\usepackage{tabularx,booktabs,lscape,rotating,multirow}
+\usepackage{listings}
+
+\usepackage{acronym}
+%\usepackage[acronym,toc]{glossaries}
+
+\ifpdf
+\usepackage[pdftex,linktocpage,bookmarks,colorlinks,linkcolor=blue,urlcolor=blue,citecolor=blue,naturalnames]{hyperref}
+\else
+\usepackage[dvips,linktocpage,bookmarks,colorlinks,linkcolor=blue,urlcolor=blue,citecolor=blue,naturalnames]{hyperref}
+\fi
+
+\newcounter{num}
+\newenvironment{NumList}
+{\begin{list}
+{\arabic{num}. }
+{\usecounter{num}
+\setlength{\topsep}{1pt}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\labelsep}{1pt}
+\setlength{\itemindent}{0pt}
+\setlength{\leftmargin}{8pt}}}
+{\end{list}
+\vspace{2pt}
+}
+
+\floatstyle{boxed}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+\counterwithout{equation}{chapter}
+\renewcommand \thesection{\arabic{chapter}.\arabic{section}}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+\newcommand{\iapfull}{\textbf{D}istributed \textbf{RE}altime \textbf{M}anaged \textbf{S}ystem}%
+
+\begin{document}
+	
+\nobibliography*
+
+\title{Integrated Timing Analysis and Verification of Component-based Distributed Real-time Systems}
+\author{Pranav Srinivas Kumar}
+\submitdate{SEPTEMBER, 2015}
+\principaladviser{Dr. Gabor Karsai}
+\academicarea{Computer Science}
+
+\beforepreface
+%\input{copyright}
+\input{Dedication}
+\input{Acknowledgements}
+%\input{Acronyms}
+\afterpreface
+
+\lstdefinestyle{XML}{basicstyle=\footnotesize, tabsize=2, captionpos=b, breaklines=true, firstnumber=last, keywordstyle=\color{Black}, identifierstyle=\color{Black}, stringstyle=\color{Blue}, commentstyle=\color{Gray}, tagstyle=\color{BrickRed}, markfirstintag=true}
+
+\input{Introduction}
+\input{Fundamentals}
+\input{Related_Research}
+\input{Proposed_Work}
+\input{Conclusions}
+\input{Publications}
+
+%\balance
+\bibliographystyle{abbrv}
+\begin{spacing}{1}
+\bibliography{Thesis}
+\end{spacing}
+
+\end{document}

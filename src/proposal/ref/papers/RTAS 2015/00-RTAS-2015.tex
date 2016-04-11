@@ -1,0 +1,90 @@
+% $Id: RTAS.tex 3909 2013-10-22 06:07:02Z dabhishe $
+
+\documentclass[10pt,conference]{IEEEtran}
+% Add the compsocconf option for Computer Society conferences.
+\usepackage{amssymb,amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{ifpdf}
+\usepackage{url}
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\graphicspath{{figs/}}
+\DeclareGraphicsExtensions{.png,.jpg, .pdf}
+\else
+\usepackage[dvips]{graphicx}
+
+\graphicspath{{eps/}}
+\DeclareGraphicsExtensions{.eps}
+\fi
+\usepackage{float}
+%\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage[font=footnotesize]{caption}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{balance}
+\pdfminorversion=6
+\hyphenation{op-tical net-works semi-conduc-tor}
+\newcommand{\indentitem}{\setlength\itemindent{0pt}}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\newcommand{\algorithmicinput}{\textbf{Input:}}
+\newcommand{\INPUT}{\item[\algorithmicinput]}
+\newcommand{\algorithmicoutput}{\textbf{Output:}}
+\newcommand{\OUTPUT}{\item[\algorithmicoutput]}
+\renewcommand{\algorithmicrequire}{\textbf{Pre Condition:}}
+\renewcommand{\algorithmicensure}{\textbf{Post Condition:}}
+\floatname{algorithm}{Procedure}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,circuits.ee,circuits.ee.IEC,shapes.geometric,shapes.misc}
+\newcommand{\iap}{\textit{DREMS}}
+%\newcommand{\iapfull}{\textbf{D}istributed \textbf{S}oftware \textbf{P}latform }
+\newcommand{\iapfull}{\textbf{D}istributed \textbf{RE}altime \textbf{M}anaged \textbf{S}ystem}% Algorithmic modifications
+\newcommand{\ALOOP}[1]{\ALC@it\algorithmicloop\ #1%
+  \begin{ALC@loop}}
+\newcommand{\ENDALOOP}{\end{ALC@loop}\ALC@it\algorithmicendloop}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\newcommand{\algorithmicbreak}{\textbf{break}}
+\newcommand{\BREAK}{\STATE \algorithmicbreak}
+\newenvironment{noindlist}
+ {\begin{list}{\labelitemi}{\leftmargin=0.1em \itemindent=0em \itemsep=0.3em}}
+ {\end{list}}
+\usepackage{multirow}
+
+\begin{document}
+\title{ Timing Analysis for Component-based Distributed Real-time Systems }
+\vspace{-0.1in}
+\author{\IEEEauthorblockN{Pranav Srinivas Kumar, Abhishek Dubey and Gabor Karsai} 
+	\IEEEauthorblockA{
+		ISIS, Dept of EECS, Vanderbilt University, Nashville, TN 37235, USA \\
+		Email:\{pkumar, dabhishe, gabor\}@isis.vanderbilt.edu
+	}
+}
+
+% make the title area
+
+\setcounter{page}{1}
+\maketitle
+
+\input{01-Abstract}
+\input{02-Introduction}
+\input{03-RelatedResearch}
+\input{04-Background}
+\input{05-Modeling}
+\input{06-Analysis}
+\input{07-FutureWork}
+\input{08-Conclusions}
+
+\textbf{Acknowledgments:} The DARPA System F6 Program and the National
+Science Foundation (CNS-1035655) supported
+this work. Any opinions, findings, and conclusions or recommendations expressed
+in this material are those of the authors and do not reflect the views of
+DARPA or NSF. 
+% \vspace{-0.1in}
+\balance
+\begin{spacing}{0.88}
+\bibliographystyle{IEEEtran}
+\bibliography{../bibliography/f6}
+\end{spacing}
+
+\end{document}

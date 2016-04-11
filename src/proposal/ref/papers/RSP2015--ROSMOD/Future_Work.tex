@@ -1,0 +1,8 @@
+\section{Future Work}
+\label{sec:Future_Work}
+
+% Analysis tools
+Building robust, stable and deterministic applications using ROSMOD requires both design-time analysis and runtime management with potential reconfiguration solutions. Our previous work on timing analysis \cite{MoDeVVa}\cite{SEUS} and network QoS analysis \cite{ISIS_F6_CYPHY:14} for component-based distributed real-time systems has given us good insight into the verification and validation requirements, challenges and general design principles for such systems. Since these methods are model-based and generic, we plan to completely integrate these tools into ROSMOD such that any deployment model can be studied at design-time for potential timing anomalies and network capacity and admittance issues. 
+
+To facilitate this, current work on the ROSMOD runtime package aims at introducing deadline monitoring on a per-component basis. The goal of this monitoring thread is to detect deadline violations in all callbacks and operations handled by the component executor thread. This helps in identifying inefficient priority assignments and schedule feasibility issues, which are typical demands for mission-critical real-time systems.
+
