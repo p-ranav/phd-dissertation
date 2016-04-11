@@ -1,0 +1,7 @@
+Check List
+----------
+
+Case: No Temporal Partitioning
+------------------------------
+(1) Check that operations are enqueued as soon as they are available on the respective nodes
+(2) Jump Time should jump to next timer - Fill fire only if nothing else is possible at that point in time.

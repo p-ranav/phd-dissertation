@@ -1,0 +1,6 @@
+Update node clock when execute happens
+	- Progressing the node clock by how much ever the calls are progressed. 
+Add the final transition Progress Time to jump to 
+	(1) Next Timer
+	(2) Next Partition
+-- Which ever is earliest. 

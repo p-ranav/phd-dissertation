@@ -1,0 +1,12 @@
+# Run Generate_Model.py to generate F6COM Scheduler Analysis Model with the following parameters
+Model_File_Name = Generated_Model.cpn
+
+# Temporal Partition Schedule
+# Part_ID:Period:Duration:Offset
+1:10:5:0
+2:10:5:5
+
+# Component Threads
+# Thread_ID:Priority:Part_ID:Max_Ticks:Deadline
+1:5:1:6:10
+2:5:2:2:3

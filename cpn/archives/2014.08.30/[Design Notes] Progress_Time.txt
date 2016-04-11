@@ -1,0 +1,6 @@
+Progress Clock Notes: 
+--------------------
+(1) Give to Execute Thread the timer list. 
+(2) If you can progress clock to the next preempt point and it wont affect the operation much AND there are no timers that wil expire by then, JUMP TO CLOCK TICK
+(3) If there WILL be a timer expiry within the next preempt point AND you can progress to it without affecting the executing operation (no induction either) THEN JUMP TO NEXT TIMER EXPIRY
+(4) If you there will be no timer expiries and no interaction with threads on other nodes, JUMP TO NEXT PARTITION

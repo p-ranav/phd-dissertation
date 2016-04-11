@@ -1,0 +1,6 @@
+1`{th_nid=1, th_tid=1, th_pn=1, th_prio=60, th_state=PASSIVE, th_st=0, th_pmt_count=0, th_opn=nil}++
+1`{th_nid=1, th_tid=2, th_pn=1, th_prio=60, th_state=PASSIVE, th_st=0, th_pmt_count=0, th_opn=nil}++
+1`{th_nid=1, th_tid=3, th_pn=1, th_prio=60, th_state=PASSIVE, th_st=0, th_pmt_count=0, th_opn=nil}++
+1`{th_nid=1, th_tid=4, th_pn=2, th_prio=60, th_state=PASSIVE, th_st=0, th_pmt_count=0, th_opn=nil}++
+1`{th_nid=1, th_tid=5, th_pn=2, th_prio=60, th_state=PASSIVE, th_st=0, th_pmt_count=0, th_opn=nil}++
+1`{th_nid=1, th_tid=6, th_pn=2, th_prio=60, th_state=PASSIVE, th_st=0, th_pmt_count=0, th_opn=nil}

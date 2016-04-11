@@ -1,0 +1,185 @@
+CPN Tools state space report for:
+/cygdrive/C/Users/Pranav/Documents/F6MDK/trunk/doc/f6com cpn/2014.03.20/No_Priorities.cpn
+Report generated: Wed Mar 26 15:59:50 2014
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  24082
+     Arcs:   62520
+     Secs:   100
+     Status: Partial
+
+  Scc Graph
+     Nodes:  24082
+     Arcs:   62520
+     Secs:   1
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+  Best Integer Bounds
+                             Upper      Lower
+     New_Page'AMI_Calls_Made 1
+                             0          0
+     New_Page'Blocked_Threads 1
+                             0          0
+     New_Page'Clock_Tick 1   1          0
+     New_Page'Completed_Operations 1
+                             1          0
+     New_Page'Component_Message_Queues 1
+                             1          1
+     New_Page'Component_Threads 1
+                             1          1
+     New_Page'Currently_Running_Thread 1
+                             1          0
+     New_Page'Induced_Operations 1
+                             2          2
+     New_Page'Late_Operation 1
+                             0          0
+     New_Page'Partition_Schedule 1
+                             1          1
+     New_Page'Timers 1       1          1
+
+  Best Upper Multi-set Bounds
+     New_Page'AMI_Calls_Made 1
+                         empty
+     New_Page'Blocked_Threads 1
+                         empty
+     New_Page'Clock_Tick 1
+                         1`{tck_node=1,tck_time=0}
+     New_Page'Completed_Operations 1
+                         1`{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=1,op_exec_t=8,op_calls=[]}++
+1`{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=1,op_et=1,op_exec_t=8,op_calls=[]}
+     New_Page'Component_Message_Queues 1
+                         1`{comp_node=1,cmq_list=[{comp_tid=1,comp_pn=1,opn_list=[]},{comp_tid=2,comp_pn=2,opn_list=[]}]}++
+1`{comp_node=1,cmq_list=[{comp_tid=1,comp_pn=1,opn_list=[]},{comp_tid=2,comp_pn=2,opn_list=[{op_id=2,op_type=DDS_OP,op_nid=1,op_tid=2,op_pn=2,op_prio=5,op_dl=40,op_wt=0,op_st=0,op_et=0,op_exec_t=0,op_calls=[{call_id=2,call_type=DDS_in,call_op_id=2,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=8},{call_id=3,call_type=RMI_c,call_op_id=2,unblk_list=[],induction=0,q_t=1,pr_t=1,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=2},{call_id=4,call_type=CALC,call_op_id=2,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=12}]}]}]}++
+1`{comp_node=1,cmq_list=[{comp_tid=1,comp_pn=1,opn_list=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=0,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=8}]}]},{comp_tid=2,comp_pn=2,opn_list=[]}]}
+     New_Page'Component_Threads 1
+                         1`{nid=1,node_ths=[{pn=1,ths=[]},{pn=2,ths=[{th_nid=1,th_tid=2,th_pn=2,th_prio=60,th_state=PASSIVE,th_st=0,th_pmt_count=0,th_opn=[]}]}]}++
+1`{nid=1,node_ths=[{pn=1,ths=[{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=PASSIVE,th_st=0,th_pmt_count=0,th_opn=[]}]},{pn=2,ths=[{th_nid=1,th_tid=2,th_pn=2,th_prio=60,th_state=PASSIVE,th_st=0,th_pmt_count=0,th_opn=[]}]}]}
+     New_Page'Currently_Running_Thread 1
+                         1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=0,th_pmt_count=0,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=0,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=0,th_pmt_count=1,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=1,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=1,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=0,th_pmt_count=2,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=2,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=2,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=0,th_pmt_count=3,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=3,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=3,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=0,th_pmt_count=4,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=4,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=4,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=0,th_pmt_count=5,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=5,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=5,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=0,th_pmt_count=6,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=6,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=6,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=0,th_pmt_count=7,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=7,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=7,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=0,th_pmt_count=7,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=7,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=1,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=7,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=0,th_pmt_count=8,th_opn=[]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=0,th_pmt_count=8,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=8,op_calls=[]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=1,th_pmt_count=0,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=1,op_et=0,op_exec_t=0,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=1,th_pmt_count=1,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=1,op_et=0,op_exec_t=1,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=1,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=1,th_pmt_count=2,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=1,op_et=0,op_exec_t=2,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=2,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=1,th_pmt_count=3,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=1,op_et=0,op_exec_t=3,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=3,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=1,th_pmt_count=4,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=1,op_et=0,op_exec_t=4,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=4,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=1,th_pmt_count=5,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=1,op_et=0,op_exec_t=5,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=5,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=1,th_pmt_count=6,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=1,op_et=0,op_exec_t=6,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=6,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=1,th_pmt_count=7,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=1,op_et=0,op_exec_t=7,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=7,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=1,th_pmt_count=7,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=1,op_et=0,op_exec_t=7,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=1,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=7,call_dur=8}]}]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=1,th_pmt_count=8,th_opn=[]}++
+1`{th_nid=1,th_tid=1,th_pn=1,th_prio=60,th_state=RUNNING,th_st=1,th_pmt_count=8,th_opn=[{op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=1,op_et=0,op_exec_t=8,op_calls=[]}]}
+     New_Page'Induced_Operations 1
+                         1`{call_id=1,iopn={op_id=2,op_type=DDS_OP,op_nid=1,op_tid=2,op_pn=2,op_prio=5,op_dl=40,op_wt=0,op_st=0,op_et=0,op_exec_t=0,op_calls=[{call_id=2,call_type=DDS_in,call_op_id=2,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=8},{call_id=3,call_type=RMI_c,call_op_id=2,unblk_list=[],induction=0,q_t=1,pr_t=1,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=2},{call_id=4,call_type=CALC,call_op_id=2,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=12}]}}++
+1`{call_id=3,iopn={op_id=3,op_type=RMI_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=40,op_wt=0,op_st=0,op_et=0,op_exec_t=0,op_calls=[{call_id=5,call_type=RMI_s,call_op_id=3,unblk_list=[{node=1,th=2}],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=12}]}}
+     New_Page'Late_Operation 1
+                         empty
+     New_Page'Partition_Schedule 1
+                         1`{node_id=1,hyp=40,hyp_count=0,plist=[{pn=1,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=0,plist=[{pn=1,hyp_cnt=0,state=INACTIVE,exec_t=1,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=0,plist=[{pn=1,hyp_cnt=0,state=INACTIVE,exec_t=2,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=0,plist=[{pn=1,hyp_cnt=0,state=INACTIVE,exec_t=3,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=0,plist=[{pn=1,hyp_cnt=0,state=INACTIVE,exec_t=4,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=0,plist=[{pn=1,hyp_cnt=0,state=INACTIVE,exec_t=5,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=0,plist=[{pn=1,hyp_cnt=0,state=INACTIVE,exec_t=6,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=0,plist=[{pn=1,hyp_cnt=0,state=INACTIVE,exec_t=7,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=0,plist=[{pn=1,hyp_cnt=0,state=INACTIVE,exec_t=8,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=0,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=1,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=2,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=3,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=4,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=5,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=6,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=7,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=8,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=9,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=10,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=11,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=12,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=13,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=14,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=15,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=16,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=17,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=18,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=19,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=20,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=21,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=22,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=23,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=1,hyp_cnt=1,state=ACTIVE,exec_t=24,dur=20,pr=40,off=0},{pn=2,hyp_cnt=0,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=2,hyp_cnt=1,state=ACTIVE,exec_t=0,dur=20,pr=40,off=20},{pn=1,hyp_cnt=1,state=INACTIVE,exec_t=0,dur=20,pr=40,off=40}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=2,hyp_cnt=1,state=ACTIVE,exec_t=1,dur=20,pr=40,off=20},{pn=1,hyp_cnt=1,state=INACTIVE,exec_t=0,dur=20,pr=40,off=40}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=2,hyp_cnt=1,state=ACTIVE,exec_t=2,dur=20,pr=40,off=20},{pn=1,hyp_cnt=1,state=INACTIVE,exec_t=0,dur=20,pr=40,off=40}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=2,hyp_cnt=1,state=ACTIVE,exec_t=3,dur=20,pr=40,off=20},{pn=1,hyp_cnt=1,state=INACTIVE,exec_t=0,dur=20,pr=40,off=40}]}++
+1`{node_id=1,hyp=40,hyp_count=1,plist=[{pn=2,hyp_cnt=1,state=ACTIVE,exec_t=4,dur=20,pr=40,off=20},{pn=1,hyp_cnt=1,state=INACTIVE,exec_t=0,dur=20,pr=40,off=40}]}
+     New_Page'Timers 1   1`{t_nid=1,t_tid=1,t_pn=1,t_pr=200,t_off=0,t_op={op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=0,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=8}]}}++
+1`{t_nid=1,t_tid=1,t_pn=1,t_pr=200,t_off=200,t_op={op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20,op_wt=0,op_st=0,op_et=0,op_exec_t=0,op_calls=[{call_id=1,call_type=DDS_out,call_op_id=1,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=8}]}}
+
+  Best Lower Multi-set Bounds
+     New_Page'AMI_Calls_Made 1
+                         empty
+     New_Page'Blocked_Threads 1
+                         empty
+     New_Page'Clock_Tick 1
+                         empty
+     New_Page'Completed_Operations 1
+                         empty
+     New_Page'Component_Message_Queues 1
+                         empty
+     New_Page'Component_Threads 1
+                         empty
+     New_Page'Currently_Running_Thread 1
+                         empty
+     New_Page'Induced_Operations 1
+                         1`{call_id=1,iopn={op_id=2,op_type=DDS_OP,op_nid=1,op_tid=2,op_pn=2,op_prio=5,op_dl=40,op_wt=0,op_st=0,op_et=0,op_exec_t=0,op_calls=[{call_id=2,call_type=DDS_in,call_op_id=2,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=8},{call_id=3,call_type=RMI_c,call_op_id=2,unblk_list=[],induction=0,q_t=1,pr_t=1,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=2},{call_id=4,call_type=CALC,call_op_id=2,unblk_list=[],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=12}]}}++
+1`{call_id=3,iopn={op_id=3,op_type=RMI_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=40,op_wt=0,op_st=0,op_et=0,op_exec_t=0,op_calls=[{call_id=5,call_type=RMI_s,call_op_id=3,unblk_list=[{node=1,th=2}],induction=0,q_t=0,pr_t=0,call_st=0,call_et=0,call_blkt=0,call_exec_t=0,call_dur=12}]}}
+     New_Page'Late_Operation 1
+                         empty
+     New_Page'Partition_Schedule 1
+                         empty
+     New_Page'Timers 1   empty
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     Initial Marking is not a home marking
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     2619 [24082,24081,24080,24079,24078,...]
+
+  Dead Transition Instances
+     New_Page'Dealine_Violation 1
+     New_Page'Enqueue_AMI_Response 1
+     New_Page'Preempt_Thread 1
+     New_Page'Unblock_Thread 1
+
+  Live Transition Instances
+     None
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+     No infinite occurrence sequences.

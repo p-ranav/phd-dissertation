@@ -1,0 +1,2 @@
+1`{node_id=1, plist = [{pn=1, state=ACTIVE, exec_t=0,dur=50,pr=100,off=0}, 
+                       {pn=2, state=INACTIVE, exec_t=0,dur=50,pr=100,off=50}]}

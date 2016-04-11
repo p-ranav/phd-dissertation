@@ -1,0 +1,2 @@
+1`{cmq_node=1, part_cmq_list=[{cmq_part=1, cmq_list=[{comp_tid=1, opn_list=[]}, {comp_tid=2, opn_list=[]}, {comp_tid=3, opn_list=[]}]},
+                              {cmq_part=2, cmq_list=[{comp_tid=4, opn_list=[]}, {comp_tid=5, opn_list=[]}, {comp_tid=6, opn_list=[]}]}]}					                               

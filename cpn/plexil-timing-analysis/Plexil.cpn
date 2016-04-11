@@ -1,0 +1,1730 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE workspaceElements PUBLIC "-//CPN//DTD CPNXML 1.0//EN" "http://cpntools.org/DTD/6/cpn.dtd">
+
+<workspaceElements>
+  <generator tool="CPN Tools"
+             version="4.0.1"
+             format="6"/>
+  <cpnet>
+    <globbox>
+      <block id="ID1412310166">
+        <id>Standard priorities</id>
+        <ml id="ID1412310255">val P_HIGH = 100;
+          <layout>val P_HIGH = 100;</layout>
+        </ml>
+        <ml id="ID1412310292">val P_NORMAL = 1000;
+          <layout>val P_NORMAL = 1000;</layout>
+        </ml>
+        <ml id="ID1412310322">val P_LOW = 10000;
+          <layout>val P_LOW = 10000;</layout>
+        </ml>
+      </block>
+      <block id="ID1">
+        <id>Standard declarations</id>
+        <color id="ID85042">
+          <id>UNIT</id>
+          <unit/>
+          <layout>colset UNIT = unit;</layout>
+        </color>
+        <color id="ID4">
+          <id>BOOL</id>
+          <bool/>
+        </color>
+        <color id="ID3">
+          <id>INT</id>
+          <int/>
+        </color>
+        <color id="ID5">
+          <id>STRING</id>
+          <string/>
+        </color>
+        <var id="ID1436465414">
+          <type>
+            <id>STRING</id>
+          </type>
+          <id>str</id>
+          <layout>var str:STRING;</layout>
+        </var>
+      </block>
+      <block id="ID1412323827">
+        <id>Plexil declarations</id>
+        <color id="ID1436466719">
+          <id>Variable</id>
+          <record>
+            <recordfield>
+              <id>VariableName</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>VariableType</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>VariableValue</id>
+              <id>STRING</id>
+            </recordfield>
+          </record>
+          <layout>colset Variable = record VariableName:STRING * 
+                                      VariableType:STRING *
+                                      VariableValue:STRING;</layout>
+        </color>
+        <color id="ID1436467100">
+          <id>VariableList</id>
+          <list>
+            <id>Variable</id>
+          </list>
+          <layout>colset VariableList = list Variable;</layout>
+        </color>
+        <color id="ID1436471230">
+          <id>Assignment</id>
+          <record>
+            <recordfield>
+              <id>VariableName</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>VariableType</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>NewValue</id>
+              <id>STRING</id>
+            </recordfield>
+          </record>
+          <layout>colset Assignment = record VariableName:STRING * 
+                                            VariableType:STRING *
+                                            NewValue:STRING;</layout>
+        </color>
+        <color id="ID1436471540">
+          <id>AssignmentList</id>
+          <list>
+            <id>Assignment</id>
+          </list>
+          <layout>colset AssignmentList = list Assignment;</layout>
+        </color>
+        <color id="ID1412459958">
+          <id>Command</id>
+          <record>
+            <recordfield>
+              <id>CommandName</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>WCET</id>
+              <id>INT</id>
+            </recordfield>
+            <recordfield>
+              <id>ExecTime</id>
+              <id>INT</id>
+            </recordfield>
+          </record>
+          <layout>colset Command = record CommandName:STRING *
+                                          WCET:INT *
+                                          ExecTime: INT;</layout>
+        </color>
+        <color id="ID1412461753">
+          <id>CommandList</id>
+          <list>
+            <id>Command</id>
+          </list>
+          <layout>colset CommandList = list Command;</layout>
+        </color>
+        <color id="ID1436317712">
+          <id>Condition</id>
+          <record>
+            <recordfield>
+              <id>ConditionType</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>ConditionName</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>Value</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>WCET</id>
+              <id>INT</id>
+            </recordfield>
+            <recordfield>
+              <id>ExecTime</id>
+              <id>INT</id>
+            </recordfield>
+          </record>
+          <layout>colset Condition = record ConditionType:STRING *
+                                         ConditionName:STRING * 
+                                         Value:STRING *
+                                         WCET:INT *
+                                         ExecTime:INT;</layout>
+        </color>
+        <color id="ID1436317823">
+          <id>ConditionList</id>
+          <list>
+            <id>Condition</id>
+          </list>
+          <layout>colset ConditionList = list Condition;</layout>
+        </color>
+        <color id="ID1412328476">
+          <id>PlexilNode</id>
+          <record>
+            <recordfield>
+              <id>NodeType</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>NodeID</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>State</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>Parent</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>VariableList</id>
+              <id>VariableList</id>
+            </recordfield>
+            <recordfield>
+              <id>ConditionList</id>
+              <id>ConditionList</id>
+            </recordfield>
+            <recordfield>
+              <id>CommandList</id>
+              <id>CommandList</id>
+            </recordfield>
+            <recordfield>
+              <id>Outcome</id>
+              <id>STRING</id>
+            </recordfield>
+          </record>
+          <layout>colset PlexilNode = record NodeType:STRING 
+                               * NodeID:STRING
+                               * State:STRING 
+                               * Parent:STRING
+                               * VariableList:VariableList
+                               * ConditionList:ConditionList
+                               * CommandList:CommandList
+                               * Outcome:STRING;</layout>
+        </color>
+        <color id="ID1412329336">
+          <id>PlexilNodes</id>
+          <list>
+            <id>PlexilNode</id>
+          </list>
+          <layout>colset PlexilNodes = list PlexilNode;</layout>
+        </color>
+        <var id="ID1412408033">
+          <type>
+            <id>PlexilNodes</id>
+          </type>
+          <id>plnodes</id>
+          <layout>var plnodes:PlexilNodes;</layout>
+        </var>
+        <color id="ID1436355011">
+          <id>change_var</id>
+          <record>
+            <recordfield>
+              <id>VariableName</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>NewValue</id>
+              <id>STRING</id>
+            </recordfield>
+          </record>
+          <layout>colset change_var = record VariableName:STRING *
+                                            NewValue:STRING;</layout>
+        </color>
+        <color id="ID1436359308">
+          <id>change_vars</id>
+          <list>
+            <id>change_var</id>
+          </list>
+          <layout>colset change_vars = list change_var;</layout>
+        </color>
+        <color id="ID1412336720">
+          <id>Event</id>
+          <record>
+            <recordfield>
+              <id>Event</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>InterArrivalTime</id>
+              <id>INT</id>
+            </recordfield>
+            <recordfield>
+              <id>NextArrival</id>
+              <id>INT</id>
+            </recordfield>
+            <recordfield>
+              <id>Effect</id>
+              <id>change_vars</id>
+            </recordfield>
+          </record>
+          <layout>colset Event = record Event:STRING * 
+                  InterArrivalTime:INT * NextArrival:INT *
+                  Effect:change_vars;</layout>
+        </color>
+        <color id="ID1412390442">
+          <id>QueueEvent</id>
+          <record>
+            <recordfield>
+              <id>Event</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>ArrivalTime</id>
+              <id>INT</id>
+            </recordfield>
+          </record>
+          <layout>colset QueueEvent = record Event:STRING * 
+                                             ArrivalTime:INT;</layout>
+        </color>
+        <color id="ID1412337173">
+          <id>Events</id>
+          <list>
+            <id>Event</id>
+          </list>
+          <layout>colset Events = list Event;</layout>
+        </color>
+        <color id="ID1412391675">
+          <id>QueueEvents</id>
+          <list>
+            <id>QueueEvent</id>
+          </list>
+          <layout>colset QueueEvents = list QueueEvent;</layout>
+        </color>
+        <var id="ID1412344361">
+          <type>
+            <id>Events</id>
+          </type>
+          <id>ne</id>
+          <layout>var ne:Events;</layout>
+        </var>
+        <var id="ID1412392296">
+          <type>
+            <id>QueueEvents</id>
+          </type>
+          <id>eq</id>
+          <layout>var eq:QueueEvents;</layout>
+        </var>
+        <color id="ID1412341141">
+          <id>clock</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset clock =  INT;</layout>
+        </color>
+        <var id="ID1412347245">
+          <type>
+            <id>clock</id>
+          </type>
+          <id>clock</id>
+          <layout>var clock:clock;</layout>
+        </var>
+        <color id="ID1436330154">
+          <id>env_var</id>
+          <record>
+            <recordfield>
+              <id>VariableName</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>VariableType</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>VariableValue</id>
+              <id>STRING</id>
+            </recordfield>
+            <recordfield>
+              <id>LookUpCost</id>
+              <id>INT</id>
+            </recordfield>
+          </record>
+          <layout>colset env_var = record VariableName:STRING * 
+                                      VariableType:STRING *
+                                      VariableValue:STRING *
+                                      LookUpCost:INT;</layout>
+        </color>
+        <color id="ID1436330685">
+          <id>Variables</id>
+          <list>
+            <id>env_var</id>
+          </list>
+          <layout>colset Variables = list env_var;</layout>
+        </color>
+        <var id="ID1436333790">
+          <type>
+            <id>Variables</id>
+          </type>
+          <id>vars</id>
+          <layout>var vars:Variables;</layout>
+        </var>
+      </block>
+      <use id="ID1412483091">
+        <ml>&quot;Plexil.sml&quot;</ml>
+        <layout>use &quot;Plexil.sml&quot;;</layout>
+      </use>
+    </globbox>
+    <page id="ID6">
+      <pageattr name="New Page"/>
+      <place id="ID1412329098">
+        <posattr x="-1061.000000"
+                 y="-588.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Plexil_Nodes</text>
+        <ellipse w="132.000000"
+                 h="70.000000"/>
+        <token x="-150.000000"
+               y="0.000000"/>
+        <marking x="-27.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="4"
+                anchor.horizontal="2"
+                anchor.vertical="1"/>
+        </marking>
+        <type id="ID1412329099">
+          <posattr x="-975.000000"
+                   y="-622.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">PlexilNodes</text>
+        </type>
+        <initmark id="ID1412329100">
+          <posattr x="325.000000"
+                   y="-14.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(* PLEXIL NODES *)
+1`[{NodeType=&quot;List&quot;, NodeID=&quot;DriveToRedRock1&quot;, State=&quot;Inactive&quot;,
+                                 Parent=&quot;NULL&quot;,
+                                 VariableList = [{VariableName=&quot;haveRR&quot;, VariableType=&quot;BOOL&quot;, VariableValue=&quot;false&quot;},
+                                                         {VariableName=&quot;stop&quot;, VariableType=&quot;BOOL&quot;, VariableValue=&quot;false&quot;}],
+                                 ConditionList=[],
+                                 CommandList=[], 
+                                 Outcome=&quot;&quot;}, 
+     {NodeType=&quot;Assignment&quot;, NodeID=&quot;SenseRR&quot;, State=&quot;Inactive&quot;,
+                          Parent=&quot;DriveToRedRock1&quot;,
+                                 VariableList=[],
+                                 ConditionList=[{ConditionType=&quot;Start&quot;, ConditionName=&quot;StartCondition&quot;, Value=&quot;true&quot;, WCET=1, ExecTime=0}],
+                                 CommandList=[{CommandName=&quot;RoverDrive&quot;, 
+                                                                WCET=10, ExecTime=0}], 
+                                 Outcome=&quot;&quot;}]</text>
+        </initmark>
+      </place>
+      <place id="ID1412330739">
+        <posattr x="-332.000000"
+                 y="-272.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Event_List</text>
+        <ellipse w="114.000000"
+                 h="76.000000"/>
+        <token x="-71.000000"
+               y="42.000000"/>
+        <marking x="-14.000000"
+                 y="13.000000"
+                 hidden="false">
+          <snap snap_id="3"
+                anchor.horizontal="3"
+                anchor.vertical="2"/>
+        </marking>
+        <type id="ID1412330740">
+          <posattr x="-266.500000"
+                   y="-308.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">Events</text>
+        </type>
+        <initmark id="ID1412330741">
+          <posattr x="137.500000"
+                   y="-470.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(* EVENT LIST *)
+1`[{Event=&quot;WheelStuck&quot;, InterArrivalTime=10, NextArrival=0, 
+                Effect=[{VariableName=&quot;WheelStuck&quot;, NewValue=&quot;true&quot;}]}]</text>
+        </initmark>
+      </place>
+      <place id="ID1412332094">
+        <posattr x="-645.000000"
+                 y="-445.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Event_Queue</text>
+        <ellipse w="140.000000"
+                 h="76.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1412332095">
+          <posattr x="-549.500000"
+                   y="-481.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">QueueEvents</text>
+        </type>
+        <initmark id="ID1412332096">
+          <posattr x="-29.000000"
+                   y="-426.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(* EVENT QUEUE *)
+1`[]</text>
+        </initmark>
+      </place>
+      <place id="ID1412339554">
+        <posattr x="-1061.000000"
+                 y="-445.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Logical_Clock</text>
+        <ellipse w="96.000000"
+                 h="72.000000"/>
+        <token x="-62.000000"
+               y="-40.000000"/>
+        <marking x="-14.000000"
+                 y="-13.000000"
+                 hidden="false">
+          <snap snap_id="5"
+                anchor.horizontal="3"
+                anchor.vertical="1"/>
+        </marking>
+        <type id="ID1412339555">
+          <posattr x="-1013.500000"
+                   y="-480.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">INT</text>
+        </type>
+        <initmark id="ID1412339556">
+          <posattr x="-1012.000000"
+                   y="-409.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">1`0</text>
+        </initmark>
+      </place>
+      <place id="ID1436328192">
+        <posattr x="-1061.000000"
+                 y="-272.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Environment_Variables</text>
+        <ellipse w="158.000000"
+                 h="84.000000"/>
+        <token x="-93.000000"
+               y="46.000000"/>
+        <marking x="-14.000000"
+                 y="13.000000"
+                 hidden="false">
+          <snap snap_id="3"
+                anchor.horizontal="3"
+                anchor.vertical="2"/>
+        </marking>
+        <type id="ID1436328193">
+          <posattr x="-973.000000"
+                   y="-311.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">Variables</text>
+        </type>
+        <initmark id="ID1436328194">
+          <posattr x="216.500000"
+                   y="-379.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(* ENVIRONMENT VARIABLES *)
+1`[{VariableName=&quot;WheelStuck&quot;, VariableType=&quot;BOOL&quot;, VariableValue=&quot;false&quot;, LookUpCost=3}]</text>
+        </initmark>
+      </place>
+      <trans id="ID1412331309"
+             explicit="false">
+        <posattr x="-645.000000"
+                 y="-272.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Event</text>
+        <box w="130.000000"
+             h="64.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1412358964">
+          <posattr x="-767.000000"
+                   y="-228.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">[EventGuard clock ne]</text>
+        </cond>
+        <time id="ID1412331311">
+          <posattr x="-565.500000"
+                   y="-229.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </time>
+        <code id="ID1412331312">
+          <posattr x="-545.500000"
+                   y="-336.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </code>
+        <priority id="ID1412331314">
+          <posattr x="-748.000000"
+                   y="-315.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </priority>
+      </trans>
+      <trans id="ID1412395446"
+             explicit="false">
+        <posattr x="-645.000000"
+                 y="-588.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Execute_Nodes</text>
+        <box w="114.000000"
+             h="52.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1436472890">
+          <posattr x="-711.000000"
+                   y="-551.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </cond>
+        <time id="ID1412395448">
+          <posattr x="-573.500000"
+                   y="-551.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </time>
+        <code id="ID1412395449">
+          <posattr x="-553.500000"
+                   y="-646.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </code>
+        <priority id="ID1412395451">
+          <posattr x="-740.000000"
+                   y="-625.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </priority>
+      </trans>
+      <arc id="ID1412341977"
+           orientation="PtoT"
+           order="2">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412331309"/>
+        <placeend idref="ID1412330739"/>
+        <annot id="ID1412341978">
+          <posattr x="-482.000000"
+                   y="-254.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">ne</text>
+        </annot>
+      </arc>
+      <arc id="ID1412342270"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412331309"/>
+        <placeend idref="ID1412330739"/>
+        <annot id="ID1412342271">
+          <posattr x="-484.000000"
+                   y="-290.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(UpdateEvents clock ne)</text>
+        </annot>
+      </arc>
+      <arc id="ID1412342566"
+           orientation="TtoP"
+           order="2">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412331309"/>
+        <placeend idref="ID1412332094"/>
+        <annot id="ID1412342567">
+          <posattr x="-549.500000"
+                   y="-362.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">eq^^(UpdateEventQueue 
+               clock ne)</text>
+        </annot>
+      </arc>
+      <arc id="ID1412342865"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412331309"/>
+        <placeend idref="ID1412332094"/>
+        <annot id="ID1412342866">
+          <posattr x="-661.000000"
+                   y="-357.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">eq</text>
+        </annot>
+      </arc>
+      <arc id="ID1412345927"
+           orientation="BOTHDIR"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412331309"/>
+        <placeend idref="ID1412339554"/>
+        <bendpoint id="ID1412371526"
+                   serial="1">
+          <posattr x="-693.000000"
+                   y="-361.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ID1436412996"
+                   serial="2">
+          <posattr x="-1061.000000"
+                   y="-361.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1412345928">
+          <posattr x="-712.000000"
+                   y="-328.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">clock</text>
+        </annot>
+      </arc>
+      <arc id="ID1412400600"
+           orientation="BOTHDIR"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412395446"/>
+        <placeend idref="ID1412329098"/>
+        <annot id="ID1412400601">
+          <posattr x="-849.000000"
+                   y="-577.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">plnodes</text>
+        </annot>
+      </arc>
+      <arc id="ID1412401268"
+           orientation="TtoP"
+           order="2">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412395446"/>
+        <placeend idref="ID1412332094"/>
+        <annot id="ID1412401269">
+          <posattr x="-675.000000"
+                   y="-521.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(tl eq)</text>
+        </annot>
+      </arc>
+      <arc id="ID1412401939"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412395446"/>
+        <placeend idref="ID1412332094"/>
+        <annot id="ID1412401940">
+          <posattr x="-626.000000"
+                   y="-522.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">eq</text>
+        </annot>
+      </arc>
+      <arc id="ID1436349231"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412331309"/>
+        <placeend idref="ID1436328192"/>
+        <annot id="ID1436349232">
+          <posattr x="-847.000000"
+                   y="-254.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">vars</text>
+        </annot>
+      </arc>
+      <arc id="ID1436350527"
+           orientation="TtoP"
+           order="2">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412331309"/>
+        <placeend idref="ID1436328192"/>
+        <annot id="ID1436350528">
+          <posattr x="-851.000000"
+                   y="-290.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(UpdateAllVariables clock ne vars)</text>
+        </annot>
+      </arc>
+      <arc id="ID1436434421"
+           orientation="BOTHDIR"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412395446"/>
+        <placeend idref="ID1436328192"/>
+        <bendpoint id="ID1436434425"
+                   serial="1">
+          <posattr x="-645.000000"
+                   y="-676.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ID1436434424"
+                   serial="2">
+          <posattr x="-1201.000000"
+                   y="-676.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ID1436434423"
+                   serial="3">
+          <posattr x="-1201.000000"
+                   y="-272.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1436434422">
+          <posattr x="-931.000000"
+                   y="-665.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">vars</text>
+        </annot>
+      </arc>
+      <constraints/>
+      <hguideline id="ID1436402433"
+                  y="272.000000">
+        <guideline_elm idref="ID1436328192"/>
+        <guideline_elm idref="ID1412331309"/>
+        <guideline_elm idref="ID1412330739"/>
+      </hguideline>
+      <hguideline id="ID1436403966"
+                  y="588.000000">
+        <guideline_elm idref="ID1412395446"/>
+        <guideline_elm idref="ID1412329098"/>
+      </hguideline>
+      <hguideline id="ID1436404737"
+                  y="445.000000">
+        <guideline_elm idref="ID1412332094"/>
+        <guideline_elm idref="ID1412339554"/>
+      </hguideline>
+      <vguideline id="ID1436400267"
+                  x="-1061.000000">
+        <guideline_elm idref="ID1436328192"/>
+        <guideline_elm idref="ID1412329098"/>
+        <guideline_elm idref="ID1412339554"/>
+      </vguideline>
+      <vguideline id="ID1436403170"
+                  x="-645.000000">
+        <guideline_elm idref="ID1412332094"/>
+        <guideline_elm idref="ID1412331309"/>
+        <guideline_elm idref="ID1412395446"/>
+      </vguideline>
+      <Aux id="ID1436318668">
+        <posattr x="-86.000000"
+                 y="-337.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>(Real.floor (uniform(0.0, 5.5)))</text>
+      </Aux>
+      <Aux id="ID1436466130">
+        <posattr x="-623.000000"
+                 y="540.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>(* TEST PLEXIL PLAN *)
+Node:{    
+    NodeId:DriveToRedRock1;      
+    Boolean haveRR=false, stop=false;  
+     NodeList:{  
+
+            Node:{       
+                NodeId: SenseRR;    
+                Interface:{ inout: haveRR;} 
+                StartCondition: { 
+                          LookupWithFrequency:{found RR, 10}==true }    
+                Assignment: haveRR=true;    }    
+           
+            Node:{  
+                 NodeId:ContDrive 
+                 Interface:{ in: stop; }      
+                 NodeList:{     
+                          Node:{  
+                               NodeId: StartDrive;       
+                               Command: &quot;Rover:drive&quot;;      } 
+                          Node:{  
+                               NodeId: StopDrive;      
+                               Interface:{ in stop;}     
+                               StartCondition: { stop==true &amp;&amp;  startDrive.state==FINISHED }     
+                               Command: &quot;Rover:stop&quot;;     }         } }       
+               
+             Node:{ 
+                    NodeId: SetRRFlag   
+                    Interface:{ inout stop; in haveRR; }   
+                    StartCondition: haveRR == true;   
+                    Assignment: stop = true;   } } }</text>
+      </Aux>
+    </page>
+    <instances>
+      <instance id="ID2149"
+                page="ID6"/>
+    </instances>
+    <options>
+      <option name="realtimestamp">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="fair_be">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="global_fairness">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="outputdirectory">
+        <value>
+          <text>&lt;same as model&gt;</text>
+        </value>
+      </option>
+      <option name="extensions.10008.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10007.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10005.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10004.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10011.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10007.options.discover">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="extensions.10011.options.disable">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repciavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repcount">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="replastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repmax">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repmin">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repstddev">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repsum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="avg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="ciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="count">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="firstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="max">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="min">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="ssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="ssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="stddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="sum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="variance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="firstupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="interval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedcount">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedlastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedmax">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedmin">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedstddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedsum">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+    </options>
+    <binders>
+      <cpnbinder id="ID1436472223"
+                 x="416"
+                 y="-53"
+                 width="1529"
+                 height="1001">
+        <sheets>
+          <cpnsheet id="ID1436472212"
+                    panx="933.000000"
+                    pany="-611.000000"
+                    zoom="1.000000"
+                    instance="ID2149">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+        </sheets>
+        <zorder>
+          <position value="0"/>
+        </zorder>
+      </cpnbinder>
+    </binders>
+    <monitorblock name="Monitors"/>
+    <IndexNode expanded="true">
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false">
+            <IndexNode expanded="false">
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+            <IndexNode expanded="false">
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+          </IndexNode>
+          <IndexNode expanded="false">
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+          </IndexNode>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+        </IndexNode>
+      </IndexNode>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="true">
+        <IndexNode expanded="false">
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+        </IndexNode>
+        <IndexNode expanded="true">
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="true"/>
+        </IndexNode>
+        <IndexNode expanded="true">
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+        </IndexNode>
+        <IndexNode expanded="true"/>
+      </IndexNode>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="true"/>
+    </IndexNode>
+  </cpnet>
+</workspaceElements>

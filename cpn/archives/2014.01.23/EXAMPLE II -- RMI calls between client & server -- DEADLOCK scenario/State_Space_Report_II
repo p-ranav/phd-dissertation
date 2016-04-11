@@ -1,0 +1,112 @@
+CPN Tools state space report for:
+/cygdrive/C/Users/Pranav/Documents/F6COM CPN/2014.01.21/EXAMPLE II -- RMI calls between client & server -- DEADLOCK scenario/Analysis_Model_II.cpn
+Report generated: Wed Jan 22 16:10:12 2014
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  10
+     Arcs:   9
+     Secs:   0
+     Status: Full
+
+  Scc Graph
+     Nodes:  10
+     Arcs:   9
+     Secs:   0
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+  Best Integer Bounds
+                             Upper      Lower
+     Analysis_Model_II'Blocked_Threads 1
+                             1          0
+     Analysis_Model_II'Clock_Tick 1
+                             1          0
+     Analysis_Model_II'Completed_Operations 1
+                             0          0
+     Analysis_Model_II'Component_Threads 1
+                             2          2
+     Analysis_Model_II'Currently_Active_Partition 1
+                             1          0
+     Analysis_Model_II'Currently_Running_Thread 1
+                             1          0
+     Analysis_Model_II'Induced_Calls 1
+                             1          0
+     Temporal_Partition_Scheduling'Schedule 1
+                             2          1
+
+  Best Upper Multi-set Bounds
+     Analysis_Model_II'Blocked_Threads 1
+                         1`{th_tid=1,th_pn=1,th_prio=5,th_state=ready,th_cmq_len=3,th_opn_list=[{op_id=1,op_type=TIMER_OP,op_tid=1,op_pn=1,op_prio=5,op_dl=10,op_wt=0,op_st=0,op_et=0,op_tc=1,op_calls=[{call_id=1,call_type=RMI_c,call_op_id=1,blk_list=[1],unblk_list=[],q_t=1,pr_t=1,call_st=0,call_et=0,call_blkt=0,call_tc=1,call_mtc=2}]}]}
+     Analysis_Model_II'Clock_Tick 1
+                         1`tick
+     Analysis_Model_II'Completed_Operations 1
+                         empty
+     Analysis_Model_II'Component_Threads 1
+                         1`{pn=1,ths=[]}++
+1`{pn=1,ths=[{th_tid=1,th_pn=1,th_prio=5,th_state=ready,th_cmq_len=3,th_opn_list=[{op_id=1,op_type=TIMER_OP,op_tid=1,op_pn=1,op_prio=5,op_dl=10,op_wt=0,op_st=0,op_et=0,op_tc=0,op_calls=[{call_id=1,call_type=RMI_c,call_op_id=1,blk_list=[1],unblk_list=[],q_t=1,pr_t=1,call_st=0,call_et=0,call_blkt=0,call_tc=0,call_mtc=2}]}]}]}++
+1`{pn=2,ths=[{th_tid=2,th_pn=2,th_prio=5,th_state=passive,th_cmq_len=0,th_opn_list=[]}]}++
+1`{pn=2,ths=[{th_tid=2,th_pn=2,th_prio=5,th_state=passive,th_cmq_len=0,th_opn_list=[{op_id=4,op_type=RMI_OP,op_tid=2,op_pn=2,op_prio=5,op_dl=10,op_wt=0,op_st=0,op_et=0,op_tc=0,op_calls=[{call_id=4,call_type=RMI_c,call_op_id=2,blk_list=[2],unblk_list=[1],q_t=1,pr_t=1,call_st=0,call_et=0,call_blkt=0,call_tc=0,call_mtc=2}]}]}]}
+     Analysis_Model_II'Currently_Active_Partition 1
+                         1`{pn=1,mf_tc=0,mf_mtc=5,mf_pr=10,mf_off=0}++
+1`{pn=1,mf_tc=1,mf_mtc=5,mf_pr=10,mf_off=0}++
+1`{pn=1,mf_tc=2,mf_mtc=5,mf_pr=10,mf_off=0}++
+1`{pn=1,mf_tc=3,mf_mtc=5,mf_pr=10,mf_off=0}++
+1`{pn=1,mf_tc=4,mf_mtc=5,mf_pr=10,mf_off=0}++
+1`{pn=1,mf_tc=5,mf_mtc=5,mf_pr=10,mf_off=0}
+     Analysis_Model_II'Currently_Running_Thread 1
+                         1`{th_tid=1,th_pn=1,th_prio=5,th_state=ready,th_cmq_len=3,th_opn_list=[{op_id=1,op_type=TIMER_OP,op_tid=1,op_pn=1,op_prio=5,op_dl=10,op_wt=0,op_st=0,op_et=0,op_tc=0,op_calls=[{call_id=1,call_type=RMI_c,call_op_id=1,blk_list=[1],unblk_list=[],q_t=1,pr_t=1,call_st=0,call_et=0,call_blkt=0,call_tc=0,call_mtc=2}]}]}
+     Analysis_Model_II'Induced_Calls 1
+                         1`{i_call_id=1,i_op={op_id=4,op_type=RMI_OP,op_tid=2,op_pn=2,op_prio=5,op_dl=10,op_wt=0,op_st=0,op_et=0,op_tc=0,op_calls=[{call_id=4,call_type=RMI_c,call_op_id=2,blk_list=[2],unblk_list=[1],q_t=1,pr_t=1,call_st=0,call_et=0,call_blkt=0,call_tc=0,call_mtc=2}]}}
+     Temporal_Partition_Scheduling'Schedule 1
+                         1`{pn=1,mf_tc=0,mf_mtc=5,mf_pr=10,mf_off=0}++
+1`{pn=1,mf_tc=0,mf_mtc=5,mf_pr=10,mf_off=10}++
+1`{pn=2,mf_tc=0,mf_mtc=5,mf_pr=10,mf_off=5}
+
+  Best Lower Multi-set Bounds
+     Analysis_Model_II'Blocked_Threads 1
+                         empty
+     Analysis_Model_II'Clock_Tick 1
+                         empty
+     Analysis_Model_II'Completed_Operations 1
+                         empty
+     Analysis_Model_II'Component_Threads 1
+                         empty
+     Analysis_Model_II'Currently_Active_Partition 1
+                         empty
+     Analysis_Model_II'Currently_Running_Thread 1
+                         empty
+     Analysis_Model_II'Induced_Calls 1
+                         empty
+     Temporal_Partition_Scheduling'Schedule 1
+                         1`{pn=2,mf_tc=0,mf_mtc=5,mf_pr=10,mf_off=5}
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     Initial Marking is not a home marking
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     [10]
+
+  Dead Transition Instances
+     Analysis_Model_II'Unblock_Thread 1
+
+  Live Transition Instances
+     None
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+     No infinite occurrence sequences.

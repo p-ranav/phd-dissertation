@@ -1,0 +1,23 @@
+val sample_profile =
+1`[{node="BBB_111", period=9000,
+    profile = [{timestamp=0, data=630000000, bandwidth=70},
+               {timestamp=9000, data=630000000, bandwidth=0}]},
+    {node="BBB_112", period=9000,
+    profile = [{timestamp=0, data=630000000, bandwidth=70},
+               {timestamp=9000, data=630000000, bandwidth=0}]},
+    {node="BBB_113", period=9000,
+    profile = [{timestamp=0, data=630000000, bandwidth=70},
+               {timestamp=9000, data=630000000, bandwidth=0}]},
+    {node="BBB_114", period=9000,
+    profile = [{timestamp=0, data=630000000, bandwidth=70},
+               {timestamp=9000, data=630000000, bandwidth=0}]},
+    {node="BBB_121", period=9000,
+    profile = [{timestamp=0, data=630000000, bandwidth=70},
+               {timestamp=9000, data=630000000, bandwidth=0}]},
+    {node="BBB_122", period=9000,
+    profile = [{timestamp=0, data=630000000, bandwidth=70},
+               {timestamp=9000, data=630000000, bandwidth=0}]},
+    {node="BBB_123", period=9000,
+    profile = [{timestamp=0, data=630000000, bandwidth=70},
+               {timestamp=9000, data=630000000, bandwidth=0}]}]
+

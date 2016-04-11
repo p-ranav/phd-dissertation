@@ -1,0 +1,25 @@
+radialPositionTimer - Average Execution Time: 6.42483279173e-06; Maximum Execution Time: 0.055773973465 ms
+radialPositionServer - Average Execution Time: 0.000124216079712; Maximum Execution Time: 0.143096923828 ms
+
+verticalPositionTimer - Average Execution Time: 6.64192945256e-07; Maximum Execution Time: 0.00588607788086 ms
+verticalPositionServer - Average Execution Time: 0.000102267113398; Maximum Execution Time: 0.0995059013367 ms
+
+servoTimer - Average Execution Time: 0.00106818628175; Maximum Execution Time: 0.372797012329 ms
+gripperRotationServer - Average Execution Time: 0.000103833677897; Maximum Execution Time: 0.0985381603241 ms
+gripperPositionServer - Average Execution Time: 2.1550725784e-06; Maximum Execution Time: 0.00204300880432 ms
+
+armTimer - Average Execution Time: 5.85656052026; Maximum Execution Time: 3437.80102539 ms
+userInputController-timer - Average Execution Time: 2.85948800813e-05; Maximum Execution Time: 0.101711988449 ms
+userInput::armStateMessage - Average Execution Time: 3.58482415531e-07; Maximum Execution Time: 0.000200033187866 ms
+
+imageProcessor - PayloadBayStateFromImageServer - Average Execution Time: 80.0025344122; Maximum Execution Time: 1680.05322266 ms
+sampleStateFromImageServer - Average Execution Time: 210.688330078; Maximum Execution Time: 3160.32495117 ms\
+imageSensor - captureImageServer - Average Execution Time: 3.40444761334; Maximum Execution Time: 898.774169922 ms
+
+userDisplayTimer - Average Execution Time: 0.0109505924568; Maximum Execution Time: 2.31057500839 ms
+userDisplay - SampleStateSusbcriber - Average Execution Time: 2.08956207159e-06; Maximum Execution Time: 0.00109910964966 ms
+userDisplay - PayloadBayStateSusbcriber - Average Execution Time: 2.53359476725e-06; Maximum Execution Time: 0.00133013725281 ms
+
+
+
+

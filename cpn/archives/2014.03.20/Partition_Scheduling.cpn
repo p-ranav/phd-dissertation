@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE workspaceElements PUBLIC "-//CPN//DTD CPNXML 1.0//EN" "http://cpntools.org/DTD/6/cpn.dtd">
+
+<workspaceElements>
+  <generator tool="CPN Tools"
+             version="4.0.0"
+             format="6"/>
+  <cpnet>
+    <globbox>
+      <block id="ID1412310166">
+        <id>Standard priorities</id>
+        <ml id="ID1412310255">val P_HIGH = 100;
+          <layout>val P_HIGH = 100;</layout>
+        </ml>
+        <ml id="ID1412310292">val P_NORMAL = 1000;
+          <layout>val P_NORMAL = 1000;</layout>
+        </ml>
+        <ml id="ID1412310322">val P_LOW = 10000;
+          <layout>val P_LOW = 10000;</layout>
+        </ml>
+      </block>
+      <block id="ID1">
+        <id>Standard declarations</id>
+        <color id="ID85042">
+          <id>UNIT</id>
+          <unit/>
+          <layout>colset UNIT = unit;</layout>
+        </color>
+        <color id="ID4">
+          <id>BOOL</id>
+          <bool/>
+        </color>
+        <color id="ID3">
+          <id>INT</id>
+          <int/>
+        </color>
+        <color id="ID1412312409">
+          <id>INTINF</id>
+          <intinf/>
+          <layout>colset INTINF = intinf;</layout>
+        </color>
+        <color id="ID1412312425">
+          <id>TIME</id>
+          <time/>
+          <layout>colset TIME = time;</layout>
+        </color>
+        <color id="ID1412322990">
+          <id>REAL</id>
+          <real/>
+          <layout>colset REAL = real;</layout>
+        </color>
+        <color id="ID5">
+          <id>STRING</id>
+          <string/>
+        </color>
+      </block>
+      <ml id="ID1427842935">fun intTime() = IntInf.toInt (time());
+        <layout>fun intTime() = IntInf.toInt (time());</layout>
+      </ml>
+      <ml id="ID1427841768">val time_res = 1;
+        <layout>val time_res = 1;</layout>
+      </ml>
+      <ml id="ID1427841800">val clock_tick = 4;
+        <layout>val clock_tick = 4;</layout>
+      </ml>
+      <color id="ID1427841885">
+        <id>part_state</id>
+        <enum>
+          <id>ACTIVE</id>
+          <id>INACTIVE</id>
+        </enum>
+        <layout>colset part_state = with ACTIVE | INACTIVE;</layout>
+      </color>
+      <color id="ID1427841954">
+        <id>partition</id>
+        <timed/>
+        <record>
+          <recordfield>
+            <id>pn</id>
+            <id>INT</id>
+          </recordfield>
+          <recordfield>
+            <id>state</id>
+            <id>part_state</id>
+          </recordfield>
+          <recordfield>
+            <id>exec_t</id>
+            <id>INT</id>
+          </recordfield>
+          <recordfield>
+            <id>dur</id>
+            <id>INT</id>
+          </recordfield>
+          <recordfield>
+            <id>pr</id>
+            <id>INT</id>
+          </recordfield>
+          <recordfield>
+            <id>off</id>
+            <id>INT</id>
+          </recordfield>
+        </record>
+        <layout>colset partition = record pn:INT *
+                                       state:part_state * 
+                                       exec_t:INT * 
+                                       dur:INT * 
+                                       pr:INT * 
+                                       off:INT timed;</layout>
+      </color>
+      <color id="ID1427842035">
+        <id>part_list</id>
+        <list>
+          <id>partition</id>
+        </list>
+        <layout>colset part_list = list partition;</layout>
+      </color>
+      <color id="ID1427842128">
+        <id>node_schedule</id>
+        <timed/>
+        <record>
+          <recordfield>
+            <id>node_id</id>
+            <id>INT</id>
+          </recordfield>
+          <recordfield>
+            <id>plist</id>
+            <id>part_list</id>
+          </recordfield>
+        </record>
+        <layout>colset node_schedule = record node_id:INT * plist:part_list timed;</layout>
+      </color>
+      <var id="ID1427842233">
+        <type>
+          <id>node_schedule</id>
+        </type>
+        <id>schedule</id>
+        <layout>var schedule:node_schedule;</layout>
+      </var>
+      <ml id="ID1427842349">fun inc_part_exec_t {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} =
+    {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t + time_res, dur=dur, pr=pr, off=off}::other_parts};
+        <layout>fun inc_part_exec_t {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} =
+    {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t + time_res, dur=dur, pr=pr, off=off}::other_parts};</layout>
+      </ml>
+      <ml id="ID1427842477">fun canInc {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} =
+            if (exec_t + time_res &lt;= dur) then true else false;
+        <layout>fun canInc {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} =
+            if (exec_t + time_res &lt;= dur) then true else false;</layout>
+      </ml>
+      <ml id="ID1427842617">fun isPartReady {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} = 
+         if (off=intTime() andalso state=INACTIVE) then 
+             true else false;
+        <layout>fun isPartReady {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} = 
+         if (off=intTime() andalso state=INACTIVE) then 
+             true else false;</layout>
+      </ml>
+      <ml id="ID1427842770">fun isPartEnd {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} = 
+         if (exec_t = dur andalso state=ACTIVE) then 
+             true else false;
+        <layout>fun isPartEnd {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} = 
+         if (exec_t = dur andalso state=ACTIVE) then 
+             true else false;</layout>
+      </ml>
+      <ml id="ID1427843111">fun activate_part {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} = 
+   if (off = intTime()) then
+    {node_id=node_id, 
+    plist={pn=pn, state=ACTIVE, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts}
+   else
+   {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts};
+        <layout>fun activate_part {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} = 
+   if (off = intTime()) then
+    {node_id=node_id, 
+    plist={pn=pn, state=ACTIVE, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts}
+   else
+   {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts};</layout>
+      </ml>
+      <ml id="ID1427843390">fun switch_part {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} = 
+     if(exec_t = dur andalso state=ACTIVE) then 
+     {node_id=node_id, 
+    plist=other_parts^^[{pn=pn, state=INACTIVE, exec_t=0, dur=dur, pr=pr, off=off+pr}]}
+     else
+     {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts};
+        <layout>fun switch_part {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} = 
+     if(exec_t = dur andalso state=ACTIVE) then 
+     {node_id=node_id, 
+    plist=other_parts^^[{pn=pn, state=INACTIVE, exec_t=0, dur=dur, pr=pr, off=off+pr}]}
+     else
+     {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts};</layout>
+      </ml>
+      <ml id="ID1427843596">fun update_part {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} = 
+     (activate_part (switch_part {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts}));
+        <layout>fun update_part {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts} = 
+     (activate_part (switch_part {node_id=node_id, 
+    plist={pn=pn, state=state, exec_t=exec_t, dur=dur, pr=pr, off=off}::other_parts}));</layout>
+      </ml>
+      <ml id="ID1427843814">fun current_part {node_id=node_id, plist=({pn=pn, state=state, exec_t=exexc_t, dur=dur, pr=pr, off=off}::other_parts)} = 
+                pn;
+        <layout>fun current_part {node_id=node_id, plist=({pn=pn, state=state, exec_t=exexc_t, dur=dur, pr=pr, off=off}::other_parts)} = 
+                pn;</layout>
+      </ml>
+    </globbox>
+    <page id="ID6">
+      <pageattr name="New Page"/>
+      <place id="ID1427843921">
+        <posattr x="-294.000000"
+                 y="42.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Partition_Schedule</text>
+        <ellipse w="168.000000"
+                 h="40.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1427843922">
+          <posattr x="-183.000000"
+                   y="18.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">node_schedule</text>
+        </type>
+        <initmark id="ID1427843923">
+          <posattr x="158.500000"
+                   y="344.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">1`{node_id=1, plist = [{pn=1, state=INACTIVE, exec_t=0,dur=20,pr=40,off=0}, {pn=2, state=INACTIVE, exec_t=0,dur=20,pr=40,off=20}]}</text>
+        </initmark>
+      </place>
+      <trans id="ID1427844037"
+             explicit="false">
+        <posattr x="-294.000000"
+                 y="-100.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Progress_Time</text>
+        <box w="124.000000"
+             h="40.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1427844038">
+          <posattr x="-437.000000"
+                   y="-69.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">[canInc schedule = true]</text>
+        </cond>
+        <time id="ID1427844039">
+          <posattr x="-190.000000"
+                   y="-69.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">@+time_res</text>
+        </time>
+        <code id="ID1427844040">
+          <posattr x="-197.500000"
+                   y="-152.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </code>
+        <priority id="ID1427844042">
+          <posattr x="-383.000000"
+                   y="-131.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">P_LOW</text>
+        </priority>
+      </trans>
+      <trans id="ID1427844159"
+             explicit="false">
+        <posattr x="-294.000000"
+                 y="210.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Update_Partition</text>
+        <box w="168.000000"
+             h="40.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1427844160">
+          <posattr x="-489.500000"
+                   y="214.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">[isPartReady schedule = true 
+ orelse 
+ isPartEnd schedule = true]</text>
+        </cond>
+        <time id="ID1427844161">
+          <posattr x="-195.500000"
+                   y="241.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </time>
+        <code id="ID1427844162">
+          <posattr x="-175.500000"
+                   y="158.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </code>
+        <priority id="ID1427844164">
+          <posattr x="-406.000000"
+                   y="179.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">P_HIGH</text>
+        </priority>
+      </trans>
+      <arc id="ID1427845612"
+           orientation="PtoT"
+           order="2">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1427844159"/>
+        <placeend idref="ID1427843921"/>
+        <bendpoint id="ID1427846234"
+                   serial="1">
+          <posattr x="-252.000000"
+                   y="113.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1427845613">
+          <posattr x="-220.000000"
+                   y="152.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">schedule</text>
+        </annot>
+      </arc>
+      <arc id="ID1427845765"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1427844159"/>
+        <placeend idref="ID1427843921"/>
+        <bendpoint id="ID1427846396"
+                   serial="1">
+          <posattr x="-336.000000"
+                   y="126.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1427845766">
+          <posattr x="-409.500000"
+                   y="139.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">update_part schedule</text>
+        </annot>
+      </arc>
+      <arc id="ID1427848371"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1427844037"/>
+        <placeend idref="ID1427843921"/>
+        <bendpoint id="ID1427848373"
+                   serial="1">
+          <posattr x="-252.000000"
+                   y="-25.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1427848372">
+          <posattr x="-220.000000"
+                   y="-32.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">schedule</text>
+        </annot>
+      </arc>
+      <arc id="ID1427848572"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1427844037"/>
+        <placeend idref="ID1427843921"/>
+        <bendpoint id="ID1427848574"
+                   serial="1">
+          <posattr x="-336.000000"
+                   y="-13.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1427848573">
+          <posattr x="-420.500000"
+                   y="-32.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">inc_part_exec_t schedule</text>
+        </annot>
+      </arc>
+      <constraints/>
+      <Aux id="ID1427851740">
+        <posattr x="195.000000"
+                 y="-137.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>NoOfNodes()</text>
+      </Aux>
+      <ssarc id="ID1427853453"
+             order="1"
+             number="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern="Solid"
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="0"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.000000"
+                   currentcyckle="2"/>
+        <source idref="ID1427853185"/>
+        <destination idref="ID1427853449"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="false"
+                    dead="false">
+          <text>1:1-&gt;2 @ 0 New_Page&apos;Update_Partition 1: {schedule={node_id=1,plist=[{pn=1,state=INACTIVE,exec_t=0,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}}</text>
+        </descriptor>
+      </ssarc>
+      <ssarc id="ID1427853725"
+             order="1"
+             number="2">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern="Solid"
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="0"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.000000"
+                   currentcyckle="2"/>
+        <source idref="ID1427853449"/>
+        <destination idref="ID1427853721"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="false"
+                    dead="false">
+          <text>2:2-&gt;3 @ 0 New_Page&apos;Progress_Time 1: {schedule={node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=0,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}}</text>
+        </descriptor>
+      </ssarc>
+      <ssarc id="ID1427854000"
+             order="1"
+             number="3">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern="Solid"
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="0"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.000000"
+                   currentcyckle="2"/>
+        <source idref="ID1427853721"/>
+        <destination idref="ID1427853996"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="false"
+                    dead="false">
+          <text>3:3-&gt;4 @ 1 New_Page&apos;Progress_Time 1: {schedule={node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=1,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}}</text>
+        </descriptor>
+      </ssarc>
+      <ssarc id="ID1427854278"
+             order="1"
+             number="4">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern="Solid"
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="0"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.000000"
+                   currentcyckle="2"/>
+        <source idref="ID1427853996"/>
+        <destination idref="ID1427854274"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="false"
+                    dead="false">
+          <text>4:4-&gt;5 @ 1 New_Page&apos;Progress_Time 1: {schedule={node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=2,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}}</text>
+        </descriptor>
+      </ssarc>
+      <ssarc id="ID1427854559"
+             order="1"
+             number="5">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern="Solid"
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="0"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.000000"
+                   currentcyckle="2"/>
+        <source idref="ID1427854274"/>
+        <destination idref="ID1427854555"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="false"
+                    dead="false">
+          <text>5:5-&gt;6 @ 1 New_Page&apos;Progress_Time 1: {schedule={node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=3,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}}</text>
+        </descriptor>
+      </ssarc>
+      <ssarc id="ID1427854843"
+             order="1"
+             number="6">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern="Solid"
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="0"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.000000"
+                   currentcyckle="2"/>
+        <source idref="ID1427854555"/>
+        <destination idref="ID1427854839"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="false"
+                    dead="false">
+          <text>6:6-&gt;7 @ 1 New_Page&apos;Progress_Time 1: {schedule={node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=4,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}}</text>
+        </descriptor>
+      </ssarc>
+      <ssarc id="ID1427855130"
+             order="1"
+             number="7">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern="Solid"
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="0"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.000000"
+                   currentcyckle="2"/>
+        <source idref="ID1427854839"/>
+        <destination idref="ID1427855126"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="false"
+                    dead="false">
+          <text>7:7-&gt;8 @ 1 New_Page&apos;Progress_Time 1: {schedule={node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=5,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}}</text>
+        </descriptor>
+      </ssarc>
+      <ssnode id="ID1427853185"
+              number="1"
+              predecessors="0"
+              successors="1">
+        <posattr x="571.000000"
+                 y="-210.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="true"
+                    dead="false">
+          <text>1 @ 0:
+New_Page&apos;Partition_Schedule 1: 1`{node_id=1,plist=[{pn=1,state=INACTIVE,exec_t=0,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}@0
+</text>
+        </descriptor>
+        <roundbox w="45.000000"
+                  h="40.000000"/>
+      </ssnode>
+      <ssnode id="ID1427853449"
+              number="2"
+              predecessors="1"
+              successors="1">
+        <posattr x="652.000000"
+                 y="-210.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <descriptor x="1.000000"
+                    y="74.000000"
+                    visible="true"
+                    dead="false">
+          <text>2 @ 0:
+New_Page&apos;Partition_Schedule 1: 1`{node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=0,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}@0
+</text>
+        </descriptor>
+        <roundbox w="45.000000"
+                  h="40.000000"/>
+      </ssnode>
+      <ssnode id="ID1427853721"
+              number="3"
+              predecessors="1"
+              successors="1">
+        <posattr x="733.000000"
+                 y="-210.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <descriptor x="-11.000000"
+                    y="131.000000"
+                    visible="true"
+                    dead="false">
+          <text>3 @ 0:
+New_Page&apos;Partition_Schedule 1: 1`{node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=1,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}@1
+</text>
+        </descriptor>
+        <roundbox w="45.000000"
+                  h="40.000000"/>
+      </ssnode>
+      <ssnode id="ID1427853996"
+              number="4"
+              predecessors="1"
+              successors="1">
+        <posattr x="814.000000"
+                 y="-210.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="false"
+                    dead="false">
+          <text>4 @ 1:
+New_Page&apos;Partition_Schedule 1: 1`{node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=2,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}@2
+</text>
+        </descriptor>
+        <roundbox w="45.000000"
+                  h="40.000000"/>
+      </ssnode>
+      <ssnode id="ID1427854274"
+              number="5"
+              predecessors="1"
+              successors="1">
+        <posattr x="895.000000"
+                 y="-210.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="false"
+                    dead="false">
+          <text>5 @ 1:
+New_Page&apos;Partition_Schedule 1: 1`{node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=3,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}@2
+</text>
+        </descriptor>
+        <roundbox w="45.000000"
+                  h="40.000000"/>
+      </ssnode>
+      <ssnode id="ID1427854555"
+              number="6"
+              predecessors="1"
+              successors="1">
+        <posattr x="976.000000"
+                 y="-210.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="false"
+                    dead="false">
+          <text>6 @ 1:
+New_Page&apos;Partition_Schedule 1: 1`{node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=4,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}@2
+</text>
+        </descriptor>
+        <roundbox w="45.000000"
+                  h="40.000000"/>
+      </ssnode>
+      <ssnode id="ID1427854839"
+              number="7"
+              predecessors="1"
+              successors="1">
+        <posattr x="1050.000000"
+                 y="-210.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="false"
+                    dead="false">
+          <text>7 @ 1:
+New_Page&apos;Partition_Schedule 1: 1`{node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=5,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}@2
+</text>
+        </descriptor>
+        <roundbox w="45.000000"
+                  h="40.000000"/>
+      </ssnode>
+      <ssnode id="ID1427855126"
+              number="8"
+              predecessors="1"
+              successors="1">
+        <posattr x="1134.000000"
+                 y="-210.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <descriptor x="0.000000"
+                    y="0.000000"
+                    visible="false"
+                    dead="false">
+          <text>8 @ 1:
+New_Page&apos;Partition_Schedule 1: 1`{node_id=1,plist=[{pn=1,state=ACTIVE,exec_t=6,dur=20,pr=40,off=0},{pn=2,state=INACTIVE,exec_t=0,dur=20,pr=40,off=20}]}@2
+</text>
+        </descriptor>
+        <roundbox w="45.000000"
+                  h="40.000000"/>
+      </ssnode>
+    </page>
+    <instances>
+      <instance id="ID2149"
+                page="ID6"/>
+    </instances>
+    <options>
+      <option name="realtimestamp">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="fair_be">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="global_fairness">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="outputdirectory">
+        <value>
+          <text>&lt;same as model&gt;</text>
+        </value>
+      </option>
+      <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10007.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10008.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10004.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10005.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10007.options.discover">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repciavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repcount">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="replastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repmax">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repmin">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repstddev">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repsum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="avg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="ciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="count">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="firstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="max">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="min">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="ssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="ssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="stddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="sum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="variance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="firstupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="interval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedcount">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedlastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedmax">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedmin">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedstddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedsum">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+    </options>
+    <binders>
+      <cpnbinder id="ID2222"
+                 x="257"
+                 y="122"
+                 width="1408"
+                 height="757">
+        <sheets>
+          <cpnsheet id="ID2215"
+                    panx="83.000000"
+                    pany="-8.000000"
+                    zoom="1.000000"
+                    instance="ID2149">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+        </sheets>
+        <zorder>
+          <position value="0"/>
+        </zorder>
+      </cpnbinder>
+    </binders>
+    <monitorblock name="Monitors"/>
+    <IndexNode expanded="true">
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false">
+            <IndexNode expanded="false">
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+            <IndexNode expanded="false">
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+          </IndexNode>
+          <IndexNode expanded="false">
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+          </IndexNode>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+        </IndexNode>
+      </IndexNode>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+      </IndexNode>
+      <IndexNode expanded="true">
+        <IndexNode expanded="false">
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+        </IndexNode>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+      </IndexNode>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="true"/>
+    </IndexNode>
+  </cpnet>
+</workspaceElements>

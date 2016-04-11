@@ -1,0 +1,3000 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE workspaceElements PUBLIC "-//CPN//DTD CPNXML 1.0//EN" "http://cpntools.org/DTD/6/cpn.dtd">
+
+<workspaceElements>
+  <generator tool="CPN Tools"
+             version="4.0.0"
+             format="6"/>
+  <cpnet>
+    <globbox>
+      <ml id="ID1420860302">val time_res = 0.1;
+        <layout>val time_res = 0.1;</layout>
+      </ml>
+      <ml id="ID1421999087">val clock_tick = 4.0;
+        <layout>val clock_tick = 4.0;</layout>
+      </ml>
+      <ml id="ID1422538269">val epsilon = 0.01;
+        <layout>val epsilon = 0.01;</layout>
+      </ml>
+      <block id="ID1412310166">
+        <id>Standard priorities</id>
+        <ml id="ID1412310255">val P_HIGH = 100;
+          <layout>val P_HIGH = 100;</layout>
+        </ml>
+        <ml id="ID1412310292">val P_NORMAL = 1000;
+          <layout>val P_NORMAL = 1000;</layout>
+        </ml>
+        <ml id="ID1412310322">val P_LOW = 10000;
+          <layout>val P_LOW = 10000;</layout>
+        </ml>
+      </block>
+      <block id="ID1">
+        <id>Standard declarations</id>
+        <color id="ID85042">
+          <id>UNIT</id>
+          <unit/>
+          <layout>colset UNIT = unit;</layout>
+        </color>
+        <color id="ID4">
+          <id>BOOL</id>
+          <bool/>
+        </color>
+        <color id="ID3">
+          <id>INT</id>
+          <int/>
+        </color>
+        <color id="ID1420921887">
+          <id>LIST_INT</id>
+          <list>
+            <id>INT</id>
+          </list>
+          <layout>colset LIST_INT = list INT;</layout>
+        </color>
+        <color id="ID1412312409">
+          <id>INTINF</id>
+          <intinf/>
+          <layout>colset INTINF = intinf;</layout>
+        </color>
+        <color id="ID1412312425">
+          <id>TIME</id>
+          <time/>
+          <layout>colset TIME = time;</layout>
+        </color>
+        <color id="ID1412322990">
+          <id>REAL</id>
+          <real/>
+          <layout>colset REAL = real;</layout>
+        </color>
+        <color id="ID5">
+          <id>STRING</id>
+          <string/>
+        </color>
+      </block>
+      <block id="ID1421206691">
+        <id>Clock_Tick</id>
+        <block id="ID1421212574">
+          <id>Color_Sets</id>
+          <color id="ID1421217024">
+            <id>tick</id>
+            <timed/>
+            <record>
+              <recordfield>
+                <id>tck_node</id>
+                <id>INT</id>
+              </recordfield>
+            </record>
+            <layout>colset tick = record tck_node:INT timed;</layout>
+          </color>
+        </block>
+        <block id="ID1421219996">
+          <id>Variables</id>
+          <var id="ID1421229009">
+            <type>
+              <id>tick</id>
+            </type>
+            <id>tk</id>
+            <layout>var tk:tick;</layout>
+          </var>
+          <var id="ID1421225989">
+            <type>
+              <id>INT</id>
+            </type>
+            <id>tck_node</id>
+            <layout>var tck_node:INT;</layout>
+          </var>
+        </block>
+      </block>
+      <block id="ID1420808340">
+        <id>Temporal_Partition_Scheduling</id>
+        <block id="ID1420808387">
+          <id>Color_Sets</id>
+          <color id="ID1420808490">
+            <id>partition</id>
+            <timed/>
+            <record>
+              <recordfield>
+                <id>nid</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>pn</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>exec_t</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>dur</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>pr</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>off</id>
+                <id>REAL</id>
+              </recordfield>
+            </record>
+            <layout>colset partition = record nid:INT * 
+                                       pn:INT * 
+                                       exec_t:REAL * 
+                                       dur:REAL * 
+                                       pr:REAL * 
+                                       off:REAL timed;</layout>
+          </color>
+          <color id="ID1420808719">
+            <id>partitions</id>
+            <timed/>
+            <list>
+              <id>partition</id>
+            </list>
+            <layout>colset partitions = list partition timed;</layout>
+          </color>
+          <color id="ID1420808836">
+            <id>schedule</id>
+            <timed/>
+            <record>
+              <recordfield>
+                <id>node_id</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>parts</id>
+                <id>partitions</id>
+              </recordfield>
+            </record>
+            <layout>colset schedule = record node_id:INT * 
+                                        parts:partitions timed;</layout>
+          </color>
+        </block>
+        <block id="ID1420809093">
+          <id>Variables</id>
+          <var id="ID1420809322">
+            <type>
+              <id>partition</id>
+            </type>
+            <id>part</id>
+            <layout>var part:partition;</layout>
+          </var>
+          <var id="ID1420809492">
+            <type>
+              <id>partitions</id>
+            </type>
+            <id>rest_parts</id>
+            <layout>var rest_parts:partitions;</layout>
+          </var>
+          <var id="ID1420809674">
+            <type>
+              <id>INT</id>
+            </type>
+            <id>nid</id>
+            <id>node_id</id>
+            <id>pn</id>
+            <layout>var nid,node_id,pn:INT;</layout>
+          </var>
+          <var id="ID1420809868">
+            <type>
+              <id>REAL</id>
+            </type>
+            <id>exec_t</id>
+            <id>dur</id>
+            <id>pr</id>
+            <id>off</id>
+            <layout>var exec_t,dur,pr,off:REAL;</layout>
+          </var>
+        </block>
+        <block id="ID1420828743">
+          <id>Functions</id>
+          <ml id="ID1421333231">fun inc_part_exec {nid=nid,pn=pn,exec_t=exec_t, dur=dur, pr=pr, off=off} = 
+            {nid=nid,pn=pn,exec_t=exec_t + time_res, dur=dur, pr=pr, off=off};
+            <layout>fun inc_part_exec {nid=nid,pn=pn,exec_t=exec_t, dur=dur, pr=pr, off=off} = 
+            {nid=nid,pn=pn,exec_t=exec_t + time_res, dur=dur, pr=pr, off=off};</layout>
+          </ml>
+          <ml id="ID1421357859">fun inactivate_part {nid=nid,pn=pn,exec_t=exec_t, dur=dur, pr=pr, off=off} = 
+            {nid=nid,pn=pn,exec_t=0.0, dur=dur, pr=pr, off=off+pr};
+            <layout>fun inactivate_part {nid=nid,pn=pn,exec_t=exec_t, dur=dur, pr=pr, off=off} = 
+            {nid=nid,pn=pn,exec_t=0.0, dur=dur, pr=pr, off=off+pr};</layout>
+          </ml>
+        </block>
+      </block>
+      <block id="ID1420906560">
+        <id>Component_Thread_Scheduling</id>
+        <block id="ID1420907825">
+          <id>Color_Sets</id>
+          <color id="ID1420913670">
+            <id>op_type</id>
+            <enum>
+              <id>TIMER_OP</id>
+              <id>RMI_OP</id>
+              <id>AMI_OP</id>
+              <id>DDS_OP</id>
+            </enum>
+            <layout>colset op_type = with TIMER_OP | RMI_OP | AMI_OP | DDS_OP;</layout>
+          </color>
+          <color id="ID1420915011">
+            <id>call_type</id>
+            <enum>
+              <id>RMI_c</id>
+              <id>RMI_s</id>
+              <id>AMI_c</id>
+              <id>AMI_s</id>
+              <id>DDS_out</id>
+              <id>DDS_in</id>
+              <id>CALC</id>
+            </enum>
+            <layout>colset call_type = with RMI_c | RMI_s | AMI_c | AMI_s | DDS_out | DDS_in | CALC;</layout>
+          </color>
+          <color id="ID1420917719">
+            <id>thread_loc</id>
+            <record>
+              <recordfield>
+                <id>node</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>th</id>
+                <id>INT</id>
+              </recordfield>
+            </record>
+            <layout>colset thread_loc = record node:INT * th:INT;</layout>
+          </color>
+          <color id="ID1420919096">
+            <id>unblk_list</id>
+            <list>
+              <id>thread_loc</id>
+            </list>
+            <layout>colset unblk_list = list thread_loc;</layout>
+          </color>
+          <color id="ID1420920485">
+            <id>call</id>
+            <record>
+              <recordfield>
+                <id>call_id</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>call_type</id>
+                <id>call_type</id>
+              </recordfield>
+              <recordfield>
+                <id>call_op_id</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>blk_list</id>
+                <id>LIST_INT</id>
+              </recordfield>
+              <recordfield>
+                <id>unblk_list</id>
+                <id>unblk_list</id>
+              </recordfield>
+              <recordfield>
+                <id>q_t</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>pr_t</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>call_st</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>call_et</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>call_blkt</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>call_exec_t</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>call_dur</id>
+                <id>REAL</id>
+              </recordfield>
+            </record>
+            <layout>colset call = record call_id:INT * call_type:call_type * call_op_id:INT * 
+                               blk_list:LIST_INT * unblk_list:unblk_list * 
+                               q_t:REAL * pr_t:REAL *
+                               call_st:REAL * call_et:REAL * call_blkt:REAL *   
+                               call_exec_t:REAL * call_dur:REAL;</layout>
+          </color>
+          <color id="ID1420924009">
+            <id>call_list</id>
+            <list>
+              <id>call</id>
+            </list>
+            <layout>colset call_list = list call;</layout>
+          </color>
+          <color id="ID1420925440">
+            <id>opn</id>
+            <record>
+              <recordfield>
+                <id>op_id</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>op_type</id>
+                <id>op_type</id>
+              </recordfield>
+              <recordfield>
+                <id>op_nid</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>op_tid</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>op_pn</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>op_prio</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>op_dl</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>op_wt</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>op_st</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>op_et</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>op_exec_t</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>op_calls</id>
+                <id>call_list</id>
+              </recordfield>
+            </record>
+            <layout>colset opn = record op_id:INT * op_type:op_type * op_nid:INT * op_tid:INT * op_pn:INT * 
+                               op_prio:INT * op_dl:REAL * op_wt:REAL * op_st:REAL * op_et:REAL * op_exec_t:REAL * 
+                               op_calls:call_list;</layout>
+          </color>
+          <color id="ID1420928328">
+            <id>opn_list</id>
+            <list>
+              <id>opn</id>
+            </list>
+            <layout>colset opn_list = list opn;</layout>
+          </color>
+          <color id="ID1420929795">
+            <id>state</id>
+            <enum>
+              <id>ready</id>
+              <id>running</id>
+              <id>blocked</id>
+            </enum>
+            <layout>colset state = with ready | running | blocked;</layout>
+          </color>
+          <color id="ID1420932016">
+            <id>thread</id>
+            <timed/>
+            <record>
+              <recordfield>
+                <id>th_nid</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>th_tid</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>th_pn</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>th_prio</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>th_state</id>
+                <id>state</id>
+              </recordfield>
+              <recordfield>
+                <id>th_cmq_len</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>th_st</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>th_opn_list</id>
+                <id>opn_list</id>
+              </recordfield>
+            </record>
+            <layout>colset thread = record th_nid:INT * th_tid:INT * th_pn:INT * th_prio:INT * 
+                                    th_state:state * th_cmq_len:INT * th_st:REAL * th_opn_list:opn_list timed;</layout>
+          </color>
+          <color id="ID1420935021">
+            <id>threads</id>
+            <list>
+              <id>thread</id>
+            </list>
+            <layout>colset threads = list thread;</layout>
+          </color>
+          <color id="ID1420936542">
+            <id>part_thread</id>
+            <record>
+              <recordfield>
+                <id>pn</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>ths</id>
+                <id>threads</id>
+              </recordfield>
+            </record>
+            <layout>colset part_thread = record pn:INT * ths:threads;</layout>
+          </color>
+          <color id="ID1420938075">
+            <id>part_threads</id>
+            <list>
+              <id>part_thread</id>
+            </list>
+            <layout>colset part_threads = list part_thread;</layout>
+          </color>
+          <color id="ID1420939620">
+            <id>ready_threads</id>
+            <record>
+              <recordfield>
+                <id>node_id</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>node_ths</id>
+                <id>part_threads</id>
+              </recordfield>
+            </record>
+            <layout>colset ready_threads = record node_id:INT * node_ths:part_threads;</layout>
+          </color>
+          <color id="ID1420945097">
+            <id>timer_op</id>
+            <timed/>
+            <record>
+              <recordfield>
+                <id>t_nid</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>t_tid</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>t_pn</id>
+                <id>INT</id>
+              </recordfield>
+              <recordfield>
+                <id>t_pr</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>t_off</id>
+                <id>REAL</id>
+              </recordfield>
+              <recordfield>
+                <id>t_op</id>
+                <id>opn</id>
+              </recordfield>
+            </record>
+            <layout>colset timer_op = record t_nid:INT * t_tid:INT * t_pn: INT * 
+                                        t_pr:REAL * t_off: REAL * 
+                                        t_op:opn timed;</layout>
+          </color>
+        </block>
+        <block id="ID1420909102">
+          <id>Variables</id>
+          <var id="ID1420933513">
+            <type>
+              <id>thread</id>
+            </type>
+            <id>th</id>
+            <layout>var th:thread;</layout>
+          </var>
+          <var id="ID1420941177">
+            <type>
+              <id>part_threads</id>
+            </type>
+            <id>node_ths</id>
+            <layout>var node_ths:part_threads;</layout>
+          </var>
+          <var id="ID1420946696">
+            <type>
+              <id>timer_op</id>
+            </type>
+            <id>timer</id>
+            <layout>var timer: timer_op;</layout>
+          </var>
+        </block>
+        <block id="ID1420910391">
+          <id>Functions</id>
+          <ml id="ID1421064487">fun pick_thread this_pn ({pn=pn, ths=ths}::rest) =
+       if (this_pn = pn) then 
+               hd ths 
+       else pick_thread this_pn rest;
+            <layout>fun pick_thread this_pn ({pn=pn, ths=ths}::rest) =
+       if (this_pn = pn) then 
+               hd ths 
+       else pick_thread this_pn rest;</layout>
+          </ml>
+          <ml id="ID1422203173">fun record_st {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} =  
+               {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=time(),
+                             th_opn_list=th_opn_list};
+            <layout>fun record_st {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} =  
+               {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=time(),
+                             th_opn_list=th_opn_list};</layout>
+          </ml>
+          <ml id="ID1422310049">fun reset_st {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} =
+               {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=0.0,
+                             th_opn_list=th_opn_list};
+            <layout>fun reset_st {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} =
+               {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=0.0,
+                             th_opn_list=th_opn_list};</layout>
+          </ml>
+          <ml id="ID1421070225">fun remv_thread {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} 
+                ({pn=pn, ths=ths}::rest)= 
+            if (th_pn = pn) then 
+                 ({pn=pn, ths=(rm {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} ths)}::rest)
+            else ({pn=pn, ths=ths}::rest);
+            <layout>fun remv_thread {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} 
+                ({pn=pn, ths=ths}::rest)= 
+            if (th_pn = pn) then 
+                 ({pn=pn, ths=(rm {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} ths)}::rest)
+            else ({pn=pn, ths=ths}::rest);</layout>
+          </ml>
+          <ml id="ID1421142116">fun state_change new_state {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} = 
+ {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=new_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list};
+            <layout>fun state_change new_state {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} = 
+ {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=new_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list};</layout>
+          </ml>
+          <ml id="ID1421165118">fun all_threads_passive [] = true 
+     |all_threads_passive ({th_nid=th_nid, th_tid=th_tid,th_pn=th_pn,th_prio=th_prio,th_state=th_state,th_cmq_len=th_cmq_len,th_st=th_st,th_opn_list=th_opn_list}::queue)  = 
+                  if(th_opn_list &lt;&gt; []) then false else
+                     true andalso (all_threads_passive queue);
+            <layout>fun all_threads_passive [] = true 
+     |all_threads_passive ({th_nid=th_nid, th_tid=th_tid,th_pn=th_pn,th_prio=th_prio,th_state=th_state,th_cmq_len=th_cmq_len,th_st=th_st,th_opn_list=th_opn_list}::queue)  = 
+                  if(th_opn_list &lt;&gt; []) then false else
+                     true andalso (all_threads_passive queue);</layout>
+          </ml>
+          <ml id="ID1421162354">fun check_ready_threads this_pn [] = true 
+   |  check_ready_threads this_pn ({pn=pn,ths=ths}::rest) = 
+      if (this_pn = pn) then 
+          (all_threads_passive ths)
+     else (check_ready_threads this_pn rest);
+            <layout>fun check_ready_threads this_pn [] = true 
+   |  check_ready_threads this_pn ({pn=pn,ths=ths}::rest) = 
+      if (this_pn = pn) then 
+          (all_threads_passive ths)
+     else (check_ready_threads this_pn rest);</layout>
+          </ml>
+          <ml id="ID1421303494">fun pnq_helper {th_nid=th_nid,th_tid=th_tid,th_pn=th_pn,th_prio=th_prio,th_state=th_state,th_cmq_len=th_cmq_len,th_st=th_st,th_opn_list=th_opn_list} [] = 
+                 [{th_nid=th_nid,th_tid=th_tid,th_pn=th_pn,th_prio=th_prio,th_state=th_state,th_cmq_len=th_cmq_len,th_st=th_st,th_opn_list=th_opn_list}]
+    | pnq_helper {th_nid=th_nid,th_tid=th_tid,th_pn=th_pn,th_prio=th_prio,th_state=th_state,th_cmq_len=th_cmq_len,th_st=th_st,th_opn_list=th_opn_list} 
+            ({th_nid=th_nid2,th_tid=th_tid2,th_pn=th_pn2,th_prio=th_prio2,th_state=th_state2,th_cmq_len=th_cmq_len2,th_st=th_st2,th_opn_list=th_opn_list2}::queue) = 
+       if (th_prio &gt; th_prio2) then 
+               {th_nid=th_nid,th_tid=th_tid,th_pn=th_pn,th_prio=th_prio,th_state=th_state,th_cmq_len=th_cmq_len,th_st=th_st,th_opn_list=th_opn_list} :: 
+              ({th_nid=th_nid2, th_tid=th_tid2,th_pn=th_pn2,th_prio=th_prio2,th_state=th_state2,th_cmq_len=th_cmq_len2,th_st=th_st2,th_opn_list=th_opn_list2}::queue)
+       else {th_nid=th_nid2, th_tid=th_tid2,th_pn=th_pn2,th_prio=th_prio2,th_state=th_state2,th_cmq_len=th_cmq_len2,th_st=th_st2,th_opn_list=th_opn_list2}::
+               (pnq_helper {th_nid=th_nid,th_tid=th_tid,th_pn=th_pn,th_prio=th_prio,th_state=th_state,th_cmq_len=th_cmq_len,th_st=th_st,th_opn_list=th_opn_list} queue);
+            <layout>fun pnq_helper {th_nid=th_nid,th_tid=th_tid,th_pn=th_pn,th_prio=th_prio,th_state=th_state,th_cmq_len=th_cmq_len,th_st=th_st,th_opn_list=th_opn_list} [] = 
+                 [{th_nid=th_nid,th_tid=th_tid,th_pn=th_pn,th_prio=th_prio,th_state=th_state,th_cmq_len=th_cmq_len,th_st=th_st,th_opn_list=th_opn_list}]
+    | pnq_helper {th_nid=th_nid,th_tid=th_tid,th_pn=th_pn,th_prio=th_prio,th_state=th_state,th_cmq_len=th_cmq_len,th_st=th_st,th_opn_list=th_opn_list} 
+            ({th_nid=th_nid2,th_tid=th_tid2,th_pn=th_pn2,th_prio=th_prio2,th_state=th_state2,th_cmq_len=th_cmq_len2,th_st=th_st2,th_opn_list=th_opn_list2}::queue) = 
+       if (th_prio &gt; th_prio2) then 
+               {th_nid=th_nid,th_tid=th_tid,th_pn=th_pn,th_prio=th_prio,th_state=th_state,th_cmq_len=th_cmq_len,th_st=th_st,th_opn_list=th_opn_list} :: 
+              ({th_nid=th_nid2, th_tid=th_tid2,th_pn=th_pn2,th_prio=th_prio2,th_state=th_state2,th_cmq_len=th_cmq_len2,th_st=th_st2,th_opn_list=th_opn_list2}::queue)
+       else {th_nid=th_nid2, th_tid=th_tid2,th_pn=th_pn2,th_prio=th_prio2,th_state=th_state2,th_cmq_len=th_cmq_len2,th_st=th_st2,th_opn_list=th_opn_list2}::
+               (pnq_helper {th_nid=th_nid,th_tid=th_tid,th_pn=th_pn,th_prio=th_prio,th_state=th_state,th_cmq_len=th_cmq_len,th_st=th_st,th_opn_list=th_opn_list} queue);</layout>
+          </ml>
+          <ml id="ID1421298569">fun enqueue_thread {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} 
+                ({pn=pn, ths=ths}::rest) = 
+       if (th_pn = pn) then
+           ({pn=pn, ths = (pnq_helper {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} ths)}::rest)
+       else
+           ({pn=pn, ths=ths}::(enqueue_thread {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list}  rest));
+            <layout>fun enqueue_thread {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} 
+                ({pn=pn, ths=ths}::rest) = 
+       if (th_pn = pn) then
+           ({pn=pn, ths = (pnq_helper {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list} ths)}::rest)
+       else
+           ({pn=pn, ths=ths}::(enqueue_thread {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list}  rest));</layout>
+          </ml>
+          <ml id="ID1421624389">fun op_nq_helper {op_id=op_id,op_type=op_type,op_nid=op_nid,op_tid=op_tid,op_pn=op_pn,op_prio=op_prio,op_dl=op_dl,op_wt=op_wt,op_st=op_st,op_et=op_et,op_exec_t=op_exec_t, op_calls=op_calls} [] = 
+                           [{op_id=op_id,op_type=op_type,op_nid=op_nid,op_tid=op_tid,op_pn=op_pn,op_prio=op_prio,op_dl=op_dl,op_wt=op_wt,op_st=op_st,op_et=op_et,op_exec_t=op_exec_t, op_calls=op_calls}]
+  | op_nq_helper {op_id=op_id,op_type=op_type,op_nid=op_nid,op_tid=op_tid,op_pn=op_pn,op_prio=op_prio,op_dl=op_dl,op_wt=op_wt,op_st=op_st,op_et=op_et,op_exec_t=op_exec_t, op_calls=op_calls}
+                          ({op_id=op_id2,op_type=op_type2,op_nid=op_nid2,op_tid=op_tid2,op_pn=op_pn2,op_prio=op_prio2,op_dl=op_dl2,op_wt=op_wt2,op_st=op_st2,op_et=op_et2,op_exec_t=op_exec_t2, op_calls=op_calls2}::rest_ops) = 
+                     if (op_prio &gt; op_prio2) then 
+                        {op_id=op_id,op_type=op_type,op_nid=op_nid,op_tid=op_tid,op_pn=op_pn,op_prio=op_prio,op_dl=op_dl,op_wt=op_wt,op_st=op_st,op_et=op_et,op_exec_t=op_exec_t, op_calls=op_calls}::
+                        ({op_id=op_id2,op_type=op_type2,op_nid=op_nid2,op_tid=op_tid2,op_pn=op_pn2,op_prio=op_prio2,op_dl=op_dl2,op_wt=op_wt2,op_st=op_st2,op_et=op_et2,op_exec_t=op_exec_t2, op_calls=op_calls2}::rest_ops)
+                     else
+                        {op_id=op_id2,op_type=op_type2,op_nid=op_nid2,op_tid=op_tid2,op_pn=op_pn2,op_prio=op_prio2,op_dl=op_dl2,op_wt=op_wt2,op_st=op_st2,op_et=op_et2,op_exec_t=op_exec_t2, op_calls=op_calls2}::
+                        (op_nq_helper {op_id=op_id,op_type=op_type,op_nid=op_nid,op_tid=op_tid,op_pn=op_pn,op_prio=op_prio,op_dl=op_dl,op_wt=op_wt,op_st=op_st,op_et=op_et,op_exec_t=op_exec_t, op_calls=op_calls} rest_ops);
+            <layout>fun op_nq_helper {op_id=op_id,op_type=op_type,op_nid=op_nid,op_tid=op_tid,op_pn=op_pn,op_prio=op_prio,op_dl=op_dl,op_wt=op_wt,op_st=op_st,op_et=op_et,op_exec_t=op_exec_t, op_calls=op_calls} [] = 
+                           [{op_id=op_id,op_type=op_type,op_nid=op_nid,op_tid=op_tid,op_pn=op_pn,op_prio=op_prio,op_dl=op_dl,op_wt=op_wt,op_st=op_st,op_et=op_et,op_exec_t=op_exec_t, op_calls=op_calls}]
+  | op_nq_helper {op_id=op_id,op_type=op_type,op_nid=op_nid,op_tid=op_tid,op_pn=op_pn,op_prio=op_prio,op_dl=op_dl,op_wt=op_wt,op_st=op_st,op_et=op_et,op_exec_t=op_exec_t, op_calls=op_calls}
+                          ({op_id=op_id2,op_type=op_type2,op_nid=op_nid2,op_tid=op_tid2,op_pn=op_pn2,op_prio=op_prio2,op_dl=op_dl2,op_wt=op_wt2,op_st=op_st2,op_et=op_et2,op_exec_t=op_exec_t2, op_calls=op_calls2}::rest_ops) = 
+                     if (op_prio &gt; op_prio2) then 
+                        {op_id=op_id,op_type=op_type,op_nid=op_nid,op_tid=op_tid,op_pn=op_pn,op_prio=op_prio,op_dl=op_dl,op_wt=op_wt,op_st=op_st,op_et=op_et,op_exec_t=op_exec_t, op_calls=op_calls}::
+                        ({op_id=op_id2,op_type=op_type2,op_nid=op_nid2,op_tid=op_tid2,op_pn=op_pn2,op_prio=op_prio2,op_dl=op_dl2,op_wt=op_wt2,op_st=op_st2,op_et=op_et2,op_exec_t=op_exec_t2, op_calls=op_calls2}::rest_ops)
+                     else
+                        {op_id=op_id2,op_type=op_type2,op_nid=op_nid2,op_tid=op_tid2,op_pn=op_pn2,op_prio=op_prio2,op_dl=op_dl2,op_wt=op_wt2,op_st=op_st2,op_et=op_et2,op_exec_t=op_exec_t2, op_calls=op_calls2}::
+                        (op_nq_helper {op_id=op_id,op_type=op_type,op_nid=op_nid,op_tid=op_tid,op_pn=op_pn,op_prio=op_prio,op_dl=op_dl,op_wt=op_wt,op_st=op_st,op_et=op_et,op_exec_t=op_exec_t, op_calls=op_calls} rest_ops);</layout>
+          </ml>
+          <ml id="ID1421637170">fun find_thread this_tid this_op ({th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list}::other_ths) = 
+                if (this_tid = th_tid) then 
+                      ({th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=ready, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=(op_nq_helper this_op th_opn_list)}::other_ths)
+                else
+                {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list}::(find_thread this_tid this_op other_ths);
+            <layout>fun find_thread this_tid this_op ({th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list}::other_ths) = 
+                if (this_tid = th_tid) then 
+                      ({th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=ready, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=(op_nq_helper this_op th_opn_list)}::other_ths)
+                else
+                {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=th_opn_list}::(find_thread this_tid this_op other_ths);</layout>
+          </ml>
+          <ml id="ID1421641463">fun enqueue_op this_pn this_tid this_op ({pn=pn,ths=ths}::rest) = 
+       if (this_pn = pn) then
+            {pn=pn, ths=(find_thread this_tid this_op ths)}::rest
+       else 
+           enqueue_op this_pn this_tid this_op rest;
+            <layout>fun enqueue_op this_pn this_tid this_op ({pn=pn,ths=ths}::rest) = 
+       if (this_pn = pn) then
+            {pn=pn, ths=(find_thread this_tid this_op ths)}::rest
+       else 
+           enqueue_op this_pn this_tid this_op rest;</layout>
+          </ml>
+          <ml id="ID1422066280">fun inc_op_exec_t {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=({op_id=op_id2,op_type=op_type2,op_nid=op_nid2,op_tid=op_tid2,op_pn=op_pn2,op_prio=op_prio2,op_dl=op_dl2,
+                                op_wt=op_wt2,op_st=op_st2,op_et=op_et2,op_exec_t=op_exec_t2, op_calls=op_calls2}::rest_ops)} = 
+                               {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=({op_id=op_id2,op_type=op_type2,op_nid=op_nid2,op_tid=op_tid2,op_pn=op_pn2,op_prio=op_prio2,op_dl=op_dl2,
+                                op_wt=op_wt2,op_st=op_st2,op_et=op_et2,op_exec_t=op_exec_t2 + time_res, op_calls=op_calls2}::rest_ops)};
+            <layout>fun inc_op_exec_t {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=({op_id=op_id2,op_type=op_type2,op_nid=op_nid2,op_tid=op_tid2,op_pn=op_pn2,op_prio=op_prio2,op_dl=op_dl2,
+                                op_wt=op_wt2,op_st=op_st2,op_et=op_et2,op_exec_t=op_exec_t2, op_calls=op_calls2}::rest_ops)} = 
+                               {th_nid=th_nid, th_tid=th_tid, th_pn=th_pn, th_prio=th_prio, 
+                             th_state=th_state, th_cmq_len=th_cmq_len, th_st=th_st,
+                             th_opn_list=({op_id=op_id2,op_type=op_type2,op_nid=op_nid2,op_tid=op_tid2,op_pn=op_pn2,op_prio=op_prio2,op_dl=op_dl2,
+                                op_wt=op_wt2,op_st=op_st2,op_et=op_et2,op_exec_t=op_exec_t2 + time_res, op_calls=op_calls2}::rest_ops)};</layout>
+          </ml>
+        </block>
+      </block>
+    </globbox>
+    <page id="ID6">
+      <pageattr name="New Page"/>
+      <place id="ID1420810060">
+        <posattr x="-638.250000"
+                 y="-274.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Schedule</text>
+        <ellipse w="102.000000"
+                 h="64.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1420810061">
+          <posattr x="-571.000000"
+                   y="-306.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">schedule</text>
+        </type>
+        <initmark id="ID1420810062">
+          <posattr x="-248.250000"
+                   y="-348.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">1`{node_id=1, parts=[{nid=1,pn=1,exec_t=0.0,dur=100.0,pr=200.0,off=0.0},{nid=1,pn=2,exec_t=0.0,dur=100.0,pr=200.0,off=100.0}]}</text>
+        </initmark>
+      </place>
+      <place id="ID1420811094">
+        <posattr x="-638.250000"
+                 y="84.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Current_Partition</text>
+        <ellipse w="136.000000"
+                 h="62.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1420811095">
+          <posattr x="-560.500000"
+                   y="52.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">partition</text>
+        </type>
+        <initmark id="ID1420811096">
+          <posattr x="-555.000000"
+                   y="115.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </initmark>
+      </place>
+      <place id="ID1420878930">
+        <posattr x="523.750000"
+                 y="657.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Component_Threads</text>
+        <ellipse w="152.500000"
+                 h="87.500000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1420878931">
+          <posattr x="626.500000"
+                   y="616.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">ready_threads</text>
+        </type>
+        <initmark id="ID1420878932">
+          <posattr x="1037.500000"
+                   y="697.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">1`{node_id=1, node_ths = [{pn=1, ths=[{th_nid=1, th_tid=1,th_pn=1,th_prio=5,th_state=ready, th_cmq_len=0, th_st=0.0,th_opn_list=[]}]}]}</text>
+        </initmark>
+      </place>
+      <place id="ID1420888720">
+        <posattr x="523.750000"
+                 y="170.500000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Currently_Running_Thread</text>
+        <ellipse w="188.000000"
+                 h="86.000000"/>
+        <token x="-177.750000"
+               y="33.000000"/>
+        <marking x="-27.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="4"
+                anchor.horizontal="2"
+                anchor.vertical="3"/>
+        </marking>
+        <type id="ID1420888721">
+          <posattr x="593.000000"
+                   y="124.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">thread</text>
+        </type>
+        <initmark id="ID1421181859">
+          <posattr x="625.000000"
+                   y="210.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </initmark>
+      </place>
+      <place id="ID1420978758">
+        <posattr x="523.750000"
+                 y="1218.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Timers</text>
+        <ellipse w="122.500000"
+                 h="62.500000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="true">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1420978759">
+          <posattr x="597.000000"
+                   y="1186.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">timer_op</text>
+        </type>
+        <initmark id="ID1421131585">
+          <posattr x="1226.500000"
+                   y="1256.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">1`{t_nid=1, t_tid=1,t_pn=1,t_pr=1000.0,t_off=0.0,t_op={op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=10.0,op_wt=0.0,op_st=0.0,op_et=0.0,op_exec_t=0.0,
+                                                               op_calls=[{call_id=1,call_type=RMI_c,call_op_id=1, blk_list=[1], unblk_list=[],q_t=1.0,pr_t=1.0, call_st=0.0, call_et=0.0, call_blkt=0.0, call_exec_t=0.0, call_dur=2.0}]}}</text>
+        </initmark>
+      </place>
+      <place id="ID1421195255">
+        <posattr x="1386.000000"
+                 y="378.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Clock_Tick</text>
+        <ellipse w="107.500000"
+                 h="58.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1421195256">
+          <posattr x="1436.500000"
+                   y="347.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">tick</text>
+        </type>
+        <initmark id="ID1421195257">
+          <posattr x="1483.500000"
+                   y="408.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">1`{tck_node = 1}</text>
+        </initmark>
+      </place>
+      <trans id="ID1420810377"
+             explicit="false">
+        <posattr x="-638.250000"
+                 y="-42.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Pick_Partition</text>
+        <box w="122.000000"
+             h="56.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1420810378">
+          <posattr x="-513.250000"
+                   y="-42.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">[#off part = time()]</text>
+        </cond>
+        <time id="ID1420810379">
+          <posattr x="-562.750000"
+                   y="-3.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </time>
+        <code id="ID1420810380">
+          <posattr x="-542.750000"
+                   y="-102.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </code>
+        <priority id="ID1420810382">
+          <posattr x="-737.250000"
+                   y="-81.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </priority>
+      </trans>
+      <trans id="ID1420813355"
+             explicit="false">
+        <posattr x="-1084.250000"
+                 y="84.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Inactivate_Partition</text>
+        <box w="133.000000"
+             h="64.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1420813356">
+          <posattr x="-1052.750000"
+                   y="134.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">[exec_t + epsilon &gt; dur andalso 
+  nid = node_id]</text>
+        </cond>
+        <time id="ID1420813357">
+          <posattr x="-1003.250000"
+                   y="127.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </time>
+        <code id="ID1420813358">
+          <posattr x="-983.250000"
+                   y="20.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </code>
+        <priority id="ID1420813360">
+          <posattr x="-1178.750000"
+                   y="41.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">P_HIGH</text>
+        </priority>
+      </trans>
+      <trans id="ID1420884461"
+             explicit="false">
+        <posattr x="523.750000"
+                 y="378.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Schedule_Thread</text>
+        <box w="154.500000"
+             h="67.500000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1421434517">
+          <posattr x="277.000000"
+                   y="413.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">[#nid part = node_id andalso
+  node_id = #tck_node tk andalso 
+ check_ready_threads (#pn part) node_ths = false]</text>
+        </cond>
+        <time id="ID1420884463">
+          <posattr x="615.500000"
+                   y="422.750000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </time>
+        <code id="ID1420884464">
+          <posattr x="635.500000"
+                   y="312.250000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </code>
+        <priority id="ID1420884466">
+          <posattr x="408.500000"
+                   y="333.250000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </priority>
+      </trans>
+      <trans id="ID1420980674"
+             explicit="false">
+        <posattr x="523.750000"
+                 y="966.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Timer_Expiry</text>
+        <box w="165.000000"
+             h="62.500000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1420980675">
+          <posattr x="688.250000"
+                   y="966.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">[#t_nid timer = node_id]</text>
+        </cond>
+        <time id="ID1420980676">
+          <posattr x="620.750000"
+                   y="1008.250000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </time>
+        <code id="ID1420980677">
+          <posattr x="640.750000"
+                   y="902.750000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </code>
+        <priority id="ID1420980679">
+          <posattr x="429.250000"
+                   y="923.750000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">50</text>
+        </priority>
+      </trans>
+      <trans id="ID1421270421"
+             explicit="false">
+        <posattr x="1050.000000"
+                 y="170.500000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Next_Clock_Tick</text>
+        <box w="127.500000"
+             h="58.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1422469321">
+          <posattr x="900.000000"
+                   y="216.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">[time() - #th_st th + epsilon &gt; clock_tick]</text>
+        </cond>
+        <time id="ID1422522645">
+          <posattr x="1128.250000"
+                   y="210.500000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </time>
+        <code id="ID1421270424">
+          <posattr x="1148.250000"
+                   y="109.500000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </code>
+        <priority id="ID1421270426">
+          <posattr x="958.250000"
+                   y="130.500000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">P_HIGH</text>
+        </priority>
+      </trans>
+      <trans id="ID1422430571"
+             explicit="false">
+        <posattr x="523.750000"
+                 y="-126.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>RMI_out</text>
+        <box w="145.000000"
+             h="67.500000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1422430572">
+          <posattr x="442.250000"
+                   y="-81.250000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </cond>
+        <time id="ID1422430573">
+          <posattr x="642.750000"
+                   y="-81.250000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">@++time_res</text>
+        </time>
+        <code id="ID1422430574">
+          <posattr x="630.750000"
+                   y="-191.750000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </code>
+        <priority id="ID1422430576">
+          <posattr x="413.250000"
+                   y="-170.750000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0"/>
+        </priority>
+      </trans>
+      <arc id="ID1420814410"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420810377"/>
+        <placeend idref="ID1420810060"/>
+        <annot id="ID1420814411">
+          <posattr x="-549.000000"
+                   y="-168.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">{node_id=node_id, 
+  parts=(part::rest_parts)}</text>
+        </annot>
+      </arc>
+      <arc id="ID1420814599"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420810377"/>
+        <placeend idref="ID1420810060"/>
+        <bendpoint id="ID1420841212"
+                   serial="1">
+          <posattr x="-638.250000"
+                   y="-141.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1420814600">
+          <posattr x="-705.500000"
+                   y="-119.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">{node_id=node_id, 
+  parts=rest_parts}</text>
+        </annot>
+      </arc>
+      <arc id="ID1420820757"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420810377"/>
+        <placeend idref="ID1420811094"/>
+        <annot id="ID1420820758">
+          <posattr x="-621.000000"
+                   y="19.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">part</text>
+        </annot>
+      </arc>
+      <arc id="ID1420821854"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420813355"/>
+        <placeend idref="ID1420811094"/>
+        <annot id="ID1420821855">
+          <posattr x="-828.000000"
+                   y="130.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">{nid=nid, 
+  pn=pn, 
+  exec_t = exec_t, 
+  dur=dur, 
+  pr=pr, 
+  off=off}</text>
+        </annot>
+      </arc>
+      <arc id="ID1420824192"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420813355"/>
+        <placeend idref="ID1420810060"/>
+        <bendpoint id="ID1420824194"
+                   serial="1">
+          <posattr x="-1084.250000"
+                   y="-274.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1420824193">
+          <posattr x="-1017.000000"
+                   y="-60.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">{node_id=node_id, 
+   parts=rest_parts}</text>
+        </annot>
+      </arc>
+      <arc id="ID1420824501"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420813355"/>
+        <placeend idref="ID1420810060"/>
+        <bendpoint id="ID1420824503"
+                   serial="1">
+          <posattr x="-1084.250000"
+                   y="-274.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1420824502">
+          <posattr x="-879.000000"
+                   y="-327.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">{node_id=node_id, 
+   parts=rest_parts^^[{nid=nid, 
+                                      pn=pn, 
+                                      exec_t=0.0, 
+                                      dur=dur, 
+                                      pr=pr, 
+                                      off=off+pr}]}</text>
+        </annot>
+      </arc>
+      <arc id="ID1420887572"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420884461"/>
+        <placeend idref="ID1420878930"/>
+        <bendpoint id="ID1421057373"
+                   serial="1">
+          <posattr x="557.000000"
+                   y="477.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1420887573">
+          <posattr x="693.000000"
+                   y="516.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">{node_id=node_id, node_ths=node_ths}</text>
+        </annot>
+      </arc>
+      <arc id="ID1420889271"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420884461"/>
+        <placeend idref="ID1420888720"/>
+        <annot id="ID1420889272">
+          <posattr x="644.000000"
+                   y="279.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">(record_st (state_change running 
+ (pick_thread (#pn part) node_ths)))</text>
+        </annot>
+      </arc>
+      <arc id="ID1420892816"
+           orientation="BOTHDIR"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420884461"/>
+        <placeend idref="ID1420811094"/>
+        <bendpoint id="ID1420892818"
+                   serial="1">
+          <posattr x="-638.250000"
+                   y="378.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1420892817">
+          <posattr x="-655.000000"
+                   y="305.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">part</text>
+        </annot>
+      </arc>
+      <arc id="ID1421010393"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420980674"/>
+        <placeend idref="ID1420978758"/>
+        <bendpoint id="ID1421022401"
+                   serial="1">
+          <posattr x="546.000000"
+                   y="1050.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1421010394">
+          <posattr x="566.000000"
+                   y="1086.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">timer</text>
+        </annot>
+      </arc>
+      <arc id="ID1421013676"
+           orientation="TtoP"
+           order="2">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420980674"/>
+        <placeend idref="ID1420978758"/>
+        <bendpoint id="ID1421020778"
+                   serial="1">
+          <posattr x="504.000000"
+                   y="1050.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1421013677">
+          <posattr x="419.000000"
+                   y="1081.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">(timer_op.set_t_off timer 
+(time() + #t_pr timer))
+@++(#t_pr timer)</text>
+        </annot>
+      </arc>
+      <arc id="ID1421054976"
+           orientation="TtoP"
+           order="2">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420884461"/>
+        <placeend idref="ID1420878930"/>
+        <bendpoint id="ID1421061062"
+                   serial="1">
+          <posattr x="488.000000"
+                   y="517.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1421054977">
+          <posattr x="371.000000"
+                   y="540.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">{node_id=node_id, node_ths = 
+(remv_thread 
+ (pick_thread (#pn part) node_ths) 
+ node_ths)}</text>
+        </annot>
+      </arc>
+      <arc id="ID1421236852"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420884461"/>
+        <placeend idref="ID1421195255"/>
+        <annot id="ID1421236853">
+          <posattr x="1290.000000"
+                   y="389.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">tk</text>
+        </annot>
+      </arc>
+      <arc id="ID1421583727"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420980674"/>
+        <placeend idref="ID1420878930"/>
+        <bendpoint id="ID1421590337"
+                   serial="1">
+          <posattr x="490.350000"
+                   y="812.400000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1421583728">
+          <posattr x="173.500000"
+                   y="821.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">{node_id=node_id, node_ths=(enqueue_op (#t_pn timer) (#t_tid timer) (#t_op timer) node_ths)}</text>
+        </annot>
+      </arc>
+      <arc id="ID1421586014"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1420980674"/>
+        <placeend idref="ID1420878930"/>
+        <bendpoint id="ID1421586016"
+                   serial="1">
+          <posattr x="567.850000"
+                   y="840.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1421586015">
+          <posattr x="704.000000"
+                   y="845.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">{node_id=node_id, node_ths=node_ths}</text>
+        </annot>
+      </arc>
+      <arc id="ID1421280721"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1421270421"/>
+        <placeend idref="ID1420888720"/>
+        <annot id="ID1421280722">
+          <posattr x="802.000000"
+                   y="182.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">th</text>
+        </annot>
+      </arc>
+      <arc id="ID1421286502"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1421270421"/>
+        <placeend idref="ID1420878930"/>
+        <bendpoint id="ID1421286504"
+                   serial="1">
+          <posattr x="1050.000000"
+                   y="656.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1421286503">
+          <posattr x="1124.500000"
+                   y="428.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">{node_id=node_id, 
+ node_ths=node_ths}</text>
+        </annot>
+      </arc>
+      <arc id="ID1421290386"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1421270421"/>
+        <placeend idref="ID1420878930"/>
+        <bendpoint id="ID1421290388"
+                   serial="1">
+          <posattr x="1050.000000"
+                   y="657.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1421290387">
+          <posattr x="1054.000000"
+                   y="329.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">1`{node_id=node_id, 
+ node_ths=(enqueue_thread (reset_st th) node_ths)}</text>
+        </annot>
+      </arc>
+      <arc id="ID1421310587"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1421270421"/>
+        <placeend idref="ID1421195255"/>
+        <bendpoint id="ID1421310589"
+                   serial="1">
+          <posattr x="1386.000000"
+                   y="170.500000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1421310588">
+          <posattr x="1250.000000"
+                   y="182.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">1`{tck_node = #th_nid th}</text>
+        </annot>
+      </arc>
+      <arc id="ID1421323074"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1421270421"/>
+        <placeend idref="ID1420811094"/>
+        <bendpoint id="ID1421323076"
+                   serial="1">
+          <posattr x="1050.000000"
+                   y="84.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1421323075">
+          <posattr x="1033.000000"
+                   y="113.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">part</text>
+        </annot>
+      </arc>
+      <arc id="ID1421345674"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1421270421"/>
+        <placeend idref="ID1420811094"/>
+        <bendpoint id="ID1421345676"
+                   serial="1">
+          <posattr x="1050.000000"
+                   y="84.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1421345675">
+          <posattr x="-420.000000"
+                   y="95.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">inc_part_exec part</text>
+        </annot>
+      </arc>
+      <arc id="ID1422438915"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1422430571"/>
+        <placeend idref="ID1420888720"/>
+        <bendpoint id="ID1422438917"
+                   serial="1">
+          <posattr x="546.000000"
+                   y="0.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1422438916">
+          <posattr x="556.500000"
+                   y="9.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">th</text>
+        </annot>
+      </arc>
+      <arc id="ID1422440205"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1422430571"/>
+        <placeend idref="ID1420888720"/>
+        <bendpoint id="ID1422440207"
+                   serial="1">
+          <posattr x="485.100000"
+                   y="42.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1422440206">
+          <posattr x="422.000000"
+                   y="-2.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.0">(inc_op_exec_t th)</text>
+        </annot>
+      </arc>
+      <constraints/>
+      <hguideline id="ID1420957563"
+                  y="274.000000">
+        <guideline_elm idref="ID1420810060"/>
+        <guideline_elm idref="ID1420824503"/>
+        <guideline_elm idref="ID1420824194"/>
+      </hguideline>
+      <hguideline id="ID1422290944"
+                  y="-170.500000">
+        <guideline_elm idref="ID1420888720"/>
+        <guideline_elm idref="ID1421270421"/>
+        <guideline_elm idref="ID1421310589"/>
+      </hguideline>
+      <vguideline id="ID1420836807"
+                  x="-1084.250000">
+        <guideline_elm idref="ID1420813355"/>
+        <guideline_elm idref="ID1420824194"/>
+        <guideline_elm idref="ID1420824503"/>
+      </vguideline>
+      <vguideline id="ID1420840240"
+                  x="-638.250000">
+        <guideline_elm idref="ID1420811094"/>
+        <guideline_elm idref="ID1420810377"/>
+        <guideline_elm idref="ID1420810060"/>
+        <guideline_elm idref="ID1420841212"/>
+        <guideline_elm idref="ID1420892818"/>
+      </vguideline>
+      <vguideline id="ID1420879612"
+                  x="523.750000">
+        <guideline_elm idref="ID1420884461"/>
+        <guideline_elm idref="ID1420980674"/>
+        <guideline_elm idref="ID1420978758"/>
+        <guideline_elm idref="ID1420878930"/>
+        <guideline_elm idref="ID1420888720"/>
+        <guideline_elm idref="ID1422430571"/>
+      </vguideline>
+      <Aux id="ID1421128984">
+        <posattr x="966.000000"
+                 y="1722.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>1`{t_nid=1, t_tid=1,t_pn=1,t_pr=1000.0,t_off=0.0, t_op={op_id=1,op_type=TIMER_OP,op_nid=1,op_tid=1,op_pn=1,op_prio=5,op_dl=20.0,op_wt=0.0,op_st=0.0,op_et=0.0,op_exec_t=0.0,
+                                                                                                           op_calls=[{call_id=1,call_type=RMI_c,call_op_id=1, blk_list=[1], unblk_list=[],q_t=1.0,pr_t=1.0, call_st=0.0, call_et=0.0, call_blkt=0.0, call_exec_t=0.0, call_dur=2.0}]}}</text>
+      </Aux>
+    </page>
+    <instances>
+      <instance id="ID2149"
+                page="ID6"/>
+    </instances>
+    <options>
+      <option name="realtimestamp">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="fair_be">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="global_fairness">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="outputdirectory">
+        <value>
+          <text>&lt;same as model&gt;</text>
+        </value>
+      </option>
+      <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10008.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10004.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10005.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10007.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10007.options.discover">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repciavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repcount">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="replastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repmax">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repmin">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repstddev">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repsum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="avg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="ciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="count">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="firstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="max">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="min">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="ssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="ssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="stddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="sum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="variance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="firstupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="interval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedcount">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedlastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedmax">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedmin">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedstddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedsum">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+    </options>
+    <binders>
+      <cpnbinder id="ID2222"
+                 x="328"
+                 y="90"
+                 width="1518"
+                 height="828">
+        <sheets>
+          <cpnsheet id="ID2215"
+                    panx="508.920000"
+                    pany="-106.880000"
+                    zoom="0.800000"
+                    instance="ID2149">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+        </sheets>
+        <zorder>
+          <position value="0"/>
+        </zorder>
+      </cpnbinder>
+    </binders>
+    <monitorblock name="Monitors"/>
+    <IndexNode expanded="true">
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="true"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false">
+            <IndexNode expanded="false">
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+            <IndexNode expanded="false">
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+          </IndexNode>
+          <IndexNode expanded="false">
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+          </IndexNode>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+        </IndexNode>
+      </IndexNode>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+      </IndexNode>
+      <IndexNode expanded="true">
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="false">
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="true">
+            <IndexNode expanded="true"/>
+          </IndexNode>
+          <IndexNode expanded="true">
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+          </IndexNode>
+        </IndexNode>
+        <IndexNode expanded="true">
+          <IndexNode expanded="false">
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+          </IndexNode>
+          <IndexNode expanded="false">
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+          </IndexNode>
+          <IndexNode expanded="true">
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="false"/>
+          </IndexNode>
+        </IndexNode>
+        <IndexNode expanded="true">
+          <IndexNode expanded="false">
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="false"/>
+          </IndexNode>
+          <IndexNode expanded="false">
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+          </IndexNode>
+          <IndexNode expanded="true">
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+          </IndexNode>
+        </IndexNode>
+      </IndexNode>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="true"/>
+    </IndexNode>
+  </cpnet>
+</workspaceElements>

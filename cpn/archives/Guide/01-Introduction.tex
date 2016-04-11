@@ -1,0 +1,37 @@
+\chapter{Introduction}\label{introduction}
+
+The F6 Timing Analysis (F6TA) capability in the F6IAP deals with determining the feasibility of the timing requirements given the model of an actual software deployment. The application designer is expected to supply in the models the worst-case execution time for each component operation and the model of the application. The system integrator creates the  complete model of a software deployment by modeling the integration, configuration, and deployment of all the applications on the system. The F6TA analyzes this integration models and provides answers to the following questions:
+\begin{itemize}
+	\item Are there any deadline violations in the system?
+	\item Are all the end-to-end (stimulus to response) timing requirements satisfied by the system?
+	\item Are there any potential deadlocks in the system? 
+\end{itemize}
+The F6TA is performed on the models from which the actual implementation artifacts are generated. 
+
+The purpose of this guide is to provide detailed instructions for using the Colored Petri Net-based Timing Analysis tool. This will include instructions on: 
+
+\begin{itemize}
+\item How to model the temporal behavior of component operations using the F6 modeling tools.
+\item How to generate the CPN Analysis model using the CPNGenerator interpreter. 
+\item How to analyze the behavior of the application using the generated CPN model.
+\end{itemize}
+
+\section{Windows Environment Setup}
+
+F6ML has been tested on the following Windows platforms: 
+\begin{itemize}
+\item Windows 7 (32-bit and 64-bit)
+\end{itemize}
+
+The following code is also required to be installed in Windows: 
+\begin{itemize}
+\item The latest version of GME 32-bit (13.5.23 x86 or later) \\ available at http://repo.isis.vanderbilt.edu/
+\item In order to use the CPN Analysis tool, a clean installation of CPN Tools 4 Tool Suite (http://cpntools.org).
+\end{itemize}
+
+\section{Installing F6ML and CPN Tools 4}
+\begin{enumerate}
+\item Go to the F6IAP distribution website and download and run the F6ML installation executable. The filename has the format F6ML-Setup-\emph{version}.msi, where version is the version number of the release (such as 0.6). 
+\item Go to http://cpntools.org/. Download a stable installation executable for the CPN Tools 4 Tool Suite. Perform a clean installation of CPN Tools 4. 
+\end{enumerate}
+

@@ -1,0 +1,5 @@
+1`{node_id=1, plist = [{pn=1, state=ACTIVE, exec_t=0,dur=200,pr=1000,off=0}, 
+                                     {pn=2, state=INACTIVE, exec_t=0,dur=200,pr=1000,off=200},
+                                     {pn=3, state=INACTIVE, exec_t=0,dur=200,pr=1000,off=400},
+                                     {pn=4, state=INACTIVE, exec_t=0,dur=200,pr=1000,off=600},
+                                     {pn=5, state=INACTIVE, exec_t=0,dur=200,pr=1000,off=800}]}
