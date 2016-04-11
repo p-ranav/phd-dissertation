@@ -22,11 +22,11 @@
 \@writefile{toc}{}
 \@writefile{lot}{Table \hfill Page}
 \@writefile{lot}{}
-\@writefile{toc}{\contentsline {chapter}{\listtablename }{iv}{chapter*.2}}
+\@writefile{toc}{\contentsline {chapter}{\listtablename }{v}{chapter*.2}}
 \citation{peterson1977petri}
 \@writefile{lof}{Figure \hfill Page}
 \@writefile{lof}{}
-\@writefile{toc}{\contentsline {chapter}{\listfigurename }{v}{chapter*.3}}
+\@writefile{toc}{\contentsline {chapter}{\listfigurename }{vi}{chapter*.3}}
 \citation{burke2010distributed}
 \citation{zimmermann2003train}
 \citation{zoitl2008real}
@@ -343,73 +343,80 @@
 \newlabel{fig:testbed}{{30}{95}{Constructed Testbed\relax }{figure.30}{}}
 \citation{kumarROSMOD}
 \citation{ROS}
-\citation{ANTLR_BOOK}
-\citation{UML}
 \@writefile{toc}{\contentsline {section}{\numberline {7.2}ROSMOD Software Infrastructure}{96}{section.7.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.1}ROSMOD Modeling Language}{96}{subsubsection.7.2.0.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces ROSMOD Project\relax }}{97}{figure.31}}
-\newlabel{fig:ROSMOD_Project}{{31}{97}{ROSMOD Project\relax }{figure.31}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.2}Deployment Infrastructure}{98}{subsubsection.7.2.0.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces ROSMOD Metamodel. Containment is specified from \emph  {src} to \emph  {dst} where the source has a containment attribute \emph  {quantity}, meaning that \emph  {quantity} objects of type \emph  {src} can be contained in an object of type \emph  {dst}. Pointers are specified as a one to one mapping from source to destination, using the name of the pointer. Sets allow for pointer containment. All objects contain a \emph  {name} attribute of type \emph  {string}, not shown for clarity. Note: the meta-model is used to create the ROSMOD Modeling Language, but users do not see or interact with it; it is used to enforce proper model creation semantics. \relax }}{97}{figure.31}}
+\newlabel{fig:ROSMOD_Project}{{31}{97}{ROSMOD Metamodel. Containment is specified from \emph {src} to \emph {dst} where the source has a containment attribute \emph {quantity}, meaning that \emph {quantity} objects of type \emph {src} can be contained in an object of type \emph {dst}. Pointers are specified as a one to one mapping from source to destination, using the name of the pointer. Sets allow for pointer containment. All objects contain a \emph {name} attribute of type \emph {string}, not shown for clarity. Note: the meta-model is used to create the ROSMOD Modeling Language, but users do not see or interact with it; it is used to enforce proper model creation semantics. \relax }{figure.31}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.2}Software Model}{98}{subsubsection.7.2.0.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.3}System Model}{100}{subsubsection.7.2.0.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.4}Deployment and Experimentation}{101}{subsubsection.7.2.0.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Software Infrastructure}{102}{subsection.7.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.1.1}ROSMOD Workspace}{102}{subsubsection.7.2.1.1}}
+\newlabel{sec:code_generation}{{7.2.1.1}{102}{ROSMOD Workspace}{subsubsection.7.2.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Workspace Code Generation. In this figure, the \emph  {image\_processor} package and its children messages (red), components (blue), and services (purple) are generated into a catkin package for compilation. The msg and srv files are automatically filled out from the definitions of the messages and services, as are the header and source files for the components.\relax }}{104}{figure.32}}
+\newlabel{fig:Code_Generation}{{32}{104}{Workspace Code Generation. In this figure, the \emph {image\_processor} package and its children messages (red), components (blue), and services (purple) are generated into a catkin package for compilation. The msg and srv files are automatically filled out from the definitions of the messages and services, as are the header and source files for the components.\relax }{figure.32}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Deployment Infrastructure}{105}{subsection.7.2.2}}
+\newlabel{sec:Deployment_Infrastructure}{{7.2.2}{105}{Deployment Infrastructure}{subsection.7.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces Software Deployment Workflow\relax }}{106}{figure.33}}
+\newlabel{fig:workflow}{{33}{106}{Software Deployment Workflow\relax }{figure.33}{}}
 \citation{SEUS}
-\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces ROSMOD Deployment Framework\relax }}{99}{figure.32}}
-\newlabel{fig:rosmod_deployment}{{32}{99}{ROSMOD Deployment Framework\relax }{figure.32}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}Evaluation of Timing Analysis Results}{99}{section.7.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces RMI Application\relax }}{100}{figure.33}}
-\newlabel{fig:rmi_application}{{33}{100}{RMI Application\relax }{figure.33}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Evaluation of Timing Analysis Results}{108}{section.7.3}}
 \citation{SEUS}
 \citation{ROS}
 \citation{kumarROSMOD}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Client-Server Interactions}{101}{subsection.7.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Publish-Subscribe Interactions}{101}{subsection.7.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces RMI Application\relax }}{109}{figure.34}}
+\newlabel{fig:rmi_application}{{34}{109}{RMI Application\relax }{figure.34}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Client-Server Interactions}{110}{subsection.7.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces Experimental Observation: Client-Server Interactions\relax }}{110}{figure.35}}
+\newlabel{fig:client-server}{{35}{110}{Experimental Observation: Client-Server Interactions\relax }{figure.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces CPN Analysis Results: Client-Server Interactions\relax }}{111}{figure.36}}
+\newlabel{fig:client-server-cpn}{{36}{111}{CPN Analysis Results: Client-Server Interactions\relax }{figure.36}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Publish-Subscribe Interactions}{111}{subsection.7.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{111}{figure.37}}
+\newlabel{fig:publish-subscribe}{{37}{111}{Experimental Observation: Publish-Subscribe Interactions\relax }{figure.37}{}}
 \citation{kumar2014colored}
-\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces Experimental Observation: Client-Server Interactions\relax }}{102}{figure.34}}
-\newlabel{fig:client-server}{{34}{102}{Experimental Observation: Client-Server Interactions\relax }{figure.34}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.3}Trajectory Planner}{102}{subsection.7.3.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces CPN Analysis Results: Client-Server Interactions\relax }}{103}{figure.35}}
-\newlabel{fig:client-server-cpn}{{35}{103}{CPN Analysis Results: Client-Server Interactions\relax }{figure.35}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.4}Time-triggered Operations}{103}{subsection.7.3.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{104}{figure.36}}
-\newlabel{fig:publish-subscribe}{{36}{104}{Experimental Observation: Publish-Subscribe Interactions\relax }{figure.36}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.5}Long-Running Operations}{104}{subsection.7.3.5}}
-\newlabel{sec:long_running_operations}{{7.3.5}{104}{Long-Running Operations}{subsection.7.3.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{105}{figure.37}}
-\newlabel{fig:publish-subscribe-cpn}{{37}{105}{CPN Analysis Results: Publish-Subscribe Interactions\relax }{figure.37}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{106}{figure.38}}
-\newlabel{fig:trajectory-planner}{{38}{106}{Experimental Observation: Trajectory Planner\relax }{figure.38}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.5.1}Challenges}{106}{subsubsection.7.3.5.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{107}{figure.39}}
-\newlabel{fig:trajectory-planner-cpn}{{39}{107}{CPN Analysis Results: Trajectory Planner\relax }{figure.39}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.5.2}Implementation and Results}{107}{subsubsection.7.3.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{112}{figure.38}}
+\newlabel{fig:publish-subscribe-cpn}{{38}{112}{CPN Analysis Results: Publish-Subscribe Interactions\relax }{figure.38}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.3}Trajectory Planner}{112}{subsection.7.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{113}{figure.39}}
+\newlabel{fig:trajectory-planner}{{39}{113}{Experimental Observation: Trajectory Planner\relax }{figure.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{114}{figure.40}}
+\newlabel{fig:trajectory-planner-cpn}{{40}{114}{CPN Analysis Results: Trajectory Planner\relax }{figure.40}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.4}Time-triggered Operations}{114}{subsection.7.3.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{115}{figure.41}}
+\newlabel{fig:periodic-timers}{{41}{115}{Experimental Observation: Periodic Timers\relax }{figure.41}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{116}{figure.42}}
+\newlabel{fig:periodic-timers-cpn}{{42}{116}{CPN Analysis Results: Periodic Timers\relax }{figure.42}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.5}Long-Running Operations}{116}{subsection.7.3.5}}
+\newlabel{sec:long_running_operations}{{7.3.5}{116}{Long-Running Operations}{subsection.7.3.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.5.1}Challenges}{117}{subsubsection.7.3.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {43}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{118}{figure.43}}
+\newlabel{fig:lro-semantics}{{43}{118}{Long Running Operations - Timing Diagram\relax }{figure.43}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.5.2}Implementation and Results}{118}{subsubsection.7.3.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {44}{\ignorespaces Long Running Operation - Software Model\relax }}{119}{figure.44}}
+\newlabel{fig:three-components-lro-rosmod}{{44}{119}{Long Running Operation - Software Model\relax }{figure.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {45}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{120}{figure.45}}
+\newlabel{fig:three-components-lro}{{45}{120}{Experimental Observation: Composed Component Assembly\relax }{figure.45}{}}
 \citation{NASA_SL}
-\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{108}{figure.40}}
-\newlabel{fig:periodic-timers}{{40}{108}{Experimental Observation: Periodic Timers\relax }{figure.40}{}}
 \citation{NASA_SL}
-\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{109}{figure.41}}
-\newlabel{fig:periodic-timers-cpn}{{41}{109}{CPN Analysis Results: Periodic Timers\relax }{figure.41}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.6}Cyber-Physical Systems: Autonomous Ground Support Equipment (AGSE) Robot}{109}{subsection.7.3.6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{110}{figure.42}}
-\newlabel{fig:lro-semantics}{{42}{110}{Long Running Operations - Timing Diagram\relax }{figure.42}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {43}{\ignorespaces Long Running Operation - Software Model\relax }}{111}{figure.43}}
-\newlabel{fig:three-components-lro-rosmod}{{43}{111}{Long Running Operation - Software Model\relax }{figure.43}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {44}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{112}{figure.44}}
-\newlabel{fig:three-components-lro}{{44}{112}{Experimental Observation: Composed Component Assembly\relax }{figure.44}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.6.1}Distributed Deployment}{112}{subsubsection.7.3.6.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {45}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{113}{figure.45}}
-\newlabel{fig:three-components-lro-cpn}{{45}{113}{CPN Analysis Results: Composed Component Assembly\relax }{figure.45}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {46}{\ignorespaces AGSE Control Flow Chart\relax }}{114}{figure.46}}
-\newlabel{fig:AGSE-FlowChart}{{46}{114}{AGSE Control Flow Chart\relax }{figure.46}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {47}{\ignorespaces AGSE Package Deployment\relax }}{115}{figure.47}}
-\newlabel{fig:AGSE_Deployment}{{47}{115}{AGSE Package Deployment\relax }{figure.47}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.6.2}Software Prototyping with ROSMOD}{115}{subsubsection.7.3.6.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {48}{\ignorespaces AGSE Component Assembly\relax }}{116}{figure.48}}
-\newlabel{fig:AGSE}{{48}{116}{AGSE Component Assembly\relax }{figure.48}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.6.3}Performance Assessment}{117}{subsubsection.7.3.6.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {46}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{121}{figure.46}}
+\newlabel{fig:three-components-lro-cpn}{{46}{121}{CPN Analysis Results: Composed Component Assembly\relax }{figure.46}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.6}Cyber-Physical Systems: Autonomous Ground Support Equipment (AGSE) Robot}{121}{subsection.7.3.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {47}{\ignorespaces AGSE Control Flow Chart\relax }}{123}{figure.47}}
+\newlabel{fig:AGSE-FlowChart}{{47}{123}{AGSE Control Flow Chart\relax }{figure.47}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.6.1}Distributed Deployment}{124}{subsubsection.7.3.6.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {48}{\ignorespaces AGSE Package Deployment\relax }}{124}{figure.48}}
+\newlabel{fig:AGSE_Deployment}{{48}{124}{AGSE Package Deployment\relax }{figure.48}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.6.2}Software Prototyping with ROSMOD}{126}{subsubsection.7.3.6.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {49}{\ignorespaces AGSE Component Assembly\relax }}{126}{figure.49}}
+\newlabel{fig:AGSE}{{49}{126}{AGSE Component Assembly\relax }{figure.49}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {50}{\ignorespaces AGSE and rocket used in the 2014-2015 NASA SLI competition. The UIP is shown in the bottom left of the picture, the Motor Control Board is on the top of the arm of the AGSE, and the NVIDIA Jetson is under the rocket.\relax }}{128}{figure.50}}
+\newlabel{fig:competition_AGSE}{{50}{128}{AGSE and rocket used in the 2014-2015 NASA SLI competition. The UIP is shown in the bottom left of the picture, the Motor Control Board is on the top of the arm of the AGSE, and the NVIDIA Jetson is under the rocket.\relax }{figure.50}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.6.3}Performance Assessment}{128}{subsubsection.7.3.6.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {51}{\ignorespaces AGSE Calibration and Testing\relax }}{129}{figure.51}}
+\newlabel{fig:AGSE_Operation}{{51}{129}{AGSE Calibration and Testing\relax }{figure.51}{}}
 \bibstyle{abbrv}
 \bibdata{00-Dissertation}
-\@writefile{lof}{\contentsline {figure}{\numberline {49}{\ignorespaces AGSE and rocket used in the 2014-2015 NASA SLI competition. The UIP is shown in the bottom left of the picture, the Motor Control Board is on the top of the arm of the AGSE, and the NVIDIA Jetson is under the rocket.\relax }}{118}{figure.49}}
-\newlabel{fig:competition_AGSE}{{49}{118}{AGSE and rocket used in the 2014-2015 NASA SLI competition. The UIP is shown in the bottom left of the picture, the Motor Control Board is on the top of the arm of the AGSE, and the NVIDIA Jetson is under the rocket.\relax }{figure.49}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {50}{\ignorespaces AGSE Calibration and Testing\relax }}{119}{figure.50}}
-\newlabel{fig:AGSE_Operation}{{50}{119}{AGSE Calibration and Testing\relax }{figure.50}{}}
 \bibcite{BBB}{{1}{}{{}}{{}}}
 \bibcite{CubeSat}{{2}{}{{}}{{}}}
 \bibcite{CubeSat_Mars}{{3}{}{{}}{{}}}
@@ -426,7 +433,7 @@
 \bibcite{bengtsson1996uppaal}{{14}{}{{}}{{}}}
 \bibcite{beydeda2005model}{{15}{}{{}}{{}}}
 \bibcite{bjorner2001deductive}{{16}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{REFERENCES}{120}{chapter*.8}}
+\@writefile{toc}{\contentsline {chapter}{REFERENCES}{131}{chapter*.8}}
 \bibcite{boehm1988spiral}{{17}{}{{}}{{}}}
 \bibcite{broy2012specification}{{18}{}{{}}{{}}}
 \bibcite{burke2010distributed}{{19}{}{{}}{{}}}

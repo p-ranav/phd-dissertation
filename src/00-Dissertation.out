@@ -60,11 +60,13 @@
 \BOOKMARK [2][-]{subsection.7.1.1}{Architecture}{section.7.1}% 60
 \BOOKMARK [2][-]{subsection.7.1.2}{Design and Construction}{section.7.1}% 61
 \BOOKMARK [1][-]{section.7.2}{ROSMOD Software Infrastructure}{chapter.VII}% 62
-\BOOKMARK [1][-]{section.7.3}{Evaluation of Timing Analysis Results}{chapter.VII}% 63
-\BOOKMARK [2][-]{subsection.7.3.1}{Client-Server Interactions}{section.7.3}% 64
-\BOOKMARK [2][-]{subsection.7.3.2}{Publish-Subscribe Interactions}{section.7.3}% 65
-\BOOKMARK [2][-]{subsection.7.3.3}{Trajectory Planner}{section.7.3}% 66
-\BOOKMARK [2][-]{subsection.7.3.4}{Time-triggered Operations}{section.7.3}% 67
-\BOOKMARK [2][-]{subsection.7.3.5}{Long-Running Operations}{section.7.3}% 68
-\BOOKMARK [2][-]{subsection.7.3.6}{Cyber-Physical Systems: Autonomous Ground Support Equipment \(AGSE\) Robot}{section.7.3}% 69
-\BOOKMARK [0][-]{chapter*.8}{REFERENCES}{}% 70
+\BOOKMARK [2][-]{subsection.7.2.1}{Software Infrastructure}{section.7.2}% 63
+\BOOKMARK [2][-]{subsection.7.2.2}{Deployment Infrastructure}{section.7.2}% 64
+\BOOKMARK [1][-]{section.7.3}{Evaluation of Timing Analysis Results}{chapter.VII}% 65
+\BOOKMARK [2][-]{subsection.7.3.1}{Client-Server Interactions}{section.7.3}% 66
+\BOOKMARK [2][-]{subsection.7.3.2}{Publish-Subscribe Interactions}{section.7.3}% 67
+\BOOKMARK [2][-]{subsection.7.3.3}{Trajectory Planner}{section.7.3}% 68
+\BOOKMARK [2][-]{subsection.7.3.4}{Time-triggered Operations}{section.7.3}% 69
+\BOOKMARK [2][-]{subsection.7.3.5}{Long-Running Operations}{section.7.3}% 70
+\BOOKMARK [2][-]{subsection.7.3.6}{Cyber-Physical Systems: Autonomous Ground Support Equipment \(AGSE\) Robot}{section.7.3}% 71
+\BOOKMARK [0][-]{chapter*.8}{REFERENCES}{}% 72

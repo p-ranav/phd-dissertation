@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.10)  11 APR 2016 16:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.10)  11 APR 2016 16:48
 entering extended mode
 **./00-Dissertation.tex
 (00-Dissertation.tex
@@ -142,6 +142,10 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
+)
+("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\placeins\placeins.
+sty"
+Package: placeins 2005/04/18  v 2.2
 )
 ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\bibentry.st
 y"
@@ -678,27 +682,27 @@ LaTeX Warning: Label `fig:rmi_application' multiply defined.
 )
 \openout1 = `00-Dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 70.
  ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 69.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 70.
 ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -724,7 +728,7 @@ Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count153
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring ON on input line 69.
+Package hyperref Info: Link coloring ON on input line 70.
 
 ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -736,69 +740,69 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count154
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
  (00-Dissertation.out) (00-Dissertation.out)
 \@outlinefile=\write5
 \openout5 = `00-Dissertation.out'.
 
  (00-Dissertation.bbl)
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 80
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 81
 .
 
 ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd
 "
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 80
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 81
 .
 
 ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd
 "
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 80
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 81
 .
 
 ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd
 "
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 80
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 81
 .
 
 ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd
 "
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 80.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 81.
  ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
 
  []
 
@@ -806,7 +810,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--80
 
 {C:/Users/prana/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 82.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 83.
 
 (00-Dissertation.toc
 Overfull \hbox (17.27686pt too wide) in paragraph at lines 27--27
@@ -817,7 +821,7 @@ Overfull \hbox (17.27686pt too wide) in paragraph at lines 27--27
 [2
 
 ]
-Overfull \hbox (1.28185pt too wide) in paragraph at lines 87--87
+Overfull \hbox (1.28185pt too wide) in paragraph at lines 92--92
  [][] []\T1/ptm/m/n/12 Cyber-Physical Sys-tems: Au-tonomous Ground Sup-port 
  []
 
@@ -825,19 +829,19 @@ Overfull \hbox (1.28185pt too wide) in paragraph at lines 87--87
 \tf@toc=\write6
 \openout6 = `00-Dissertation.toc'.
 
- [3] (00-Dissertation.lot)
+ [3] [4] (00-Dissertation.lot)
 \tf@lot=\write7
 \openout7 = `00-Dissertation.lot'.
 
- [4
+ [5
 
-] (00-Dissertation.lof [5
+] (00-Dissertation.lof [6
 
-] [6])
+] [7])
 \tf@lof=\write8
 \openout8 = `00-Dissertation.lof'.
 
- [7]
+ [8]
 (01-Introduction.tex
 CHAPTER I.
 [1
@@ -845,7 +849,7 @@ CHAPTER I.
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 12.
- [2] <img/sdlc.png, id=518, 647.41875pt x 620.3175pt>
+ [2] <img/sdlc.png, id=534, 647.41875pt x 620.3175pt>
 File: img/sdlc.png Graphic file (type png)
  <use img/sdlc.png>
 Package pdftex.def Info: img/sdlc.png used on input line 20.
@@ -864,7 +868,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.07397pt on input line 21.
 
-<img/big_picture_2.png, id=519, 368.0952pt x 292.9344pt>
+<img/big_picture_2.png, id=535, 368.0952pt x 292.9344pt>
 File: img/big_picture_2.png Graphic file (type png)
 
 <use img/big_picture_2.png>
@@ -898,7 +902,7 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 74.
 
 ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [21] [22] [23] [24] [25] <img/pn.png, id=729, 551.05875pt x 557.08125pt>
+) [21] [22] [23] [24] [25] <img/pn.png, id=745, 551.05875pt x 557.08125pt>
 File: img/pn.png Graphic file (type png)
 
 <use img/pn.png>
@@ -920,7 +924,7 @@ Overfull \hbox (6.0038pt too wide) in paragraph at lines 8--9
 grated ACE ORB (CIAO)
  []
 
-<img/ROSMOD_Component.png, id=878, 1288.815pt x 649.67719pt>
+<img/ROSMOD_Component.png, id=894, 1288.815pt x 649.67719pt>
 File: img/ROSMOD_Component.png Graphic file (type png)
 
 <use img/ROSMOD_Component.png>
@@ -929,7 +933,7 @@ Package pdftex.def Info: img/ROSMOD_Component.png used on input line 12.
  [40
 
 ] [41 <./img/ROSMOD_Component.png>] [42]
-<img/cop_execution_semantics.png, id=911, 1120.9378pt x 555.57562pt>
+<img/cop_execution_semantics.png, id=927, 1120.9378pt x 555.57562pt>
 File: img/cop_execution_semantics.png Graphic file (type png)
 
 <use img/cop_execution_semantics.png>
@@ -945,7 +949,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.43999pt on input line 29.
  [43 <./img/cop_execution_semantics.png>]
-<img/partition_scheduling.png, id=919, 1271.5003pt x 582.67688pt>
+<img/partition_scheduling.png, id=935, 1271.5003pt x 582.67688pt>
 File: img/partition_scheduling.png Graphic file (type png)
 
 <use img/partition_scheduling.png>
@@ -962,21 +966,21 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 25.
 ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-[49] <img/hlcpn_cropped.jpg, id=962, 819.06pt x 662.475pt>
+[49] <img/hlcpn_cropped.jpg, id=978, 819.06pt x 662.475pt>
 File: img/hlcpn_cropped.jpg Graphic file (type jpg)
 
 <use img/hlcpn_cropped.jpg>
 Package pdftex.def Info: img/hlcpn_cropped.jpg used on input line 31.
 (pdftex.def)             Requested size: 433.62pt x 350.72595pt.
  [50 <./img/hlcpn_cropped.jpg>]
-<img/hlcpn_structure.png, id=969, 651.3936pt x 529.4982pt>
+<img/hlcpn_structure.png, id=985, 651.3936pt x 529.4982pt>
 File: img/hlcpn_structure.png Graphic file (type png)
 
 <use img/hlcpn_structure.png>
 Package pdftex.def Info: img/hlcpn_structure.png used on input line 40.
 (pdftex.def)             Requested size: 433.62pt x 352.48352pt.
  [51 <./img/hlcpn_structure.png>] [52]
-<img/source-thread_execution_cycle.png, id=986, 638.385pt x 454.8192pt>
+<img/source-thread_execution_cycle.png, id=1002, 638.385pt x 454.8192pt>
 File: img/source-thread_execution_cycle.png Graphic file (type png)
 
 <use img/source-thread_execution_cycle.png>
@@ -984,14 +988,14 @@ Package pdftex.def Info: img/source-thread_execution_cycle.png used on input li
 ne 87.
 (pdftex.def)             Requested size: 433.62pt x 308.9329pt.
  [53 <./img/source-thread_execution_cycle.png>] [54] <img/rmi_application.png, 
-id=1000, 831.85782pt x 385.44pt>
+id=1016, 831.85782pt x 385.44pt>
 File: img/rmi_application.png Graphic file (type png)
 
 <use img/rmi_application.png>
 Package pdftex.def Info: img/rmi_application.png used on input line 118.
 (pdftex.def)             Requested size: 433.62pt x 200.9181pt.
  [55]
-<img/cpn_rmi_app_timer_token.png, id=1007, 1136.74687pt x 198.7425pt>
+<img/cpn_rmi_app_timer_token.png, id=1023, 1136.74687pt x 198.7425pt>
 File: img/cpn_rmi_app_timer_token.png Graphic file (type png)
 
 <use img/cpn_rmi_app_timer_token.png>
@@ -999,7 +1003,7 @@ Package pdftex.def Info: img/cpn_rmi_app_timer_token.png used on input line 127
 .
 (pdftex.def)             Requested size: 433.62pt x 75.81102pt.
  [56 <./img/rmi_application.png> <./img/cpn_rmi_app_timer_token.png>]
-<img/cpn_rmi_app_server_token.png, id=1013, 1138.2525pt x 158.09062pt>
+<img/cpn_rmi_app_server_token.png, id=1029, 1138.2525pt x 158.09062pt>
 File: img/cpn_rmi_app_server_token.png Graphic file (type png)
 
 <use img/cpn_rmi_app_server_token.png>
@@ -1007,7 +1011,7 @@ Package pdftex.def Info: img/cpn_rmi_app_server_token.png used on input line 13
 6.
 (pdftex.def)             Requested size: 433.62pt x 60.22461pt.
  [57 <./img/cpn_rmi_app_server_token.png>] <img/component_interactions.jpg, id=
-1022, 685.8122pt x 232.61906pt>
+1038, 685.8122pt x 232.61906pt>
 File: img/component_interactions.jpg Graphic file (type jpg)
 
 <use img/component_interactions.jpg>
@@ -1015,7 +1019,7 @@ Package pdftex.def Info: img/component_interactions.jpg used on input line 155.
 
 (pdftex.def)             Requested size: 433.62pt x 147.08319pt.
 
-<img/cpn_rmi_app_iop.png, id=1024, 1197.72469pt x 208.52907pt>
+<img/cpn_rmi_app_iop.png, id=1040, 1197.72469pt x 208.52907pt>
 File: img/cpn_rmi_app_iop.png Graphic file (type png)
 
 <use img/cpn_rmi_app_iop.png>
@@ -1026,21 +1030,21 @@ Package pdftex.def Info: img/cpn_rmi_app_iop.png used on input line 164.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [58 <./img/component_interactions.jpg>]
-<img/timers.jpg, id=1031, 498.36188pt x 356.83313pt>
+<img/timers.jpg, id=1047, 498.36188pt x 356.83313pt>
 File: img/timers.jpg Graphic file (type jpg)
  <use img/timers.jpg>
 Package pdftex.def Info: img/timers.jpg used on input line 182.
 (pdftex.def)             Requested size: 433.62pt x 310.48586pt.
 
 [59 <./img/cpn_rmi_app_iop.png>] [60 <./img/timers.jpg>] [61]
-<./img/BL-EBNF.png, id=1046, 1279.78125pt x 751.30687pt>
+<./img/BL-EBNF.png, id=1062, 1279.78125pt x 751.30687pt>
 File: ./img/BL-EBNF.png Graphic file (type png)
 
 <use ./img/BL-EBNF.png>
 Package pdftex.def Info: ./img/BL-EBNF.png used on input line 207.
 (pdftex.def)             Requested size: 433.62pt x 254.55823pt.
  [62]
-<./img/abstract_business_logic.png, id=1054, 402.303pt x 406.1574pt>
+<./img/abstract_business_logic.png, id=1070, 402.303pt x 406.1574pt>
 File: ./img/abstract_business_logic.png Graphic file (type png)
 
 <use ./img/abstract_business_logic.png>
@@ -1048,7 +1052,7 @@ Package pdftex.def Info: ./img/abstract_business_logic.png used on input line 2
 18.
 (pdftex.def)             Requested size: 346.89731pt x 350.23676pt.
  [63 <./img/BL-EBNF.png>]
-<./img/cpn_business_logic_token_example.png, id=1064, 1187.18532pt x 185.19188p
+<./img/cpn_business_logic_token_example.png, id=1080, 1187.18532pt x 185.19188p
 t>
 File: ./img/cpn_business_logic_token_example.png Graphic file (type png)
  <use ./img/cpn_business_logic_token_example.png>
@@ -1058,7 +1062,7 @@ ut line 227.
 ) (06-Analysis.tex [64 <./img/abstract_business_logic.png> <./img/cpn_business_
 logic_token_example.png>]
 CHAPTER VI.
-<./img/Case_Study_Fixed.png, id=1071, 1047.915pt x 524.71031pt>
+<./img/Case_Study_Fixed.png, id=1087, 1047.915pt x 524.71031pt>
 File: ./img/Case_Study_Fixed.png Graphic file (type png)
 
 <use ./img/Case_Study_Fixed.png>
@@ -1067,14 +1071,14 @@ Package pdftex.def Info: ./img/Case_Study_Fixed.png used on input line 8.
  [65
 
  <./img/Case_Study_Fixed.png>]
-<./img/scatter.jpg, id=1076, 814.04124pt x 478.78876pt>
+<./img/scatter.jpg, id=1093, 814.04124pt x 478.78876pt>
 File: ./img/scatter.jpg Graphic file (type jpg)
 
 <use ./img/scatter.jpg>
 Package pdftex.def Info: ./img/scatter.jpg used on input line 21.
 (pdftex.def)             Requested size: 303.53267pt x 178.52254pt.
  [66] [67 <./img/scatter.jpg>] [68]
-<./img/Deadline_Violations.png, id=1098, 874.01532pt x 310.91156pt>
+<./img/Deadline_Violations.png, id=1114, 874.01532pt x 310.91156pt>
 File: ./img/Deadline_Violations.png Graphic file (type png)
 
 <use ./img/Deadline_Violations.png>
@@ -1105,7 +1109,7 @@ Overfull \hbox (2.22693pt too wide) in paragraph at lines 66--66
 []|$\OML/ztmcm/m/it/12 T[]$
  []
 
-<./img/Response_Times.png, id=1105, 684.30656pt x 194.22563pt>
+<./img/Response_Times.png, id=1121, 684.30656pt x 194.22563pt>
 File: ./img/Response_Times.png Graphic file (type png)
 
 <use ./img/Response_Times.png>
@@ -1121,27 +1125,27 @@ nput line 106.
 Package natbib Warning: Citation `MoDeVVa' on page 74 undefined on input line 1
 25.
 
-[74] [75] [76] <./img/clock.png, id=1154, 921.4425pt x 152.06813pt>
+[74] [75] [76] <./img/clock.png, id=1170, 921.4425pt x 152.06813pt>
 File: ./img/clock.png Graphic file (type png)
 
 <use ./img/clock.png>
 Package pdftex.def Info: ./img/clock.png used on input line 154.
 (pdftex.def)             Requested size: 303.53267pt x 50.09213pt.
  [77] [78 <./img/clock.png>]
-<./img/time.png, id=1165, 911.65594pt x 537.50812pt>
+<./img/time.png, id=1181, 911.65594pt x 537.50812pt>
 File: ./img/time.png Graphic file (type png)
  <use ./img/time.png>
 Package pdftex.def Info: ./img/time.png used on input line 167.
 (pdftex.def)             Requested size: 433.62pt x 255.66348pt.
 
-[79 <./img/time.png>] [80] <./img/dd.png, id=1178, 803.25093pt x 807.7678pt>
+[79 <./img/time.png>] [80] <./img/dd.png, id=1194, 803.25093pt x 807.7678pt>
 File: ./img/dd.png Graphic file (type png)
 
 <use ./img/dd.png>
 Package pdftex.def Info: ./img/dd.png used on input line 181.
 (pdftex.def)             Requested size: 346.89731pt x 348.84943pt.
  [81 <./img/dd.png>] [82] [83] [84]
-<./img/Generated_Model.png, id=1218, 1379.90532pt x 580.41844pt>
+<./img/Generated_Model.png, id=1234, 1379.90532pt x 580.41844pt>
 File: ./img/Generated_Model.png Graphic file (type png)
 
 <use ./img/Generated_Model.png>
@@ -1155,14 +1159,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: Reference `fig:BL_Model' on page 85 undefined on input line 219.
 
 
-[85] <./img/sl.png, id=1223, 754.31813pt x 387.69844pt>
+[85] <./img/sl.png, id=1239, 754.31813pt x 387.69844pt>
 File: ./img/sl.png Graphic file (type png)
  <use ./img/sl.png>
 Package pdftex.def Info: ./img/sl.png used on input line 223.
 (pdftex.def)             Requested size: 433.62pt x 222.8657pt.
 
 [86 <./img/Generated_Model.png>]
-<./img/asap.png, id=1230, 306.39468pt x 207.02344pt>
+<./img/asap.png, id=1246, 306.39468pt x 207.02344pt>
 File: ./img/asap.png Graphic file (type png)
  <use ./img/asap.png>
 Package pdftex.def Info: ./img/asap.png used on input line 232.
@@ -1180,7 +1184,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 [89
 
 ] [90] [91]
-<img/rcps-architecture.png, id=1267, 1851.16594pt x 1044.15094pt>
+<img/rcps-architecture.png, id=1283, 1851.16594pt x 1044.15094pt>
 File: img/rcps-architecture.png Graphic file (type png)
 
 <use img/rcps-architecture.png>
@@ -1190,7 +1194,7 @@ Package pdftex.def Info: img/rcps-architecture.png used on input line 35.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[92] <img/bbb.jpg, id=1278, 1461.46pt x 1216.545pt>
+[92] <img/bbb.jpg, id=1294, 1461.46pt x 1216.545pt>
 File: img/bbb.jpg Graphic file (type jpg)
  <use img/bbb.jpg>
 Package pdftex.def Info: img/bbb.jpg used on input line 44.
@@ -1200,233 +1204,234 @@ Package pdftex.def Info: img/bbb.jpg used on input line 44.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [93 <./img/rcps-architecture.png>] [94 <./img/bbb.jpg>]
-<img/testbed.png, id=1293, 698.61pt x 355.0866pt>
+<img/testbed.png, id=1309, 698.61pt x 355.0866pt>
 File: img/testbed.png Graphic file (type png)
  <use img/testbed.png>
 Package pdftex.def Info: img/testbed.png used on input line 61.
 (pdftex.def)             Requested size: 433.62pt x 220.40063pt.
 
 [95 <./img/testbed.png>]
+
+LaTeX Warning: Reference `fig:rosmod_deployment' on page 96 undefined on input 
+line 70.
+
+
 Overfull \hbox (0.5207pt too wide) in paragraph at lines 70--71
 []\T1/ptm/m/n/12 The soft-ware in-fras-truc-ture in-cludes our model-driven too
 l-suite and DREMS-style com-
  []
 
-<img/ROSMOD_Project.png, id=1306, 1245.9047pt x 512.66531pt>
-File: img/ROSMOD_Project.png Graphic file (type png)
+<img/ROSMOD-Meta2.png, id=1320, 1169.87062pt x 1382.16376pt>
+File: img/ROSMOD-Meta2.png Graphic file (type png)
 
-<use img/ROSMOD_Project.png>
-Package pdftex.def Info: img/ROSMOD_Project.png used on input line 78.
-(pdftex.def)             Requested size: 433.62pt x 178.42642pt.
+<use img/ROSMOD-Meta2.png>
+Package pdftex.def Info: img/ROSMOD-Meta2.png used on input line 94.
+(pdftex.def)             Requested size: 433.62pt x 512.29945pt.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <12> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 106.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 106.
+LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
+(Font)              scaled to size 11.03998pt on input line 106.
+ [96] [97 <./img/ROSMOD-Meta2.png>]
 
+LaTeX Warning: Reference `fig:ROSMOD_Component' on page 98 undefined on input l
+ine 151.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[98
 
-[96] [97 <./img/ROSMOD_Project.png>]
-<img/workflow.png, id=1320, 878.53218pt x 545.78906pt>
-File: img/workflow.png Graphic file (type png)
- <use img/workflow.png>
-Package pdftex.def Info: img/workflow.png used on input line 97.
-(pdftex.def)             Requested size: 433.62pt x 269.39607pt.
+] [99] [100] [101] [102]
+<img/Code_Generation.png, id=1361, 3645.11812pt x 2213.26875pt>
+File: img/Code_Generation.png Graphic file (type png)
 
+<use img/Code_Generation.png>
+Package pdftex.def Info: img/Code_Generation.png used on input line 328.
+(pdftex.def)             Requested size: 433.62pt x 263.28432pt.
+ [103] [104 <./img/Code_Generation.png>]
+<img/DeploymentInfrastructure.png, id=1373, 652.839pt x 530.4618pt>
+File: img/DeploymentInfrastructure.png Graphic file (type png)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[98] [99 <./img/workflow.png>]
+<use img/DeploymentInfrastructure.png>
+Package pdftex.def Info: img/DeploymentInfrastructure.png used on input line 39
+6.
+(pdftex.def)             Requested size: 433.62pt x 352.34795pt.
+ [105] [106 <./img/DeploymentInfrastructure.png>] [107] [108]
 File: img/rmi_application.png Graphic file (type png)
  <use img/rmi_application.png>
-Package pdftex.def Info: img/rmi_application.png used on input line 112.
+Package pdftex.def Info: img/rmi_application.png used on input line 467.
 (pdftex.def)             Requested size: 433.62pt x 200.9181pt.
- [100]
-<img/client-server.png, id=1343, 1463.4675pt x 662.475pt>
+ [109]
+<img/client-server.png, id=1404, 1463.4675pt x 662.475pt>
 File: img/client-server.png Graphic file (type png)
 
 <use img/client-server.png>
-Package pdftex.def Info: img/client-server.png used on input line 128.
+Package pdftex.def Info: img/client-server.png used on input line 483.
 (pdftex.def)             Requested size: 433.62pt x 196.28766pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/client-server-cpn.png, id=1345, 1435.61343pt x 750.55406pt>
+<img/client-server-cpn.png, id=1406, 1435.61343pt x 750.55406pt>
 File: img/client-server-cpn.png Graphic file (type png)
 
 <use img/client-server-cpn.png>
-Package pdftex.def Info: img/client-server-cpn.png used on input line 137.
+Package pdftex.def Info: img/client-server-cpn.png used on input line 493.
 (pdftex.def)             Requested size: 433.62pt x 226.70259pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/publish-subscribe.png, id=1346, 1439.3775pt x 642.90187pt>
+[110 <./img/client-server.png>]
+<img/publish-subscribe.png, id=1412, 1439.3775pt x 642.90187pt>
 File: img/publish-subscribe.png Graphic file (type png)
 
 <use img/publish-subscribe.png>
-Package pdftex.def Info: img/publish-subscribe.png used on input line 149.
+Package pdftex.def Info: img/publish-subscribe.png used on input line 505.
 (pdftex.def)             Requested size: 433.62pt x 193.67645pt.
- [101]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/publish-subscribe-cpn.png, id=1353, 1426.57968pt x 764.10469pt>
+<img/publish-subscribe-cpn.png, id=1415, 1426.57968pt x 764.10469pt>
 File: img/publish-subscribe-cpn.png Graphic file (type png)
 
 <use img/publish-subscribe-cpn.png>
-Package pdftex.def Info: img/publish-subscribe-cpn.png used on input line 158.
+Package pdftex.def Info: img/publish-subscribe-cpn.png used on input line 515.
 (pdftex.def)             Requested size: 433.62pt x 232.25293pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/trajectory-planner.png, id=1356, 1450.6697pt x 842.39719pt>
+ [111 <./img/client-server-cpn.png> <./img/publish-subscribe.png>]
+<img/trajectory-planner.png, id=1424, 1450.6697pt x 842.39719pt>
 File: img/trajectory-planner.png Graphic file (type png)
 
 <use img/trajectory-planner.png>
-Package pdftex.def Info: img/trajectory-planner.png used on input line 170.
+Package pdftex.def Info: img/trajectory-planner.png used on input line 527.
 (pdftex.def)             Requested size: 433.62pt x 251.79562pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[102 <./img/client-server.png>]
-<img/trajectory-planner-cpn.png, id=1363, 1428.08531pt x 755.07094pt>
+[112 <./img/publish-subscribe-cpn.png>]
+<img/trajectory-planner-cpn.png, id=1430, 1428.08531pt x 755.07094pt>
 File: img/trajectory-planner-cpn.png Graphic file (type png)
 
 <use img/trajectory-planner-cpn.png>
-Package pdftex.def Info: img/trajectory-planner-cpn.png used on input line 179.
+Package pdftex.def Info: img/trajectory-planner-cpn.png used on input line 537.
 
 (pdftex.def)             Requested size: 433.62pt x 229.26512pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[103 <./img/client-server-cpn.png>]
-<img/periodic-timers.png, id=1371, 1446.15282pt x 948.54375pt>
+[113 <./img/trajectory-planner.png>] [114 <./img/trajectory-planner-cpn.png>]
+<img/periodic-timers.png, id=1444, 1446.15282pt x 948.54375pt>
 File: img/periodic-timers.png Graphic file (type png)
 
 <use img/periodic-timers.png>
-Package pdftex.def Info: img/periodic-timers.png used on input line 194.
+Package pdftex.def Info: img/periodic-timers.png used on input line 553.
 (pdftex.def)             Requested size: 433.62pt x 284.40611pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/periodic-timers-cpn.png, id=1372, 1431.09656pt x 947.03813pt>
+<img/periodic-timers-cpn.png, id=1445, 1431.09656pt x 947.03813pt>
 File: img/periodic-timers-cpn.png Graphic file (type png)
 
 <use img/periodic-timers-cpn.png>
-Package pdftex.def Info: img/periodic-timers-cpn.png used on input line 201.
+Package pdftex.def Info: img/periodic-timers-cpn.png used on input line 561.
 (pdftex.def)             Requested size: 433.62pt x 286.94595pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[104 <./img/publish-subscribe.png>] [105 <./img/publish-subscribe-cpn.png>]
-<img/lro-semantics.png, id=1383, 1145.78062pt x 542.025pt>
+[115 <./img/periodic-timers.png>] [116 <./img/periodic-timers-cpn.png>]
+<img/lro-semantics.png, id=1456, 1145.78062pt x 542.025pt>
 File: img/lro-semantics.png Graphic file (type png)
 
 <use img/lro-semantics.png>
-Package pdftex.def Info: img/lro-semantics.png used on input line 217.
+Package pdftex.def Info: img/lro-semantics.png used on input line 578.
 (pdftex.def)             Requested size: 433.62pt x 205.12802pt.
- [106 <./img/trajectory-planner.png>]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/three-components-lro-rosmod.png, id=1392, 804.00375pt x 443.40656pt>
+[117]
+<img/three-components-lro-rosmod.png, id=1464, 804.00375pt x 443.40656pt>
 File: img/three-components-lro-rosmod.png Graphic file (type png)
 
 <use img/three-components-lro-rosmod.png>
 Package pdftex.def Info: img/three-components-lro-rosmod.png used on input line
- 228.
+ 590.
 (pdftex.def)             Requested size: 433.62pt x 239.13828pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[107 <./img/trajectory-planner-cpn.png>]
-<img/three-components-lro.png, id=1401, 1432.60219pt x 948.54375pt>
+[118 <./img/lro-semantics.png>]
+<img/three-components-lro.png, id=1471, 1432.60219pt x 948.54375pt>
 File: img/three-components-lro.png Graphic file (type png)
 
 <use img/three-components-lro.png>
-Package pdftex.def Info: img/three-components-lro.png used on input line 239.
+Package pdftex.def Info: img/three-components-lro.png used on input line 600.
 (pdftex.def)             Requested size: 433.62pt x 287.09819pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/three-components-lro-cpn.png, id=1402, 730.60454pt x 500.62032pt>
+[119 <./img/three-components-lro-rosmod.png>]
+<img/three-components-lro-cpn.png, id=1479, 730.60454pt x 500.62032pt>
 File: img/three-components-lro-cpn.png Graphic file (type png)
 
 <use img/three-components-lro-cpn.png>
-Package pdftex.def Info: img/three-components-lro-cpn.png used on input line 24
-6.
+Package pdftex.def Info: img/three-components-lro-cpn.png used on input line 61
+1.
 (pdftex.def)             Requested size: 433.62pt x 297.12036pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[120 <./img/three-components-lro.png>]
 
-Package natbib Warning: Citation `NASA_SL' on page 108 undefined on input line 
-255.
+Package natbib Warning: Citation `NASA_SL' on page 121 undefined on input line 
+621.
 
-[108 <./img/periodic-timers.png>]
 
-Package natbib Warning: Citation `NASA_SL' on page 109 undefined on input line 
-261.
+Package natbib Warning: Citation `NASA_SL' on page 121 undefined on input line 
+627.
 
-[109 <./img/periodic-timers-cpn.png>]
-<img/AGSE-FlowChart.png, id=1415, 4775.08969pt x 5573.07094pt>
+[121 <./img/three-components-lro-cpn.png>]
+<img/AGSE-FlowChart.png, id=1491, 4775.08969pt x 5573.07094pt>
 File: img/AGSE-FlowChart.png Graphic file (type png)
 
 <use img/AGSE-FlowChart.png>
-Package pdftex.def Info: img/AGSE-FlowChart.png used on input line 293.
+Package pdftex.def Info: img/AGSE-FlowChart.png used on input line 659.
 (pdftex.def)             Requested size: 346.89731pt x 404.86642pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[110 <./img/lro-semantics.png>] [111 <./img/three-components-lro-rosmod.png>]
-[112 <./img/three-components-lro.png>]
-<img/AGSE_Deployment.png, id=1432, 730.22812pt x 408.77719pt>
+[122] [123 <./img/AGSE-FlowChart.png>]
+<img/AGSE_Deployment.png, id=1501, 730.22812pt x 408.77719pt>
 File: img/AGSE_Deployment.png Graphic file (type png)
 
 <use img/AGSE_Deployment.png>
-Package pdftex.def Info: img/AGSE_Deployment.png used on input line 353.
+Package pdftex.def Info: img/AGSE_Deployment.png used on input line 688.
 (pdftex.def)             Requested size: 433.62pt x 242.7358pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[113 <./img/three-components-lro-cpn.png>] [114 <./img/AGSE-FlowChart.png>]
-<img/AGSE-Deployment.png, id=1444, 5490.26157pt x 4950.495pt>
+ [124 <./img/AGSE_Deployment.png>]
+<img/AGSE-Deployment.png, id=1509, 5490.26157pt x 4950.495pt>
 File: img/AGSE-Deployment.png Graphic file (type png)
 
 <use img/AGSE-Deployment.png>
-Package pdftex.def Info: img/AGSE-Deployment.png used on input line 376.
+Package pdftex.def Info: img/AGSE-Deployment.png used on input line 744.
 (pdftex.def)             Requested size: 433.62pt x 390.98662pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[115 <./img/AGSE_Deployment.png>] [116 <./img/AGSE-Deployment.png>]
-<img/AGSE_Render.png, id=1459, 2789.92313pt x 2277.25781pt>
+ [125] [126 <./img/AGSE-Deployment.png>]
+<img/AGSE_Render.png, id=1524, 2789.92313pt x 2277.25781pt>
 File: img/AGSE_Render.png Graphic file (type png)
 
 <use img/AGSE_Render.png>
-Package pdftex.def Info: img/AGSE_Render.png used on input line 428.
+Package pdftex.def Info: img/AGSE_Render.png used on input line 797.
 (pdftex.def)             Requested size: 433.62pt x 353.90952pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/AGSE_Operation.png, id=1461, 998.22937pt x 962.09438pt>
+[127] <img/AGSE_Operation.png, id=1530, 998.22937pt x 962.09438pt>
 File: img/AGSE_Operation.png Graphic file (type png)
 
 <use img/AGSE_Operation.png>
-Package pdftex.def Info: img/AGSE_Operation.png used on input line 451.
+Package pdftex.def Info: img/AGSE_Operation.png used on input line 820.
 (pdftex.def)             Requested size: 433.62pt x 417.92046pt.
- [117]) (00-Dissertation.bbl [118 <./img/AGSE_Render.png>] [119 <./img/AGSE_Ope
-ration.png>]
+ [128 <./img/AGSE_Render.png>] [129 <./img/AGSE_Operation.png>]) (00-Dissertati
+on.bbl [130]
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 []\T1/ptm/m/n/12 NASA Cube-Sat Launch ini-tia-tive.  [][]$\T1/pcr/m/n/12 https 
 : / / www . nasa . gov /$
@@ -1451,20 +1456,20 @@ Underfull \hbox (badness 1688) in paragraph at lines 56--59
 ]$\T1/pcr/m/n/12 http : / / www .$
  []
 
-[120
+[131
 
-] [121] [122] [123] [124] [125] [126] [127])
+] [132] [133] [134] [135] [136] [137] [138])
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-[128]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
+[139]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
  (00-Dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
 Package rerunfilecheck Info: File `00-Dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 5AC1E3D6BEFA7DA4B32588ECF20620AB;5419.
+(rerunfilecheck)             Checksum: 934DC4C7272164B991165507BC9669DA;5577.
 
 
 LaTeX Warning: There were undefined references.
@@ -1472,16 +1477,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 12680 strings out of 493634
- 196071 string characters out of 3135239
- 279525 words of memory out of 3000000
- 15327 multiletter control sequences out of 15000+200000
- 51778 words of font info for 81 fonts, out of 3000000 for 9000
+ 12732 strings out of 493634
+ 197097 string characters out of 3135239
+ 282976 words of memory out of 3000000
+ 15354 multiletter control sequences out of 15000+200000
+ 54634 words of font info for 83 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 36i,13n,43p,2641b,930s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,13n,43p,2641b,930s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontname/8r
 .enc}<C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmmi10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
@@ -1489,14 +1494,16 @@ nts/cm/cmmi10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/prana/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/prana/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/prana/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/prana/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/prana/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/p
-rana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Use
-rs/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 00-Dissertation.pdf (135 pages, 30264678 bytes).
+/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/prana
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/pr
+ana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/User
+s/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:
+/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
+><C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8
+a.pfb>
+Output written on 00-Dissertation.pdf (147 pages, 33321402 bytes).
 PDF statistics:
- 1646 PDF objects out of 1728 (max. 8388607)
- 410 named destinations out of 1000 (max. 500000)
- 811 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1724 PDF objects out of 1728 (max. 8388607)
+ 428 named destinations out of 1000 (max. 500000)
+ 832 words of extra memory for PDF output out of 10000 (max. 10000000)
 

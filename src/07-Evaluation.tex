@@ -71,35 +71,390 @@ The software infrastructure includes our model-driven toolsuite and DREMS-style 
 
 \subsubsection{ROSMOD Modeling Language}
 
-ROSMOD Projects are built using the ROSMOD Modeling Language. With this language, ROS users can create models of ROS workspaces, hardware topologies, deployment plans and more. The tool suite provides a Graphical User Interface to build these models but the state and configuration properties of the project are saved in a set of text files (models) that follow a strict set of grammatical rules, written using Antlr 4 \cite{ANTLR_BOOK}. Figure \ref{fig:ROSMOD_Project} shows the metamodel of the textual modeling language as a UML \cite{UML} class diagram.
+To enable the design, development, and testing of software on
+distributed CPS, we have developed a modeling language specific to the
+domain of distributed CPS which utilize ROS, the ROSMOD Modeling
+Language (RML), shown in Figure~\ref{fig:ROSMOD_Project}.  RML
+captures all the relevant aspects of the sofware, the system (hardware
+and network), and the deployment which specifies how the software will
+be executed on the selected system.  Using ROSMOD, developers can
+create models which contain instances of the objects defined in RML.
+This approach of using a domain specific modeling language to define
+the semantics of the models allows us to check and enforce the models
+for correctness.  Furthermore, this approach allows us to develop
+generic utilities, called \emph{plugins} which can act on any models
+created using ROSMOD, for instance generating and compiling the software
+automatically or automatically deploying and managing the software on
+the defined system.  The rest of this section goes into the specific
+parts of the modeling language, called the Meta-Model, and how they
+define the entities in a ROSMOD Model.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{ROSMOD_Project}
-    \caption{ROSMOD Project}
-    \label{fig:ROSMOD_Project}
+\begin{figure*}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{ROSMOD-Meta2.png}
+	\caption{ROSMOD Metamodel.  Containment is specified from
+		\emph{src} to \emph{dst} where the source has a containment
+		attribute \emph{quantity}, meaning that \emph{quantity}
+		objects of type \emph{src} can be contained in an object of
+		type \emph{dst}. Pointers are specified as a one to one
+		mapping from source to destination, using the name of the
+		pointer.  Sets allow for pointer containment.  All objects
+		contain a \emph{name} attribute of type \emph{string}, not
+		shown for clarity.  Note: the meta-model is used to create
+		the ROSMOD Modeling Language, but users do not see or
+		interact with it; it is used to enforce proper model
+		creation semantics. }
+	\label{fig:ROSMOD_Project}	
+\end{figure*}
+\FloatBarrier
+
+The top-level entity of RML is a \emph{Project}, which is shown in the
+upper left of Figure \ref{fig:ROSMOD_Project}.  The language supports
+a variety of modeling concepts that address structural and behavioral
+aspects for distributed embedded platforms. ROSMOD users can create
+models of software workspaces, required software libraries, embedded
+devices, network topologies, component constraints and hardware
+capabilities. The language also supports code development,
+particularly with regards to port interface implementations i.e. the
+execution code for operations owned and triggered by communication
+ports or local timers. Below, we describe in detail the various
+aspects of this meta-model and how these concepts are integral to
+developing distributed CPS and rapid prototyping needs.
+
+\subsubsection{Software Model}
+
+The \emph{Software} class in Figure \ref{fig:ROSMOD_Project} models a
+software workspace. A workspace, following ROS terminology, is a
+collection of applications that are developed and compiled together
+into binaries. Thus, each Software class can contain ROS applications,
+called \emph{Packages}, and \emph{Libraries} required for the
+applications. Packages consist of \emph{Messages}, \emph{Services} and
+\emph{Components}. Components contain a set of pointers to Libraries
+to establish dependence e.g. an \emph{ImageProcessor} component
+\emph{requires} OpenCV, an open-source computer vision
+library. Libraries are of two types: Source libraries and System
+libraries. Source libraries are standalone archives that can be
+retrieved, extracted and integrated into the software build system
+with no additional changes. System libraries are assumptions made by a
+software developer regarding the libraries pre-installed in the
+system. Here, system refers to the embedded device on which the
+component is intended to execute.
+
+\emph{Messages} represent the ROS message description language for
+describing the data values used by the ROS publish-subscribe
+interactions. Similarly, \emph{Services} describe the ROS peer-to-peer
+request-reply interaction pattern. Each service is characterized by a
+pair of messages, \emph{request} and \emph{response}. A client entity
+can call a service by sending a request message and awaiting a
+response. This interaction is presented to the user as a remote
+procedure call. Each ROSMOD component, as described in the component
+model (Figure \ref{fig:ROSMOD_Component}), contains a finite set of
+communication ports. These ports refer to messages and services to
+concretize the communication interface. Components can also contain
+\emph{Timers} for time-triggered operation e.g. periodically sampling
+inertial measurment sensors while operating an unmanned aerial vehicle
+(UAV). Lastly, components can be characterized by
+\emph{Constraints}. Currently, ROSMOD constraints are a simple way to
+establish hardware requirements for operation e.g. fast multi-core
+processor, quadrature encoded pulse hardware, camera interface
+etc. When starting such components at runtime, ROSMOD will try to map
+each component to one of the available devices that satisfies all of
+the component's constraints. Specifying constraints for a component
+can be arbitrarily complex but currently we support simple
+feature-specific constraints e.g. \emph{This component needs a device
+	with atleast 12 open GPIO pins to enable motor control}. In such
+cases, ROSMOD will simply scan the set of devices in the hardware
+model and find a candidate host that \emph{provides} such a
+\emph{capability}.  More about the deployment infrastructure and the
+mapping of constraints to capabilities is described in
+Section~\ref{sec:Deployment_Infrastructure}.
+
+All requests received by a component, via subscribers or servers, and
+all timed triggers can be prioritized. The prioritization is used
+primarily by the component scheduler and the chosen scheduling
+scheme. First-in-first-out (FIFO) scheduling of received operations
+prioritizes based on the arrival time of the requests. Priority-based
+FIFO resolves conflicts between received operations by using the
+\emph{Priority} attribute of the relevant ports. Similary,
+deadline-based schemes like the Earliest-Deadline-First (EDF) scheme
+uses the \emph{deadline} of the received operation requests to resolve
+conflicts and operate safely. The scheduling scheme and operation
+priorities within a component are important choices to make since
+these choices directly affect the efficiency and safe operation of
+components. Highly critical operations need acceptable response times
+for robotic systems to meet quality and timing specifications. This
+design criteria is our primary motivation for integrating timing and
+performance characterization techniques into our software
+specification and tool suite.  The integrated performance and timing
+measurement system allows for the logging and visualization of system
+execution traces and to show the enqueue, dequeue, and completion of
+operations being executed by the component executor thread.  As these
+operations trigger each other, these traces provide valuable feedback
+to the users about the performance and timing characteristics of the
+system, allowing the determination of performance bottlenecks and
+resource contention.
+
+\subsubsection{System Model} 
+
+A \emph{System Model} completely describes the hardware architecture
+of a system onto which the software can be deployed. A ROSMOD Project
+contains one or more \emph{Systems}. Each System contains one or
+more \emph{Hosts}, one or more \emph{Users}, one or more
+\emph{Networks}, and one or more \emph{Links}.  A host can contain one
+or more \emph{Network Interfaces}, which connect through a link to a
+network.  On this link the host's interface is assigned an IP, which
+matches the subnet and netmask specification of the network.
+Additionally, a host has a set of references to users, which define
+the user-name, home directory, and ssh-key location for that user.
+The host itself has attributes which determine what kind of processor
+architecture it has, e.g. \emph{armv7l}, what operating system it is
+running, and lastly a combination of Device ID and Device ID Command
+which provide an additional means for specifying the type of host (and
+a way to determine it), for instance specifying the difference between
+a BeagleBone Black and an NVIDIA Jetson TK1 which both have armv7l
+architecture but can be separated by looking at the model name in the
+device tree.  Finally, a host may contain zero or more
+\emph{Capabilities} to which the component constraints (described in
+the previous section) are mapped.  The final relevant attribute is the
+\emph{Network Profile} attribute of a link.  Using the network
+profile, which is specified as a time-series of bandwdith and latency
+values, we can configure the links of the network using the Linux TC
+to enforce time-varying bandwidth and latency.  This network
+configuration is useful when running experiments on labratory hardware
+for which the network is not representative of the deployed system's
+network.
+
+\subsubsection{Deployment and Experimentation}
+
+\emph{Deployment} refers to the act of starting application processes
+on candidate hosts, where each host can provide for and satisfy all of
+the constraints of the processes e.g. general purpose input/output
+(GPIO) ports, CPU speed etc. Therefore, a deployment is a mapping
+between application processes and system hosts on which the
+application processes run.  The ROSMOD Deployment Model makes this map
+a loose coupling to enable rapid testing and experimentation. Each
+Deployment consists of a set of \emph{Containers}. Each container,
+conceptually, is a set of processes that need to be
+collocated. Containers also ensure that no process outside a container
+is deployed along with the container once it has been mapped to a
+host. Each container, therefore, contains a set of \emph{Nodes} (ROS
+terminology for processes). In each node, application developers
+instantiate one or more components previously defined in the Software
+model. Following the ROSMOD component model, each such instance maps to an
+executor thread that executes the operations in the component's
+operation queue.  Note that the same component can be instantiated
+multiple times even within the same node. Also note the container is
+not mapped to a specific host within the deployment model, but rather
+is automatically mapped to a host by the deployment infrastructure
+within an \emph{Experiment}.
+
+As shown in Figure \ref{fig:ROSMOD_Project}, each project supports a
+set of \emph{Experiments}. Each experiment has pointers to one System
+model and one Deployment model. The system model provides the set of
+available devices and the deployment model provides the set of
+containers, where each container contains a set of component
+constraints that need satisfying (the union of all the container's
+nodes' component constraints). ROSMOD uses these sets to find a
+suitable mapping and then deploys the containers on the chosen host
+devices, if a mapping can be found which satisfies all the constraints
+of all the containers.  When the deployment infrastructure selects
+hosts from the system model for mapping, it first checks to see which
+of the system model's hosts are 1) reachable, 2) have valid login
+credentials, 3) have the correct architecture, operating system, and
+device ID, and 3) are not currently running any other compilation or
+experiment processes from any other user.  In the case that there are
+no available hosts in the system or the deployment's constraints
+cannot be satisfied, the infrastructure informs the user.  Upon
+successful deployment of the experiment, the infrastructure
+automatically stores the specific mapping relevant to the deployed
+experiment for later management and destruction. When such experiments
+are stopped, ROSMOD retrieves the component logs from the hosts and
+displays results. We are currently working on improving our runtime
+monitoring features to enable real-time component execution plots and
+network performance measurements at runtime.
+
+Such a loose coupling between the deployment model and the system
+model, along with the infrastructure automatically mapping the
+containers to valid, unused hosts enables the execution of the same
+deployment onto subsets of a large system, for instance running many
+instances of the same deployment as separate experiments in parallel
+on a large cluster of embedded devices.  Additionally such a loose
+coupling enables redeployment onto a completely different system by
+simply changing the experiment's system model reference; the
+infrastructure will automatically verify that the new system meets the
+constraints of the deployment and has available hosts.
+
+\subsection{Software Infrastructure} 
+
+The ROSMOD software infrastructure provides the user with the tools to
+generate source code corresponding to the software model, compile that
+source code to produce binaries that can run on the hosts defined in
+the system models, and also generate documentation for the software
+and associated libraries.
+
+\subsubsection{ROSMOD Workspace}
+\label{sec:code_generation}
+
+The Software generator in ROSMOD is a plugin that produces a complete
+ROSMOD workspace. The application software, as defined in the model,
+is a collection of packages, each with messages, services, components
+and required libraries. When invoking the workspace code generation,
+ROSMOD first generates the ROSMOD packages including C++ classes for
+each component, package-specific messages and services, and logging
+and XML parser-specific files. Then, for each external library, the
+URL of the library archive is used to fetch the library and inject
+this code as a package into the generated workspace. Assuming the
+library is stable and the target devices have the necessary system
+libraries, this generated code compiles without errors out of the
+box. The meta-model for the software is fully specified to include
+attributes for user code, the business logic for the components'
+operations, additional class members, etc. Because these pieces of
+user code are all captured within the model, they are placed into the
+proper sections of the generated code.  For this reason, it is not
+necessary to alter the generated code before compilation into
+binaries.  If the user chooses, the software infrastructure for ROSMOD
+will automatically determine the different types of hosts in all the
+current project's system models, determine which of those hosts are
+available that match the model specifications and will compile the
+source code into binaries for those architectures.  The compilation is
+performed as a remote procedure on the host; therefore the compilation
+will not select hosts which are currently running other compilation or
+deployment processes.  To enable the user to multi-task, compilation
+is an asynchronous non-blocking process allowing further interaction
+with the model or other plugins.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{Code_Generation.png}
+	\caption{Workspace Code Generation.  In this figure, the
+		\emph{image\_processor} package and its children messages
+		(red), components (blue), and services (purple) are
+		generated into a catkin package for compilation.  The msg
+		and srv files are automatically filled out from the
+		definitions of the messages and services, as are the header
+		and source files for the components.}
+	\label{fig:Code_Generation}
 \end{figure}
+\FloatBarrier
 
-ROS workspaces are high-level containers for source code which may contain one or more ROS packages.  ROS packages are containers which may include (1) one or more ROS message definitions for asynchronous publish/subscribe, (2) one or more ROS service definitions for synchronous RMI, and (3) one or more ROS Nodes, which are processes that can communicate with each other using predefined ROS messages or ROS services.  In this way a ROS package can be thought of as an application, and a ROS node is a process in that application.
+Figure \ref{fig:Code_Generation} shows the generated code tree for an
+\emph{image\_processor} package. This package has three components -
+\emph{userDisplay}, \emph{imageProcessor}, \emph{imageSensor}, and
+associated messages and services. For each component, ROSMOD generates
+a unique class that inherits from a base \emph{Component} class and
+contains member objects for every component port and timer. Unlike
+earlier versions of ROSMOD, this generated code is not a
+skeleton. Rather, it includes all of the operation execution code
+embedded in the model. So, all changes to this business logic code are
+done from the model, instead of modifying a skeleton. This ensures
+code consistency and avoids synchronization issues between the model
+and the generated code.  Furthermore, this enables faster training and
+use of the ROSMOD tool suite, since users no longer need to know into
+what folders and files the generated code goes.  In the competition
+version of ROSMOD, a user would have to generate the skeleton code for
+the workspace, open up the relevant files manually, find the specific
+places into which to place the business logic for the operations and
+added members, add extra library code into the generated build files
+manually, and then inform the infrastructure that the code was ready
+for compilation.  This process was error prone and required detailed
+knowledge of what files are generated, how to integrate libraries into
+the build system, and other details that were specific to both ROS'
+package system and our component implmentation.  In the current
+version of ROSMOD, the user is given direct access to only the code
+relevant for the specific object (component, message, service) they
+are editing.  Furthermore, the library system now enables the creation
+and use of libraries without knowledge of how the underlying ROSMOD
+build system works.
 
-\emph{The ROSMOD Software model} represents a ROS workspace. Each model consists of one or more ROS packages. Each ROS package contains definitions to (1) messages, (2) services and (3) components. The component assembly is derived from the interacting component ports. Ports that are associated with callbacks e.g. subscribers, contain both a \emph{priority} and a \emph{deadline} property to facilitate the scheduling schemes in the component model.
+\subsection{Deployment Infrastructure}
+\label{sec:Deployment_Infrastructure}
 
-\emph{Hardware models} completely describe the hardware architecture of the system. Here, the user describes the different hardware hosts available for deployment, including their properties such as IP address, username and SSH keys.  These properties allow the user to directly map executables to hardware in a specified network and allow the deployment infrastructure to manage all remote operations and help ensure security between applications.  Deployment models refer to such predefined hardware models when mapping processes to hardware devices. Current work aims to improve on this hardware model by adding concepts for subnets, network interface controllers (NIC) and network links between hardware devices to more accurately represent the network topology.
+The workflow for software deployment is as shown Figure
+\ref{fig:workflow}. After the user has generated and compiled the
+software model into binary executables, they can run an experiment
+that has valid deployment model and system model references. Every
+ROSMOD workspace is generated with an additional \emph{node}
+package. This builds a generic node executable that can dynamically
+load libraries. When the software infrastructure generates and
+compiles the source code for the software model, the components are
+compiled into dynamically loadable libraries, one for each component
+definition along with a single executable corresponding to the generic
+node package. The first step the deployment infrastructure performs
+when running an experiment is generating the XML files which contain
+metadata about each ROS node modeled in the ROSMOD Deployment
+Model. This metadata includes the component instances in each node and the
+appropriate component libraries to be loaded. Based on the XML file
+supplied to the node executable, the node will behave as one of the
+ROS nodes in the deployment model. This allows for a reusable
+framework where a generic executable (1) loads an XML file, (2)
+identifies the component instances in the node, (3) finds the
+necessary component libraries to load and (4) spawns the executor
+threads bound to each component.
 
-\emph{ROSMOD Deployment models} contain the specifications for ROS nodes (executable processes). Each ROS node is ranked by a process priority and is mapped to a specific hardware device on which it will be executed. Each ROS node contains instances of software components that control its behavior. These component instances refer to specific components defined in the Software Model. At run-time, each node creates one executor thread per component instance before  beginning its interaction with the rest of the application. 
-
-\subsubsection{Deployment Infrastructure}
-
-The workflow for software deployment is as shown Figure \ref{fig:rosmod_deployment}. Every ROS workspace is generated with an additional \emph{node} package. This builds a generic node executable that can dynamically load libraries. Once the generators generate the ROS workspace and deployment XML files, users complete application development and build their ROS workspace. The build process generates dynamically loadable libraries, one for each component definition along with a single executable corresponding to the generic node package. The generated XML files contain metadata about about all ROS nodes modeled in the ROSMOD Deployment Model. This includes the component instances in each node and the appropriate component libraries to be loaded. Based on the XML file supplied to the node executable, the node will behave as one of the ROS nodes in the model. This allows for a reusable framework where a generic executable (1) loads an XML file, (2) identifies the component instances in the node, (3) finds the necessary component libraries to load and (4) spawns the executor threads bound to each component. 
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{workflow}
-    \caption{ROSMOD Deployment Framework}
-    \label{fig:rosmod_deployment}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{DeploymentInfrastructure.png}
+	\caption{Software Deployment Workflow}
+	\label{fig:workflow}
 \end{figure}
- 
-In the above architecture, the deployment needs three primary ingredients: (1) the generic node executable, (2) dynamically loadable component libraries, and (3) an XML file for each ROS node in the deployment model. For each new node added to the deployment model, by merely regenerating the XML files, we can establish a new deployment. The ROS workspace is rebuilt only if new component definitions are added to the Software Model. This architecture not only accelerates the development process but also ensures a separation between the Software Model (i.e. the application structure) and deployment-specific concerns e.g. component instantiation inside ROS nodes.
+\FloatBarrier
+
+The reason for having the components be libraries that are loaded at
+run-time by a node executable is 1) to help enforce separation between
+each component's code, 2) to shorten the compilation time (which may
+be quite long for embedded processors and complex models), and most
+importantly 3) to enable the ability for users to change the mapping
+of component instances to processes without the need to recompile any
+of the code.  Because ROSMOD is focused on the rapid development and
+deployment of reusable software components, we designed the
+infrastructure to allow users to experiment with which components are
+collocated within processes dynamically and rapidly iterate through
+several scenarios and experiments without having to wait for code
+compilations between experiments.  Finally, such a component-based
+deployment framework enables unit testing and integration testing in a
+very well-defined manner for the software components.  If an error
+occurs during the execution of an application on a system, the user
+can easily and quickly break the deployment down into sub-deployments
+for unit-testing of only the relevant components to determine the
+source of the error.
+
+In the above architecture, the deployment needs three primary
+ingredients: (1) the generic node executable, (2) dynamically loadable
+component libraries, and (3) an XML file for each ROS node in the
+deployment model. For each new node added to the deployment model, by
+merely regenerating the XML files, we can establish a new
+deployment. The ROS workspace is rebuilt only if new component
+definitions are added to the Software Model. This architecture not
+only accelerates the development process but also ensures a separation
+between the Software Model (i.e. the application structure) and
+deployment-specific concerns e.g. component instantiation inside ROS
+nodes.
+
+When the user has selected an experiment to run, the deployment
+infrastructure first determines whether the selected deployment can
+execute on the selected system.  Like the software infrastructure
+described above, the deployment infrastructure queries the selected
+system to validate that the system is reachable, conforms to the
+model, and has available hosts for deployment (i.e. they are not
+currently running any compilation or deployment processes).  Once
+those available hosts have been determined, the infrastructure
+attempts to map the deployment's containers to the available hosts
+based on the constraints and capabilities of the two sets.  If the
+constraints cannot be satisfied by the capabilities of the available
+hosts, the user is informed and the deployment of the experiment is
+halted.  If the capabilities of the hosts do satisfy the constraints
+of the containers and their associated components, the deployment
+infrastructure generates the required XML files for the deployment and
+copies the XML files and the binaries over to the selected hosts,
+before starting the relevant processes.  Finally, if all of those
+steps are successful, the infrastructure saves the mapping into the
+model for user inspection and for later teardown of the experiment.
+
+When the user chooses to end a currently running experiment, the
+deployment infrastructure verifies that the experiment is still
+running before stopping the associated processes, copying the relevant
+log files back, cleaning up the deployment artifacts from the hosts,
+and removing the saved experiment mapping from the model.
 
 \section{Evaluation of Timing Analysis Results}
 
@@ -129,6 +484,7 @@ The server (Power\_operation) periodically receives this operation request and r
 	\caption{Experimental Observation: Client-Server Interactions}
 	\label{fig:client-server}
 \end{figure}
+\FloatBarrier
 
 Figure \ref{fig:client-server-cpn} shows the execution time plot derived from our CPN. As expected, since there are no other interruptions on the server side, the server is able to promptly respond to the client.
 
@@ -138,7 +494,7 @@ Figure \ref{fig:client-server-cpn} shows the execution time plot derived from ou
 	\caption{CPN Analysis Results: Client-Server Interactions}
 	\label{fig:client-server-cpn}
 \end{figure}
-
+\FloatBarrier
 
 \subsection{Publish-Subscribe Interactions}
 
@@ -150,6 +506,7 @@ Similar to the earlier example, consider a simple anonymous publish-subscribe in
 	\caption{Experimental Observation: Publish-Subscribe Interactions}
 	\label{fig:publish-subscribe}
 \end{figure}
+\FloatBarrier
 
 Figure \ref{fig:publish-subscribe} shows our testbed observations and Figure \ref{fig:publish-subscribe-cpn} shows our CPN analysis results. As evident, the CPN results closely match and validate this sample. 
 
@@ -159,11 +516,11 @@ Figure \ref{fig:publish-subscribe} shows our testbed observations and Figure \re
 	\caption{CPN Analysis Results: Publish-Subscribe Interactions}
 	\label{fig:publish-subscribe-cpn}
 \end{figure}
+\FloatBarrier
 
 \subsection{Trajectory Planner}
 
 In the past \cite{kumar2014colored}, we have used a \emph{Trajectory Planner} deployment to illustrate the utility of our state space analysis. Figure \ref{fig:trajectory-planner} shows the execution time plot of this sample. A Sensor component is periodically triggered every second by the \emph{sensor\_timer} at which point it publishes a notification to the Trajectory Planner, alerting the planner of new sensor state. The planner component receives this notification on its \emph{state\_subscriber}. On receiving this message, the planner executes a remote method invocation to the \emph{compute} server located in the Sensor, blocked and waiting for a response. At this point, the \emph{compute\_operation} is executed on the Sensor which returns the updated sensor state. This unblocks the planner component which uses the new sensor state to perform trajectory planning tasks. 
-
 
 \begin{figure}[h]
 	\centering
@@ -171,6 +528,7 @@ In the past \cite{kumar2014colored}, we have used a \emph{Trajectory Planner} de
 	\caption{Experimental Observation: Trajectory Planner}
 	\label{fig:trajectory-planner}
 \end{figure}
+\FloatBarrier
 
 This is a common interaction pattern in Cyber-Physical systems since embedded sensors are updated at a much higher frequency than a path planning entity. Thus, the planner can query the sensor at a lower rate to sample the sensor state. In this example, the planner is matching the frequency of the sensor since the execution cost is low. However, when more components are added to this deployment, the planner would have to fetch sensor state less frequently so as to not affect other system-level deadlines.  
 
@@ -180,6 +538,7 @@ This is a common interaction pattern in Cyber-Physical systems since embedded se
 	\caption{CPN Analysis Results: Trajectory Planner}
 	\label{fig:trajectory-planner-cpn}
 \end{figure}
+\FloatBarrier
 
 \subsection{Time-triggered Operations}
 
@@ -195,6 +554,7 @@ It must be noted here that the execution time values assigned to each timer oper
 	\caption{Experimental Observation: Periodic Timers}
 	\label{fig:periodic-timers}
 \end{figure}
+\FloatBarrier
 
 \begin{figure}[h]
 	\centering
@@ -202,6 +562,7 @@ It must be noted here that the execution time values assigned to each timer oper
 	\caption{CPN Analysis Results: Periodic Timers}
 	\label{fig:periodic-timers-cpn}
 \end{figure}
+\FloatBarrier
 
 \subsection{Long-Running Operations}
 \label{sec:long_running_operations}
@@ -218,6 +579,7 @@ One of the primary challenges here is to identify the semantics of a long-runnin
 	\caption{Long Running Operations - Timing Diagram}
 	\label{fig:lro-semantics}
 \end{figure}
+\FloatBarrier
 
 \subsubsection{Implementation and Results}
 
@@ -229,10 +591,9 @@ In each long-running operation, we, therefore, include a synchronous \emph{check
 	\caption{Long Running Operation - Software Model}
 	\label{fig:three-components-lro-rosmod}
 \end{figure}
+\FloatBarrier
 
 The assembly consists of three components. Components \emph{Component\_1} and \emph{Component\_2} periodically publish on the \emph{ComponentName} message. \emph{Component\_3} periodically queries the server in \emph{Component\_2}. During these interactions, \emph{Component\_1} is performing a long running operation, the duration of which, is magnitudes larger than the average execution time of all other operations. Figure \ref{fig:three-components-lro} shows the execution time plot of this scenario, as measured on our testbed. 
-
-For the CPN analysis, in order to obtain pure execution times of all these operations, each operation on each component is executed as a stand-alone function on the hardware. This way, we know the average and worst-case execution times of all operational steps with minimal interruptions. These numbers are injected into our generated CPN and state space analysis is performed. Figure \ref{fig:three-components-lro-cpn} shows our CPN analysis results for the same assembly.
 
 \begin{figure}[h]
 	\centering
@@ -240,6 +601,10 @@ For the CPN analysis, in order to obtain pure execution times of all these opera
 	\caption{Experimental Observation: Composed Component Assembly}
 	\label{fig:three-components-lro}
 \end{figure}
+\FloatBarrier
+
+For the CPN analysis, in order to obtain pure execution times of all these operations, each operation on each component is executed as a stand-alone function on the hardware. This way, we know the average and worst-case execution times of all operational steps with minimal interruptions. These numbers are injected into our generated CPN and state space analysis is performed. Figure \ref{fig:three-components-lro-cpn} shows our CPN analysis results for the same assembly.
+
 
 \begin{figure}[h]
 	\centering
@@ -247,6 +612,7 @@ For the CPN analysis, in order to obtain pure execution times of all these opera
 	\caption{CPN Analysis Results: Composed Component Assembly}
 	\label{fig:three-components-lro-cpn}
 \end{figure}
+\FloatBarrier
 
 \subsection{Cyber-Physical Systems: Autonomous Ground Support Equipment (AGSE) Robot}
 
@@ -294,6 +660,7 @@ control flow in the AGSE software is shown in Figure
 	\caption{AGSE Control Flow Chart}
 	\label{fig:AGSE-FlowChart}
 \end{figure}
+\FloatBarrier
 
 While the driving requirements of the competition were fixed, many of
 the minor rules regarding AGSE performance, behavior, and safety
@@ -315,6 +682,14 @@ as the robot's gripper, any single degree of freedom, image
 processing, motor control, etc.) as the design evolved.
 
 \subsubsection{Distributed Deployment}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{AGSE_Deployment.png}
+	\caption{AGSE Package Deployment}
+	\label{fig:AGSE_Deployment}
+\end{figure}
+\FloatBarrier
 
 The AGSE robot is controlled by a distributed set of embedded
 controllers. Figure \ref{fig:AGSE_Deployment} shows the high-level
@@ -348,13 +723,6 @@ showing what the AGSE sees as it searches the workspace for the sample
 and the payload bay.  This BeagleBone Black resides the User Interface
 Panel (UIP).
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{AGSE_Deployment.png}
-	\caption{AGSE Package Deployment}
-	\label{fig:AGSE_Deployment}
-\end{figure}
-
 The NVIDIA Jetson TK1 periodically fetches the latest webcam feed,
 performs image processing and high-level path planning, and updates a
 global state machine. The Beaglebone Black (BBB) mounted on top of the
@@ -377,6 +745,7 @@ coordinate and maintain the AGSE state.
 	\caption{AGSE Component Assembly}
 	\label{fig:AGSE}
 \end{figure}
+\FloatBarrier
 
 The AGSE software was iteratively designed and rapid prototyped using
 our ROSMOD tool suite. The Software Model consists of 8 components
@@ -432,7 +801,7 @@ Figure~\ref{fig:competition_AGSE}.
 		the AGSE, and the NVIDIA Jetson is under the rocket.}
 	\label{fig:competition_AGSE}
 \end{figure}
-
+\FloatBarrier
 
 \subsubsection{Performance Assessment}
 
@@ -452,6 +821,7 @@ the NASA officials and earned the competition's \emph{Autonomous
 	\caption{AGSE Calibration and Testing}
 	\label{fig:AGSE_Operation}	
 \end{figure}
+\FloatBarrier
 
 System robustness was validated on the day of competition when a key
 component failed and was able to be quickly replaced with a different

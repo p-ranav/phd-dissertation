@@ -37,23 +37,24 @@ Figure \hfill Page
 \contentsline {figure}{\numberline {28}{\ignorespaces Testbed Architecture\relax }}{93}{figure.28}
 \contentsline {figure}{\numberline {29}{\ignorespaces Beaglebone Black Boards - Custom Mounting\relax }}{94}{figure.29}
 \contentsline {figure}{\numberline {30}{\ignorespaces Constructed Testbed\relax }}{95}{figure.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces ROSMOD Project\relax }}{97}{figure.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces ROSMOD Deployment Framework\relax }}{99}{figure.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces RMI Application\relax }}{100}{figure.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces Experimental Observation: Client-Server Interactions\relax }}{102}{figure.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces CPN Analysis Results: Client-Server Interactions\relax }}{103}{figure.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{104}{figure.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{105}{figure.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{106}{figure.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{107}{figure.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{108}{figure.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{109}{figure.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{110}{figure.42}
-\contentsline {figure}{\numberline {43}{\ignorespaces Long Running Operation - Software Model\relax }}{111}{figure.43}
-\contentsline {figure}{\numberline {44}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{112}{figure.44}
-\contentsline {figure}{\numberline {45}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{113}{figure.45}
-\contentsline {figure}{\numberline {46}{\ignorespaces AGSE Control Flow Chart\relax }}{114}{figure.46}
-\contentsline {figure}{\numberline {47}{\ignorespaces AGSE Package Deployment\relax }}{115}{figure.47}
-\contentsline {figure}{\numberline {48}{\ignorespaces AGSE Component Assembly\relax }}{116}{figure.48}
-\contentsline {figure}{\numberline {49}{\ignorespaces AGSE and rocket used in the 2014-2015 NASA SLI competition. The UIP is shown in the bottom left of the picture, the Motor Control Board is on the top of the arm of the AGSE, and the NVIDIA Jetson is under the rocket.\relax }}{118}{figure.49}
-\contentsline {figure}{\numberline {50}{\ignorespaces AGSE Calibration and Testing\relax }}{119}{figure.50}
+\contentsline {figure}{\numberline {31}{\ignorespaces ROSMOD Metamodel. Containment is specified from \emph {src} to \emph {dst} where the source has a containment attribute \emph {quantity}, meaning that \emph {quantity} objects of type \emph {src} can be contained in an object of type \emph {dst}. Pointers are specified as a one to one mapping from source to destination, using the name of the pointer. Sets allow for pointer containment. All objects contain a \emph {name} attribute of type \emph {string}, not shown for clarity. Note: the meta-model is used to create the ROSMOD Modeling Language, but users do not see or interact with it; it is used to enforce proper model creation semantics. \relax }}{97}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces Workspace Code Generation. In this figure, the \emph {image\_processor} package and its children messages (red), components (blue), and services (purple) are generated into a catkin package for compilation. The msg and srv files are automatically filled out from the definitions of the messages and services, as are the header and source files for the components.\relax }}{104}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces Software Deployment Workflow\relax }}{106}{figure.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces RMI Application\relax }}{109}{figure.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces Experimental Observation: Client-Server Interactions\relax }}{110}{figure.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces CPN Analysis Results: Client-Server Interactions\relax }}{111}{figure.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{111}{figure.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{112}{figure.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{113}{figure.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{114}{figure.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{115}{figure.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{116}{figure.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{118}{figure.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces Long Running Operation - Software Model\relax }}{119}{figure.44}
+\contentsline {figure}{\numberline {45}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{120}{figure.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{121}{figure.46}
+\contentsline {figure}{\numberline {47}{\ignorespaces AGSE Control Flow Chart\relax }}{123}{figure.47}
+\contentsline {figure}{\numberline {48}{\ignorespaces AGSE Package Deployment\relax }}{124}{figure.48}
+\contentsline {figure}{\numberline {49}{\ignorespaces AGSE Component Assembly\relax }}{126}{figure.49}
+\contentsline {figure}{\numberline {50}{\ignorespaces AGSE and rocket used in the 2014-2015 NASA SLI competition. The UIP is shown in the bottom left of the picture, the Motor Control Board is on the top of the arm of the AGSE, and the NVIDIA Jetson is under the rocket.\relax }}{128}{figure.50}
+\contentsline {figure}{\numberline {51}{\ignorespaces AGSE Calibration and Testing\relax }}{129}{figure.51}
