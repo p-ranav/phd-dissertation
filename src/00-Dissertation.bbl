@@ -363,6 +363,13 @@ K.~G. Larsen, P.~Pettersson, and W.~Yi.
 \newblock {\em International Journal on Software Tools for Technology Transfer
   (STTT)}, 1(1):134--152, 1997.
 
+\bibitem{lin1987protocol}
+F.~J. Lin, P.~Chu, and M.~T. Liu.
+\newblock Protocol verification using reachability analysis: the state space
+  explosion problem and relief strategies.
+\newblock In {\em ACM SIGCOMM Computer Communication Review}, volume~17, pages
+  126--135. ACM, 1987.
+
 \bibitem{lions1996ariane}
 J.-L. Lions et~al.
 \newblock Ariane 5 flight 501 failure, 1996.

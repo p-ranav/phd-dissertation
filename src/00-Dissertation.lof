@@ -7,54 +7,53 @@ Figure \hfill Page
 \contentsline {figure}{\numberline {2}{\ignorespaces Sample Petri Net, reprinted from \cite {peterson1977petri}\relax }}{27}{figure.2}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3}{\ignorespaces DREMS Component\relax }}{41}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Scheduling Component Operations\relax }}{43}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Component Operation - Execution Semantics\relax }}{44}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Sample Temporal Partition Schedule with Hyperperiod = 300 ms\relax }}{45}{figure.6}
+\contentsline {figure}{\numberline {4}{\ignorespaces Component Operation Execution Semantics: This figure shows the effects of the ROSMOD component scheduling on an incoming operation request. $t\_{req}$ represents the arrival time of a remote request. $t\_{wait}$ is the wait time of this request in the message queue while the current operation is still executing. $t\_{timer\_cmpl}$ is the time stamp at which the current operation completes executing. At this time, the remote request is finally scheduled for execution. $t\_{req\_cmpl}$ is the time stamp at which the remote request completes. The execution time, $t\_{exec}$ of this request is calculated as the difference in time stamps between $t\_{req\_cmpl}$ and $t\_{req}$.\relax }}{43}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Sample Temporal Partition Schedule with Hyperperiod = 300 ms\relax }}{45}{figure.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7}{\ignorespaces Colored Petri Net Analysis Model\relax }}{52}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Analysis Model - Structural Aspects\relax }}{53}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Component Thread Execution Cycle\relax }}{55}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces RMI Application\relax }}{57}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces RMI Application - Client Timer Operation\relax }}{57}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces RMI Application - Server Operation\relax }}{58}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Operation Induction\relax }}{59}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Operation Induction Token\relax }}{60}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Timer Operations\relax }}{61}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Modeling the Business Logic of Component Operations\relax }}{64}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Sample Business Logic Model\relax }}{65}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces CPN Business Logic Representation\relax }}{66}{figure.18}
+\contentsline {figure}{\numberline {6}{\ignorespaces Colored Petri Net Analysis Model\relax }}{51}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Analysis Model - Structural Aspects\relax }}{52}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Component Thread Execution Cycle\relax }}{54}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces RMI Application\relax }}{56}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces RMI Application - Client Timer Operation\relax }}{56}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces RMI Application - Server Operation\relax }}{57}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Operation Induction\relax }}{58}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Operation Induction Token\relax }}{59}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Timer Operations\relax }}{60}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Modeling the Business Logic of Component Operations\relax }}{63}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Sample Business Logic Model\relax }}{64}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces CPN Business Logic Representation\relax }}{65}{figure.17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {19}{\ignorespaces DREMS Application\relax }}{67}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Scatter Operation\relax }}{69}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Deadline Violation Observer place\relax }}{71}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Response-time Analysis\relax }}{73}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces A Clock Token with Temporal Partitioning\relax }}{80}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Dynamic Time Progression\relax }}{81}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces Structural Reductions in CPN\relax }}{83}{figure.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Generated CPN model for a Distributed Application Deployment\relax }}{88}{figure.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces Sweep-Line Method\relax }}{89}{figure.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces Dead States Checking in a Component-based application\relax }}{90}{figure.28}
+\contentsline {figure}{\numberline {18}{\ignorespaces DREMS Application\relax }}{66}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Scatter Operation\relax }}{68}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Deadline Violation Observer place\relax }}{70}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Response-time Analysis\relax }}{72}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces A Clock Token with Temporal Partitioning\relax }}{79}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Dynamic Time Progression\relax }}{80}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Structural Reductions in CPN\relax }}{82}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Generated CPN model for a Distributed Application Deployment\relax }}{87}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Sweep-Line Method\relax }}{88}{figure.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces Dead States Checking in a Component-based application\relax }}{89}{figure.27}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {29}{\ignorespaces Testbed Architecture\relax }}{95}{figure.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces Beaglebone Black Boards - Custom Mounting\relax }}{96}{figure.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces Constructed Testbed\relax }}{97}{figure.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces ROSMOD Project\relax }}{99}{figure.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces ROSMOD Deployment Framework\relax }}{101}{figure.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces RMI Application\relax }}{102}{figure.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces Experimental Observation: Client-Server Interactions\relax }}{104}{figure.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces CPN Analysis Results: Client-Server Interactions\relax }}{105}{figure.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{106}{figure.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{107}{figure.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{108}{figure.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{109}{figure.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{110}{figure.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{111}{figure.42}
-\contentsline {figure}{\numberline {43}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{112}{figure.43}
-\contentsline {figure}{\numberline {44}{\ignorespaces Long Running Operation - Software Model\relax }}{113}{figure.44}
-\contentsline {figure}{\numberline {45}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{114}{figure.45}
-\contentsline {figure}{\numberline {46}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{115}{figure.46}
-\contentsline {figure}{\numberline {47}{\ignorespaces AGSE Control Flow Chart\relax }}{116}{figure.47}
-\contentsline {figure}{\numberline {48}{\ignorespaces AGSE Package Deployment\relax }}{117}{figure.48}
-\contentsline {figure}{\numberline {49}{\ignorespaces AGSE Component Assembly\relax }}{118}{figure.49}
-\contentsline {figure}{\numberline {50}{\ignorespaces AGSE and rocket used in the 2014-2015 NASA SLI competition. The UIP is shown in the bottom left of the picture, the Motor Control Board is on the top of the arm of the AGSE, and the NVIDIA Jetson is under the rocket.\relax }}{120}{figure.50}
-\contentsline {figure}{\numberline {51}{\ignorespaces AGSE Calibration and Testing\relax }}{121}{figure.51}
+\contentsline {figure}{\numberline {28}{\ignorespaces Testbed Architecture\relax }}{94}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Beaglebone Black Boards - Custom Mounting\relax }}{95}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces Constructed Testbed\relax }}{96}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces ROSMOD Project\relax }}{98}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces ROSMOD Deployment Framework\relax }}{100}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces RMI Application\relax }}{101}{figure.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Experimental Observation: Client-Server Interactions\relax }}{103}{figure.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces CPN Analysis Results: Client-Server Interactions\relax }}{104}{figure.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{105}{figure.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{106}{figure.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{107}{figure.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{108}{figure.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{109}{figure.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{110}{figure.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{111}{figure.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces Long Running Operation - Software Model\relax }}{112}{figure.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{113}{figure.44}
+\contentsline {figure}{\numberline {45}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{114}{figure.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces AGSE Control Flow Chart\relax }}{115}{figure.46}
+\contentsline {figure}{\numberline {47}{\ignorespaces AGSE Package Deployment\relax }}{116}{figure.47}
+\contentsline {figure}{\numberline {48}{\ignorespaces AGSE Component Assembly\relax }}{117}{figure.48}
+\contentsline {figure}{\numberline {49}{\ignorespaces AGSE and rocket used in the 2014-2015 NASA SLI competition. The UIP is shown in the bottom left of the picture, the Motor Control Board is on the top of the arm of the AGSE, and the NVIDIA Jetson is under the rocket.\relax }}{119}{figure.49}
+\contentsline {figure}{\numberline {50}{\ignorespaces AGSE Calibration and Testing\relax }}{120}{figure.50}
