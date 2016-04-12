@@ -1,0 +1,805 @@
+=================================================================
+ROSMOD::DEBUG::1459354832399645288::CALLBACK FIFO ENQUEUE::Alias=init_timer_operation; Priority=99; Deadline sec=1, nsec=0; Enqueue Time sec=1459354832, nsec=399560122
+ROSMOD::DEBUG::1459354832400194870::Entering imageSensor::init_timer_operation
+ROSMOD::DEBUG::1459354832689678016::Exiting imageSensor::init_timer_operation
+ROSMOD::DEBUG::1459354832689728766::CALLBACK COMPLETED::Alias=init_timer_operation; Completion Time sec=1459354832, nsec=689720100; Execution Time sec=0, nsec=290159978
+ROSMOD::DEBUG::1459354837621958059::CALLBACK FIFO ENQUEUE::Alias=controlInputsSubscriber_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354837, nsec=621916726
+ROSMOD::DEBUG::1459354837622829141::Entering imageSensor::controlInputsSubscriber_operation
+ROSMOD::DEBUG::1459354837622879057::Exiting imageSensor::controlInputsSubscriber_operation
+ROSMOD::DEBUG::1459354837622939224::CALLBACK COMPLETED::Alias=controlInputsSubscriber_operation; Completion Time sec=1459354837, nsec=622914390; Execution Time sec=0, nsec=997664
+ROSMOD::DEBUG::1459354838909428504::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354838, nsec=909404671
+ROSMOD::DEBUG::1459354838909696420::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354838909982086::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354838, nsec=909955170; Execution Time sec=0, nsec=550499
+ROSMOD::DEBUG::1459354840727274941::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354840, nsec=727258274
+ROSMOD::DEBUG::1459354840727474774::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354840727698356::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354840, nsec=727688440; Execution Time sec=0, nsec=430166
+ROSMOD::DEBUG::1459354840906121850::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354840, nsec=906107016
+ROSMOD::DEBUG::1459354840906348682::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354840906511099::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354840, nsec=906502265; Execution Time sec=0, nsec=395249
+ROSMOD::DEBUG::1459354841905169229::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354841, nsec=905148479
+ROSMOD::DEBUG::1459354841905314646::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354841905488562::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354841, nsec=905477062; Execution Time sec=0, nsec=328583
+ROSMOD::DEBUG::1459354842905015524::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354842, nsec=904995024
+ROSMOD::DEBUG::1459354842905222607::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354842905426856::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354842, nsec=905413606; Execution Time sec=0, nsec=418582
+ROSMOD::DEBUG::1459354843904343903::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354843, nsec=904306153
+ROSMOD::DEBUG::1459354843904652819::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354843905015152::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354843, nsec=904985735; Execution Time sec=0, nsec=679582
+ROSMOD::DEBUG::1459354844217631243::CALLBACK FIFO ENQUEUE::Alias=controlInputsSubscriber_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354844, nsec=217589410
+ROSMOD::DEBUG::1459354844217882493::Entering imageSensor::controlInputsSubscriber_operation
+ROSMOD::DEBUG::1459354844217913243::Exiting imageSensor::controlInputsSubscriber_operation
+ROSMOD::DEBUG::1459354844217943743::CALLBACK COMPLETED::Alias=controlInputsSubscriber_operation; Completion Time sec=1459354844, nsec=217933659; Execution Time sec=0, nsec=344249
+ROSMOD::DEBUG::1459354844904947696::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354844, nsec=904925363
+ROSMOD::DEBUG::1459354844905400612::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354845748398779::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354845, nsec=748366946; Execution Time sec=0, nsec=843441583
+ROSMOD::DEBUG::1459354846543430477::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354846, nsec=543409310
+ROSMOD::DEBUG::1459354846543658226::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354847400382611::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354847, nsec=400350444; Execution Time sec=0, nsec=856941134
+ROSMOD::DEBUG::1459354848165936962::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354848, nsec=165921878
+ROSMOD::DEBUG::1459354848166127128::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354849027880084::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354849, nsec=27846834; Execution Time sec=0, nsec=861924956
+ROSMOD::DEBUG::1459354849781480630::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354849, nsec=781469547
+ROSMOD::DEBUG::1459354849781578630::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354850586103139::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354850, nsec=586069806; Execution Time sec=0, nsec=804600259
+ROSMOD::DEBUG::1459354851343620009::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354851, nsec=343598759
+ROSMOD::DEBUG::1459354851343881842::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354852203987469::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354852, nsec=203954386; Execution Time sec=0, nsec=860355627
+ROSMOD::DEBUG::1459354852963498585::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354852, nsec=963476835
+ROSMOD::DEBUG::1459354852963857834::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354853821738800::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354853, nsec=821709301; Execution Time sec=0, nsec=858232466
+ROSMOD::DEBUG::1459354854569020279::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354854, nsec=569000862
+ROSMOD::DEBUG::1459354854569307945::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354855415898855::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354855, nsec=415865771; Execution Time sec=0, nsec=846864909
+ROSMOD::DEBUG::1459354856164397163::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354856, nsec=164379330
+ROSMOD::DEBUG::1459354856164653746::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354857021769631::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354857, nsec=21737048; Execution Time sec=0, nsec=857357718
+ROSMOD::DEBUG::1459354857780719082::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354857, nsec=780697166
+ROSMOD::DEBUG::1459354857780982082::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354858638407883::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354858, nsec=638374883; Execution Time sec=0, nsec=857677717
+ROSMOD::DEBUG::1459354859383627700::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354859, nsec=383607950
+ROSMOD::DEBUG::1459354859383885282::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354860197258438::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354860, nsec=197224521; Execution Time sec=0, nsec=813616571
+ROSMOD::DEBUG::1459354860959722214::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354860, nsec=959699214
+ROSMOD::DEBUG::1459354860960325796::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354861814963604::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354861, nsec=814933354; Execution Time sec=0, nsec=855234140
+ROSMOD::DEBUG::1459354862560101422::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354862, nsec=560076089
+ROSMOD::DEBUG::1459354862560336671::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354863418927804::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354863, nsec=418909720; Execution Time sec=0, nsec=858833631
+ROSMOD::DEBUG::1459354864173127100::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354864, nsec=173108850
+ROSMOD::DEBUG::1459354864173375349::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354865023513668::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354865, nsec=23480668; Execution Time sec=0, nsec=850371818
+ROSMOD::DEBUG::1459354865781871955::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354865, nsec=781850955
+ROSMOD::DEBUG::1459354865782204871::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354866641322085::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354866, nsec=641289002; Execution Time sec=0, nsec=859438047
+ROSMOD::DEBUG::1459354867387171068::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354867, nsec=387148485
+ROSMOD::DEBUG::1459354867387432485::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354868246986365::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354868, nsec=246953948; Execution Time sec=0, nsec=859805463
+ROSMOD::DEBUG::1459354868990212354::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354868, nsec=990190938
+ROSMOD::DEBUG::1459354868990604437::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354869840544090::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354869, nsec=840512007; Execution Time sec=0, nsec=850321069
+ROSMOD::DEBUG::1459354870595383969::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354870, nsec=595365469
+ROSMOD::DEBUG::1459354870595627468::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354871459209090::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354871, nsec=459180423; Execution Time sec=0, nsec=863814954
+ROSMOD::DEBUG::1459354872210865643::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354872, nsec=210845476
+ROSMOD::DEBUG::1459354872211138892::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354873039327431::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354873, nsec=39297847; Execution Time sec=0, nsec=828452371
+ROSMOD::DEBUG::1459354873785541080::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354873, nsec=785521997
+ROSMOD::DEBUG::1459354873785804996::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354874634723153::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354874, nsec=634692653; Execution Time sec=0, nsec=849170656
+ROSMOD::DEBUG::1459354875384367127::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354875, nsec=384343211
+ROSMOD::DEBUG::1459354875384627877::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354876248609081::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354876, nsec=248578914; Execution Time sec=0, nsec=864235703
+ROSMOD::DEBUG::1459354876992069904::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354876, nsec=992036154
+ROSMOD::DEBUG::1459354876992610903::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354877855606943::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354877, nsec=855574443; Execution Time sec=0, nsec=863538289
+ROSMOD::DEBUG::1459354878604295503::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354878, nsec=604279004
+ROSMOD::DEBUG::1459354878604537920::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354879451869164::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354879, nsec=451839080; Execution Time sec=0, nsec=847560076
+ROSMOD::DEBUG::1459354880210971700::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354880, nsec=210953616
+ROSMOD::DEBUG::1459354880211222283::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354881067502672::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354881, nsec=67469422; Execution Time sec=0, nsec=856515806
+ROSMOD::DEBUG::1459354881807593420::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354881, nsec=807561254
+ROSMOD::DEBUG::1459354881807904419::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354882672961372::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354882, nsec=672931122; Execution Time sec=0, nsec=865369868
+ROSMOD::DEBUG::1459354883421134518::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354883, nsec=421111851
+ROSMOD::DEBUG::1459354883421408184::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354884267427431::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354884, nsec=267397181; Execution Time sec=0, nsec=846285330
+ROSMOD::DEBUG::1459354885019367901::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354885, nsec=19337902
+ROSMOD::DEBUG::1459354885019829900::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354885882358942::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354885, nsec=882326859; Execution Time sec=0, nsec=862988957
+ROSMOD::DEBUG::1459354886640439815::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354886, nsec=640419315
+ROSMOD::DEBUG::1459354886640710481::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354887535852279::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354887, nsec=535822029; Execution Time sec=0, nsec=895402714
+ROSMOD::DEBUG::1459354888298029809::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354888, nsec=298011393
+ROSMOD::DEBUG::1459354888298311308::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354889177646978::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354889, nsec=177618478; Execution Time sec=0, nsec=879607085
+ROSMOD::DEBUG::1459354889918443892::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354889, nsec=918420142
+ROSMOD::DEBUG::1459354889918727474::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354890816068101::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354890, nsec=816023351; Execution Time sec=0, nsec=897603209
+ROSMOD::DEBUG::1459354891578230714::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354891, nsec=578203548
+ROSMOD::DEBUG::1459354891578555297::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354892469827355::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354892, nsec=469793605; Execution Time sec=0, nsec=891590057
+ROSMOD::DEBUG::1459354893229119559::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354893, nsec=229102559
+ROSMOD::DEBUG::1459354893229599641::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354894110439640::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354894, nsec=110407724; Execution Time sec=0, nsec=881305165
+ROSMOD::DEBUG::1459354894854548047::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354894, nsec=854527297
+ROSMOD::DEBUG::1459354894854823130::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354895749998845::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354895, nsec=749969262; Execution Time sec=0, nsec=895441965
+ROSMOD::DEBUG::1459354896496090414::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354896, nsec=496068497
+ROSMOD::DEBUG::1459354896496355913::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354897390532965::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354897, nsec=390499548; Execution Time sec=0, nsec=894431051
+ROSMOD::DEBUG::1459354898148151840::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354898, nsec=148129506
+ROSMOD::DEBUG::1459354898148418006::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354899032292249::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354899, nsec=32259249; Execution Time sec=0, nsec=884129743
+ROSMOD::DEBUG::1459354899781577060::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354899, nsec=781555143
+ROSMOD::DEBUG::1459354899781847059::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354900611334098::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354900, nsec=611305181
+ROSMOD::DEBUG::1459354900672205954::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354900, nsec=672172954; Execution Time sec=0, nsec=890617811
+ROSMOD::DEBUG::1459354900672347203::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354901415350363::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354901, nsec=415334363
+ROSMOD::DEBUG::1459354901473653808::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354901, nsec=473619725; Execution Time sec=0, nsec=862314544
+ROSMOD::DEBUG::1459354901473748141::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354902268540512::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354902, nsec=268507429; Execution Time sec=0, nsec=853173066
+ROSMOD::DEBUG::1459354903019328820::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354903, nsec=19313570
+ROSMOD::DEBUG::1459354903019442820::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354903819340428::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354903, nsec=819308678; Execution Time sec=0, nsec=799995108
+ROSMOD::DEBUG::1459354904574787975::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354904, nsec=574776559
+ROSMOD::DEBUG::1459354904574884309::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354905168212572::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354905, nsec=168201739
+ROSMOD::DEBUG::1459354905376369497::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354905, nsec=376336247; Execution Time sec=0, nsec=801559688
+ROSMOD::DEBUG::1459354905376471663::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354906120465404::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354906, nsec=120450654
+ROSMOD::DEBUG::1459354906172850697::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354906, nsec=172816781; Execution Time sec=1, nsec=4615042
+ROSMOD::DEBUG::1459354906173001697::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354906975826965::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354906, nsec=975793799; Execution Time sec=0, nsec=855343145
+ROSMOD::DEBUG::1459354907718839209::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354907, nsec=718807042
+ROSMOD::DEBUG::1459354907719030458::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354908277951971::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354908, nsec=277940387
+ROSMOD::DEBUG::1459354908519499483::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354908, nsec=519467400; Execution Time sec=0, nsec=800660358
+ROSMOD::DEBUG::1459354908519599316::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354909263921306::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354909, nsec=263906473
+ROSMOD::DEBUG::1459354909314138938::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354909, nsec=314104438; Execution Time sec=1, nsec=36164051
+ROSMOD::DEBUG::1459354909314237771::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354910115699710::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354910, nsec=115666376; Execution Time sec=0, nsec=851759903
+ROSMOD::DEBUG::1459354910860461783::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354910, nsec=860448366
+ROSMOD::DEBUG::1459354910860571699::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354911417579966::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354911, nsec=417569216
+ROSMOD::DEBUG::1459354911661010557::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354911, nsec=660978474; Execution Time sec=0, nsec=800530108
+ROSMOD::DEBUG::1459354911661163223::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354912404403967::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354912, nsec=404388133
+ROSMOD::DEBUG::1459354912455469679::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354912, nsec=455435846; Execution Time sec=1, nsec=37866630
+ROSMOD::DEBUG::1459354912455567929::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354913257159118::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354913, nsec=257126118; Execution Time sec=0, nsec=852737985
+ROSMOD::DEBUG::1459354914013522080::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354914, nsec=13507914
+ROSMOD::DEBUG::1459354914013632997::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354914558576459::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354914, nsec=558565625
+ROSMOD::DEBUG::1459354914814025438::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354914, nsec=813993355; Execution Time sec=0, nsec=800485441
+ROSMOD::DEBUG::1459354914814158605::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354915558524429::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354915, nsec=558508012
+ROSMOD::DEBUG::1459354915608430061::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354915, nsec=608394811; Execution Time sec=1, nsec=49829186
+ROSMOD::DEBUG::1459354915608529061::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354916409901000::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354916, nsec=409869667; Execution Time sec=0, nsec=851361655
+ROSMOD::DEBUG::1459354917152843328::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354917, nsec=152827912
+ROSMOD::DEBUG::1459354917152991828::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354917703484194::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354917, nsec=703472610
+ROSMOD::DEBUG::1459354917946395036::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354917, nsec=946362786; Execution Time sec=0, nsec=793534874
+ROSMOD::DEBUG::1459354917946494619::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354918693292105::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354918, nsec=693277688
+ROSMOD::DEBUG::1459354918740871826::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354918, nsec=740838909; Execution Time sec=1, nsec=37366299
+ROSMOD::DEBUG::1459354918740967076::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354919543748595::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354919, nsec=543716179; Execution Time sec=0, nsec=850438491
+ROSMOD::DEBUG::1459354920291450162::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354920, nsec=291435829
+ROSMOD::DEBUG::1459354920291562579::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354921091825271::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354921, nsec=91792188; Execution Time sec=0, nsec=800356359
+ROSMOD::DEBUG::1459354921220477301::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354921, nsec=220466551
+ROSMOD::DEBUG::1459354921220586384::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354921836242929::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354921, nsec=836227846
+ROSMOD::DEBUG::1459354922014119592::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354922, nsec=14082009; Execution Time sec=0, nsec=793615458
+ROSMOD::DEBUG::1459354922014261675::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354922815685282::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354922, nsec=815650032; Execution Time sec=0, nsec=979422186
+ROSMOD::DEBUG::1459354923562074685::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354923, nsec=562039185
+ROSMOD::DEBUG::1459354923562191518::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354924247861399::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354924, nsec=247850315
+ROSMOD::DEBUG::1459354924357781056::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354924, nsec=357747056; Execution Time sec=0, nsec=795707871
+ROSMOD::DEBUG::1459354924357875222::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354925101088467::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354925, nsec=101073717
+ROSMOD::DEBUG::1459354925154094091::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354925, nsec=154060008; Execution Time sec=0, nsec=906209693
+ROSMOD::DEBUG::1459354925154191508::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354925957193528::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354925, nsec=957153694; Execution Time sec=0, nsec=856079977
+ROSMOD::DEBUG::1459354926702029935::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354926, nsec=701997602
+ROSMOD::DEBUG::1459354926702192018::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354927256231043::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354927, nsec=256220459
+ROSMOD::DEBUG::1459354927502499294::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354927, nsec=502467294; Execution Time sec=0, nsec=800469692
+ROSMOD::DEBUG::1459354927502636377::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354928252813189::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354928, nsec=252799022
+ROSMOD::DEBUG::1459354928297130834::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354928, nsec=297095501; Execution Time sec=1, nsec=40875042
+ROSMOD::DEBUG::1459354928297225334::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354929098695774::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354929, nsec=98662274; Execution Time sec=0, nsec=845863252
+ROSMOD::DEBUG::1459354929842475185::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354929, nsec=842461018
+ROSMOD::DEBUG::1459354929842586268::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354930581906272::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354930, nsec=581895022
+ROSMOD::DEBUG::1459354930639375469::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354930, nsec=639343636; Execution Time sec=0, nsec=796882618
+ROSMOD::DEBUG::1459354930639477469::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354931382812964::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354931, nsec=382797130
+ROSMOD::DEBUG::1459354931434022426::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354931, nsec=433990843; Execution Time sec=0, nsec=852095821
+ROSMOD::DEBUG::1459354931434130592::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354932235672200::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354932, nsec=235640616; Execution Time sec=0, nsec=852843486
+ROSMOD::DEBUG::1459354932977261615::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354932, nsec=977248115
+ROSMOD::DEBUG::1459354932977432531::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354933542530530::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354933, nsec=542519364
+ROSMOD::DEBUG::1459354933777805641::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354933, nsec=777773142; Execution Time sec=0, nsec=800525027
+ROSMOD::DEBUG::1459354933777905225::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354934520724304::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354934, nsec=520710721
+ROSMOD::DEBUG::1459354934572639015::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354934, nsec=572605515; Execution Time sec=1, nsec=30086151
+ROSMOD::DEBUG::1459354934572735598::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354935374171122::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354935, nsec=374137789; Execution Time sec=0, nsec=853427068
+ROSMOD::DEBUG::1459354936120821109::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354936, nsec=120806609
+ROSMOD::DEBUG::1459354936120928192::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354936670528561::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354936, nsec=670517311
+ROSMOD::DEBUG::1459354936914532652::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354936, nsec=914502319; Execution Time sec=0, nsec=793695710
+ROSMOD::DEBUG::1459354936914625735::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354937654200322::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354937, nsec=654185072
+ROSMOD::DEBUG::1459354937709407109::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354937, nsec=709373192; Execution Time sec=1, nsec=38855881
+ROSMOD::DEBUG::1459354937709552608::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354938511011216::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354938, nsec=510979883; Execution Time sec=0, nsec=856794811
+ROSMOD::DEBUG::1459354939252177383::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354939, nsec=252162217
+ROSMOD::DEBUG::1459354939252292216::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354940052356078::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354940, nsec=52324411; Execution Time sec=0, nsec=800162194
+ROSMOD::DEBUG::1459354940179787944::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354940, nsec=179724610
+ROSMOD::DEBUG::1459354940179891193::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354940798431733::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354940, nsec=798416150
+ROSMOD::DEBUG::1459354940973436653::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354940, nsec=973401153; Execution Time sec=0, nsec=793676543
+ROSMOD::DEBUG::1459354940973537236::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354941775109928::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354941, nsec=775070094; Execution Time sec=0, nsec=976653944
+ROSMOD::DEBUG::1459354942512219521::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354942, nsec=512189021
+ROSMOD::DEBUG::1459354942512378687::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354943246813871::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354943, nsec=246803621
+ROSMOD::DEBUG::1459354943312709382::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354943, nsec=312677632; Execution Time sec=0, nsec=800488611
+ROSMOD::DEBUG::1459354943312869298::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354944054660381::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354944, nsec=54643797
+ROSMOD::DEBUG::1459354944107517839::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354944, nsec=107484339; Execution Time sec=0, nsec=860680718
+ROSMOD::DEBUG::1459354944107613422::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354944909234530::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354944, nsec=909194197; Execution Time sec=0, nsec=854550400
+ROSMOD::DEBUG::1459354945650872280::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354945, nsec=650848447
+ROSMOD::DEBUG::1459354945651038446::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354946246817207::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354946, nsec=246806207
+ROSMOD::DEBUG::1459354946451411641::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354946, nsec=451380474; Execution Time sec=0, nsec=800532027
+ROSMOD::DEBUG::1459354946451504974::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354947192259642::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354947, nsec=192243559
+ROSMOD::DEBUG::1459354947245950099::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354947, nsec=245914932; Execution Time sec=0, nsec=999108725
+ROSMOD::DEBUG::1459354947246068349::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354948047411124::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354948, nsec=47378874; Execution Time sec=0, nsec=855135315
+ROSMOD::DEBUG::1459354948786461964::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354948, nsec=786438297
+ROSMOD::DEBUG::1459354948786651546::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354949587155741::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354949, nsec=587124408; Execution Time sec=0, nsec=800686111
+ROSMOD::DEBUG::1459354950338228469::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354950, nsec=338217552
+ROSMOD::DEBUG::1459354950338323552::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354951133471009::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354951, nsec=133438676; Execution Time sec=0, nsec=795221124
+ROSMOD::DEBUG::1459354951896134043::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354951, nsec=896121126
+ROSMOD::DEBUG::1459354951896231876::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354952785255195::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354952, nsec=785227278; Execution Time sec=0, nsec=889106152
+ROSMOD::DEBUG::1459354953535605591::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354953, nsec=535581508
+ROSMOD::DEBUG::1459354953535855007::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354954434629470::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354954, nsec=434596637; Execution Time sec=0, nsec=899015129
+ROSMOD::DEBUG::1459354955182690372::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354955, nsec=182669872
+ROSMOD::DEBUG::1459354955182957788::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354956064347209::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354956, nsec=64316625; Execution Time sec=0, nsec=881646753
+ROSMOD::DEBUG::1459354956817530015::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354956, nsec=817512432
+ROSMOD::DEBUG::1459354956817982848::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354957670610586::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354957, nsec=670577336; Execution Time sec=0, nsec=853064904
+ROSMOD::DEBUG::1459354958421487982::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354958, nsec=421471732
+ROSMOD::DEBUG::1459354958421749898::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354959312186464::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354959, nsec=312159047; Execution Time sec=0, nsec=890687315
+ROSMOD::DEBUG::1459354960055845043::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354960, nsec=55818043
+ROSMOD::DEBUG::1459354960056216459::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354960939167960::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354960, nsec=939136793; Execution Time sec=0, nsec=883318750
+ROSMOD::DEBUG::1459354961691984518::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354961, nsec=691965184
+ROSMOD::DEBUG::1459354961692239600::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354962580468589::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354962, nsec=580435339; Execution Time sec=0, nsec=888470155
+ROSMOD::DEBUG::1459354963344196704::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354963, nsec=344181454
+ROSMOD::DEBUG::1459354963344438620::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354964208256000::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354964, nsec=208222250; Execution Time sec=0, nsec=864040796
+ROSMOD::DEBUG::1459354964953723992::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354964, nsec=953699325
+ROSMOD::DEBUG::1459354964954162157::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354965837691657::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354965, nsec=837658741; Execution Time sec=0, nsec=883959416
+ROSMOD::DEBUG::1459354966589341885::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354966, nsec=589326135
+ROSMOD::DEBUG::1459354966589588717::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354967478679454::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354967, nsec=478646621; Execution Time sec=0, nsec=889320486
+ROSMOD::DEBUG::1459354968223244032::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354968, nsec=223216199
+ROSMOD::DEBUG::1459354968223584448::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354969118169838::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354969, nsec=118141255; Execution Time sec=0, nsec=894925056
+ROSMOD::DEBUG::1459354969864778745::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354969, nsec=864758245
+ROSMOD::DEBUG::1459354969865017994::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354970747774663::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354970, nsec=747736913; Execution Time sec=0, nsec=882978668
+ROSMOD::DEBUG::1459354971504243463::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354971, nsec=504225046
+ROSMOD::DEBUG::1459354971504478795::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354972399907434::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354972, nsec=399880268; Execution Time sec=0, nsec=895655222
+ROSMOD::DEBUG::1459354973160427475::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354973, nsec=160403891
+ROSMOD::DEBUG::1459354973160765140::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354974017461204::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354974, nsec=17427038; Execution Time sec=0, nsec=857023147
+ROSMOD::DEBUG::1459354974790648048::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354974, nsec=790628965
+ROSMOD::DEBUG::1459354974790888298::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354975644856201::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354975, nsec=644826785; Execution Time sec=0, nsec=854197820
+ROSMOD::DEBUG::1459354976403860579::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354976, nsec=403840745
+ROSMOD::DEBUG::1459354976404129828::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354977262712971::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354977, nsec=262682388; Execution Time sec=0, nsec=858841643
+ROSMOD::DEBUG::1459354978018598522::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354978, nsec=18572022
+ROSMOD::DEBUG::1459354978018881605::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354978913773746::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354978, nsec=913740329; Execution Time sec=0, nsec=895168307
+ROSMOD::DEBUG::1459354979662168815::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354979, nsec=662150565
+ROSMOD::DEBUG::1459354979662423731::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354980519026046::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354980, nsec=518994379; Execution Time sec=0, nsec=856843814
+ROSMOD::DEBUG::1459354981277071176::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354981, nsec=277051259
+ROSMOD::DEBUG::1459354981277476425::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354982101953315::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354982, nsec=101920565; Execution Time sec=0, nsec=824869306
+ROSMOD::DEBUG::1459354982851658548::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354982, nsec=851638131
+ROSMOD::DEBUG::1459354982851895548::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354983250735774::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354983, nsec=250716941
+ROSMOD::DEBUG::1459354983673330278::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354983, nsec=673296528; Execution Time sec=0, nsec=821658397
+ROSMOD::DEBUG::1459354983673427778::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354984412695286::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354984, nsec=412678786
+ROSMOD::DEBUG::1459354984469456819::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354984, nsec=469424402; Execution Time sec=1, nsec=218707461
+ROSMOD::DEBUG::1459354984469558569::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354985270502598::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354985, nsec=270474348; Execution Time sec=0, nsec=857795562
+ROSMOD::DEBUG::1459354986021400828::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354986, nsec=21388912
+ROSMOD::DEBUG::1459354986021502578::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354986821759776::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354986, nsec=821728193; Execution Time sec=0, nsec=800339281
+ROSMOD::DEBUG::1459354987405895149::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354987, nsec=405885233
+ROSMOD::DEBUG::1459354987406010816::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354987566253022::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354987, nsec=566228855
+ROSMOD::DEBUG::1459354988254294650::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354988, nsec=254260150; Execution Time sec=0, nsec=848374917
+ROSMOD::DEBUG::1459354988254390983::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354989054821847::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354989, nsec=54788181; Execution Time sec=1, nsec=488559326
+ROSMOD::DEBUG::1459354989799470760::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354989, nsec=799459676
+ROSMOD::DEBUG::1459354989799563343::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354990164473900::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354990, nsec=164463483
+ROSMOD::DEBUG::1459354990599519375::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354990, nsec=599486041; Execution Time sec=0, nsec=800026365
+ROSMOD::DEBUG::1459354990599616958::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354991340630212::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354991, nsec=340614379
+ROSMOD::DEBUG::1459354991394351502::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354991, nsec=394316169; Execution Time sec=1, nsec=229852686
+ROSMOD::DEBUG::1459354991394445585::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354992194822449::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354992, nsec=194795200; Execution Time sec=0, nsec=854180821
+ROSMOD::DEBUG::1459354992934588707::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354992, nsec=934576957
+ROSMOD::DEBUG::1459354992934721790::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354993728071921::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354993, nsec=728029504; Execution Time sec=0, nsec=793452547
+ROSMOD::DEBUG::1459354994424502447::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354994, nsec=424488197
+ROSMOD::DEBUG::1459354994424744946::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354994473653498::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354994, nsec=473636581
+ROSMOD::DEBUG::1459354995238671945::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354995, nsec=238639112; Execution Time sec=0, nsec=814150915
+ROSMOD::DEBUG::1459354995238770362::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354996038893727::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354996, nsec=38862227; Execution Time sec=1, nsec=565225646
+ROSMOD::DEBUG::1459354996791836870::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354996, nsec=791824953
+ROSMOD::DEBUG::1459354996791945037::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354997265967753::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354997, nsec=265957253
+ROSMOD::DEBUG::1459354997586989747::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354997, nsec=586957831; Execution Time sec=0, nsec=795132878
+ROSMOD::DEBUG::1459354997587092747::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354998330785162::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354998, nsec=330770162
+ROSMOD::DEBUG::1459354998382868872::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354998, nsec=382835123; Execution Time sec=1, nsec=116877870
+ROSMOD::DEBUG::1459354998383014122::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459354999183227737::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459354999, nsec=183198404; Execution Time sec=0, nsec=852428242
+ROSMOD::DEBUG::1459354999929009231::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459354999, nsec=928996647
+ROSMOD::DEBUG::1459354999929111147::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355000729388179::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355000, nsec=729356096; Execution Time sec=0, nsec=800359449
+ROSMOD::DEBUG::1459355001339839491::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355001, nsec=339829741
+ROSMOD::DEBUG::1459355001339934408::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355001478320332::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355001, nsec=478300332
+ROSMOD::DEBUG::1459355002187582161::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355002, nsec=187546495; Execution Time sec=0, nsec=847716754
+ROSMOD::DEBUG::1459355002187678661::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355002987860860::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355002, nsec=987828777; Execution Time sec=1, nsec=509528445
+ROSMOD::DEBUG::1459355003736891096::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355003, nsec=736880263
+ROSMOD::DEBUG::1459355003736991096::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355004263602106::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355004, nsec=263590772
+ROSMOD::DEBUG::1459355004537313878::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355004, nsec=537281961; Execution Time sec=0, nsec=800401698
+ROSMOD::DEBUG::1459355004537452127::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355005283763703::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355005, nsec=283747953
+ROSMOD::DEBUG::1459355005332192756::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355005, nsec=332158339; Execution Time sec=1, nsec=68567567
+ROSMOD::DEBUG::1459355005332291756::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355006132734454::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355006, nsec=132709037; Execution Time sec=0, nsec=848961084
+ROSMOD::DEBUG::1459355006874664374::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355006, nsec=874653124
+ROSMOD::DEBUG::1459355006874761873::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355007668987170::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355007, nsec=668957420; Execution Time sec=0, nsec=794304296
+ROSMOD::DEBUG::1459355008341363420::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355008, nsec=341353587
+ROSMOD::DEBUG::1459355008341457420::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355008415106496::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355008, nsec=415085663
+ROSMOD::DEBUG::1459355009184994017::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355009, nsec=184960267; Execution Time sec=0, nsec=843606680
+ROSMOD::DEBUG::1459355009185121767::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355009985269049::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355009, nsec=985236883; Execution Time sec=1, nsec=570151220
+ROSMOD::DEBUG::1459355010744268845::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355010, nsec=744258096
+ROSMOD::DEBUG::1459355010744401845::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355011262699625::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355011, nsec=262688708
+ROSMOD::DEBUG::1459355011537827477::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355011, nsec=537797061; Execution Time sec=0, nsec=793538965
+ROSMOD::DEBUG::1459355011537914310::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355012277959235::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355012, nsec=277944485
+ROSMOD::DEBUG::1459355012332894439::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355012, nsec=332859272; Execution Time sec=1, nsec=70170564
+ROSMOD::DEBUG::1459355012332992938::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355013134641051::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355013, nsec=134608634; Execution Time sec=0, nsec=856664149
+ROSMOD::DEBUG::1459355013876673387::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355013, nsec=876663137
+ROSMOD::DEBUG::1459355013876768721::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355014677116003::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355014, nsec=677092420; Execution Time sec=0, nsec=800429283
+ROSMOD::DEBUG::1459355015439492292::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355015, nsec=439474792
+ROSMOD::DEBUG::1459355015439733124::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355016168579325::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355016, nsec=168540742
+ROSMOD::DEBUG::1459355016250553382::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355016, nsec=250521632; Execution Time sec=0, nsec=811046840
+ROSMOD::DEBUG::1459355016250707465::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355016988642811::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355016, nsec=988627895
+ROSMOD::DEBUG::1459355017052452078::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355017, nsec=52416495; Execution Time sec=0, nsec=883875753
+ROSMOD::DEBUG::1459355017052549328::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355017853055110::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355017, nsec=853015943; Execution Time sec=0, nsec=864388048
+ROSMOD::DEBUG::1459355018610010078::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355018, nsec=609998745
+ROSMOD::DEBUG::1459355018610106078::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355019160423783::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355019, nsec=160412866
+ROSMOD::DEBUG::1459355019403447794::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355019, nsec=403415627; Execution Time sec=0, nsec=793416882
+ROSMOD::DEBUG::1459355019403547294::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355020142497138::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355020, nsec=142483054
+ROSMOD::DEBUG::1459355020204614741::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355020, nsec=204580825; Execution Time sec=1, nsec=44167959
+ROSMOD::DEBUG::1459355020204713158::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355021005121607::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355021, nsec=5090107; Execution Time sec=0, nsec=862607053
+ROSMOD::DEBUG::1459355021777410206::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355021, nsec=777399790
+ROSMOD::DEBUG::1459355021777542123::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355022286863174::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355022, nsec=286852674
+ROSMOD::DEBUG::1459355022570909172::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355022, nsec=570877589; Execution Time sec=0, nsec=793477799
+ROSMOD::DEBUG::1459355022571001922::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355023311589845::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355023, nsec=311573429
+ROSMOD::DEBUG::1459355023372010120::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355023, nsec=371976203; Execution Time sec=1, nsec=85123529
+ROSMOD::DEBUG::1459355023372120286::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355024173934149::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355024, nsec=173905983; Execution Time sec=0, nsec=862332554
+ROSMOD::DEBUG::1459355024912908243::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355024, nsec=912896743
+ROSMOD::DEBUG::1459355024913006910::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355025714720106::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355025, nsec=714693440; Execution Time sec=0, nsec=801796697
+ROSMOD::DEBUG::1459355026333412400::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355026, nsec=333402567
+ROSMOD::DEBUG::1459355026333506484::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355026460392518::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355026, nsec=460372185
+ROSMOD::DEBUG::1459355027183899149::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355027, nsec=183864649; Execution Time sec=0, nsec=850462082
+ROSMOD::DEBUG::1459355027184076815::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355027985595929::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355027, nsec=985562596; Execution Time sec=1, nsec=525190411
+ROSMOD::DEBUG::1459355028744153394::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355028, nsec=744142727
+ROSMOD::DEBUG::1459355028744250644::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355029239699395::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355029, nsec=239688395
+ROSMOD::DEBUG::1459355029544141178::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355029, nsec=544107928; Execution Time sec=0, nsec=799965201
+ROSMOD::DEBUG::1459355029544234261::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355030282207025::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355030, nsec=282191442
+ROSMOD::DEBUG::1459355030345366626::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355030, nsec=345332376; Execution Time sec=1, nsec=105643981
+ROSMOD::DEBUG::1459355030345472793::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355031147236156::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355031, nsec=147211240; Execution Time sec=0, nsec=865019798
+ROSMOD::DEBUG::1459355031896901809::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355031, nsec=896889892
+ROSMOD::DEBUG::1459355031897001892::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355032690738191::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355032, nsec=690712024; Execution Time sec=0, nsec=793822132
+ROSMOD::DEBUG::1459355033309443569::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355033, nsec=309433985
+ROSMOD::DEBUG::1459355033309558902::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355033444863417::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355033, nsec=444843333
+ROSMOD::DEBUG::1459355034131421051::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355034, nsec=131386635; Execution Time sec=0, nsec=821952650
+ROSMOD::DEBUG::1459355034131518134::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355034931949918::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355034, nsec=931918251; Execution Time sec=1, nsec=487074918
+ROSMOD::DEBUG::1459355035698624114::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355035, nsec=698613698
+ROSMOD::DEBUG::1459355035698689697::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355036176667823::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355036, nsec=176656406
+ROSMOD::DEBUG::1459355036491747082::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355036, nsec=491714832; Execution Time sec=0, nsec=793101134
+ROSMOD::DEBUG::1459355036491845081::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355037235215499::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355037, nsec=235200166
+ROSMOD::DEBUG::1459355037293233446::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355037, nsec=293198779; Execution Time sec=1, nsec=116542373
+ROSMOD::DEBUG::1459355037293333779::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355038093463063::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355038, nsec=93430397; Execution Time sec=0, nsec=858230231
+ROSMOD::DEBUG::1459355038838944560::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355038, nsec=838933143
+ROSMOD::DEBUG::1459355038839088559::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355039163505046::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355039, nsec=163494963
+ROSMOD::DEBUG::1459355039633394108::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355039, nsec=633361941; Execution Time sec=0, nsec=794428798
+ROSMOD::DEBUG::1459355039633491357::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355040377164108::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355040, nsec=377146941
+ROSMOD::DEBUG::1459355040435648220::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355040, nsec=435614970; Execution Time sec=1, nsec=272120007
+ROSMOD::DEBUG::1459355040435746220::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355041237643834::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355041, nsec=237611834; Execution Time sec=0, nsec=860464893
+ROSMOD::DEBUG::1459355041980974502::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355041, nsec=980962335
+ROSMOD::DEBUG::1459355041981099002::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355042775273050::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355042, nsec=775236134; Execution Time sec=0, nsec=794273799
+ROSMOD::DEBUG::1459355043373083227::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355043, nsec=373073144
+ROSMOD::DEBUG::1459355043373177644::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355043521300545::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355043, nsec=521281129
+ROSMOD::DEBUG::1459355044231981207::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355044, nsec=231946957; Execution Time sec=0, nsec=858873813
+ROSMOD::DEBUG::1459355044232153457::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355045035371484::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355045, nsec=35338401; Execution Time sec=1, nsec=514057272
+ROSMOD::DEBUG::1459355045794405366::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355045, nsec=794394199
+ROSMOD::DEBUG::1459355045794500782::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355046588313832::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355046, nsec=588284082; Execution Time sec=0, nsec=793889883
+ROSMOD::DEBUG::1459355047162973647::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355047, nsec=162964064
+ROSMOD::DEBUG::1459355047163083647::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355047328722424::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355047, nsec=328702590
+ROSMOD::DEBUG::1459355048017900553::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355048, nsec=17865053; Execution Time sec=0, nsec=854900989
+ROSMOD::DEBUG::1459355048017996886::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355048820477415::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355048, nsec=820447165; Execution Time sec=1, nsec=491744575
+ROSMOD::DEBUG::1459355049585352783::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355049, nsec=585341867
+ROSMOD::DEBUG::1459355049585452033::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355050158074936::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355050, nsec=158063936
+ROSMOD::DEBUG::1459355050380299997::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355050, nsec=380268914; Execution Time sec=0, nsec=794927047
+ROSMOD::DEBUG::1459355050380441747::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355051119464342::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355051, nsec=119448342
+ROSMOD::DEBUG::1459355051182798193::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355051, nsec=182764610; Execution Time sec=1, nsec=24700674
+ROSMOD::DEBUG::1459355051182893693::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355051983276977::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355051, nsec=983243811; Execution Time sec=0, nsec=863795469
+ROSMOD::DEBUG::1459355052732801881::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355052, nsec=732791382
+ROSMOD::DEBUG::1459355052732868631::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355053237080946::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355053, nsec=237070029
+ROSMOD::DEBUG::1459355053534292163::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355053, nsec=534259997; Execution Time sec=0, nsec=801468615
+ROSMOD::DEBUG::1459355053534381413::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355054276293669::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355054, nsec=276278335
+ROSMOD::DEBUG::1459355054336552277::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355054, nsec=336517694; Execution Time sec=1, nsec=99447665
+ROSMOD::DEBUG::1459355054336647860::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355055137094145::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355055, nsec=137052645; Execution Time sec=0, nsec=860774310
+ROSMOD::DEBUG::1459355055888791127::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355055, nsec=888779960
+ROSMOD::DEBUG::1459355055888913877::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355056682586177::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355056, nsec=682567677; Execution Time sec=0, nsec=793787717
+ROSMOD::DEBUG::1459355057308934955::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355057, nsec=308925205
+ROSMOD::DEBUG::1459355057309029038::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355057429492754::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355057, nsec=429470504
+ROSMOD::DEBUG::1459355058165329524::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355058, nsec=165295191; Execution Time sec=0, nsec=856369986
+ROSMOD::DEBUG::1459355058165429607::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355058744892662::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355058, nsec=744881745
+ROSMOD::DEBUG::1459355058965787226::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355058, nsec=965754892; Execution Time sec=1, nsec=536284388
+ROSMOD::DEBUG::1459355058965879475::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355059709097145::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355059, nsec=709080228
+ROSMOD::DEBUG::1459355059762137937::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355059, nsec=762103020; Execution Time sec=1, nsec=17221275
+ROSMOD::DEBUG::1459355059762230436::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355060563347720::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355060, nsec=563316136; Execution Time sec=0, nsec=854235908
+ROSMOD::DEBUG::1459355061324453264::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355061, nsec=324442680
+ROSMOD::DEBUG::1459355061324572013::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355062118080148::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355062, nsec=118052481; Execution Time sec=0, nsec=793609801
+ROSMOD::DEBUG::1459355062866126222::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355062, nsec=866115056
+ROSMOD::DEBUG::1459355062866222472::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355063684448465::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355063, nsec=684415882; Execution Time sec=0, nsec=818300826
+ROSMOD::DEBUG::1459355064445038427::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355064, nsec=445016594
+ROSMOD::DEBUG::1459355064445325843::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355065267858493::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355065, nsec=267825243; Execution Time sec=0, nsec=822808649
+ROSMOD::DEBUG::1459355066012132410::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355066, nsec=12108244
+ROSMOD::DEBUG::1459355066012408326::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355066861122164::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355066, nsec=861090665; Execution Time sec=0, nsec=848982421
+ROSMOD::DEBUG::1459355067608883990::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355067, nsec=608864573
+ROSMOD::DEBUG::1459355067609164073::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355068491904498::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355068, nsec=491875331; Execution Time sec=0, nsec=883010758
+ROSMOD::DEBUG::1459355069236222332::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355069, nsec=236204082
+ROSMOD::DEBUG::1459355069236596581::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355070130173730::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355070, nsec=130134397; Execution Time sec=0, nsec=893930315
+ROSMOD::DEBUG::1459355070886792202::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355070, nsec=886764869
+ROSMOD::DEBUG::1459355070887062868::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355071771297456::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355071, nsec=771276206; Execution Time sec=0, nsec=884511337
+ROSMOD::DEBUG::1459355072523183023::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355072, nsec=523164189
+ROSMOD::DEBUG::1459355072523438105::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355073411620851::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355073, nsec=411591018; Execution Time sec=0, nsec=888426829
+ROSMOD::DEBUG::1459355074176587303::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355074, nsec=176568387
+ROSMOD::DEBUG::1459355074176842719::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355075064500633::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355075, nsec=64468967; Execution Time sec=0, nsec=887900580
+ROSMOD::DEBUG::1459355075830114417::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355075, nsec=830095417
+ROSMOD::DEBUG::1459355075830348250::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355076681210667::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355076, nsec=681179667; Execution Time sec=0, nsec=851084250
+ROSMOD::DEBUG::1459355077440319800::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355077, nsec=440302550
+ROSMOD::DEBUG::1459355077440662466::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355078323833140::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355078, nsec=323801057; Execution Time sec=0, nsec=883498507
+ROSMOD::DEBUG::1459355079070725468::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355079, nsec=70696135
+ROSMOD::DEBUG::1459355079071011218::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355079926744790::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355079, nsec=926712957; Execution Time sec=0, nsec=856016822
+ROSMOD::DEBUG::1459355080683008513::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355080, nsec=682988430
+ROSMOD::DEBUG::1459355080683278846::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355081567738267::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355081, nsec=567707434; Execution Time sec=0, nsec=884719004
+ROSMOD::DEBUG::1459355082339703703::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355082, nsec=339685870
+ROSMOD::DEBUG::1459355082339947120::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355083221036133::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355083, nsec=221002466; Execution Time sec=0, nsec=881316596
+ROSMOD::DEBUG::1459355083971876618::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355083, nsec=971852702
+ROSMOD::DEBUG::1459355083972156284::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355084825377530::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355084, nsec=825345196; Execution Time sec=0, nsec=853492494
+ROSMOD::DEBUG::1459355085580795663::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355085, nsec=580776080
+ROSMOD::DEBUG::1459355085581174246::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355086431414513::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355086, nsec=431386179; Execution Time sec=0, nsec=850610099
+ROSMOD::DEBUG::1459355087188204765::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355087, nsec=188184015
+ROSMOD::DEBUG::1459355087188409098::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355088036308567::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355088, nsec=36277400; Execution Time sec=0, nsec=848093385
+ROSMOD::DEBUG::1459355088790301756::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355088, nsec=790285756
+ROSMOD::DEBUG::1459355088790565671::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355089652121844::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355089, nsec=652085094; Execution Time sec=0, nsec=861799338
+ROSMOD::DEBUG::1459355090409622192::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355090, nsec=409596109
+ROSMOD::DEBUG::1459355090409876274::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355091258641174::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355091, nsec=258607340; Execution Time sec=0, nsec=849011231
+ROSMOD::DEBUG::1459355092010395052::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355092, nsec=10366635
+ROSMOD::DEBUG::1459355092010664467::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355092862521613::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355092, nsec=862489363; Execution Time sec=0, nsec=852122728
+ROSMOD::DEBUG::1459355093614915163::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355093, nsec=614895246
+ROSMOD::DEBUG::1459355093615314745::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355094470350135::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355094, nsec=470317052; Execution Time sec=0, nsec=855421806
+ROSMOD::DEBUG::1459355095224977933::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355095, nsec=224940600
+ROSMOD::DEBUG::1459355095225230265::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355096074618436::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355096, nsec=74586436; Execution Time sec=0, nsec=849645836
+ROSMOD::DEBUG::1459355096830670236::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355096, nsec=830651903
+ROSMOD::DEBUG::1459355096830916818::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355097680351497::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355097, nsec=680320748; Execution Time sec=0, nsec=849668845
+ROSMOD::DEBUG::1459355098432325987::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355098, nsec=432309154
+ROSMOD::DEBUG::1459355098432578820::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355099287668150::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355099, nsec=287639150; Execution Time sec=0, nsec=855329996
+ROSMOD::DEBUG::1459355100029113439::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355100, nsec=29084355
+ROSMOD::DEBUG::1459355100029384438::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355100879160715::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355100, nsec=879129298; Execution Time sec=0, nsec=850044943
+ROSMOD::DEBUG::1459355101637458943::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355101, nsec=637439360
+ROSMOD::DEBUG::1459355101637875525::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355102494982864::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355102, nsec=494948447; Execution Time sec=0, nsec=857509087
+ROSMOD::DEBUG::1459355103236916081::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355103, nsec=236896831
+ROSMOD::DEBUG::1459355103237246663::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355104090734190::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355104, nsec=90700857; Execution Time sec=0, nsec=853804026
+ROSMOD::DEBUG::1459355104834599407::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355104, nsec=834580240
+ROSMOD::DEBUG::1459355104834846573::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355105683969042::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355105, nsec=683936042; Execution Time sec=0, nsec=849355802
+ROSMOD::DEBUG::1459355106440498465::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355106, nsec=440481215
+ROSMOD::DEBUG::1459355106440737298::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355107290869854::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355107, nsec=290837604; Execution Time sec=0, nsec=850356389
+ROSMOD::DEBUG::1459355108036172911::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355108, nsec=36145245
+ROSMOD::DEBUG::1459355108036454493::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355108894144944::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355108, nsec=894113778; Execution Time sec=0, nsec=857968533
+ROSMOD::DEBUG::1459355109647221645::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355109, nsec=647204978
+ROSMOD::DEBUG::1459355109647573560::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355110499961457::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355110, nsec=499930540; Execution Time sec=0, nsec=852725562
+ROSMOD::DEBUG::1459355111243571867::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355111, nsec=243552201
+ROSMOD::DEBUG::1459355111243837616::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355112093297281::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355112, nsec=93264781; Execution Time sec=0, nsec=849712580
+ROSMOD::DEBUG::1459355112842398927::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355112, nsec=842383344
+ROSMOD::DEBUG::1459355112842644593::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355113733954519::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355113, nsec=733921186; Execution Time sec=0, nsec=891537842
+ROSMOD::DEBUG::1459355114494534293::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355114, nsec=494515543
+ROSMOD::DEBUG::1459355114494763959::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355115386442808::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355115, nsec=386417391; Execution Time sec=0, nsec=891901848
+ROSMOD::DEBUG::1459355116153449981::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355116, nsec=153426814
+ROSMOD::DEBUG::1459355116153717313::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355117037954949::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355117, nsec=37921449; Execution Time sec=0, nsec=884494635
+ROSMOD::DEBUG::1459355117807674702::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355117, nsec=807653285
+ROSMOD::DEBUG::1459355117808223366::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355118701783307::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355118, nsec=701749807; Execution Time sec=0, nsec=894096522
+ROSMOD::DEBUG::1459355119458462034::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355119, nsec=458441451
+ROSMOD::DEBUG::1459355119458702367::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355120343643766::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355120, nsec=343607932; Execution Time sec=0, nsec=885166481
+ROSMOD::DEBUG::1459355121082547984::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355121, nsec=82520651
+ROSMOD::DEBUG::1459355121082853650::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355121961592414::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355121, nsec=961559997; Execution Time sec=0, nsec=879039346
+ROSMOD::DEBUG::1459355122713317423::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355122, nsec=713294007
+ROSMOD::DEBUG::1459355122713511756::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355123601641408::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355123, nsec=601611408; Execution Time sec=0, nsec=888317401
+ROSMOD::DEBUG::1459355124358690986::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355124, nsec=358673153
+ROSMOD::DEBUG::1459355124358925402::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355125241799999::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355125, nsec=241767249; Execution Time sec=0, nsec=883094096
+ROSMOD::DEBUG::1459355125987218295::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355125, nsec=987190878
+ROSMOD::DEBUG::1459355125987624126::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355126870473898::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355126, nsec=870442148; Execution Time sec=0, nsec=883251270
+ROSMOD::DEBUG::1459355127627037991::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355127, nsec=627017825
+ROSMOD::DEBUG::1459355127627294324::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355128522002307::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355128, nsec=521972057; Execution Time sec=0, nsec=894954232
+ROSMOD::DEBUG::1459355129280318066::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355129, nsec=280294900
+ROSMOD::DEBUG::1459355129280599149::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355130164023766::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355130, nsec=163996849; Execution Time sec=0, nsec=883701949
+ROSMOD::DEBUG::1459355130909557914::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355130, nsec=909534414
+ROSMOD::DEBUG::1459355130909802246::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355131793208538::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355131, nsec=793181955; Execution Time sec=0, nsec=883647541
+ROSMOD::DEBUG::1459355132547134994::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355132, nsec=547118411
+ROSMOD::DEBUG::1459355132547384327::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355133442718163::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355133, nsec=442690663; Execution Time sec=0, nsec=895572252
+ROSMOD::DEBUG::1459355134204893177::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355134, nsec=204872927
+ROSMOD::DEBUG::1459355134205445092::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355135085375244::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355135, nsec=85343328; Execution Time sec=0, nsec=880470401
+ROSMOD::DEBUG::1459355135834234566::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355135, nsec=834213566
+ROSMOD::DEBUG::1459355135834518731::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355136714463141::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355136, nsec=714428975; Execution Time sec=0, nsec=880215409
+ROSMOD::DEBUG::1459355137481811982::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355137, nsec=481794482
+ROSMOD::DEBUG::1459355137482058481::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355138367743877::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355138, nsec=367715627; Execution Time sec=0, nsec=885921145
+ROSMOD::DEBUG::1459355139122952602::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355139, nsec=122926102
+ROSMOD::DEBUG::1459355139123213518::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355139937067692::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355139, nsec=937020275; Execution Time sec=0, nsec=814094173
+ROSMOD::DEBUG::1459355140693073338::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355140, nsec=693030338
+ROSMOD::DEBUG::1459355140693321670::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355141516726398::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355141, nsec=516696898; Execution Time sec=0, nsec=823666560
+ROSMOD::DEBUG::1459355142260485929::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355142, nsec=260470679
+ROSMOD::DEBUG::1459355142260847344::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355143077882435::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355143, nsec=77851102; Execution Time sec=0, nsec=817380423
+ROSMOD::DEBUG::1459355143842612310::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355143, nsec=842595310
+ROSMOD::DEBUG::1459355143842844726::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355144658998744::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355144, nsec=658971661; Execution Time sec=0, nsec=816376351
+ROSMOD::DEBUG::1459355145415591738::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355145, nsec=415575905
+ROSMOD::DEBUG::1459355145415825487::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355146230633516::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355146, nsec=230609766; Execution Time sec=0, nsec=815033861
+ROSMOD::DEBUG::1459355146974829979::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355146, nsec=974804896
+ROSMOD::DEBUG::1459355146975138394::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355147799923392::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355147, nsec=799895476; Execution Time sec=0, nsec=825090580
+ROSMOD::DEBUG::1459355148548028430::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355148, nsec=548011514
+ROSMOD::DEBUG::1459355148548295929::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355149369181781::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355149, nsec=369149448; Execution Time sec=0, nsec=821137934
+ROSMOD::DEBUG::1459355150127533952::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355150, nsec=127505202
+ROSMOD::DEBUG::1459355150128075534::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355150941363837::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355150, nsec=941330753; Execution Time sec=0, nsec=813825551
+ROSMOD::DEBUG::1459355151692480541::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355151, nsec=692461124
+ROSMOD::DEBUG::1459355151692725040::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355152520948877::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355152, nsec=520918627; Execution Time sec=0, nsec=828457503
+ROSMOD::DEBUG::1459355153270446593::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355153, nsec=270425260
+ROSMOD::DEBUG::1459355153270708259::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355154116887785::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355154, nsec=116860035; Execution Time sec=0, nsec=846434775
+ROSMOD::DEBUG::1459355154859725781::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355154, nsec=859707864
+ROSMOD::DEBUG::1459355154859972113::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355155708838386::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355155, nsec=708810636; Execution Time sec=0, nsec=849102772
+ROSMOD::DEBUG::1459355156461580601::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355156, nsec=461562018
+ROSMOD::DEBUG::1459355156461826184::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355157316469692::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355157, nsec=316442358; Execution Time sec=0, nsec=854880340
+ROSMOD::DEBUG::1459355158065722758::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355158, nsec=65694008
+ROSMOD::DEBUG::1459355158066253256::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355158918867278::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355158, nsec=918835695; Execution Time sec=0, nsec=853141687
+ROSMOD::DEBUG::1459355159672324418::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355159, nsec=672305752
+ROSMOD::DEBUG::1459355159672578001::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355160524749114::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355160, nsec=524715197; Execution Time sec=0, nsec=852409445
+ROSMOD::DEBUG::1459355161277778844::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355161, nsec=277758594
+ROSMOD::DEBUG::1459355161278004093::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355162131828790::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355162, nsec=131799206; Execution Time sec=0, nsec=854040612
+ROSMOD::DEBUG::1459355162887831432::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355162, nsec=887808682
+ROSMOD::DEBUG::1459355162888130930::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355163701747864::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355163, nsec=701715531; Execution Time sec=0, nsec=813906849
+ROSMOD::DEBUG::1459355164463890489::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355164, nsec=463864489
+ROSMOD::DEBUG::1459355164464218904::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355165318372862::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355165, nsec=318342529; Execution Time sec=0, nsec=854478040
+ROSMOD::DEBUG::1459355166069296783::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355166, nsec=69268200
+ROSMOD::DEBUG::1459355166069770864::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355166958778701::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355166, nsec=958746784; Execution Time sec=0, nsec=889478584
+ROSMOD::DEBUG::1459355167709278213::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355167, nsec=709258963
+ROSMOD::DEBUG::1459355167709559795::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355168597890641::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355168, nsec=597856974; Execution Time sec=0, nsec=888598011
+ROSMOD::DEBUG::1459355169352287644::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355169, nsec=352271560
+ROSMOD::DEBUG::1459355169352524226::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355170239384917::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355170, nsec=239351833; Execution Time sec=0, nsec=887080273
+ROSMOD::DEBUG::1459355170986355952::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355170, nsec=986326702
+ROSMOD::DEBUG::1459355170986646867::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355171879706709::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355171, nsec=879675542; Execution Time sec=0, nsec=893348840
+ROSMOD::DEBUG::1459355172626591667::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355172, nsec=626571750
+ROSMOD::DEBUG::1459355172626841749::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355173510125799::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355173, nsec=510093299; Execution Time sec=0, nsec=883521549
+ROSMOD::DEBUG::1459355174255916932::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355174, nsec=255895849
+ROSMOD::DEBUG::1459355174256285348::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355175139197071::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355175, nsec=139169822; Execution Time sec=0, nsec=883273973
+ROSMOD::DEBUG::1459355175890914939::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355175, nsec=890890189
+ROSMOD::DEBUG::1459355175891230188::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355176779643315::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355176, nsec=779615648; Execution Time sec=0, nsec=888725459
+ROSMOD::DEBUG::1459355177537210834::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355177, nsec=537195334
+ROSMOD::DEBUG::1459355177537452833::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355178420962233::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355178, nsec=420933650; Execution Time sec=0, nsec=883738316
+ROSMOD::DEBUG::1459355179218975612::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355179, nsec=218884279
+ROSMOD::DEBUG::1459355179219361194::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355180105399508::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355180, nsec=105365175; Execution Time sec=0, nsec=886480896
+ROSMOD::DEBUG::1459355180854069486::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355180, nsec=854023153
+ROSMOD::DEBUG::1459355180854307819::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355181746598867::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355181, nsec=746565951; Execution Time sec=0, nsec=892542798
+ROSMOD::DEBUG::1459355182498835837::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355182, nsec=498797338
+ROSMOD::DEBUG::1459355182499217503::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355183387548071::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355183, nsec=387519988; Execution Time sec=0, nsec=888722650
+ROSMOD::DEBUG::1459355184137881137::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355184, nsec=137856637
+ROSMOD::DEBUG::1459355184138242969::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355185017225660::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355185, nsec=17193910; Execution Time sec=0, nsec=879337273
+ROSMOD::DEBUG::1459355185771542634::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355185, nsec=771523884
+ROSMOD::DEBUG::1459355185771835799::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355186658105471::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355186, nsec=658074388; Execution Time sec=0, nsec=886550504
+ROSMOD::DEBUG::1459355187415824270::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355187, nsec=415804937
+ROSMOD::DEBUG::1459355187416088353::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355188299424457::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355188, nsec=299400541; Execution Time sec=0, nsec=883595604
+ROSMOD::DEBUG::1459355189042923395::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355189, nsec=42898146
+ROSMOD::DEBUG::1459355189043266644::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355189927056837::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355189, nsec=927013503; Execution Time sec=0, nsec=884115357
+ROSMOD::DEBUG::1459355190675701762::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355190, nsec=675681095
+ROSMOD::DEBUG::1459355190676083177::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355191566930184::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355191, nsec=566897267; Execution Time sec=0, nsec=891216172
+ROSMOD::DEBUG::1459355192324970831::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355192, nsec=324950247
+ROSMOD::DEBUG::1459355192325212496::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355193208156120::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355193, nsec=208130537; Execution Time sec=0, nsec=883180290
+ROSMOD::DEBUG::1459355193952577570::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355193, nsec=952557236
+ROSMOD::DEBUG::1459355193952858152::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355194837504942::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355194, nsec=837471276; Execution Time sec=0, nsec=884914040
+ROSMOD::DEBUG::1459355195585859384::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355195, nsec=585842050
+ROSMOD::DEBUG::1459355195586134716::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355196477239239::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355196, nsec=477206406; Execution Time sec=0, nsec=891364356
+ROSMOD::DEBUG::1459355197221701699::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355197, nsec=221679282
+ROSMOD::DEBUG::1459355197221968948::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355198105306337::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355198, nsec=105274337; Execution Time sec=0, nsec=883595055
+ROSMOD::DEBUG::1459355198855219282::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355198, nsec=855197616
+ROSMOD::DEBUG::1459355198855605948::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355199735805354::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355199, nsec=735771688; Execution Time sec=0, nsec=880574072
+ROSMOD::DEBUG::1459355200494819106::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355200, nsec=494799856
+ROSMOD::DEBUG::1459355200495090021::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355201387727556::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355201, nsec=387707640; Execution Time sec=0, nsec=892907784
+ROSMOD::DEBUG::1459355202154852367::CALLBACK FIFO ENQUEUE::Alias=captureImageServer_operation; Priority=50; Deadline sec=5, nsec=0; Enqueue Time sec=1459355202, nsec=154831784
+ROSMOD::DEBUG::1459355202155138033::Entering imageSensor::captureImageServer_operation
+ROSMOD::DEBUG::1459355203038663022::CALLBACK COMPLETED::Alias=captureImageServer_operation; Completion Time sec=1459355203, nsec=38632439; Execution Time sec=0, nsec=883800655
