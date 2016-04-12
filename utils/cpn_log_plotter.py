@@ -117,14 +117,14 @@ class CPN_Log_Plotter():
                 else:
                     break
             exec_plot = plt.plot(x_axis, y_axis, color, label=call)
-            deadline_plot = plt.plot(x_axis, deadline, 'r', label='Deadline')
+            #deadline_plot = plt.plot(x_axis, deadline, 'r', label='Deadline')
             at = AnchoredText("Node: " + calls[0].node + "\nComponent Instance: " + calls[0].component_instance +\
                               "\nOperation Deadline:" + str(instance.deadline) + ' ' + self.time_unit\
                               + "\nMaximum Execution Time: " + str(max([instance.exec_time for instance in calls])) + ' ' + self.time_unit +\
                               "\nAverage Execution Time: " + str(sum([instance.exec_time for instance in calls])/len([instance.exec_time for instance in calls])) +\
                               ' ' + self.time_unit,
                               prop=dict(size=12), frameon=True,
-                              loc=2,
+                              loc=4,
                           )
             at.patch.set_boxstyle("round,pad=0.,rounding_size=0.5")
             ax.add_artist(at)
@@ -135,23 +135,27 @@ class CPN_Log_Plotter():
             plt.title('CPN Analysis - Operation Execution Plot - ' + call)
             plt.grid(True)
             plt.legend(loc=1,prop={'size':15})
-            pylab.xlim([x_min, 100000])
-            pylab.ylim([0, instance.deadline*3])
+            pylab.xlim([x_min, x_max])
+            pylab.ylim([0, 2 + max([instance.exec_time for instance in calls])])
         fig = plt.gcf()
         fig.set_size_inches(18.5, 10.5)
         fig.subplots_adjust(hspace=.5)
         if combined == False:
             if directory != '.':
                 fig.savefig(os.path.join(directory, call + '_cpn.png'), dpi=100)
+                plt.show()
                 print "Plot: " + call + '_cpn.png saved at: ' + directory
             else:
                 fig.savefig(call + '_cpn.png', dpi=100)
+                plt.show()
         else:
             if directory != '.':
                 fig.savefig(os.path.join(directory, 'combined_cpn.png'), dpi=100)
+                plt.show()
                 print "Plot: " + 'combined_cpn.png saved at: ' + directory
             else:
                 fig.savefig('combined_cpn.png', dpi=100)
+                plt.show()
     
 def main():
 
