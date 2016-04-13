@@ -57,15 +57,17 @@ D.~P. Appenzeller and A.~Kuehlmann.
 \newblock {AUTomotive Open System ARchitecture}.
 \newblock \url{http://www.autosar.org/}.
 
+\bibitem{balasubramanian2015drems}
+D.~Balasubramanian, A.~Dubey, W.~Otte, T.~Levendovszky, A.~Gokhale, P.~Kumar,
+  W.~Emfinger, and G.~Karsai.
+\newblock Drems ml: A wide spectrum architecture design language for
+  distributed computing platforms.
+\newblock {\em Science of Computer Programming}, 2015.
+
 \bibitem{bause1996stochastic}
 F.~Bause and P.~S. Kritzinger.
 \newblock {\em Stochastic Petri Nets}.
 \newblock Springer, 1996.
-
-\bibitem{UML}
-D.~Bell.
-\newblock Uml basics: An introduction to the unified modeling language.
-\newblock 2003.
 
 \bibitem{bengtsson1996uppaal}
 J.~Bengtsson, K.~Larsen, F.~Larsson, P.~Pettersson, and W.~Yi.
@@ -350,6 +352,14 @@ P.~Kumar and G.~Karsai.
   Computing Workshops (ISORCW), 2015 IEEE International Symposium on Real-time
   Computing (ISORC)}, pages 50--57, April 2015.
 
+\bibitem{SEUS2016}
+P.~Kumar and G.~Karsai.
+\newblock Experimental validation of timing analysis for component-based
+  distributed real-time embedded systems.
+\newblock In {\em Object/Component/Service-Oriented Real-Time Distributed
+  Computing Workshops (ISORCW), 2016 IEEE International Symposium on Real-time
+  Computing (ISORC)}, May 2016.
+
 \bibitem{kumar2014colored}
 P.~S. Kumar, A.~Dubey, and G.~Karsai.
 \newblock Colored petri net-based modeling and formal analysis of
@@ -497,12 +507,6 @@ J.~C. Palencia and M.~G. Harbour.
   distributed real-time systems.
 \newblock In {\em Real-Time Systems Symposium, 1999. Proceedings. The 20th
   IEEE}, pages 328--339. IEEE, 1999.
-
-\bibitem{ANTLR_BOOK}
-T.~Parr.
-\newblock {\em {The Definitive ANTLR Reference: Building Domain-Specific
-  Languages}}.
-\newblock 2007.
 
 \bibitem{peterson1977petri}
 J.~L. Peterson.
