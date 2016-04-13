@@ -82,15 +82,14 @@
 \contentsline {subsubsection}{\numberline {7.2.1.1}ROSMOD Workspace}{102}{subsubsection.7.2.1.1}
 \contentsline {subsection}{\numberline {7.2.2}Deployment Infrastructure}{105}{subsection.7.2.2}
 \contentsline {section}{\numberline {7.3}Evaluation of Timing Analysis Results}{108}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Client-Server Interactions}{110}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Publish-Subscribe Interactions}{111}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Trajectory Planner}{112}{subsection.7.3.3}
-\contentsline {subsection}{\numberline {7.3.4}Time-triggered Operations}{114}{subsection.7.3.4}
-\contentsline {subsection}{\numberline {7.3.5}Long-Running Operations}{116}{subsection.7.3.5}
-\contentsline {subsubsection}{\numberline {7.3.5.1}Challenges}{117}{subsubsection.7.3.5.1}
-\contentsline {subsubsection}{\numberline {7.3.5.2}Implementation and Results}{118}{subsubsection.7.3.5.2}
-\contentsline {subsection}{\numberline {7.3.6}Cyber-Physical Systems: Autonomous Ground Support Equipment (AGSE) Robot}{121}{subsection.7.3.6}
-\contentsline {subsubsection}{\numberline {7.3.6.1}Distributed Deployment}{124}{subsubsection.7.3.6.1}
-\contentsline {subsubsection}{\numberline {7.3.6.2}Software Prototyping with ROSMOD}{126}{subsubsection.7.3.6.2}
-\contentsline {subsubsection}{\numberline {7.3.6.3}Performance Assessment}{128}{subsubsection.7.3.6.3}
-\contentsline {chapter}{REFERENCES}{131}{chapter*.8}
+\contentsline {subsection}{\numberline {7.3.1}Understanding the CPN Analysis Plots}{109}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Client-Server Interactions}{110}{subsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.2.1}Bad Designs}{111}{subsubsection.7.3.2.1}
+\contentsline {subsection}{\numberline {7.3.3}Publish-Subscribe Interactions}{112}{subsection.7.3.3}
+\contentsline {subsubsection}{\numberline {7.3.3.1}Bad Designs}{114}{subsubsection.7.3.3.1}
+\contentsline {subsection}{\numberline {7.3.4}Trajectory Planner}{115}{subsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3.5}Time-triggered Operations}{117}{subsection.7.3.5}
+\contentsline {subsection}{\numberline {7.3.6}Long-Running Operations}{119}{subsection.7.3.6}
+\contentsline {subsubsection}{\numberline {7.3.6.1}Challenges}{120}{subsubsection.7.3.6.1}
+\contentsline {subsubsection}{\numberline {7.3.6.2}Implementation and Results}{121}{subsubsection.7.3.6.2}
+\contentsline {chapter}{REFERENCES}{125}{chapter*.8}

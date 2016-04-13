@@ -3,7 +3,7 @@
 
 <workspaceElements>
   <generator tool="CPN Tools"
-             version="3.4.0"
+             version="4.0.1"
              format="6"/>
   <cpnet>
     <globbox>
@@ -555,7 +555,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">timers</text>
+                version="4.0.1">timers</text>
         </type>
         <initmark id="ID1435018189">
           <posattr x="-1120.000000"
@@ -569,7 +569,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(* TIMERS *)
+                version="4.0.1">(* TIMERS *)
 1`[{node=&quot;BBB_111&quot;, period=5000000, offset=0, 
             operation={node=&quot;BBB_111&quot;, component=&quot;Client&quot;, operation=&quot;client_timer_operation&quot;, priority=50, deadline=3000000, enqueue_time=0,
                                         steps=[{kind=&quot;LOCAL&quot;, port=&quot;LOCAL&quot;, unblk=[], exec_time=0, duration=150000},
@@ -612,7 +612,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">clocks</text>
+                version="4.0.1">clocks</text>
         </type>
         <initmark id="ID1435018838">
           <posattr x="-1402.500000"
@@ -626,7 +626,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(* CLOCKS *)
+                version="4.0.1">(* CLOCKS *)
 1`[{node=&quot;BBB_111&quot;, value=0, next_tick=4000}, 
      {node=&quot;BBB_112&quot;, value=0, next_tick=4000}]</text>
         </initmark>
@@ -666,7 +666,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">ncmql</text>
+                version="4.0.1">ncmql</text>
         </type>
         <initmark id="ID1435200222">
           <posattr x="-1259.000000"
@@ -680,7 +680,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(* COMPONENT MESSAGE QUEUES *)
+                version="4.0.1">(* COMPONENT MESSAGE QUEUES *)
 1`[{node=&quot;BBB_111&quot;, cmql=[{component=&quot;Client&quot;, scheme=PFIFO, queue=[]}]}, 
      {node=&quot;BBB_112&quot;, cmql=[{component=&quot;Server&quot;, scheme=PFIFO, queue=[]}]}]</text>
         </initmark>
@@ -720,7 +720,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">node_thread_list</text>
+                version="4.0.1">node_thread_list</text>
         </type>
         <initmark id="ID1435293006">
           <posattr x="-1199.500000"
@@ -734,7 +734,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(* COMPONENT EXECUTOR THREADS *)
+                version="4.0.1">(* COMPONENT EXECUTOR THREADS *)
 1`[{node=&quot;BBB_111&quot;, 
              threads=[{node=&quot;BBB_111&quot;, component=&quot;Client&quot;, priority=50, operation=[]}]}, 
      {node=&quot;BBB_112&quot;, 
@@ -777,7 +777,7 @@ Threads</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">component_threads</text>
+                version="4.0.1">component_threads</text>
         </type>
         <initmark id="ID1435294850">
           <posattr x="-716.000000"
@@ -791,7 +791,7 @@ Threads</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">1`[]</text>
+                version="4.0.1">1`[]</text>
         </initmark>
       </place>
       <place id="ID1435502913">
@@ -830,7 +830,7 @@ Enqueue</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">waiting_interactions</text>
+                version="4.0.1">waiting_interactions</text>
         </type>
         <initmark id="ID1435502915">
           <posattr x="-1043.000000"
@@ -844,7 +844,7 @@ Enqueue</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">1`[]</text>
+                version="4.0.1">1`[]</text>
         </initmark>
       </place>
       <place id="ID1435651741">
@@ -883,11 +883,11 @@ Interactions</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">interactions</text>
+                version="4.0.1">interactions</text>
         </type>
         <initmark id="ID1435651743">
-          <posattr x="-906.000000"
-                   y="807.000000"/>
+          <posattr x="-1136.000000"
+                   y="826.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -897,9 +897,9 @@ Interactions</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(* COMPONENT INTERACTIONS *)
+                version="4.0.1">(* COMPONENT INTERACTIONS *)
 1`[{node=&quot;BBB_111&quot;, port=&quot;client_port&quot;, operation={node=&quot;BBB_112&quot;, component=&quot;Server&quot;, operation=&quot;Power_operation&quot;, priority=50, deadline=2000000, enqueue_time=0, 
-                                                                                                     steps=[{kind=&quot;LOCAL&quot;, port=&quot;LOCAL&quot;, unblk=[{node=&quot;BBB_111&quot;, component=&quot;Client&quot;, port=&quot;client_port&quot;}], exec_time=0, duration=850000}]}}]</text>
+                                                                                                     steps=[{kind=&quot;LOCAL&quot;, port=&quot;LOCAL&quot;, unblk=[{node=&quot;BBB_111&quot;, component=&quot;Client&quot;, port=&quot;client_port&quot;}], exec_time=0, duration=8500000}]}}]</text>
         </initmark>
       </place>
       <place id="ID1435709373">
@@ -937,7 +937,7 @@ Interactions</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">completed_operations</text>
+                version="4.0.1">completed_operations</text>
         </type>
         <initmark id="ID1435709375">
           <posattr x="-687.000000"
@@ -951,7 +951,7 @@ Interactions</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">1`[]</text>
+                version="4.0.1">1`[]</text>
         </initmark>
       </place>
       <place id="ID1435735797">
@@ -990,7 +990,7 @@ Threads</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">component_threads</text>
+                version="4.0.1">component_threads</text>
         </type>
         <initmark id="ID1435735799">
           <posattr x="-490.750000"
@@ -1004,7 +1004,7 @@ Threads</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">1`[]</text>
+                version="4.0.1">1`[]</text>
         </initmark>
       </place>
       <place id="ID1435751119">
@@ -1043,7 +1043,7 @@ Unblock</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">waiting_threads</text>
+                version="4.0.1">waiting_threads</text>
         </type>
         <initmark id="ID1435751121">
           <posattr x="-459.000000"
@@ -1057,7 +1057,7 @@ Unblock</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">1`[]</text>
+                version="4.0.1">1`[]</text>
         </initmark>
       </place>
       <place id="ID1435864419">
@@ -1096,7 +1096,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">component_thread</text>
+                version="4.0.1">component_thread</text>
         </type>
         <initmark id="ID1435878385">
           <posattr x="-376.000000"
@@ -1110,7 +1110,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </initmark>
       </place>
       <trans id="ID1435035478"
@@ -1142,7 +1142,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">[ExpiryGuard 
+                version="4.0.1">[ExpiryGuard 
   clocks timers]</text>
         </cond>
         <time id="ID1435035480">
@@ -1157,7 +1157,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </time>
         <code id="ID1435035481">
           <posattr x="-1010.500000"
@@ -1171,22 +1171,8 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </code>
-        <channel id="ID1435035482">
-          <posattr x="-1011.500000"
-                   y="64.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="3.4.0"/>
-        </channel>
         <priority id="ID1435035483">
           <posattr x="-1181.000000"
                    y="33.000000"/>
@@ -1199,7 +1185,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </priority>
       </trans>
       <trans id="ID1435293749"
@@ -1231,7 +1217,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">[ScheduleGuard 
+                version="4.0.1">[ScheduleGuard 
   clocks ncmql 
   nths rths]</text>
         </cond>
@@ -1247,7 +1233,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </time>
         <code id="ID1435293752">
           <posattr x="-668.500000"
@@ -1261,22 +1247,8 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </code>
-        <channel id="ID1435293753">
-          <posattr x="-669.500000"
-                   y="-53.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="3.4.0"/>
-        </channel>
         <priority id="ID1435293754">
           <posattr x="-859.000000"
                    y="-84.000000"/>
@@ -1289,7 +1261,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </priority>
       </trans>
       <trans id="ID1435383691"
@@ -1321,7 +1293,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">[ExecuteGuard 
+                version="4.0.1">[ExecuteGuard 
    clocks timers
     rths wi wths]</text>
         </cond>
@@ -1337,7 +1309,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </time>
         <code id="ID1435383694">
           <posattr x="-669.500000"
@@ -1351,22 +1323,8 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </code>
-        <channel id="ID1435383695">
-          <posattr x="-670.500000"
-                   y="-308.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="3.4.0"/>
-        </channel>
         <priority id="ID1435383696">
           <posattr x="-858.000000"
                    y="-339.000000"/>
@@ -1379,7 +1337,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </priority>
       </trans>
       <trans id="ID1435541887"
@@ -1411,7 +1369,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">[EnqueueGuard 
+                version="4.0.1">[EnqueueGuard 
    clocks wi]</text>
         </cond>
         <time id="ID1435541889">
@@ -1426,7 +1384,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </time>
         <code id="ID1435541890">
           <posattr x="-990.500000"
@@ -1440,22 +1398,8 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </code>
-        <channel id="ID1435541891">
-          <posattr x="-991.500000"
-                   y="-168.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="3.4.0"/>
-        </channel>
         <priority id="ID1435541892">
           <posattr x="-1201.000000"
                    y="-199.000000"/>
@@ -1468,7 +1412,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </priority>
       </trans>
       <trans id="ID1435566509"
@@ -1500,7 +1444,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">[PreemptGuard 
+                version="4.0.1">[PreemptGuard 
   clocks rths]</text>
         </cond>
         <time id="ID1435566511">
@@ -1515,7 +1459,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </time>
         <code id="ID1435566512">
           <posattr x="-412.750000"
@@ -1529,22 +1473,8 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </code>
-        <channel id="ID1435566513">
-          <posattr x="-413.750000"
-                   y="-168.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="3.4.0"/>
-        </channel>
         <priority id="ID1435566514">
           <posattr x="-607.250000"
                    y="-199.000000"/>
@@ -1557,7 +1487,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </priority>
       </trans>
       <trans id="ID1435688685"
@@ -1589,7 +1519,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">[AdvanceTimeGuard clocks]</text>
+                version="4.0.1">[AdvanceTimeGuard clocks wths wi]</text>
         </cond>
         <time id="ID1435688687">
           <posattr x="-857.500000"
@@ -1603,7 +1533,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </time>
         <code id="ID1435688688">
           <posattr x="-837.500000"
@@ -1617,11 +1547,11 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </code>
-        <channel id="ID1435688689">
-          <posattr x="-838.500000"
-                   y="275.483594"/>
+        <priority id="ID1435907230">
+          <posattr x="-1006.000000"
+                   y="244.483594"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1631,21 +1561,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
-        </channel>
-        <priority id="ID1435688690">
-          <posattr x="-997.000000"
-                   y="258.483594"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="3.4.0">P_LOW</text>
+                version="4.0.1"/>
         </priority>
       </trans>
       <trans id="ID1435763743"
@@ -1677,7 +1593,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">[UnblockGuard 
+                version="4.0.1">[UnblockGuard 
   clocks wths]</text>
         </cond>
         <time id="ID1435763745">
@@ -1692,7 +1608,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </time>
         <code id="ID1435763746">
           <posattr x="-218.568750"
@@ -1706,22 +1622,8 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </code>
-        <channel id="ID1435763747">
-          <posattr x="-219.568750"
-                   y="-168.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="3.4.0"/>
-        </channel>
         <priority id="ID1435763748">
           <posattr x="-399.068750"
                    y="-199.000000"/>
@@ -1734,7 +1636,7 @@ THREADS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </priority>
       </trans>
       <trans id="ID1435865646"
@@ -1767,7 +1669,7 @@ ORDER</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </cond>
         <time id="ID1435865648">
           <posattr x="-561.500000"
@@ -1781,7 +1683,7 @@ ORDER</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </time>
         <code id="ID1435865649">
           <posattr x="-541.500000"
@@ -1795,22 +1697,8 @@ ORDER</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0"/>
+                version="4.0.1"/>
         </code>
-        <channel id="ID1435865650">
-          <posattr x="-542.500000"
-                   y="224.483594"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="3.4.0"/>
-        </channel>
         <priority id="ID1435865651">
           <posattr x="-712.000000"
                    y="250.000000"/>
@@ -1823,7 +1711,7 @@ ORDER</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">P_HIGH</text>
+                version="4.0.1">P_HIGH</text>
         </priority>
       </trans>
       <arc id="ID1435043801"
@@ -1855,7 +1743,7 @@ ORDER</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">timers</text>
+                version="4.0.1">timers</text>
         </annot>
       </arc>
       <arc id="ID1435044709"
@@ -1926,7 +1814,7 @@ ORDER</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(UpdateTimers 
+                version="4.0.1">(UpdateTimers 
 clocks timers)</text>
         </annot>
       </arc>
@@ -1959,7 +1847,7 @@ clocks timers)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">ncmql</text>
+                version="4.0.1">ncmql</text>
         </annot>
       </arc>
       <arc id="ID1435236099"
@@ -1991,7 +1879,7 @@ clocks timers)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(EnqueueAllOperations 
+                version="4.0.1">(EnqueueAllOperations 
  (ListTimerOperations 
    clocks timers) ncmql)</text>
         </annot>
@@ -2025,7 +1913,7 @@ clocks timers)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">nths</text>
+                version="4.0.1">nths</text>
         </annot>
       </arc>
       <arc id="ID1435294396"
@@ -2060,7 +1948,7 @@ clocks timers)</text>
         </bendpoint>
         <annot id="ID1435294397">
           <posattr x="-682.000000"
-                   y="4.000000"/>
+                   y="-2.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2070,7 +1958,7 @@ clocks timers)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(RemoveThreads 
+                version="4.0.1">(RemoveThreads 
  clocks ncmql 
  nths)</text>
         </annot>
@@ -2104,7 +1992,7 @@ clocks timers)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">ncmql</text>
+                version="4.0.1">ncmql</text>
         </annot>
       </arc>
       <arc id="ID1435302454"
@@ -2136,7 +2024,7 @@ clocks timers)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(ScheduleThreads clocks 
+                version="4.0.1">(ScheduleThreads clocks 
   ncmql nths rths)</text>
         </annot>
       </arc>
@@ -2169,7 +2057,7 @@ clocks timers)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">rths</text>
+                version="4.0.1">rths</text>
         </annot>
       </arc>
       <arc id="ID1435335818"
@@ -2201,7 +2089,7 @@ clocks timers)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(DequeueOperations 
+                version="4.0.1">(DequeueOperations 
 clocks ncmql nths rths)</text>
         </annot>
       </arc>
@@ -2260,7 +2148,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">clocks</text>
+                version="4.0.1">clocks</text>
         </annot>
       </arc>
       <arc id="ID1435380984"
@@ -2318,7 +2206,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">clocks</text>
+                version="4.0.1">clocks</text>
         </annot>
       </arc>
       <arc id="ID1435440478"
@@ -2350,7 +2238,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">rths</text>
+                version="4.0.1">rths</text>
         </annot>
       </arc>
       <arc id="ID1435457333"
@@ -2382,7 +2270,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(ExecuteThreads 
+                version="4.0.1">(ExecuteThreads 
  clocks timers 
  wi wths rths)</text>
         </annot>
@@ -2429,7 +2317,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">clocks</text>
+                version="4.0.1">clocks</text>
         </annot>
       </arc>
       <arc id="ID1435484024"
@@ -2474,7 +2362,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(UpdateClocks 
+                version="4.0.1">(UpdateClocks 
  clocks timers
  wi rths)</text>
         </annot>
@@ -2534,7 +2422,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">wi</text>
+                version="4.0.1">wi</text>
         </annot>
       </arc>
       <arc id="ID1435527764"
@@ -2592,7 +2480,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(InduceOperations wi 
+                version="4.0.1">(InduceOperations wi 
  rths interactions clocks)</text>
         </annot>
       </arc>
@@ -2625,7 +2513,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">wi</text>
+                version="4.0.1">wi</text>
         </annot>
       </arc>
       <arc id="ID1435550997"
@@ -2657,7 +2545,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(EnqueueAllOperations 
+                version="4.0.1">(EnqueueAllOperations 
  (GetOperationsList 
   clocks wi) ncmql)</text>
         </annot>
@@ -2691,7 +2579,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">ncmql</text>
+                version="4.0.1">ncmql</text>
         </annot>
       </arc>
       <arc id="ID1435560494"
@@ -2736,7 +2624,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">clocks</text>
+                version="4.0.1">clocks</text>
         </annot>
       </arc>
       <arc id="ID1435571775"
@@ -2768,7 +2656,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">rths</text>
+                version="4.0.1">rths</text>
         </annot>
       </arc>
       <arc id="ID1435573958"
@@ -2800,7 +2688,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(UpdateRunningThreads 
+                version="4.0.1">(UpdateRunningThreads 
   clocks rths)</text>
         </annot>
       </arc>
@@ -2846,7 +2734,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(EstablishOrder 
+                version="4.0.1">(EstablishOrder 
  clocks rths nths)</text>
         </annot>
       </arc>
@@ -2892,7 +2780,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">nths</text>
+                version="4.0.1">nths</text>
         </annot>
       </arc>
       <arc id="ID1435604465"
@@ -2963,7 +2851,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">timers</text>
+                version="4.0.1">timers</text>
         </annot>
       </arc>
       <arc id="ID1435635763"
@@ -3008,7 +2896,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">clocks</text>
+                version="4.0.1">clocks</text>
         </annot>
       </arc>
       <arc id="ID1435638232"
@@ -3053,7 +2941,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(UpdateClocksOnPreemption 
+                version="4.0.1">(UpdateClocksOnPreemption 
    clocks rths)</text>
         </annot>
       </arc>
@@ -3086,7 +2974,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(RemoveOperations 
+                version="4.0.1">(RemoveOperations 
          clocks wi)</text>
         </annot>
       </arc>
@@ -3145,7 +3033,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">interactions</text>
+                version="4.0.1">interactions</text>
         </annot>
       </arc>
       <arc id="ID1435689594"
@@ -3177,7 +3065,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">clocks</text>
+                version="4.0.1">clocks</text>
         </annot>
       </arc>
       <arc id="ID1435690769"
@@ -3222,7 +3110,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">timers</text>
+                version="4.0.1">timers</text>
         </annot>
       </arc>
       <arc id="ID1435695552"
@@ -3280,7 +3168,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">wi</text>
+                version="4.0.1">wi</text>
         </annot>
       </arc>
       <arc id="ID1435700142"
@@ -3302,7 +3190,7 @@ clocks ncmql nths rths)</text>
         <placeend idref="ID1435018836"/>
         <annot id="ID1435700143">
           <posattr x="-804.000000"
-                   y="223.000000"/>
+                   y="218.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3312,7 +3200,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(AdvanceTime 
+                version="4.0.1">(AdvanceTime 
 (GetAdvanceTime clocks 
    timers wi wths ncmql nths rths)
  clocks timers wi wths)</text>
@@ -3360,7 +3248,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">copns</text>
+                version="4.0.1">copns</text>
         </annot>
       </arc>
       <arc id="ID1435716335"
@@ -3392,7 +3280,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(SaveAllCompletedOperations 
+                version="4.0.1">(SaveAllCompletedOperations 
   copns clocks timers wi wths rths)</text>
         </annot>
       </arc>
@@ -3451,7 +3339,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">bths</text>
+                version="4.0.1">bths</text>
         </annot>
       </arc>
       <arc id="ID1435746650"
@@ -3509,7 +3397,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(GetAllBlockedThreads 
+                version="4.0.1">(GetAllBlockedThreads 
   (RemoveBlockedThreads 
    (UnblockThreads wths rths
   bths clocks timers wi) bths) 
@@ -3545,7 +3433,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">wths</text>
+                version="4.0.1">wths</text>
         </annot>
       </arc>
       <arc id="ID1435760804"
@@ -3577,7 +3465,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(UnblockThreads wths rths
+                version="4.0.1">(UnblockThreads wths rths
   bths clocks timers wi)</text>
         </annot>
       </arc>
@@ -3623,7 +3511,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">wths</text>
+                version="4.0.1">wths</text>
         </annot>
       </arc>
       <arc id="ID1435770250"
@@ -3668,7 +3556,7 @@ clocks ncmql nths rths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(RemoveUnblockedThreads 
+                version="4.0.1">(RemoveUnblockedThreads 
  (GetThreadsToRemoveFromWTHS 
 clocks wths) wths)</text>
         </annot>
@@ -3715,7 +3603,7 @@ clocks wths) wths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">nths</text>
+                version="4.0.1">nths</text>
         </annot>
       </arc>
       <arc id="ID1435778373"
@@ -3760,7 +3648,7 @@ clocks wths) wths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(EstablishOrderUponUnblock clocks 
+                version="4.0.1">(EstablishOrderUponUnblock clocks 
  (GetUnblockableThreads clocks wths) 
    nths)</text>
         </annot>
@@ -3820,7 +3708,7 @@ clocks wths) wths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">wths</text>
+                version="4.0.1">wths</text>
         </annot>
       </arc>
       <arc id="ID1435807058"
@@ -3878,7 +3766,7 @@ clocks wths) wths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">ncmql</text>
+                version="4.0.1">ncmql</text>
         </annot>
       </arc>
       <arc id="ID1435809900"
@@ -3923,7 +3811,7 @@ clocks wths) wths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">nths</text>
+                version="4.0.1">nths</text>
         </annot>
       </arc>
       <arc id="ID1435815312"
@@ -4007,7 +3895,7 @@ clocks wths) wths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">rths</text>
+                version="4.0.1">rths</text>
         </annot>
       </arc>
       <arc id="ID1435831803"
@@ -4052,7 +3940,7 @@ clocks wths) wths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">clocks</text>
+                version="4.0.1">clocks</text>
         </annot>
       </arc>
       <arc id="ID1435845077"
@@ -4110,7 +3998,7 @@ clocks wths) wths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">copns</text>
+                version="4.0.1">copns</text>
         </annot>
       </arc>
       <arc id="ID1435860832"
@@ -4168,7 +4056,7 @@ clocks wths) wths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(SaveUnblockedCompletedOperations 
+                version="4.0.1">(SaveUnblockedCompletedOperations 
   copns wths)</text>
         </annot>
       </arc>
@@ -4201,7 +4089,7 @@ clocks wths) wths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">th</text>
+                version="4.0.1">th</text>
         </annot>
       </arc>
       <arc id="ID1435869561"
@@ -4259,7 +4147,7 @@ clocks wths) wths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">nths</text>
+                version="4.0.1">nths</text>
         </annot>
       </arc>
       <arc id="ID1435873337"
@@ -4317,9 +4205,10 @@ clocks wths) wths)</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="3.4.0">(Initialize th nths)</text>
+                version="4.0.1">(Initialize th nths)</text>
         </annot>
       </arc>
+      <constraints/>
       <hguideline id="ID1435367866"
                   y="53.000000">
         <guideline_elm idref="ID1435200220"/>
@@ -4460,6 +4349,61 @@ use &quot;queries/logger.sml&quot;;</text>
       <option name="outputdirectory">
         <value>
           <text>&lt;same as model&gt;</text>
+        </value>
+      </option>
+      <option name="extensions.10005.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10004.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10007.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10008.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10011.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10007.options.discover">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="extensions.10011.options.disable">
+        <value>
+          <boolean>false</boolean>
         </value>
       </option>
       <option name="repavg">
@@ -4660,14 +4604,14 @@ use &quot;queries/logger.sml&quot;;</text>
     </options>
     <binders>
       <cpnbinder id="ID2222"
-                 x="96"
-                 y="34"
-                 width="1822"
-                 height="915">
+                 x="38"
+                 y="20"
+                 width="1368"
+                 height="829">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="630.068750"
-                    pany="-107.516406"
+                    panx="624.068750"
+                    pany="-576.516406"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
@@ -4738,8 +4682,27 @@ use &quot;queries/logger.sml&quot;;</text>
             <IndexNode expanded="false"/>
           </IndexNode>
         </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+        </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+      </IndexNode>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
@@ -4792,7 +4755,7 @@ use &quot;queries/logger.sml&quot;;</text>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
         </IndexNode>
-        <IndexNode expanded="false">
+        <IndexNode expanded="true">
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>

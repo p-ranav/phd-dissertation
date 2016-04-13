@@ -462,16 +462,13 @@ Experimental validation should demonstrate that online measurements of the real-
 
 Note that in Figure \ref{fig:rmi_application}, we only annotate isolated code blocks that take a fixed amount of execution time on a specific hardware architecture. These are the only measurements that we can reliably make with repeated testing and instrumentation. The client-side blocking delay is not measured because the number of factors responsible for this delay are numerous e.g. server's message queue state, scheduling non-determinism, network delays etc. In order to be able to predict this delay, we need to use state space analysis and search through the tree of possible executions to identify the worst-case blocking delay. This also means that our CPN model must capture and account for such delay-causing factors. 
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=\textwidth]{rmi_application}
-	\caption{RMI Application}
-	\label{fig:rmi_application}
-\end{figure}
-
 WCET of component operational steps needs to be measured by having the component operation execute at real-time priority with no other component threads intervening this process. This measurement gives us a \emph{pure execution time} of the code block. The process must be repeated for all component operations to obtain meaningful worst-case estimates that are tailored to the target platform. Obtaining the WCET values by this method is not only more realistic but also an accurate representation of the target system. Once these individual numbers are obtained, the values are plugged into the CPN through our business-logic models. 
 
 The remainder of this section presents various primitive interaction patterns and assemblies that have been evaluated. The results are restricted to simple cases, though we have tested on medium-to-large scale examples spanning 25-30 computing nodes, and with up to a 100 components. The scalability of our model, however, is not within the scope of this paper as we have previously evaluated this metric \cite{SEUS}. As mentioned earlier, in all of our tests, we use the ROS \cite{ROS} middleware and our ROSMOD \cite{kumarROSMOD} component model. 
+
+\subsection{Understanding the CPN Analysis Plots}
+
+By performing state space analysis, we are analyzing a bounded tree of possibilities. A tree of execution traces provided by the non-deterministic execution of our timing analysis model. By identifying the worst-case execution trace in this tree, we're able to obtain a suitable conservative candidate execution that represents a possible behavior. Once this trace is identified, we plot the execution time behavior of all components in this trace. This pattern is followed in all of the following plots. Here, we discuss how the plot is made and how it must be interpreted. 
 
 \subsection{Client-Server Interactions}
 
@@ -496,9 +493,23 @@ Figure \ref{fig:client-server-cpn} shows the execution time plot derived from ou
 \end{figure}
 \FloatBarrier
 
+\subsubsection{Bad Designs}
+
+The goal of our CPN timing analysis is to identify bad component designs, unacceptable execution times, response times etc. There are various ways in which we can accidentally design a poorly performing client-server interaction. In the above case, the server operation takes 852 ms in its worst-case before responding to the client and unblocking the client executor thread. If instead, the server operation took 8.5 seconds, the client component will stay blocked for 10 times longer and the client timer expiries will not be serviced faster than the timer periods. This shows a simple use-case where the currently blocked client timer operation is starving subsequent timer expiries from being handled promptly. Figure \ref{fig:client-server-bad-case} shows our CPN predictions after simply changing this server execution time. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{client-server-bad-case}
+	\caption{CPN Analysis Results: Client-Server Response Times in Bad Designs}
+	\label{fig:client-server-bad-case}
+\end{figure}
+\FloatBarrier
+
+The execution time of the each new client-side timer operation is worse than the previous since the operation is spending much longer waiting in the queue. Recall that the execution time of a component operation includes the waiting time in the message queue. Even with a bounded state space that spans just 1 minute, it is clear that the client component message queue size is monotonically increasing. This is a use case where a client component execution is affected by delays caused on a remote server. Each client-server interaction delay will only be worsened when the server component has other operations to tend to aside from the client requests. 
+
 \subsection{Publish-Subscribe Interactions}
 
-Similar to the earlier example, consider a simple anonymous publish-subscribe interaction. A publisher is periodically triggered by a timer when this component broadcasts a message on a topic. A subscribing component receives this message and performs some computation.
+Similar to the earlier example, consider the ROSMOD publish-subscribe interaction. A publisher is periodically triggered by a timer when this component broadcasts a message on a topic. A subscribing component receives this message and performs some computation. In this case, the timer period is set to 2 seconds i.e. every 2 seconds, these two component interact via publish-subscribe messaging passing. 
 
 \begin{figure}[h]
 	\centering
@@ -517,6 +528,20 @@ Figure \ref{fig:publish-subscribe} shows our testbed observations and Figure \re
 	\label{fig:publish-subscribe-cpn}
 \end{figure}
 \FloatBarrier
+
+\subsubsection{Bad Designs}
+
+Similar to the client-server example, we can explore another accidental bad design that may become hard to track. In a publish-subscribe interaction, the publisher and the subscriber are completely detached from each other i.e. delays in the subscriber operation do not affect the publisher. So, the only way the publisher component can affect its own behavior is how it is triggered. Periodically triggered data dissemination is the most commonly used streaming pattern aside from event-driven messaging. Here, if the period of the timer is decreased from 2 s to 10 ms, the publisher gets triggered too frequently and is seriously affected by a local design flaw.  
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{publish-subscribe-bad-case}
+	\caption{CPN Analysis Results: Time-triggered Publisher -- Periodicity Issues}
+	\label{fig:publish-subscribe-bad-case}
+\end{figure}
+\FloatBarrier
+
+Figure \ref{fig:publish-subscribe-bad-case} shows the CPN results for this design. The subscriber still performs as expected taking 200 ms to process each incoming message. But the publishing component is affected by the periodicity of its trigger. The publish\_timer fires every 10 ms, and at each expiry enqueues a timer operation request onto the publisher component's message queue. Each timer operation itself takes about 250 ms i.e. 25 times of the periodicity of its trigger. The inevitable result of this design is the monotonically rising execution times of each subsequent timer operation due to progressively delayed response. Here, the $t\_response\_time$ = $t\_dequeue$ - $t\_enqueue$ becomes progressively worse and eventually the publisher's message queue overflows. In the real experiment, we were unable to access the publisher component's device via remote shell as the device CPU was saturated. 
 
 \subsection{Trajectory Planner}
 
@@ -614,6 +639,7 @@ For the CPN analysis, in order to obtain pure execution times of all these opera
 \end{figure}
 \FloatBarrier
 
+\if 0
 \subsection{Cyber-Physical Systems: Autonomous Ground Support Equipment (AGSE) Robot}
 
 This section briefly describes an Autonomous Ground Support Equipment
@@ -843,4 +869,5 @@ mounting footprint. After these modifications were made, the AGSE was
 able to perform at its optimal level during its part of the
 competition.
 
+\fi
 

@@ -56,7 +56,7 @@ fun LimitReached [] = true
 (*-----------------------------------------------------------------------------------------------------------------------------------------------------------*)       
 fun TickReached [] = false
   | TickReached ({node=node, value=value, next_tick=next_tick}::other_nodes) = 
-  	  if (next_tick - value = clock_tick) then 
+  	  if (next_tick - value <= clock_tick) then 
   	  	true
   	  else 
   	  	false orelse (TickReached other_nodes);

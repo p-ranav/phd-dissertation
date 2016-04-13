@@ -593,12 +593,14 @@ fun InduceOperations wi rths [] clocks = []
 (*-----------------------------------------------------------------------------------------------------------------------------------------------------------*)   
 (*-----------------------------------------------------------------------------------------------------------------------------------------------------------*) 
 
-fun AdvanceTimeGuard clocks = 
-  if (LimitReached clocks = false) then 
+fun AdvanceTimeGuard clocks wths wi = 
+  if ((LimitReached clocks = false) andalso (
+        (wths != [] andalso (UnblockGuard clocks wths = false))
+        orelse
+        (wi != [] andalso (EnqueueGuard clocks wi = false))))  then 
     true
   else
     false; 
-
 fun AdvanceThisClock this_value {node=node, value=value, next_tick=next_tick} = 
    if (next_tick <= this_value) then (* Loop and increment next_tick till next_tick > this_value *)
         (AdvanceThisClock this_value {node=node, value=this_value, next_tick = next_tick + clock_tick})  

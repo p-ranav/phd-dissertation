@@ -4484,6 +4484,20 @@ TextIO.closeOut writestream</text>
         <label/>
         <text>use &quot;operations.txt&quot;;</text>
       </Aux>
+      <Aux id="ID1436213633">
+        <posattr x="0.000000"
+                 y="-840.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>val operations = 1`[{node=&quot;BBB_111&quot;,component=&quot;Publisher&quot;,operation=&quot;publish_timer_operation&quot;,enqueue_time=0,completion_time=252000,deadline=1000000},{node=&quot;BBB_112&quot;,component=&quot;Subscriber&quot;,operation=&quot;subscriber_port_operation&quot;,enqueue_time=252000,completion_time=452000,deadline=1000000},{node=&quot;BBB_111&quot;,component=&quot;Publisher&quot;,operation=&quot;publish_timer_operation&quot;,enqueue_time=10000,completion_time=508000,deadline=1000000},{node=&quot;BBB_112&quot;,component=&quot;Subscriber&quot;,operation=&quot;subscriber_port_operation&quot;,enqueue_time=508000,completion_time=708000,deadline=1000000},{node=&quot;BBB_111&quot;,component=&quot;Publisher&quot;,operation=&quot;publish_timer_operation&quot;,enqueue_time=20000,completion_time=764000,deadline=1000000},{node=&quot;BBB_112&quot;,component=&quot;Subscriber&quot;,operation=&quot;subscriber_port_operation&quot;,enqueue_time=764000,completion_time=964000,deadline=1000000},{node=&quot;BBB_111&quot;,component=&quot;Publisher&quot;,operation=&quot;publish_timer_operation&quot;,enqueue_time=30000,completion_time=1020000,deadline=1000000},{node=&quot;BBB_112&quot;,component=&quot;Subscriber&quot;,operation=&quot;subscriber_port_operation&quot;,enqueue_time=1020000,completion_time=1220000,deadline=1000000},{node=&quot;BBB_111&quot;,component=&quot;Publisher&quot;,operation=&quot;publish_timer_operation&quot;,enqueue_time=40000,completion_time=1276000,deadline=1000000},{node=&quot;BBB_112&quot;,component=&quot;Subscriber&quot;,operation=&quot;subscriber_port_operation&quot;,enqueue_time=1276000,completion_time=1476000,deadline=1000000},{node=&quot;BBB_111&quot;,component=&quot;Publisher&quot;,operation=&quot;publish_timer_operation&quot;,enqueue_time=50000,completion_time=1532000,deadline=1000000},{node=&quot;BBB_112&quot;,component=&quot;Subscriber&quot;,operation=&quot;subscriber_port_operation&quot;,enqueue_time=1532000,completion_time=1732000,deadline=1000000},{node=&quot;BBB_111&quot;,component=&quot;Publisher&quot;,operation=&quot;publish_timer_operation&quot;,enqueue_time=60000,completion_time=1788000,deadline=1000000},{node=&quot;BBB_112&quot;,component=&quot;Subscriber&quot;,operation=&quot;subscriber_port_operation&quot;,enqueue_time=1788000,completion_time=1988000,deadline=1000000},{node=&quot;BBB_111&quot;,component=&quot;Publisher&quot;,operation=&quot;publish_timer_operation&quot;,enqueue_time=70000,completion_time=2044000,deadline=1000000}];</text>
+      </Aux>
     </page>
     <instances>
       <instance id="ID2149"
@@ -4510,12 +4524,7 @@ TextIO.closeOut writestream</text>
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10007.enable">
+      <option name="extensions.10008.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4525,12 +4534,7 @@ TextIO.closeOut writestream</text>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10004.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10002.enable">
+      <option name="extensions.10007.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4540,7 +4544,7 @@ TextIO.closeOut writestream</text>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10001.enable">
+      <option name="extensions.10004.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4550,7 +4554,17 @@ TextIO.closeOut writestream</text>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10008.enable">
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10001.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4765,12 +4779,12 @@ TextIO.closeOut writestream</text>
       <cpnbinder id="ID2222"
                  x="262"
                  y="-50"
-                 width="1681"
-                 height="997">
+                 width="1368"
+                 height="829">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="270.005000"
-                    pany="-258.563125"
+                    panx="-427.995000"
+                    pany="-497.563125"
                     zoom="0.800000"
                     instance="ID2149">
             <zorder>
@@ -4859,9 +4873,7 @@ TextIO.closeOut writestream</text>
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
+      <IndexNode expanded="false"/>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
