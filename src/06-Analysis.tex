@@ -1,43 +1,25 @@
 \chapter{State Space Analysis and Verification}
 \label{chapter:analysis}
 
-Consider the sample deployment shown in Figure \ref{fig:CT}. This is a 3-satellite cluster with each satellite consisting of an instance of a DREMS application. All satellites are deployed with the same component assembly and Satellite 1 is chosen as the cluster leader using a leader-election algorithm. 
+The state of a dynamic system refers to a minimum set of variables, called state variables, that fully describe the system and its response to any given set of inputs. This minimum set of variables, $s_i(t), i=0,1,2,..n$ along with knowledge of those variables at an initial time $t_0$ and the system inputs for time $t > t_0$, are sufficient to predict the future system state and outputs for all time $t > t_0$. This asserts that the dynamic behavior of a state is completely characterized by the response of the set of state variables $s_i(t)$. CPN Tools uses a built-in \emph{state space} analysis tool to generate a bounded state space from an initialized CPN model. Here, a state space is a tree of nodes, called states, each of which represents a unique system state. The root of this tree is the initial state of the system, which in our case is a record of all the places in the CPN i.e. the token values in every place of the CPN model. This record is therefore a snapshot of the token configuration of the net and represents its execution state. State space generation is a process of generating this tree of nodes, from an initial state. State spaces of dynamic systems can be potentially infinite if there is always a potential unique state transition. So, we generate a bounded state space i.e. a tree of nodes bounded by some rule e.g. $t_i < t_bound$, where $t_i$ is some global time variable. In this case, the state space will contain only nodes where the state variable $t_i$ is less than some upper bound $t_bound$. Alternately, the rule can be to generate a state space as long as the component message queue size is under 50 waiting requests. 
+
+To illustrate the state space analysis of DREMS using our CPN, we consider a simple example -- consider three equal-priority components, grouped into a process and executed on a single device. Each component has a periodic timer that fires every 10 ms and triggers the respective components into executing a block of code. Each component maps to an executor thread and these three threads are scheduled concurrently with all other threads in the system. In this example, there are no other component threads or system-level threads considered. Based on the OS scheduling scheme, these components, with equal priority, are scheduled using round-robin conflict resolution i.e. one of these threads is chosen at random and then a cyclic scheduling executive is maintained. Since all three timers have the same period, the three timers fire concurrently and the respective component threads are marked as 'ready' at the exact same time. Since all three component threads are ready to execute the same times, there are $3!$ possible thread execution orders following round-robin scheduling. Figure \ref{fig:SSScreenshot} shows a bounded state space generated in CPN Tools for this component assembly. There are 6 branches from the initial state of the system as the model realizes the 6 possible behaviors. Each node in this state space is annotated with a state space ID and also a pair of integers in the format \emph{"p:c"}, where p refers to the number of parent nodes and c refers to the number of child nodes. This figure also shows results of a \emph{state space query}. Specifically, the query finds the \emph{marking} on the \emph{Completed\_Operations} place in two different state space nodes, 35 and 37. In node 37, Timer\_3\_operation is the first operation to complete as Component\_3 is the first ready thread chosen by the OS. In node 35, Timer\_1\_operation is the first operation to complete as Component\_1 is the first ready thread chosen by the OS. This illustrates the tree of possible behaviors that is encoded in the state space starting from an initial state. The goal of state space analysis is to search this tree of possibilities to identify a single execution trace i.e. a single branch in this tree that either satisfies or negates a system property e.g. the deadline of one of these timer operations is violated. 
+
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=\textwidth]{./img/Case_Study_Fixed.png}
-	\caption{DREMS Application}
-	\label{fig:CT}
+	\includegraphics[width=\textwidth]{./img/state-space-analysis.png}
+	\caption{Bounded State Space for a Multi-component Timer example -- The component threads have the same real-time priority and are executed in the same device. Each component is triggered with a 100 Hz periodic timer and all three timers are synchronized to illustrate non-determinism.}
+	\label{fig:SSScreenshot}
 \end{figure}
+\FloatBarrier
 
-Each satellite consists of a set of sensor-dependent critical components required for both safe flight and remote sensing tasks. These components interact with physical sensor devices such as cameras, radar altimeters etc. to receive and process data periodically and transmit to a ground receiving station. The component \emph{Ground COM} behaves as the communication link between internal satellite components and the ground station. Periodically processed and encoded image data from the \emph{Remote Sensing} device is received by the Ground COM using a DDS-based \emph{publish-subscribe} scheme upon which the data is transmitted to the ground receiver. 
-
-A more critical task in this deployment is maintaining the cluster attitude. This includes the relative position and acceleration of the satellites from each other with the satellites using a distributed but synchronized database to keep track of \emph{state vectors} of each other. A \emph{GPS} component periodically publishes a state vector to all satellites in the cluster. The GPS component uses its subscriber port to receive the equivalent vectors from other satellites. A \emph{Flight Control} component responsible for the integrity of the cluster flight uses an RMI interface to access the most recent vector metrics from GPS including metrics received from other satellites to calculate and maintain the flight trajectory. The Flight Control component does not fetch GPS information until all the satellites have published on the updated sensor data. 
-
-Lastly, there are scenarios where the ground station will command the satellites in the cluster to perform a coordinated \emph{scatter}. This is a time-triggered critical event that is transmitted to the cluster leader. On receiving such a command, the Ground COM of Satellite 1 uses an interface on the \emph{Command Proxy} to publish this command to all satellites in the cluster. The command proxy uses a high-priority synchronous method invocation to communicate with the Flight Control component to trigger the scatter. Since the component-level scheduler is non-preemptive, the Flight Control cannot trash any operation that it would be executing at time $t_S$ when a scatter request is received from the Command Proxy. This motivates the need for accurate modeling of component interaction semantics to obtain conservative response-time results. 
-
-\begin{figure}[htb]
-	\centering
-	\includegraphics[width=0.7\textwidth]{./img/scatter.jpg}
-	\caption{Scatter Operation}
-	\label{fig:FLC}
-\end{figure}
-
-The abstract business logic \emph{steps} of the \emph{scatter} operation in the Flight Control is modeled as shown in Figure \ref{fig:FLC}. This operation is requested by the Command Proxy when a command is received from the ground station. For sake of simplicity, we have reduced this operation down to 3 distinct steps. The controller first obtains updated position vectors from the GPS component using the RMI interface. Notice the lack of a WCET for this interaction. This is because the GPS is scheduled on a separate temporal partition and the amount of time for which the Flight Control has to wait for the updated metrics is dependent on the time stamp at which the scatter command is received and also the state of the GPS component message queue. Once these metrics are received, the Flight Control calculates a new trajectory which is also the return arguments of this operation. This trajectory is passed down to the Command Proxy which publishes the leader's updated metrics to the rest of the satellites in the cluster. Once the trajectory is calculated, each Flight Control component interacts with the thrusters and maneuvers the satellites.  
-
-The temporal partitioning schedule for this scenario consists of two broad minor frames each of length 100 msec. All satellite sensor components such as the camera and the GPS are grouped into sensor processes and assigned to the first temporal partition. This includes the image processing tasks undertaken by the Remote Sensing component, the vector publication and reception by the GPS component and the communication with the ground network. 
-
-The Flight Control is assigned to partition 2 and is guaranteed to receive the newest vector data as it waits for the GPS component to update the database of state variables. The Ground COM and the Command Proxy component threads run at SYSTEM priority and are scheduled as and when required. In our case, we use a sporadic timer on the Ground COM component to trigger the sequence of interactions leading a scatter.
-
-\section{State Space Analysis}
-
-CPN Tools uses a built-in state space (SS) analysis tool to generate a bounded state space from an initialized CPN model. Exceptions caused by inconsistent token structures or incomplete arc bindings cause the tool to stop generation. However, it has been noted by the CPN Tools community that the built-in state space tool is inefficient with its search algorithm \cite{CPNTwoInterfaces} and therefore we also work with the ASAP tool \cite{ASAP} which is an extensible platform for advanced CPN state space analysis methods including optimized reduction techniques for large-scale applications. Thirdly, we also use the ASK-CTL \cite{ASK-CTL} model checking library, expressing state space properties using a CTL-style logic and exploiting strongly connected components for efficient state space searching. For smaller design models, we use observer places \cite{Alpern1989} in the CPN to \emph{collect} tokens that represent timing anomalies such as deadline violations. This makes the state space search easier as we simply look for nodes where the observer places are not empty. 
-
-\subsection{Bounded State Space Generation}
-
-Components in safety-critical DRE applications can be either sporadically or periodically triggered by an entity. A bounded state space generated in CPN Tools must be sufficiently large so that the lack of deadline violations or deadlocks or delayed response times \emph{during} this interval will guarantee safe operation throughout the lifetime of the components. This is important in order to gain confidence from the obtained results while not generating an infinite state space. 
+The rest of this chapter details how a bounded state space can be used to analyze DREMS applications for deadline violations, response times predictions etc. 
 
 \subsection{Deadline Violations and System-wide Deadlocks}
+
+
+
 
 On a sufficiently large bounded state space, the analysis tool looks for specific behavioral patterns such as weakly-decreasing size of the component message queue. If requests from external components or timers pile up over time in the message queue, the responsible component is not scheduled for long enough time to be able to serve all the requests on time. This observation will also be supported by the detection of deadline violations or unusual blocking times. This is especially useful in identifying timing delays that propagate through successive hyperperiods in the temporal partition schedule. 
 
@@ -57,27 +39,6 @@ LO = \ <Node_{name}, O_{name}, O_{ST}, \ O_{DLT}>
 
 where operation $O_{name}$ executing on computing node $Node_{name}$ started at time $O_{ST}$ and violated its deadline at time $O_{DLT}$. Since the component-level scheduler uses a non-preemptive scheme, this operation is still run to completion after the violated deadline. Delays like these propagate to the waiting operations in the message queue.
 
-\begin{table}[h]
-	\caption{Component Operations on Satellite 1}
-	\label{table:AR}
-	\begin{center}
-		\begin{tabular}{ | c | p{1.0cm} | p{1.0cm} | p{1.0cm} | p{1.0cm} | p{1.0cm} | p{1.0cm} |}
-			\hline
-			Component & \multicolumn{1}{|c|}{Operation} & $Dl_{O}$ (ms) & $T_{NQ}$ (ms) & $T_{DQ}$ (ms) & $T_{FIN}$ (ms) & $T_{EXEC}$ (ms) \\ \hline
-			GPS & \multicolumn{1}{|c|}{publish\_vector} & \multicolumn{1}{|c|}{10} & \multicolumn{1}{|c|}{0} & \multicolumn{1}{|c|}{0} & \multicolumn{1}{|c|}{8} & \multicolumn{1}{|c|}{8} \\ \hline
-			GPS & \multicolumn{1}{|c|}{update\_dbs} & \multicolumn{1}{|c|}{18} & \multicolumn{1}{|c|}{20 (n/w delay)} & \multicolumn{1}{|c|}{20} & \multicolumn{1}{|c|}{36} & \multicolumn{1}{|c|}{16} \\ \hline
-			Remote Sensing & \multicolumn{1}{|c|}{img\_process} & \multicolumn{1}{|c|}{90} & \multicolumn{1}{|c|}{0} & \multicolumn{1}{|c|}{12} & \multicolumn{1}{|c|}{80} & \multicolumn{1}{|c|}{80} \\ \hline
-			Ground COM & \multicolumn{1}{|c|}{transmit\_imgs} & \multicolumn{1}{|c|}{20} & \multicolumn{1}{|c|}{80} & \multicolumn{1}{|c|}{80} & \multicolumn{1}{|c|}{95} & \multicolumn{1}{|c|}{15} \\ \hline
-			Ground COM & \multicolumn{1}{|c|}{scatter\_cmd} & \multicolumn{1}{|c|}{200} & \multicolumn{1}{|c|}{120} & \multicolumn{1}{|c|}{120} & \multicolumn{1}{|c|}{315} & \multicolumn{1}{|c|}{195} \\ \hline
-			Command Proxy & \multicolumn{1}{|c|}{notify\_cmd} & \multicolumn{1}{|c|}{200} & \multicolumn{1}{|c|}{132} & \multicolumn{1}{|c|}{132} & \multicolumn{1}{|c|}{142} & \multicolumn{1}{|c|}{10} \\ \hline
-			Flight Control & \multicolumn{1}{|c|}{calc\_trj} & \multicolumn{1}{|c|}{45} & \multicolumn{1}{|c|}{100} & \multicolumn{1}{|c|}{100} & \multicolumn{1}{|c|}{150} & \multicolumn{1}{|c|}{50} \\ \hline
-			Flight Control & \multicolumn{1}{|c|}{scatter} & \multicolumn{1}{|c|}{200} & \multicolumn{1}{|c|}{142} & \multicolumn{1}{|c|}{150} & \multicolumn{1}{|c|}{305} & \multicolumn{1}{|c|}{163} \\ \hline
-			
-			
-		\end{tabular}
-	\end{center}
-\end{table}
-
 For a large state space, using observer places is not the most efficient approach as the accumulated violation tokens themselves contribute to the state space. An easy fix to this challenge is to stop generating state space nodes after the detection of the first violation. However, if all system violations need to be recorded, then instead of using observer places, we query the state space of transition firings to find \emph{binding elements} that indirectly suggest a violation.
 
 System-wide deadlocks are caused by the inability of the OS schedulers (on all nodes) to schedule any component thread. This can be caused by situations where a set of executing threads are indefinitely blocked on each other because of cyclic dependencies in the interactions. Deadlocks can identified by checking the leaf nodes of the bounded state space for \emph{dead transitions} that are unable to fire. Alternatively, the tokens in \emph{Component Interactions} are analyzed to identify cyclic dependencies and provide warnings to possible deadlocks. Such queries are useful in large component assemblies where mutually blocking dependencies are not immediately perceivable. 
@@ -94,12 +55,6 @@ System-wide deadlocks are caused by the inability of the OS schedulers (on all n
 Response-times are measured by observing completed operations. Similar to deadline violations, an observer place \emph{Completed Operations} (Figure \ref{fig:COP}) accumulates all operation requests completed by component threads on all nodes. The structure of this data is similar to equation \ref{eq:DLV} except we replace $O_{DLT}$ with the end-time of the operation $O_{ET}$.
 
 For a known trigger operation and an expected response/actuation, we used state space queries to identify the (1) earliest completion of the trigger operation and the (2) latest completion of a response operation. These operations are possibly running on different components, temporal partitions or nodes. To keep a check on the state space for large models, we simply observe the bindings of the transition \emph{Execute Thread} to gather a list of completed operations, ordered by $O_{ET}$.
-
-\subsection{Search Results}
-
-Table \ref{table:AR} shows some worst-case execution time results from state space analysis on each component thread on Satellite 1. Each operation request is enqueued into the component message queue at $T_{NQ}$. A dispatcher thread dequeues this request at $T_{DQ}$ and schedules an operation for execution. Delays in the dequeue can be caused due to the non-preemptive nature of the component-level scheduling. Once scheduled, the component executor thread sequentially executes the steps in each operation to completion at time stamp $T_{FIN}$ leading to an overall execution time of $T_{EXEC}$ measured starting from $T_{NQ}$. 
-
-Significant worst-case network delays are assumed between interacting components that are distributed. For instance, the GPS component on each node finishes publishing sensor data at time stamp 8 ms but the GPS components on other nodes do not notice the subscription token in the message queues till $T_{NQ} = 20 ms$. Also, the synchronous dependency of the Flight Control component with the GPS component is a sign of poor design as a scatter command received in partition 2 of one hyperperiod will most likely finish only a hyperperiod later as the updated GPS coordinates are queried. 
 
 \subsection{Incomplete Designs}
 

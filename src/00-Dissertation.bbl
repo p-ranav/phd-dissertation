@@ -172,6 +172,14 @@ A.~Dubey, G.~Karsai, and N.~Mahadevan.
   \textsc{ARINC-653}}.
 \newblock {\em Software: Practice and Experience}, 41(12):1517--1550, 2011.
 
+\bibitem{ISIS_F6_CYPHY:14}
+W.~Emfinger, G.~Karsai, A.~Dubey, and A.~Gokhale.
+\newblock Analysis, verification, and management toolsuite for cyber-physical
+  applications on time-varying networks.
+\newblock In {\em Proceedings of the 4th ACM SIGBED International Workshop on
+  Design, Modeling, and Evaluation of Cyber-Physical Systems}, CyPhy '14, pages
+  44--47, New York, NY, USA, 2014. ACM.
+
 \bibitem{DREMS13Software}
 T.~L. et~al.
 \newblock Distributed real-time managed systems: A model-driven distributed

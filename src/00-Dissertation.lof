@@ -23,37 +23,36 @@ Figure \hfill Page
 \contentsline {figure}{\numberline {16}{\ignorespaces Sample Business Logic Model\relax }}{64}{figure.16}
 \contentsline {figure}{\numberline {17}{\ignorespaces CPN Business Logic Representation\relax }}{64}{figure.17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {18}{\ignorespaces DREMS Application\relax }}{65}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Scatter Operation\relax }}{67}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Deadline Violation Observer place\relax }}{69}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Response-time Analysis\relax }}{71}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces A Clock Token with Temporal Partitioning\relax }}{78}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Dynamic Time Progression\relax }}{79}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Structural Reductions in CPN\relax }}{81}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces Generated CPN model for a Distributed Application Deployment\relax }}{86}{figure.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Sweep-Line Method\relax }}{87}{figure.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces Dead States Checking in a Component-based application\relax }}{88}{figure.27}
+\contentsline {figure}{\numberline {18}{\ignorespaces Bounded State Space for a Multi-component Timer example -- The component threads have the same real-time priority and are executed in the same device. Each component is triggered with a 100 Hz periodic timer and all three timers are synchronized to illustrate non-determinism.\relax }}{67}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Deadline Violation Observer place\relax }}{68}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Response-time Analysis\relax }}{69}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces A Clock Token with Temporal Partitioning\relax }}{76}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Dynamic Time Progression\relax }}{77}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Structural Reductions in CPN\relax }}{79}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Generated CPN model for a Distributed Application Deployment\relax }}{84}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Sweep-Line Method\relax }}{85}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Dead States Checking in a Component-based application\relax }}{86}{figure.26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {28}{\ignorespaces Testbed Architecture\relax }}{93}{figure.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces Beaglebone Black Boards - Custom Mounting\relax }}{94}{figure.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces Constructed Testbed\relax }}{95}{figure.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces ROSMOD Metamodel. Containment is specified from \emph {src} to \emph {dst} where the source has a containment attribute \emph {quantity}, meaning that \emph {quantity} objects of type \emph {src} can be contained in an object of type \emph {dst}. Pointers are specified as a one to one mapping from source to destination, using the name of the pointer. Sets allow for pointer containment. All objects contain a \emph {name} attribute of type \emph {string}, not shown for clarity. Note: the meta-model is used to create the ROSMOD Modeling Language, but users do not see or interact with it; it is used to enforce proper model creation semantics. \relax }}{97}{figure.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces Workspace Code Generation. In this figure, the \emph {image\_processor} package and its children messages (red), components (blue), and services (purple) are generated into a catkin package for compilation. The msg and srv files are automatically filled out from the definitions of the messages and services, as are the header and source files for the components.\relax }}{104}{figure.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces Software Deployment Workflow\relax }}{106}{figure.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces Experimental Observation: Client-Server Interactions\relax }}{110}{figure.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces CPN Analysis Results: Client-Server Interactions\relax }}{111}{figure.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces CPN Analysis Results: Client-Server Response Times in Bad Designs\relax }}{112}{figure.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{113}{figure.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{114}{figure.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces CPN Analysis Results: Time-triggered Publisher -- Periodicity Issues\relax }}{115}{figure.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{116}{figure.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{117}{figure.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{118}{figure.42}
-\contentsline {figure}{\numberline {43}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{119}{figure.43}
-\contentsline {figure}{\numberline {44}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{121}{figure.44}
-\contentsline {figure}{\numberline {45}{\ignorespaces Long Running Operation - Software Model\relax }}{122}{figure.45}
-\contentsline {figure}{\numberline {46}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{123}{figure.46}
-\contentsline {figure}{\numberline {47}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{124}{figure.47}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {27}{\ignorespaces Testbed Architecture\relax }}{91}{figure.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces Beaglebone Black Boards - Custom Mounting\relax }}{92}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Constructed Testbed\relax }}{93}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces ROSMOD Metamodel. Containment is specified from \emph {src} to \emph {dst} where the source has a containment attribute \emph {quantity}, meaning that \emph {quantity} objects of type \emph {src} can be contained in an object of type \emph {dst}. Pointers are specified as a one to one mapping from source to destination, using the name of the pointer. Sets allow for pointer containment. All objects contain a \emph {name} attribute of type \emph {string}, not shown for clarity. Note: the meta-model is used to create the ROSMOD Modeling Language, but users do not see or interact with it; it is used to enforce proper model creation semantics. \relax }}{95}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces Workspace Code Generation. In this figure, the \emph {image\_processor} package and its children messages (red), components (blue), and services (purple) are generated into a catkin package for compilation. The msg and srv files are automatically filled out from the definitions of the messages and services, as are the header and source files for the components.\relax }}{102}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces Software Deployment Workflow\relax }}{104}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces Interpreting Execution Time Plots\relax }}{108}{figure.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Experimental Observation: Client-Server Interactions\relax }}{109}{figure.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces CPN Analysis Results: Client-Server Interactions\relax }}{110}{figure.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces CPN Analysis Results: Client-Server Response Times in Bad Designs\relax }}{111}{figure.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{112}{figure.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{113}{figure.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces CPN Analysis Results: Time-triggered Publisher -- Periodicity Issues\relax }}{114}{figure.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{115}{figure.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{116}{figure.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{117}{figure.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{118}{figure.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{120}{figure.44}
+\contentsline {figure}{\numberline {45}{\ignorespaces Long Running Operation - Software Model\relax }}{121}{figure.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{122}{figure.46}
+\contentsline {figure}{\numberline {47}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{123}{figure.47}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

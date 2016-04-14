@@ -468,7 +468,16 @@ The remainder of this section presents various primitive interaction patterns an
 
 \subsection{Understanding the CPN Analysis Plots}
 
-By performing state space analysis, we are analyzing a bounded tree of possibilities. A tree of execution traces provided by the non-deterministic execution of our timing analysis model. By identifying the worst-case execution trace in this tree, we're able to obtain a suitable conservative candidate execution that represents a possible behavior. Once this trace is identified, we plot the execution time behavior of all components in this trace. This pattern is followed in all of the following plots. Here, we discuss how the plot is made and how it must be interpreted. 
+By performing state space analysis, we are analyzing a bounded tree of possibilities. A tree of execution traces provided by the non-deterministic execution of our timing analysis model. By identifying the worst-case execution trace in this tree, we're able to obtain a suitable conservative candidate execution that represents a possible behavior. Once this trace is identified, we plot the execution time behavior of all components in this trace. This pattern is followed in all of the following plots. Figure \ref{fig:understanding-the-plots} describes the analysis plots presented later in this chapter. Each subplot in this figure represents the execution of a component operation. The x axis of this plot represents the analysis time, and the y axis represents the execution time of the operation. Each execution is shown as a rectangular pulse, the amplitude of which is the execution time of the operation. The rising edge of the pulse represents the enqueue time stamp of the operation i.e. the time instant when a request for this operation was enqueued onto the component message queue. The falling edge of the pulse represents the completion time stamp i.e. the time instant when the component executor thread has completed execution of the operation and is ready to service the next request waiting in the queue. Since the execution time of the operation is calculated from the enqueue time instant, the plot can have intersecting pulses, as shown in the second subplot. Here a new operation request is enqueued onto the message queue while an existing instance of the operation request is being executed by the component executor thread. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{understanding-the-plots}
+	\caption{Interpreting Execution Time Plots}
+	\label{fig:understanding-the-plots}
+\end{figure}
+\FloatBarrier
+
 
 \subsection{Client-Server Interactions}
 
@@ -638,6 +647,13 @@ For the CPN analysis, in order to obtain pure execution times of all these opera
 	\label{fig:three-components-lro-cpn}
 \end{figure}
 \FloatBarrier
+
+\section{Analysis Limitations}
+
+The business logic abstraction, as presented in Section \ref{sec:BL_Model}, is quite simple. This model represents abstractly how long the different blocks of code in an operation take, but does not fully model its behavior e.g. each non-blocking local code block is represented by a single WCET and no other properties. Since variables local to these functional code blocks are not modeled, this grammar also does not model conditional behavior. So, a high-level controller component that executes an event-driven state machine cannot be sufficiently modeled with the current model. Moreover, depending on the local state of such code blocks, different interaction patterns may be invoked e.g. if this high-level controller was responsible for performing periodic image processing to identify an object, the image processing (and all the associated image processing) would stop once the object was identified. Since this conditional interaction is not modeled in the CPN business logic grammar, the abstraction would assume that the image processing interactions always happen, instead of conditionally. Such abstractions can lead to gross over-estimation of the worst-case execution times of component operations. The primary reason for keeping the business logic grammar to this level of simplicity is to reduce the level of state space explosion i.e. modeling all local variables of an operation, and consequently the state changes for each of these variables would exponentially increase the size of the state space to be analyzed. Also, modeling the local variable state would also require (1) modeling the semantics of language with which the operation code was written, (2) evaluating all expressions using these local variables, and (3) calculating the result of all conditionals used in the business logic at all possible times. Such an analysis would be too refined, hard to implement and susceptible to semantic errors. 
+
+
+
 
 \if 0
 \subsection{Cyber-Physical Systems: Autonomous Ground Support Equipment (AGSE) Robot}

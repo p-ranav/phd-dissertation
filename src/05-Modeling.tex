@@ -5,7 +5,7 @@
 
 Consider a set of mixed-criticality component-based applications that are distributed and deployed across a cluster of embedded computing nodes. Each component has a set of interfaces that it exposes to other components and to the underlying framework. Once deployed, each component functions by executing operations observed on its component message queue. Each component is associated with a single executor thread that handles these operation requests. The nature of mixed-criticality means that these executor threads are scheduled in conjunction with a known set of highly critical system threads and other low priority \emph{best-effort} threads. Furthermore, the application threads are also subject to a temporally partitioned scheduling scheme. 
 
-\paragraph{System Assumptions: }
+\paragraph{System Assumptions:}
 \begin{enumerate}
 	\item Knowledge about the component definition, component assembly, communication ports, deployment mapping, temporal partitioning etc. 
 	
