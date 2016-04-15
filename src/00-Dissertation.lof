@@ -10,9 +10,9 @@ Figure \hfill Page
 \contentsline {figure}{\numberline {4}{\ignorespaces Component Operation Execution Semantics: This figure shows the effects of the ROSMOD component scheduling on an incoming operation request. $t\_{req}$ represents the arrival time of a remote request. $t\_{wait}$ is the wait time of this request in the message queue while the current operation is still executing. $t\_{timer\_cmpl}$ is the time stamp at which the current operation completes executing. At this time, the remote request is finally scheduled for execution. $t\_{req\_cmpl}$ is the time stamp at which the remote request completes. The execution time, $t\_{exec}$ of this request is calculated as the difference in time stamps between $t\_{req\_cmpl}$ and $t\_{req}$.\relax }}{43}{figure.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Sample Temporal Partition Schedule with Hyperperiod = 300 ms\relax }}{45}{figure.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6}{\ignorespaces Colored Petri Net Analysis Model\relax }}{50}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Analysis Model - Structural Aspects\relax }}{51}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Component Thread Execution Cycle\relax }}{53}{figure.8}
+\contentsline {figure}{\numberline {6}{\ignorespaces Colored Petri Net Analysis Model\relax }}{51}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Analysis Model - Structural Aspects\relax }}{52}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Component Thread Execution Cycle\relax }}{54}{figure.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces RMI Application\relax }}{56}{figure.9}
 \contentsline {figure}{\numberline {10}{\ignorespaces RMI Application - Client Timer Operation\relax }}{56}{figure.10}
 \contentsline {figure}{\numberline {11}{\ignorespaces RMI Application - Server Operation\relax }}{57}{figure.11}
@@ -21,11 +21,11 @@ Figure \hfill Page
 \contentsline {figure}{\numberline {14}{\ignorespaces Timer Operations\relax }}{60}{figure.14}
 \contentsline {figure}{\numberline {15}{\ignorespaces Modeling the Business Logic of Component Operations\relax }}{63}{figure.15}
 \contentsline {figure}{\numberline {16}{\ignorespaces Sample Business Logic Model\relax }}{64}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces CPN Business Logic Representation\relax }}{64}{figure.17}
+\contentsline {figure}{\numberline {17}{\ignorespaces CPN Business Logic Representation\relax }}{65}{figure.17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {18}{\ignorespaces Bounded State Space for a Multi-component Timer example -- The component threads have the same real-time priority and are executed in the same device. Each component is triggered with a 100 Hz periodic timer and all three timers are synchronized to illustrate non-determinism.\relax }}{67}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Deadline Violation Observer place\relax }}{68}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Response-time Analysis\relax }}{69}{figure.20}
+\contentsline {figure}{\numberline {18}{\ignorespaces Bounded State Space for a Multi-component Timer example -- The component threads have the same real-time priority and are executed in the same device. Each component is triggered with a 100 Hz periodic timer and all three timers are synchronized to illustrate non-determinism. 'Mark' is a state space query function that provides the \emph {marking} of a place in a particular state space node.\relax }}{68}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces SearchNodes function provided by CPNTools\relax }}{69}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Deadline Violation Observer place\relax }}{71}{figure.20}
 \contentsline {figure}{\numberline {21}{\ignorespaces A Clock Token with Temporal Partitioning\relax }}{76}{figure.21}
 \contentsline {figure}{\numberline {22}{\ignorespaces Dynamic Time Progression\relax }}{77}{figure.22}
 \contentsline {figure}{\numberline {23}{\ignorespaces Structural Reductions in CPN\relax }}{79}{figure.23}
