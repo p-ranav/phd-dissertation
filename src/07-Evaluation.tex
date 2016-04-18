@@ -554,7 +554,17 @@ Figure \ref{fig:publish-subscribe-bad-case} shows the CPN results for this desig
 
 \subsection{Trajectory Planner}
 
-In the past \cite{kumar2014colored}, we have used a \emph{Trajectory Planner} deployment to illustrate the utility of our state space analysis. Figure \ref{fig:trajectory-planner} shows the execution time plot of this sample. A Sensor component is periodically triggered every second by the \emph{sensor\_timer} at which point it publishes a notification to the Trajectory Planner, alerting the planner of new sensor state. The planner component receives this notification on its \emph{state\_subscriber}. On receiving this message, the planner executes a remote method invocation to the \emph{compute} server located in the Sensor, blocked and waiting for a response. At this point, the \emph{compute\_operation} is executed on the Sensor which returns the updated sensor state. This unblocks the planner component which uses the new sensor state to perform trajectory planning tasks. 
+In the past \cite{kumar2014colored}, we have used a \emph{Trajectory Planner} deployment to illustrate the utility of our state space analysis. As shown in Figure \ref{fig:trajectory-planner-components}, a Sensor component is periodically triggered every second by the \emph{sensor\_timer} at which point it publishes a notification to the Trajectory Planner, alerting the planner of new sensor state. The planner component receives this notification on its \emph{state\_subscriber}. On receiving this message, the planner executes a remote method invocation to the \emph{compute} server located in the Sensor, blocked and waiting for a response. At this point, the \emph{compute\_operation} is executed on the Sensor which returns the updated sensor state. This unblocks the planner component which uses the new sensor state to perform trajectory planning tasks. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{trajectory-planner-components}
+	\caption{Trajectory Planner Test}
+	\label{fig:trajectory-planner-components}
+\end{figure}
+\FloatBarrier
+
+Figure \ref{fig:trajectory-planner} shows the execution time plot of this sample where the sensor updates happen once a second. 
 
 \begin{figure}[h]
 	\centering
@@ -571,6 +581,16 @@ This is a common interaction pattern in Cyber-Physical systems since embedded se
 	\includegraphics[width=\textwidth]{trajectory-planner-cpn}
 	\caption{CPN Analysis Results: Trajectory Planner}
 	\label{fig:trajectory-planner-cpn}
+\end{figure}
+\FloatBarrier
+
+If the sensor update frequency is increased to 100 ms, the sensor begins to notify the planner at a much higher frequency than expected. If there is no down-sampling on the planner's side, every single update will be handled by the planner, leading to dangerous queue size growth on the planner. Figure \ref{fig:trajectory-planner-bad-case} shows this deployment, as observed in the CPN analysis. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{trajectory-planner-bad-case}
+	\caption{CPN Analysis - Sensor firing too frequently}
+	\label{fig:trajectory-planner-bad-case}
 \end{figure}
 \FloatBarrier
 

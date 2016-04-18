@@ -81,16 +81,16 @@
 \contentsline {subsection}{\numberline {7.3.3}Publish-Subscribe Interactions}{111}{subsection.7.3.3}
 \contentsline {subsubsection}{\numberline {7.3.3.1}Bad Designs}{113}{subsubsection.7.3.3.1}
 \contentsline {subsection}{\numberline {7.3.4}Trajectory Planner}{114}{subsection.7.3.4}
-\contentsline {subsection}{\numberline {7.3.5}Time-triggered Operations}{116}{subsection.7.3.5}
-\contentsline {subsection}{\numberline {7.3.6}Long-Running Operations}{118}{subsection.7.3.6}
-\contentsline {subsubsection}{\numberline {7.3.6.1}Challenges}{119}{subsubsection.7.3.6.1}
-\contentsline {subsubsection}{\numberline {7.3.6.2}Implementation and Results}{120}{subsubsection.7.3.6.2}
-\contentsline {section}{\numberline {7.4}Analysis Limitations}{123}{section.7.4}
-\contentsline {chapter}{\numberline {VIII}Future Work and Conclusions}{125}{chapter.VIII}
-\contentsline {chapter}{Appendices}{126}{section*.5}
-\contentsline {chapter}{\numberline {A}Publications}{127}{APPENDIX.A}
-\contentsline {section}{\numberline {1.1}Workshop Papers}{127}{section.1.1}
-\contentsline {section}{\numberline {1.2}Conference Papers}{127}{section.1.2}
-\contentsline {section}{\numberline {1.3}Journal Papers}{128}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Awaiting Reviews}{128}{subsection.1.3.1}
-\contentsline {chapter}{REFERENCES}{130}{chapter*.6}
+\contentsline {subsection}{\numberline {7.3.5}Time-triggered Operations}{118}{subsection.7.3.5}
+\contentsline {subsection}{\numberline {7.3.6}Long-Running Operations}{120}{subsection.7.3.6}
+\contentsline {subsubsection}{\numberline {7.3.6.1}Challenges}{121}{subsubsection.7.3.6.1}
+\contentsline {subsubsection}{\numberline {7.3.6.2}Implementation and Results}{122}{subsubsection.7.3.6.2}
+\contentsline {section}{\numberline {7.4}Analysis Limitations}{125}{section.7.4}
+\contentsline {chapter}{\numberline {VIII}Future Work and Conclusions}{127}{chapter.VIII}
+\contentsline {chapter}{Appendices}{128}{section*.5}
+\contentsline {chapter}{\numberline {A}Publications}{129}{APPENDIX.A}
+\contentsline {section}{\numberline {1.1}Workshop Papers}{129}{section.1.1}
+\contentsline {section}{\numberline {1.2}Conference Papers}{129}{section.1.2}
+\contentsline {section}{\numberline {1.3}Journal Papers}{130}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Awaiting Reviews}{130}{subsection.1.3.1}
+\contentsline {chapter}{REFERENCES}{132}{chapter*.6}

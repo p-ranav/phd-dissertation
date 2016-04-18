@@ -46,13 +46,15 @@ Figure \hfill Page
 \contentsline {figure}{\numberline {37}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{112}{figure.37}
 \contentsline {figure}{\numberline {38}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{113}{figure.38}
 \contentsline {figure}{\numberline {39}{\ignorespaces CPN Analysis Results: Time-triggered Publisher -- Periodicity Issues\relax }}{114}{figure.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{115}{figure.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{116}{figure.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{117}{figure.42}
-\contentsline {figure}{\numberline {43}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{118}{figure.43}
-\contentsline {figure}{\numberline {44}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{120}{figure.44}
-\contentsline {figure}{\numberline {45}{\ignorespaces Long Running Operation - Software Model\relax }}{121}{figure.45}
-\contentsline {figure}{\numberline {46}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{122}{figure.46}
-\contentsline {figure}{\numberline {47}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{123}{figure.47}
+\contentsline {figure}{\numberline {40}{\ignorespaces Trajectory Planner Test\relax }}{115}{figure.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{116}{figure.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{117}{figure.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces CPN Analysis - Sensor firing too frequently\relax }}{118}{figure.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{119}{figure.44}
+\contentsline {figure}{\numberline {45}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{120}{figure.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{122}{figure.46}
+\contentsline {figure}{\numberline {47}{\ignorespaces Long Running Operation - Software Model\relax }}{123}{figure.47}
+\contentsline {figure}{\numberline {48}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{124}{figure.48}
+\contentsline {figure}{\numberline {49}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{125}{figure.49}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
