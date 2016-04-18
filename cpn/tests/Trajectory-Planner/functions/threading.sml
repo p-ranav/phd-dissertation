@@ -602,12 +602,12 @@ fun AdvanceTimeGuard clocks wths wi =
   else
     false; 
 fun AdvanceThisClock this_value {node=node, value=value, next_tick=next_tick} = 
-   if (next_tick <= this_value) then (* Loop and increment next_tick till next_tick > this_value *)
+   if (next_tick < this_value) then (* Loop and increment next_tick till next_tick > this_value *)
         (AdvanceThisClock this_value {node=node, value=this_value, next_tick = next_tick + clock_tick})  
    else
       (* When next_tick > this_value, you can safely set "value=this_value" *)
       if (value < this_value) then
-        {node=node, value=this_value, next_tick=next_tick}
+        {node=node, value=this_value, next_tick=this_value + clock_tick}
       else
         {node=node, value=value, next_tick=next_tick};
 

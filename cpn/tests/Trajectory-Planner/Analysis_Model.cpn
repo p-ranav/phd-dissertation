@@ -572,11 +572,11 @@
                  h="40.000000"/>
         <token x="-68.000000"
                y="16.000000"/>
-        <marking x="-98.750000"
-                 y="-12.500000"
+        <marking x="-27.000000"
+                 y="0.000000"
                  hidden="false">
-          <snap snap_id="0"
-                anchor.horizontal="3"
+          <snap snap_id="4"
+                anchor.horizontal="2"
                 anchor.vertical="2"/>
         </marking>
         <type id="ID1435018188">
@@ -629,10 +629,10 @@
                  h="40.000000"/>
         <token x="-44.000000"
                y="24.000000"/>
-        <marking x="41.000000"
-                 y="18.000000"
+        <marking x="-14.000000"
+                 y="13.000000"
                  hidden="false">
-          <snap snap_id="0"
+          <snap snap_id="3"
                 anchor.horizontal="3"
                 anchor.vertical="2"/>
         </marking>
@@ -4276,6 +4276,7 @@ clocks wths) wths)</text>
         <guideline_elm idref="ID1435502913"/>
         <guideline_elm idref="ID1435383691"/>
         <guideline_elm idref="ID1435751119"/>
+        <guideline_elm idref="ID1435484026"/>
       </hguideline>
       <hguideline id="ID1435687867"
                   y="560.250000">
@@ -4310,6 +4311,7 @@ clocks wths) wths)</text>
         <guideline_elm idref="ID1435018836"/>
         <guideline_elm idref="ID1435688685"/>
         <guideline_elm idref="ID1435651741"/>
+        <guideline_elm idref="ID1435484026"/>
       </vguideline>
       <vguideline id="ID1435391014"
                   x="-508.250000">
@@ -4400,6 +4402,21 @@ TextIO.closeOut writestream</text>
         <label/>
         <text>use &quot;operations.txt&quot;;</text>
       </Aux>
+      <Aux id="ID1436219062">
+        <posattr x="53.743750"
+                 y="-924.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>val clock = {node=&quot;1&quot;, value=0, next_tick=4000};
+(ProgressClock 9000 clock)</text>
+      </Aux>
     </page>
     <instances>
       <instance id="ID2149"
@@ -4426,21 +4443,6 @@ TextIO.closeOut writestream</text>
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10008.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10003.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10007.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10005.enable">
         <value>
           <boolean>true</boolean>
@@ -4451,12 +4453,7 @@ TextIO.closeOut writestream</text>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10011.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10002.enable">
+      <option name="extensions.10007.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4466,7 +4463,27 @@ TextIO.closeOut writestream</text>
           <boolean>true</boolean>
         </value>
       </option>
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
       <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10008.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10011.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4681,12 +4698,12 @@ TextIO.closeOut writestream</text>
       <cpnbinder id="ID2222"
                  x="170"
                  y="-41"
-                 width="1368"
-                 height="829">
+                 width="1636"
+                 height="1101">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="367.005000"
-                    pany="-111.563125"
+                    panx="-139.995000"
+                    pany="-559.563125"
                     zoom="0.800000"
                     instance="ID2149">
             <zorder>

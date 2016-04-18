@@ -72,7 +72,7 @@ fun ProgressClock this_value {node=node, value=value, next_tick=next_tick} =
    if (next_tick < this_value) then 
         (ProgressClock this_value {node=node, value=this_value, next_tick = next_tick})  
    else
-        {node=node, value=this_value, next_tick=next_tick};
+        {node=node, value=this_value, next_tick=this_value + clock_tick};
 
 fun GotoNextTick {node=node, value=value, next_tick=next_tick} = 
       {node=node, value=next_tick, next_tick=next_tick + clock_tick};
