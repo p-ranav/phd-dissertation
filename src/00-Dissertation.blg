@@ -25,13 +25,13 @@ Repeated entry---line 6796 of file 00-Dissertation.bib
  : @conference {ROS
  :                 ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "MoDeVVa"
 Warning--to sort, need author or key in BBB
 Warning--to sort, need author or key in Simulink
 Warning--to sort, need author or key in CubeSat
 Warning--to sort, need author or key in CubeSat_Mars
 Warning--empty journal in abrahammathworks
 Warning--empty year in abrahammathworks
+Warning--empty journal in UML
 Warning--empty journal in de2001object
 Warning--empty journal in feilkas2009top
 Warning--empty journal in gordon1993introduction
@@ -41,6 +41,4 @@ Warning--empty journal in reineke2006definition
 Warning--empty year in reineke2006definition
 Warning--empty journal in shelleyacl2
 Warning--empty year in shelleyacl2
-Warning--empty journal in CPNTwoInterfaces
-Warning--empty year in CPNTwoInterfaces
 (There were 6 error messages)

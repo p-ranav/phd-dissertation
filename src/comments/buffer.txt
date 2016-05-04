@@ -1,0 +1,1 @@
+What is the 'underlying infrastructure'? What is received from it? Messages  and service requests or service responses, and timer activations. Optionally: messages from the I/O system (but we did not implement that in DREMS). 

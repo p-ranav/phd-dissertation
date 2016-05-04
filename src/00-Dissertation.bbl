@@ -69,6 +69,11 @@ F.~Bause and P.~S. Kritzinger.
 \newblock {\em Stochastic Petri Nets}.
 \newblock Springer, 1996.
 
+\bibitem{UML}
+D.~Bell.
+\newblock Uml basics: An introduction to the unified modeling language.
+\newblock 2003.
+
 \bibitem{bengtsson1996uppaal}
 J.~Bengtsson, K.~Larsen, F.~Larsson, P.~Pettersson, and W.~Yi.
 \newblock {\em UPPAAL-a tool suite for automatic verification of real-time
@@ -109,11 +114,10 @@ Y.-A. Chen, E.~Clarke, P.-H. Ho, Y.~Hoskote, T.~Kam, M.~Khaira, J.~O'Leary, and
 \newblock In {\em Formal Methods in Computer-Aided Design}, pages 19--33.
   Springer, 1996.
 
-\bibitem{ASK-CTL}
-A.~Cheng, S.~Christensen, and K.~H. Mortensen.
-\newblock Model checking coloured petri nets-exploiting strongly connected
-  components.
-\newblock {\em DAIMI Report Series}, 26(519), 1997.
+\bibitem{CPN_Sweepline}
+S.~Christensen, L.~M. Kristensen, and T.~Mailund.
+\newblock {\em A sweep-line method for state space exploration}.
+\newblock Springer, 2001.
 
 \bibitem{Christensen2001}
 S.~Christensen, L.~M. Kristensen, and T.~Mailund.
@@ -121,11 +125,6 @@ S.~Christensen, L.~M. Kristensen, and T.~Mailund.
 \newblock In {\em Proceedings of the 7th International Conference on Tools and
   Algorithms for the Construction and Analysis of Systems}, TACAS 2001, pages
   450--464, London, UK, UK, 2001. Springer-Verlag.
-
-\bibitem{CPN_Sweepline}
-S.~Christensen, L.~M. Kristensen, and T.~Mailund.
-\newblock {\em A sweep-line method for state space exploration}.
-\newblock Springer, 2001.
 
 \bibitem{clemens1998component}
 S.~Clemens, G.~Dominik, and M.~Stephan.
@@ -457,6 +456,11 @@ T.~Murata.
 \newblock Petri nets: Properties, analysis and applications.
 \newblock {\em Proceedings of the IEEE}, 77(4):541--580, 1989.
 
+\bibitem{navet2008automotive}
+N.~Navet and F.~Simonot-Lion.
+\newblock {\em Automotive embedded systems handbook}.
+\newblock CRC press, 2008.
+
 \bibitem{CCM-light:03}
 {Object Management Group}.
 \newblock {\em {Light Weight CORBA Component Model Revised Submission}}, {OMG
@@ -660,10 +664,6 @@ M.~Westergaard, S.~Evangelista, and L.~M. Kristensen.
 \newblock Asap: an extensible platform for state space analysis.
 \newblock In {\em Applications and Theory of Petri Nets}, pages 303--312.
   Springer, 2009.
-
-\bibitem{CPNTwoInterfaces}
-M.~Westergaard and L.~M. Kristensen.
-\newblock Two interfaces to the cpn tools simulator.
 
 \bibitem{wilhelm2008worst}
 R.~Wilhelm, J.~Engblom, A.~Ermedahl, N.~Holsti, S.~Thesing, D.~Whalley,
