@@ -130,6 +130,12 @@ S.~Christensen, L.~M. Kristensen, and T.~Mailund.
 S.~Clemens, G.~Dominik, and M.~Stephan.
 \newblock Component software: beyond object-oriented programming, 1998.
 
+\bibitem{correll2005design}
+K.~Correll, N.~Barendt, and M.~Branicky.
+\newblock Design considerations for software only implementations of the ieee
+  1588 precision time protocol.
+\newblock In {\em Conference on IEEE}, volume 1588, pages 11--15, 2005.
+
 \bibitem{Cusumano:2011:RTD:1866739.1866750}
 M.~A. Cusumano.
 \newblock Reflections on the toyota debacle.
