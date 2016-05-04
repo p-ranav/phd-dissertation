@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.10)  27 APR 2016 11:05
-entering extended mode
-**./00-Dissertation.tex
-(00-Dissertation.tex
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2016.4.30)  4 MAY 2016 10:50
+ restricted \write18 enabled.
+**00-Dissertation.tex
+(./00-Dissertation.tex
 LaTeX2e <2015/10/01> patch level 2
 Babel <3.9n> and hyphenation patterns for 69 languages loaded.
-(vuthesis.cls
+(./vuthesis.cls
 Document Class: vuthesis 1999/03/24 Document Class `vuthesis'.
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -24,11 +24,11 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\indentfirst.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/indentfirst.
 sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/float/float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count88
 \float@exts=\toks14
@@ -36,11 +36,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks15
 \@floatcapt=\box27
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/setspace/setspace.
 sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/natbib/natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
@@ -48,14 +48,14 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count89
 )
 \@float@every@figure=\toks16
-) ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+) ("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/fontenc.sty
 "
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
- ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+ ("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\mathptmx.st
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/mathptmx.st
 y"
 Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
@@ -92,49 +92,49 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/helvet.sty"
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval.st
 y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 ))
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\courier.sty
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/courier.sty
 "
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.s
 ty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphicx.
 sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphics.
 sty"
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\graphics.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/graphics.
 cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 94.
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pdftex-def/pdftex.
 def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/infware
 rr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds
 .sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
@@ -143,22 +143,22 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\placeins\placeins.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/placeins/placeins.
 sty"
 Package: placeins 2005/04/18  v 2.2
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\bibentry.st
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/natbib/bibentry.st
 y"
 Package: bibentry 2007/10/30 1.5 (PWD)
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\appendix\appendix.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/appendix/appendix.
 sty"
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@pps=\count91
 \c@@ppsavesec=\count92
 \c@@ppsaveapp=\count93
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/amsfonts.
 sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks18
@@ -167,33 +167,33 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.s
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/amssymb.s
 ty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsmath.st
 y"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amstext.st
 y"
 Package: amstext 2000/06/29 v2.01
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
 "
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks19
 \ex@=\dimen105
 ))
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
 "
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen106
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
 "
 Package: amsopn 1999/12/14 v2.01 operator names
 )
@@ -235,7 +235,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amscls/amsthm.sty"
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks24
 \thm@bodyfont=\toks25
@@ -247,11 +247,11 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip50
 \dth@everypar=\toks29
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tabulary\tabulary.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tabulary/tabulary.
 sty"
 Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/array.sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen114
 \extrarowheight=\dimen115
@@ -265,11 +265,11 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \tymax=\dimen118
 \TY@tablewidth=\dimen119
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption.st
 y"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption3.s
 ty"
 Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
@@ -283,31 +283,31 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 )
 \c@ContinuedFloat=\count107
 Package caption Info: float package is loaded.
-) ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+) ("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/color.sty
 "
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\color.cfg
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/color.cfg
 "
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\dvipsnam.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/dvipsnam.
 def"
 File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
 ))
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\colortbl.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/colortbl/colortbl.
 sty"
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks31
 \minrowclearance=\skip53
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/textcomp.sty"
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -321,7 +321,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
 LaTeX Info: Redefining \oldstylenums on input line 334.
@@ -349,7 +349,6 @@ Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
 Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
 Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
 Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
-
 Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
 Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
 Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
@@ -388,11 +387,11 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ltxmisc\relsize.st
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ltxmisc/relsize.st
 y"
 Package: relsize 2003/07/04 ver 3.1
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyvrb\fancyvrb.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fancyvrb/fancyvrb.
 sty"
 Package: fancyvrb 2008/02/07
 
@@ -405,17 +404,17 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \FV@StepNumber=\count110
 \FV@OutFile=\write3
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/subcaption
 .sty"
 Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 \c@subfigure=\count111
 \c@subtable=\count112
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\rotating\rotating.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/rotating/rotating.
 sty"
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count113
@@ -424,24 +423,24 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box31
 \rot@mess@toks=\toks32
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tocvsec2\tocvsec2.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tocvsec2/tocvsec2.
 sty"
 Package: tocvsec2 2014/03/10 v1.3a variable ToC section entries
 \c@max@tocdepth=\count114
 \c@max@secnumdepth=\count115
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\chngcntr\chngcntr.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/chngcntr/chngcntr.
 sty"
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorit
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/algorithms/algorit
 hm.sty"
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environ
+ment
 \@float@every@algorithm=\toks33
 \c@algorithm=\count116
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorit
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/algorithms/algorit
 hmic.sty"
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@unique=\count117
@@ -451,7 +450,7 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip56
 \algorithmicindent=\skip57
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.sty
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/tabularx.sty
 "
 Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 \TX@col@width=\dimen127
@@ -462,7 +461,7 @@ Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 \TX@cols=\count121
 \TX@ftn=\toks34
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/booktabs/booktabs.
 sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen132
@@ -483,15 +482,15 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count125
 \@thisrulewidth=\dimen144
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.st
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/lscape.st
 y"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/multirow/multirow.
 sty"
 \bigstrutjot=\dimen145
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.
 sty"
 \lst@mode=\count126
 \lst@gtempboxa=\box32
@@ -506,30 +505,30 @@ sty"
 \lst@lineno=\count131
 \lst@maxwidth=\dimen149
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.s
 ty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count132
 \lst@skipnumbers=\count133
 \lst@framebox=\box33
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.
 cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\acronym\acronym.st
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/acronym/acronym.st
 y"
 Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bigfoot\suffix.sty
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/bigfoot/suffix.sty
 "
 Package: suffix 2006/07/15 1.5a Variant command support
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xstring\xstring.st
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xstring/xstring.st
 y"
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xstring\xstring.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/generic/xstring/xstring.
 tex"
 \@xs@message=\write4
 \integerpart=\count134
@@ -539,43 +538,42 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 \AC@clearlist=\toks36
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hyperref.
 sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-
 hyperref.sty"
 Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 
-
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-
 generic.sty"
 Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+Package ifluatex Info: LuaTeX detected.
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
+Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
+
+(C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/scripts/oberdiek/oberdiek.luat
+ex.lua)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks37
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
-)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO)
+
 Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
 Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
@@ -589,15 +587,15 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.
 sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/auxhook.s
 ty"
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/kvoptions
 .sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
@@ -605,13 +603,13 @@ Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 \Hy@linkcounter=\count136
 \Hy@pagecounter=\count137
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/pd1enc.de
 f"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count138
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/hyperref.
 cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -649,34 +647,34 @@ LaTeX Info: Redefining \pageref on input line 6369.
 Package hyperref Message: Driver: hpdftex.
 
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hpdftex.d
 ef"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count144
 \c@bookmark@seq@number=\count145
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/rerunfile
 check.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
+2.
 )
 \Hy@SectionHShift=\skip58
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfiles\subfiles.
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/subfiles/subfiles.
 sty"
 Package: subfiles 2012/05/23 Federico Garcia
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.sty
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/verbatim.sty
 "
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks37
-\verbatim@line=\toks38
+\every@verbatim=\toks38
+\verbatim@line=\toks39
 \verbatim@in@stream=\read2
 ))
 \c@num=\count146
- (00-Dissertation.aux)
-\openout1 = `00-Dissertation.aux'.
+ (./00-Dissertation.aux)
+\openout1 = 00-Dissertation.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
@@ -693,7 +691,7 @@ LaTeX Font Info:    ... okay on input line 70.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 70.
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 70.
@@ -701,10 +699,10 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 70.
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count147
@@ -712,12 +710,12 @@ ii"
 \scratchbox=\box34
 \nofMPsegments=\count148
 \nofMParguments=\count149
-\everyMPshowfont=\toks39
+\everyMPshowfont=\toks40
 \MPscratchCnt=\count150
 \MPscratchDim=\dimen155
 \MPnumerator=\count151
 \makeMPintoPDFobject=\count152
-\everyMPtoPDFconversion=\toks40
+\everyMPtoPDFconversion=\toks41
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
@@ -728,11 +726,11 @@ Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box35
 Package hyperref Info: Link coloring ON on input line 70.
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/nameref.s
 ty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/gettitl
 estring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
@@ -741,41 +739,42 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 70.
 LaTeX Info: Redefining \pageref on input line 70.
 LaTeX Info: Redefining \nameref on input line 70.
- (00-Dissertation.out) (00-Dissertation.out)
+ (./00-Dissertation.out) (./00-Dissertation.out)
 \@outlinefile=\write5
-\openout5 = `00-Dissertation.out'.
 
- (00-Dissertation.bbl)
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 81
-.
+\openout5 = 00-Dissertation.out
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd
+(./00-Dissertation.bbl)
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 81.
+
+
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/ot1ztmcm.fd
 "
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 81
-.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 81.
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd
+
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/omlztmcm.fd
 "
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 81
-.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 81.
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd
+
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/omsztmcm.fd
 "
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 81
-.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 81.
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd
+
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/omxztmcm.fd
 "
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 81.
- ("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+ ("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -810,37 +809,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--81
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 83.
 
-(00-Dissertation.toc
+(./00-Dissertation.toc
 Overfull \hbox (17.27686pt too wide) in paragraph at lines 27--27
- [][] []\T1/ptm/m/n/12 Mapping AADL Mod-els to Anal-y-sis Repos-i-tory - MoSaRT
- 
+ [][][] []\T1/ptm/m/n/12 Map-ping AADL Mod-els to Anal-y-sis Repos-i-tory - MoS
+aRT 
  []
 
 [2
 
 ] [3])
 \tf@toc=\write6
-\openout6 = `00-Dissertation.toc'.
 
- [4] (00-Dissertation.lot)
+\openout6 = 00-Dissertation.toc
+ [4] (./00-Dissertation.lot)
 \tf@lot=\write7
-\openout7 = `00-Dissertation.lot'.
 
+\openout7 = 00-Dissertation.lot
  [5
 
-] (00-Dissertation.lof [6
+] (./00-Dissertation.lof [6
 
 ]
-Overfull \hbox (8.56392pt too wide) in paragraph at lines 26--26
+Overfull \hbox (8.56392pt too wide) in paragraph at lines 28--28
  \T1/ptm/m/n/12 and all three timers are syn-chro-nized to il-lus-trate non-det
 erminism. 'Mark' 
  []
 
 [7])
 \tf@lof=\write8
-\openout8 = `00-Dissertation.lof'.
 
- [8] (01-Introduction.tex
+\openout8 = 00-Dissertation.lof
+ [8] (./01-Introduction.tex
 CHAPTER I.
 [1
 
@@ -854,14 +853,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
  [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 12.
- <img/sdlc.png, id=563, 647.41875pt x 620.3175pt>
+ <img/sdlc.png, id=574, 647.41875pt x 620.3175pt>
 File: img/sdlc.png Graphic file (type png)
  <use img/sdlc.png>
 Package pdftex.def Info: img/sdlc.png used on input line 20.
 (pdftex.def)             Requested size: 195.12767pt x 186.95802pt.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 21.
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
@@ -873,22 +872,22 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.07397pt on input line 21.
 
-<img/big_picture_2.png, id=564, 368.0952pt x 292.9344pt>
+<img/big_picture_2.png, id=575, 368.0952pt x 292.9344pt>
 File: img/big_picture_2.png Graphic file (type png)
 
 <use img/big_picture_2.png>
 Package pdftex.def Info: img/big_picture_2.png used on input line 26.
 (pdftex.def)             Requested size: 216.81pt x 172.53926pt.
- [3] [4 <./img/sdlc.png> <./img/big_picture_2.png>]
+ [3] [4<./img/sdlc.png><./img/big_picture_2.png>]
 
-LaTeX Warning: Reference `chapter:conclusion' on page 5 undefined on input line
- 38.
+LaTeX Warning: Reference `chapter:conclusion' on page 5 undefined on input line 
+38.
 
 
-LaTeX Warning: Reference `chapter:publications' on page 5 undefined on input li
-ne 38.
+LaTeX Warning: Reference `chapter:publications' on page 5 undefined on input lin
+e 38.
 
-) (02-Fundamentals.tex [5] [6]
+) (./02-Fundamentals.tex [5] [6]
 CHAPTER II.
 [7
 
@@ -898,16 +897,17 @@ Overfull \hbox (0.88295pt too wide) in paragraph at lines 14--15
 orst-case ex-e-cu-tion times (WCET)
  []
 
-[9]) (03-Related-Research.tex [10]
+[9]) (./03-Related-Research.tex [10]
 CHAPTER III.
 [11
 
 ] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 74.
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [22] [23] [24] [25] [26] <img/pn.png, id=777, 551.05875pt x 557.08125pt>
+)
+[22] [23] [24] [25] [26] <img/pn.png, id=808, 551.05875pt x 557.08125pt>
 File: img/pn.png Graphic file (type png)
 
 <use img/pn.png>
@@ -917,13 +917,13 @@ Package pdftex.def Info: img/pn.png used on input line 115.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27] [28 <./img/pn.png>] [29] [30] [31] [32] [33] [34] [35]
+[27] [28<./img/pn.png>] [29] [30] [31] [32] [33] [34] [35]
 
 LaTeX Warning: Reference `fig:mast' on page 36 undefined on input line 181.
 
-[36] [37] [38] [39]) (04-DREMS.tex [40]
+[36] [37] [38] [39]) (./04-DREMS.tex [40]
 CHAPTER IV.
-<img/ROSMOD_Component.png, id=920, 1288.815pt x 649.67719pt>
+<img/ROSMOD_Component.png, id=962, 1288.815pt x 649.67719pt>
 File: img/ROSMOD_Component.png Graphic file (type png)
 
 <use img/ROSMOD_Component.png>
@@ -935,145 +935,149 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [41
 
-] [42 <./img/ROSMOD_Component.png>]
-<img/cop_execution_semantics.png, id=943, 1120.9378pt x 555.57562pt>
+] [42<./img/ROSMOD_Component.png>] [43]
+<img/cop_execution_semantics.png, id=991, 1120.9378pt x 555.57562pt>
 File: img/cop_execution_semantics.png Graphic file (type png)
 
 <use img/cop_execution_semantics.png>
-Package pdftex.def Info: img/cop_execution_semantics.png used on input line 28.
-
+Package pdftex.def Info: img/cop_execution_semantics.png used on input line 30.
 (pdftex.def)             Requested size: 433.62pt x 214.9188pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.27998pt on input line 29.
+(Font)              scaled to size 8.27998pt on input line 31.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.43999pt on input line 29.
- [43] [44 <./img/cop_execution_semantics.png>] <img/partition_scheduling.png, i
-d=957, 1271.5003pt x 582.67688pt>
+(Font)              scaled to size 6.43999pt on input line 31.
+ [44<./img/cop_execution_semantics.png>]
+<img/partition_scheduling.png, id=1001, 1271.5003pt x 582.67688pt>
 File: img/partition_scheduling.png Graphic file (type png)
 
 <use img/partition_scheduling.png>
-Package pdftex.def Info: img/partition_scheduling.png used on input line 43.
+Package pdftex.def Info: img/partition_scheduling.png used on input line 45.
 (pdftex.def)             Requested size: 433.62pt x 198.7121pt.
- [45]) (05-Modeling.tex [46 <./img/partition_scheduling.png>] [47]
+ [45] [46<./img/partition_scheduling.png>])
+(./05-Modeling.tex [47]
 CHAPTER V.
 [48
 
-] [49]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 25.
+] [49] [50]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 28.
 
-("C:\Users\prana\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-[50] <img/hlcpn_cropped.jpg, id=999, 819.06pt x 662.475pt>
+[51] <img/hlcpn_cropped.jpg, id=1060, 819.06pt x 662.475pt>
 File: img/hlcpn_cropped.jpg Graphic file (type jpg)
 
 <use img/hlcpn_cropped.jpg>
-Package pdftex.def Info: img/hlcpn_cropped.jpg used on input line 31.
+Package pdftex.def Info: img/hlcpn_cropped.jpg used on input line 34.
 (pdftex.def)             Requested size: 433.62pt x 350.72595pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/hlcpn_structure.png, id=1002, 651.3936pt x 529.4982pt>
+<img/hlcpn_structure.png, id=1063, 651.3936pt x 529.4982pt>
 File: img/hlcpn_structure.png Graphic file (type png)
 
 <use img/hlcpn_structure.png>
-Package pdftex.def Info: img/hlcpn_structure.png used on input line 40.
+Package pdftex.def Info: img/hlcpn_structure.png used on input line 43.
 (pdftex.def)             Requested size: 433.62pt x 352.48352pt.
+ [52<./img/hlcpn_cropped.jpg>] [53<./img/hlcpn_structure.png>]
+<img/temporal_partition_schedule.png, id=1081, 533.8344pt x 315.579pt>
+File: img/temporal_partition_schedule.png Graphic file (type png)
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[51] [52 <./img/hlcpn_cropped.jpg>] [53 <./img/hlcpn_structure.png>]
-<img/source-thread_execution_cycle.png, id=1024, 638.385pt x 454.8192pt>
+<use img/temporal_partition_schedule.png>
+Package pdftex.def Info: img/temporal_partition_schedule.png used on input line 
+78.
+(pdftex.def)             Requested size: 303.53267pt x 179.43887pt.
+ [54]
+<img/source-thread_execution_cycle.png, id=1091, 638.385pt x 454.8192pt>
 File: img/source-thread_execution_cycle.png Graphic file (type png)
 
 <use img/source-thread_execution_cycle.png>
-Package pdftex.def Info: img/source-thread_execution_cycle.png used on input li
-ne 87.
+Package pdftex.def Info: img/source-thread_execution_cycle.png used on input lin
+e 97.
 (pdftex.def)             Requested size: 433.62pt x 308.9329pt.
- [54] [55 <./img/source-thread_execution_cycle.png>] <img/rmi_application.png, 
-id=1037, 831.85782pt x 385.44pt>
+ [55<./img/temporal_partition_schedule.png>] [56<./img/source-thread_execution_c
+ycle.png>]
+<img/cpn_cmq.png, id=1105, 627.7854pt x 478.9092pt>
+File: img/cpn_cmq.png Graphic file (type png)
+ <use img/cpn_cmq.png>
+Package pdftex.def Info: img/cpn_cmq.png used on input line 118.
+(pdftex.def)             Requested size: 433.62pt x 330.78384pt.
+
+[57] [58<./img/cpn_cmq.png>]
+<img/rmi_application.png, id=1119, 831.85782pt x 385.44pt>
 File: img/rmi_application.png Graphic file (type png)
 
 <use img/rmi_application.png>
-Package pdftex.def Info: img/rmi_application.png used on input line 118.
+Package pdftex.def Info: img/rmi_application.png used on input line 137.
 (pdftex.def)             Requested size: 433.62pt x 200.9181pt.
- [56]
-<img/cpn_rmi_app_timer_token.png, id=1044, 1136.74687pt x 198.7425pt>
+ [59<./img/rmi_application.png>]
+<img/cpn_rmi_app_timer_token.png, id=1126, 1136.74687pt x 198.7425pt>
 File: img/cpn_rmi_app_timer_token.png Graphic file (type png)
 
 <use img/cpn_rmi_app_timer_token.png>
-Package pdftex.def Info: img/cpn_rmi_app_timer_token.png used on input line 127
-.
+Package pdftex.def Info: img/cpn_rmi_app_timer_token.png used on input line 146.
+
 (pdftex.def)             Requested size: 433.62pt x 75.81102pt.
- [57 <./img/rmi_application.png> <./img/cpn_rmi_app_timer_token.png>]
-<img/cpn_rmi_app_server_token.png, id=1050, 1138.2525pt x 158.09062pt>
+
+<img/cpn_rmi_app_server_token.png, id=1128, 1138.2525pt x 158.09062pt>
 File: img/cpn_rmi_app_server_token.png Graphic file (type png)
 
 <use img/cpn_rmi_app_server_token.png>
-Package pdftex.def Info: img/cpn_rmi_app_server_token.png used on input line 13
-6.
+Package pdftex.def Info: img/cpn_rmi_app_server_token.png used on input line 155
+.
 (pdftex.def)             Requested size: 433.62pt x 60.22461pt.
- [58 <./img/cpn_rmi_app_server_token.png>] <img/component_interactions.jpg, id=
-1058, 685.8122pt x 232.61906pt>
+ [60<./img/cpn_rmi_app_timer_token.png>]
+<img/component_interactions.jpg, id=1137, 685.8122pt x 232.61906pt>
 File: img/component_interactions.jpg Graphic file (type jpg)
 
 <use img/component_interactions.jpg>
-Package pdftex.def Info: img/component_interactions.jpg used on input line 155.
-
+Package pdftex.def Info: img/component_interactions.jpg used on input line 175.
 (pdftex.def)             Requested size: 433.62pt x 147.08319pt.
-
-<img/cpn_rmi_app_iop.png, id=1060, 1197.72469pt x 208.52907pt>
+ [61<./img/cpn_rmi_app_server_token.png>]
+<img/cpn_rmi_app_iop.png, id=1145, 1197.72469pt x 208.52907pt>
 File: img/cpn_rmi_app_iop.png Graphic file (type png)
 
 <use img/cpn_rmi_app_iop.png>
-Package pdftex.def Info: img/cpn_rmi_app_iop.png used on input line 164.
+Package pdftex.def Info: img/cpn_rmi_app_iop.png used on input line 184.
 (pdftex.def)             Requested size: 433.62pt x 75.49359pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[59 <./img/component_interactions.jpg>]
-<img/timers.jpg, id=1069, 498.36188pt x 356.83313pt>
+ [62<./img/component_interactions.jpg><./img/cpn_rmi_app_iop.png>] <img/timers.
+jpg, id=1154, 498.36188pt x 356.83313pt>
 File: img/timers.jpg Graphic file (type jpg)
- <use img/timers.jpg>
-Package pdftex.def Info: img/timers.jpg used on input line 182.
-(pdftex.def)             Requested size: 433.62pt x 310.48586pt.
 
-[60 <./img/cpn_rmi_app_iop.png>] [61 <./img/timers.jpg>] [62]
-<./img/BL-EBNF.png, id=1083, 1279.78125pt x 751.30687pt>
+<use img/timers.jpg>
+Package pdftex.def Info: img/timers.jpg used on input line 202.
+(pdftex.def)             Requested size: 433.62pt x 310.48586pt.
+ [63<./img/timers.jpg>] [64] [65]
+<./img/BL-EBNF.png, id=1169, 914.91812pt x 536.50438pt>
 File: ./img/BL-EBNF.png Graphic file (type png)
 
 <use ./img/BL-EBNF.png>
-Package pdftex.def Info: ./img/BL-EBNF.png used on input line 207.
-(pdftex.def)             Requested size: 433.62pt x 254.55823pt.
- [63]
-<./img/abstract_business_logic.png, id=1091, 402.303pt x 406.1574pt>
+Package pdftex.def Info: ./img/BL-EBNF.png used on input line 227.
+(pdftex.def)             Requested size: 433.62pt x 254.26918pt.
+ [66<./img/BL-EBNF.png>]
+<./img/abstract_business_logic.png, id=1180, 402.303pt x 406.1574pt>
 File: ./img/abstract_business_logic.png Graphic file (type png)
 
 <use ./img/abstract_business_logic.png>
-Package pdftex.def Info: ./img/abstract_business_logic.png used on input line 2
-18.
+Package pdftex.def Info: ./img/abstract_business_logic.png used on input line 23
+8.
 (pdftex.def)             Requested size: 346.89731pt x 350.23676pt.
- [64 <./img/BL-EBNF.png>]
-<./img/cpn_business_logic_token_example.png, id=1101, 1187.18532pt x 185.19188p
+ [67]
+<./img/cpn_business_logic_token_example.png, id=1190, 1187.18532pt x 185.19188p
 t>
 File: ./img/cpn_business_logic_token_example.png Graphic file (type png)
  <use ./img/cpn_business_logic_token_example.png>
-Package pdftex.def Info: ./img/cpn_business_logic_token_example.png used on inp
-ut line 227.
+Package pdftex.def Info: ./img/cpn_business_logic_token_example.png used on inpu
+t line 247.
 (pdftex.def)             Requested size: 433.62pt x 67.64108pt.
- [65 <./img/abstract_business_logic.png>]) (06-Analysis.tex [66 <./img/cpn_busi
-ness_logic_token_example.png>]
+ [68<./img/abstract_business_logic.png>]) (./06-Analysis.tex [69<./img/cpn_busin
+ess_logic_token_example.png>]
 CHAPTER VI.
-[67
+[70
 
-] <./img/state-space-analysis.png, id=1117, 540.14297pt x 470.50781pt>
+] <./img/state-space-analysis.png, id=1210, 540.14297pt x 470.50781pt>
 File: ./img/state-space-analysis.png Graphic file (type png)
 
 <use ./img/state-space-analysis.png>
@@ -1085,35 +1089,34 @@ LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
 (Font)              scaled to size 11.03998pt on input line 14.
- [68] [69 <./img/state-space-analysis.png>]
+ [71] [72<./img/state-space-analysis.png>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 19.
 
-<./img/state-space-searching.png, id=1129, 627.7854pt x 349.7868pt>
+<./img/state-space-searching.png, id=1223, 627.7854pt x 349.7868pt>
 File: ./img/state-space-searching.png Graphic file (type png)
 
 <use ./img/state-space-searching.png>
 Package pdftex.def Info: ./img/state-space-searching.png used on input line 25.
-
 (pdftex.def)             Requested size: 303.53267pt x 169.118pt.
- [70
+ [73
 
- <./img/state-space-searching.png>]
+<./img/state-space-searching.png>]
 Overfull \hbox (4.3412pt too wide) in paragraph at lines 36--37
 \T1/ptm/m/n/12 for ex-e-cu-tion, it is suf-fi-cient to ex-e-cute the pred-i-cat
 e $\OML/ztmcm/m/it/12 current[]ime \OMS/ztmcm/m/n/12   \OML/ztmcm/m/it/12 opera
-tion:enqueue[]ime >$
+tion:enqueue[]ime >
  []
 
-<./img/Deadline_Violations.png, id=1136, 874.01532pt x 310.91156pt>
+<./img/Deadline_Violations.png, id=1232, 874.01532pt x 310.91156pt>
 File: ./img/Deadline_Violations.png Graphic file (type png)
 
 <use ./img/Deadline_Violations.png>
 Package pdftex.def Info: ./img/Deadline_Violations.png used on input line 50.
 (pdftex.def)             Requested size: 433.62pt x 154.25038pt.
- [71] [72 <./img/Deadline_Violations.png>]
-[73] [74] [75] <./img/clock.png, id=1167, 1228.59pt x 202.7575pt>
+ [74] [75<./img/Deadline_Violations.png>]
+[76] [77] [78] <./img/clock.png, id=1266, 1228.59pt x 202.7575pt>
 File: ./img/clock.png Graphic file (type png)
 
 <use ./img/clock.png>
@@ -1123,21 +1126,21 @@ Package pdftex.def Info: ./img/clock.png used on input line 96.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[76] [77 <./img/clock.png>]
-<./img/time.png, id=1180, 911.65594pt x 537.50812pt>
+[79] [80<./img/clock.png>]
+<./img/time.png, id=1279, 911.65594pt x 537.50812pt>
 File: ./img/time.png Graphic file (type png)
  <use ./img/time.png>
 Package pdftex.def Info: ./img/time.png used on input line 109.
 (pdftex.def)             Requested size: 433.62pt x 255.66348pt.
 
-[78 <./img/time.png>] [79] <./img/dd.png, id=1193, 803.25093pt x 807.7678pt>
+[81<./img/time.png>] [82] <./img/dd.png, id=1294, 803.25093pt x 807.7678pt>
 File: ./img/dd.png Graphic file (type png)
 
 <use ./img/dd.png>
 Package pdftex.def Info: ./img/dd.png used on input line 123.
 (pdftex.def)             Requested size: 346.89731pt x 348.84943pt.
- [80 <./img/dd.png>] [81] [82] [83]
-<./img/Generated_Model.png, id=1235, 1379.90532pt x 580.41844pt>
+ [83<./img/dd.png>] [84] [85] [86]
+<./img/Generated_Model.png, id=1340, 1379.90532pt x 580.41844pt>
 File: ./img/Generated_Model.png Graphic file (type png)
 
 <use ./img/Generated_Model.png>
@@ -1148,17 +1151,16 @@ Package pdftex.def Info: ./img/Generated_Model.png used on input line 156.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `fig:BL_Model' on page 84 undefined on input line 161.
+LaTeX Warning: Reference `fig:BL_Model' on page 87 undefined on input line 161.
 
-
-[84] <./img/sl.png, id=1240, 754.31813pt x 387.69844pt>
+[87] <./img/sl.png, id=1346, 754.31813pt x 387.69844pt>
 File: ./img/sl.png Graphic file (type png)
  <use ./img/sl.png>
 Package pdftex.def Info: ./img/sl.png used on input line 165.
 (pdftex.def)             Requested size: 433.62pt x 222.8657pt.
 
-[85 <./img/Generated_Model.png>]
-<./img/asap.png, id=1247, 306.39468pt x 207.02344pt>
+[88<./img/Generated_Model.png>]
+<./img/asap.png, id=1353, 306.39468pt x 207.02344pt>
 File: ./img/asap.png Graphic file (type png)
  <use ./img/asap.png>
 Package pdftex.def Info: ./img/asap.png used on input line 174.
@@ -1167,16 +1169,16 @@ Package pdftex.def Info: ./img/asap.png used on input line 174.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (07-Evaluation.tex [86 <./img/sl.png>] [87 <./img/asap.png>]
+) (./07-Evaluation.tex [89<./img/sl.png>] [90<./img/asap.png>]
 CHAPTER VII.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 9.
 
-[88
+[91
 
-] [89] [90]
-<img/rcps-architecture.png, id=1283, 1851.16594pt x 1044.15094pt>
+] [92] [93]
+<img/rcps-architecture.png, id=1392, 1851.16594pt x 1044.15094pt>
 File: img/rcps-architecture.png Graphic file (type png)
 
 <use img/rcps-architecture.png>
@@ -1186,7 +1188,7 @@ Package pdftex.def Info: img/rcps-architecture.png used on input line 35.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[91] <img/bbb.jpg, id=1294, 1461.46pt x 1216.545pt>
+[94] <img/bbb.jpg, id=1404, 1461.46pt x 1216.545pt>
 File: img/bbb.jpg Graphic file (type jpg)
  <use img/bbb.jpg>
 Package pdftex.def Info: img/bbb.jpg used on input line 44.
@@ -1195,69 +1197,69 @@ Package pdftex.def Info: img/bbb.jpg used on input line 44.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[92 <./img/rcps-architecture.png>] [93 <./img/bbb.jpg>]
-<img/testbed.png, id=1309, 698.61pt x 355.0866pt>
+[95<./img/rcps-architecture.png>] [96<./img/bbb.jpg>]
+<img/testbed.png, id=1420, 698.61pt x 355.0866pt>
 File: img/testbed.png Graphic file (type png)
  <use img/testbed.png>
 Package pdftex.def Info: img/testbed.png used on input line 61.
 (pdftex.def)             Requested size: 433.62pt x 220.40063pt.
 
-[94 <./img/testbed.png>]
+[97<./img/testbed.png>]
 
-LaTeX Warning: Reference `fig:rosmod_deployment' on page 95 undefined on input 
-line 70.
+LaTeX Warning: Reference `fig:rosmod_deployment' on page 98 undefined on input l
+ine 70.
 
 
 Overfull \hbox (0.5207pt too wide) in paragraph at lines 70--71
-[]\T1/ptm/m/n/12 The soft-ware in-fras-truc-ture in-cludes our model-driven too
-l-suite and DREMS-style com-
+[][]\T1/ptm/m/n/12 The soft-ware in-fras-truc-ture in-cludes our model-driven t
+ool-suite and DREMS-style com-
  []
 
-<img/ROSMOD-Meta2.png, id=1319, 1169.87062pt x 1382.16376pt>
+<img/ROSMOD-Meta2.png, id=1431, 1169.87062pt x 1382.16376pt>
 File: img/ROSMOD-Meta2.png Graphic file (type png)
 
 <use img/ROSMOD-Meta2.png>
 Package pdftex.def Info: img/ROSMOD-Meta2.png used on input line 94.
 (pdftex.def)             Requested size: 433.62pt x 512.29945pt.
- [95] [96 <./img/ROSMOD-Meta2.png>]
+ [98] [99<./img/ROSMOD-Meta2.png>]
 
-LaTeX Warning: Reference `fig:ROSMOD_Component' on page 97 undefined on input l
+LaTeX Warning: Reference `fig:ROSMOD_Component' on page 100 undefined on input l
 ine 151.
 
-[97
+[100
 
-] [98] [99] [100] [101]
-<img/Code_Generation.png, id=1360, 3645.11812pt x 2213.26875pt>
+] [101] [102] [103] [104]
+<img/Code_Generation.png, id=1475, 3645.11812pt x 2213.26875pt>
 File: img/Code_Generation.png Graphic file (type png)
 
 <use img/Code_Generation.png>
 Package pdftex.def Info: img/Code_Generation.png used on input line 328.
 (pdftex.def)             Requested size: 433.62pt x 263.28432pt.
- [102] [103 <./img/Code_Generation.png>]
-<img/DeploymentInfrastructure.png, id=1372, 652.839pt x 530.4618pt>
+ [105] [106<./img/Code_Generation.png>]
+<img/DeploymentInfrastructure.png, id=1488, 652.839pt x 530.4618pt>
 File: img/DeploymentInfrastructure.png Graphic file (type png)
 
 <use img/DeploymentInfrastructure.png>
-Package pdftex.def Info: img/DeploymentInfrastructure.png used on input line 39
-6.
+Package pdftex.def Info: img/DeploymentInfrastructure.png used on input line 396
+.
 (pdftex.def)             Requested size: 433.62pt x 352.34795pt.
- [104] [105 <./img/DeploymentInfrastructure.png>] [106] [107] [108]
-<img/understanding-the-plots.png, id=1402, 622.325pt x 339.2675pt>
+ [107] [108<./img/DeploymentInfrastructure.png>] [109] [110] [111]
+<img/understanding-the-plots.png, id=1520, 622.325pt x 339.2675pt>
 File: img/understanding-the-plots.png Graphic file (type png)
 
 <use img/understanding-the-plots.png>
-Package pdftex.def Info: img/understanding-the-plots.png used on input line 475
-.
+Package pdftex.def Info: img/understanding-the-plots.png used on input line 475.
+
 (pdftex.def)             Requested size: 433.62pt x 236.39331pt.
- [109 <./img/understanding-the-plots.png>] <img/client-server.png, id=1410, 146
-3.4675pt x 662.475pt>
+ [112<./img/understanding-the-plots.png>]
+<img/client-server.png, id=1529, 1463.4675pt x 662.475pt>
 File: img/client-server.png Graphic file (type png)
 
 <use img/client-server.png>
 Package pdftex.def Info: img/client-server.png used on input line 489.
 (pdftex.def)             Requested size: 433.62pt x 196.28766pt.
 
-<img/client-server-cpn.png, id=1412, 1435.61343pt x 750.55406pt>
+<img/client-server-cpn.png, id=1531, 1435.61343pt x 750.55406pt>
 File: img/client-server-cpn.png Graphic file (type png)
 
 <use img/client-server-cpn.png>
@@ -1267,27 +1269,26 @@ Package pdftex.def Info: img/client-server-cpn.png used on input line 499.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[110 <./img/client-server.png>]
-<img/client-server-bad-case.png, id=1419, 564.98578pt x 321.45094pt>
+[113<./img/client-server.png>]
+<img/client-server-bad-case.png, id=1540, 564.98578pt x 321.45094pt>
 File: img/client-server-bad-case.png Graphic file (type png)
 
 <use img/client-server-bad-case.png>
 Package pdftex.def Info: img/client-server-bad-case.png used on input line 511.
-
 (pdftex.def)             Requested size: 433.62pt x 246.71358pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[111 <./img/client-server-cpn.png>]
-<img/publish-subscribe.png, id=1426, 1439.3775pt x 642.90187pt>
+[114<./img/client-server-cpn.png>]
+<img/publish-subscribe.png, id=1548, 1439.3775pt x 642.90187pt>
 File: img/publish-subscribe.png Graphic file (type png)
 
 <use img/publish-subscribe.png>
 Package pdftex.def Info: img/publish-subscribe.png used on input line 525.
 (pdftex.def)             Requested size: 433.62pt x 193.67645pt.
- [112 <./img/client-server-bad-case.png>]
-<img/publish-subscribe-cpn.png, id=1434, 1426.57968pt x 764.10469pt>
+ [115<./img/client-server-bad-case.png>]
+<img/publish-subscribe-cpn.png, id=1556, 1426.57968pt x 764.10469pt>
 File: img/publish-subscribe-cpn.png Graphic file (type png)
 
 <use img/publish-subscribe-cpn.png>
@@ -1297,29 +1298,28 @@ Package pdftex.def Info: img/publish-subscribe-cpn.png used on input line 535.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[113 <./img/publish-subscribe.png>]
-<img/publish-subscribe-bad-case.png, id=1441, 572.5139pt x 312.7936pt>
+[116<./img/publish-subscribe.png>]
+<img/publish-subscribe-bad-case.png, id=1563, 572.5139pt x 312.7936pt>
 File: img/publish-subscribe-bad-case.png Graphic file (type png)
 
 <use img/publish-subscribe-bad-case.png>
-Package pdftex.def Info: img/publish-subscribe-bad-case.png used on input line 
-547.
+Package pdftex.def Info: img/publish-subscribe-bad-case.png used on input line 5
+47.
 (pdftex.def)             Requested size: 433.62pt x 236.90944pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[114 <./img/publish-subscribe-cpn.png>] [115 <./img/publish-subscribe-bad-case.
-png>]
-<img/trajectory-planner-components.png, id=1456, 851.8224pt x 435.0654pt>
+[117<./img/publish-subscribe-cpn.png>] [118<./img/publish-subscribe-bad-case.png
+>] <img/trajectory-planner-components.png, id=1579, 851.8224pt x 435.0654pt>
 File: img/trajectory-planner-components.png Graphic file (type png)
 
 <use img/trajectory-planner-components.png>
-Package pdftex.def Info: img/trajectory-planner-components.png used on input li
-ne 561.
+Package pdftex.def Info: img/trajectory-planner-components.png used on input lin
+e 561.
 (pdftex.def)             Requested size: 433.62pt x 221.46881pt.
 
-<img/trajectory-planner.png, id=1458, 1450.6697pt x 842.39719pt>
+<img/trajectory-planner.png, id=1581, 1450.6697pt x 842.39719pt>
 File: img/trajectory-planner.png Graphic file (type png)
 
 <use img/trajectory-planner.png>
@@ -1329,39 +1329,38 @@ Package pdftex.def Info: img/trajectory-planner.png used on input line 571.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[116 <./img/trajectory-planner-components.png>]
-<img/trajectory-planner-cpn.png, id=1464, 1428.08531pt x 755.07094pt>
+[119<./img/trajectory-planner-components.png>]
+<img/trajectory-planner-cpn.png, id=1588, 1428.08531pt x 755.07094pt>
 File: img/trajectory-planner-cpn.png Graphic file (type png)
 
 <use img/trajectory-planner-cpn.png>
 Package pdftex.def Info: img/trajectory-planner-cpn.png used on input line 581.
-
 (pdftex.def)             Requested size: 433.62pt x 229.26512pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[117 <./img/trajectory-planner.png>]
-<img/trajectory-planner-bad-case.png, id=1471, 769.87625pt x 461.22313pt>
+[120<./img/trajectory-planner.png>]
+<img/trajectory-planner-bad-case.png, id=1595, 769.87625pt x 461.22313pt>
 File: img/trajectory-planner-bad-case.png Graphic file (type png)
 
 <use img/trajectory-planner-bad-case.png>
-Package pdftex.def Info: img/trajectory-planner-bad-case.png used on input line
- 591.
+Package pdftex.def Info: img/trajectory-planner-bad-case.png used on input line 
+591.
 (pdftex.def)             Requested size: 433.62pt x 259.78221pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[118 <./img/trajectory-planner-cpn.png>] [119 <./img/trajectory-planner-bad-cas
-e.png>] <img/periodic-timers.png, id=1485, 1446.15282pt x 948.54375pt>
+[121<./img/trajectory-planner-cpn.png>] [122<./img/trajectory-planner-bad-case.p
+ng>] <img/periodic-timers.png, id=1610, 1446.15282pt x 948.54375pt>
 File: img/periodic-timers.png Graphic file (type png)
 
 <use img/periodic-timers.png>
 Package pdftex.def Info: img/periodic-timers.png used on input line 607.
 (pdftex.def)             Requested size: 433.62pt x 284.40611pt.
 
-<img/periodic-timers-cpn.png, id=1486, 1431.09656pt x 947.03813pt>
+<img/periodic-timers-cpn.png, id=1611, 1431.09656pt x 947.03813pt>
 File: img/periodic-timers-cpn.png Graphic file (type png)
 
 <use img/periodic-timers-cpn.png>
@@ -1371,8 +1370,8 @@ Package pdftex.def Info: img/periodic-timers-cpn.png used on input line 615.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[120 <./img/periodic-timers.png>] [121 <./img/periodic-timers-cpn.png>]
-<img/lro-semantics.png, id=1497, 1145.78062pt x 542.025pt>
+[123<./img/periodic-timers.png>] [124<./img/periodic-timers-cpn.png>]
+<img/lro-semantics.png, id=1623, 1145.78062pt x 542.025pt>
 File: img/lro-semantics.png Graphic file (type png)
 
 <use img/lro-semantics.png>
@@ -1382,20 +1381,20 @@ Package pdftex.def Info: img/lro-semantics.png used on input line 632.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[122]
-<img/three-components-lro-rosmod.png, id=1505, 804.00375pt x 443.40656pt>
+[125]
+<img/three-components-lro-rosmod.png, id=1631, 804.00375pt x 443.40656pt>
 File: img/three-components-lro-rosmod.png Graphic file (type png)
 
 <use img/three-components-lro-rosmod.png>
-Package pdftex.def Info: img/three-components-lro-rosmod.png used on input line
- 644.
+Package pdftex.def Info: img/three-components-lro-rosmod.png used on input line 
+644.
 (pdftex.def)             Requested size: 433.62pt x 239.13828pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[123 <./img/lro-semantics.png>]
-<img/three-components-lro.png, id=1512, 1432.60219pt x 948.54375pt>
+[126<./img/lro-semantics.png>]
+<img/three-components-lro.png, id=1639, 1432.60219pt x 948.54375pt>
 File: img/three-components-lro.png Graphic file (type png)
 
 <use img/three-components-lro.png>
@@ -1405,32 +1404,32 @@ Package pdftex.def Info: img/three-components-lro.png used on input line 654.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[124 <./img/three-components-lro-rosmod.png>]
-<img/three-components-lro-cpn.png, id=1519, 730.60454pt x 500.62032pt>
+[127<./img/three-components-lro-rosmod.png>]
+<img/three-components-lro-cpn.png, id=1647, 730.60454pt x 500.62032pt>
 File: img/three-components-lro-cpn.png Graphic file (type png)
 
 <use img/three-components-lro-cpn.png>
-Package pdftex.def Info: img/three-components-lro-cpn.png used on input line 66
-5.
+Package pdftex.def Info: img/three-components-lro-cpn.png used on input line 665
+.
 (pdftex.def)             Requested size: 433.62pt x 297.12036pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[125 <./img/three-components-lro.png>] [126 <./img/three-components-lro-cpn.png
->]) (08-Future-Work.tex [127]
+[128<./img/three-components-lro.png>] [129<./img/three-components-lro-cpn.png>]
+) (./08-Future-Work.tex [130]
 CHAPTER VIII.
-) (09-Conclusions.tex) (10-Publications.tex [128
+) (./09-Conclusions.tex) (./10-Publications.tex [131
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
- [129
+ [132
 
 
 ]
 APPENDIX A.
-(00-Dissertation.bbl)
+(./00-Dissertation.bbl)
 Overfull \hbox (7.94211pt too wide) in paragraph at lines 13--14
 \T1/ptm/m/n/12 based dis-tributed real-time em-bed-ded sys-tems.  In \T1/ptm/m/
 it/12 Object/Component/Service-Oriented
@@ -1442,43 +1441,42 @@ Overfull \hbox (7.94211pt too wide) in paragraph at lines 14--15
 it/12 Object/Component/Service-Oriented
  []
 
-[130
+[133
 
-] [131]) (00-Dissertation.bbl [132]
+] [134]) (./00-Dissertation.bbl [135]
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
-[]\T1/ptm/m/n/12 NASA Cube-Sat Launch ini-tia-tive.  [][]$\T1/pcr/m/n/12 https 
-: / / www . nasa . gov /$
+[][]\T1/ptm/m/n/12 NASA Cube-Sat Launch ini-tia-tive.  [][]$\T1/pcr/m/n/12 http
+s : / / www . nasa . gov /
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 13--16
-[]\T1/ptm/m/n/12 NASA Cube-Sats Mis-sion to Mars.  [][]$\T1/pcr/m/n/12 http : /
- / www . nasa . gov /$
+[][]\T1/ptm/m/n/12 NASA Cube-Sats Mis-sion to Mars.  [][]$\T1/pcr/m/n/12 http :
+ / / www . nasa . gov /
  []
 
 
 Overfull \hbox (284.54657pt too wide) in paragraph at lines 13--16
-$\T1/pcr/m/n/12 press-[]release / nasa-[]prepares-[]for-[]first-[]interplanetar
-y-[]cubesats-[]on-[]agency-[]s-[]next-[]mission-[]to-[]mars$[][]\T1/ptm/m/n/12 
-. 
+\T1/pcr/m/n/12 press-[]release / nasa-[]prepares-[]for-[]first-[]interplanetary
+-[]cubesats-[]on-[]agency-[]s-[]next-[]mission-[]to-[]mars$[][]\T1/ptm/m/n/12 .
+ 
  []
 
 
 Underfull \hbox (badness 1688) in paragraph at lines 56--59
-[]\T1/ptm/m/n/12 Autosar GbR.  AU-To-mo-tive Open Sys-tem AR-chi-tec-ture.  [][
-]$\T1/pcr/m/n/12 http : / / www .$
+[][]\T1/ptm/m/n/12 Au-tosar GbR.  AU-To-mo-tive Open Sys-tem AR-chi-tec-ture.  
+[][]$\T1/pcr/m/n/12 http : / / www .
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{cite.balasubr
+LuaTeX warning (ext4): destination with the same identifier (name{cite.balasubr
 amanian2015drems}) has been already used, duplicate ignored
 <to be read again> 
-                   \relax 
+\relax 
 \HyWrap@new@pdflink ... \Hy@pstringDest \@pdfview 
                                                   \Hy@RestoreLastskip \ifhmo...
-
 \hyper@anchorstart #1->\new@pdflink {#1}
                                         \Hy@activeanchortrue 
-<argument> ...ubramanian2015drems\@extra@b@citeb }
+<argument> ...{cite.balasubramanian2015drems\@extra@b@citeb }
                                                   \Hy@SaveSpaceFactor }
 \makesm@sh ...tbox \z@ \hbox {\color@begingroup #1
                                                   \color@endgroup }\finsm@sh 
@@ -1486,31 +1484,28 @@ amanian2015drems}) has been already used, duplicate ignored
                                                   \Hy@RestoreSpaceFactor \fi 
 \NAT@anchor ...natanchorstart {#1\@extra@b@citeb }
                                                   \def \@tempa {#2}\@ifx {\@...
-
 \sbox #1#2->\setbox #1\hbox {\color@setgroup #2
                                                \color@endgroup }
 \@item ...i \fi \sbox \@tempboxa {\makelabel {#1}}
                                                   \global \setbox \@labels \...
-<argument> ...alasubramanian2015drems}{\NAT@num }]
+<argument> ...T@anchor {balasubramanian2015drems}{\NAT@num }]
                                                   \global \let \NAT@bibitem@...
-
 \@firstoftwo #1#2->#1
                      
 \@lbibitem ...2}{}\NAT@bibitem@cont \bibitem@fin }
                                                   \@ifx {\NAT@tmp \@empty }{...
 l.60 \bibitem{balasubramanian2015drems}
-                                        [133
+                                      [136
 
-] [134] [135] [136]pdfTeX warning (ext4): destination with the same identifier 
-(name{cite.SEUS}) has been already used, duplicate ignored
+] [137] [138] [139]LuaTeX warning (ext4): destination with the same identifier (
+name{cite.SEUS}) has been already used, duplicate ignored
 <to be read again> 
-                   \relax 
+\relax 
 \HyWrap@new@pdflink ... \Hy@pstringDest \@pdfview 
                                                   \Hy@RestoreLastskip \ifhmo...
-
 \hyper@anchorstart #1->\new@pdflink {#1}
                                         \Hy@activeanchortrue 
-<argument> ...horstart {cite.SEUS\@extra@b@citeb }
+<argument> ... \hyper@anchorstart {cite.SEUS\@extra@b@citeb }
                                                   \Hy@SaveSpaceFactor }
 \makesm@sh ...tbox \z@ \hbox {\color@begingroup #1
                                                   \color@endgroup }\finsm@sh 
@@ -1518,29 +1513,26 @@ l.60 \bibitem{balasubramanian2015drems}
                                                   \Hy@RestoreSpaceFactor \fi 
 \NAT@anchor ...natanchorstart {#1\@extra@b@citeb }
                                                   \def \@tempa {#2}\@ifx {\@...
-
 \sbox #1#2->\setbox #1\hbox {\color@setgroup #2
                                                \color@endgroup }
 \@item ...i \fi \sbox \@tempboxa {\makelabel {#1}}
                                                   \global \setbox \@labels \...
-<argument> ...\hfil \NAT@anchor {SEUS}{\NAT@num }]
+<argument> ...fin \item [\hfil \NAT@anchor {SEUS}{\NAT@num }]
                                                   \global \let \NAT@bibitem@...
-
 \@firstoftwo #1#2->#1
                      
 \@lbibitem ...2}{}\NAT@bibitem@cont \bibitem@fin }
                                                   \@ifx {\NAT@tmp \@empty }{...
 l.354 \bibitem{SEUS}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{cite.SEUS2016}) has been already used, duplicate ignored
+                  LuaTeX warning (ext4): destination with the same identifier (n
+ame{cite.SEUS2016}) has been already used, duplicate ignored
 <to be read again> 
-                   \relax 
+\relax 
 \HyWrap@new@pdflink ... \Hy@pstringDest \@pdfview 
                                                   \Hy@RestoreLastskip \ifhmo...
-
 \hyper@anchorstart #1->\new@pdflink {#1}
                                         \Hy@activeanchortrue 
-<argument> ...tart {cite.SEUS2016\@extra@b@citeb }
+<argument> ...per@anchorstart {cite.SEUS2016\@extra@b@citeb }
                                                   \Hy@SaveSpaceFactor }
 \makesm@sh ...tbox \z@ \hbox {\color@begingroup #1
                                                   \color@endgroup }\finsm@sh 
@@ -1548,29 +1540,26 @@ l.354 \bibitem{SEUS}
                                                   \Hy@RestoreSpaceFactor \fi 
 \NAT@anchor ...natanchorstart {#1\@extra@b@citeb }
                                                   \def \@tempa {#2}\@ifx {\@...
-
 \sbox #1#2->\setbox #1\hbox {\color@setgroup #2
                                                \color@endgroup }
 \@item ...i \fi \sbox \@tempboxa {\makelabel {#1}}
                                                   \global \setbox \@labels \...
-<argument> ...l \NAT@anchor {SEUS2016}{\NAT@num }]
+<argument> ...\item [\hfil \NAT@anchor {SEUS2016}{\NAT@num }]
                                                   \global \let \NAT@bibitem@...
-
 \@firstoftwo #1#2->#1
                      
 \@lbibitem ...2}{}\NAT@bibitem@cont \bibitem@fin }
                                                   \@ifx {\NAT@tmp \@empty }{...
 l.362 \bibitem{SEUS2016}
-                        pdfTeX warning (ext4): destination with the same identi
-fier (name{cite.kumar2014colored}) has been already used, duplicate ignored
+                      LuaTeX warning (ext4): destination with the same identifie
+r (name{cite.kumar2014colored}) has been already used, duplicate ignored
 <to be read again> 
-                   \relax 
+\relax 
 \HyWrap@new@pdflink ... \Hy@pstringDest \@pdfview 
                                                   \Hy@RestoreLastskip \ifhmo...
-
 \hyper@anchorstart #1->\new@pdflink {#1}
                                         \Hy@activeanchortrue 
-<argument> ...te.kumar2014colored\@extra@b@citeb }
+<argument> ...orstart {cite.kumar2014colored\@extra@b@citeb }
                                                   \Hy@SaveSpaceFactor }
 \makesm@sh ...tbox \z@ \hbox {\color@begingroup #1
                                                   \color@endgroup }\finsm@sh 
@@ -1578,25 +1567,29 @@ fier (name{cite.kumar2014colored}) has been already used, duplicate ignored
                                                   \Hy@RestoreSpaceFactor \fi 
 \NAT@anchor ...natanchorstart {#1\@extra@b@citeb }
                                                   \def \@tempa {#2}\@ifx {\@...
-
 \sbox #1#2->\setbox #1\hbox {\color@setgroup #2
                                                \color@endgroup }
 \@item ...i \fi \sbox \@tempboxa {\makelabel {#1}}
                                                   \global \setbox \@labels \...
-<argument> ...nchor {kumar2014colored}{\NAT@num }]
+<argument> ...hfil \NAT@anchor {kumar2014colored}{\NAT@num }]
                                                   \global \let \NAT@bibitem@...
-
 \@firstoftwo #1#2->#1
                      
 \@lbibitem ...2}{}\NAT@bibitem@cont \bibitem@fin }
                                                   \@ifx {\NAT@tmp \@empty }{...
 l.370 \bibitem{kumar2014colored}
-                                 [137] [138] [139] [140])
+                               [140
+Missing character: There is no ’ (U+2019) in font ptmri8t!
+] [141] [142
+Missing character: There is no — (U+2014) in font ptmri8t!
+] [143])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
- [141]
+ [144
+Missing character: There is no — (U+2014) in font ptmr8t!
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
 
-(00-Dissertation.aux)
+(./00-Dissertation.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `00-Dissertation.out' has not changed.
@@ -1606,32 +1599,34 @@ Package rerunfilecheck Info: File `00-Dissertation.out' has not changed.
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
- ) 
-Here is how much of TeX's memory you used:
- 12777 strings out of 493634
- 198348 string characters out of 3135239
- 283760 words of memory out of 3000000
- 15385 multiletter control sequences out of 15000+200000
- 73879 words of font info for 114 fonts, out of 3000000 for 9000
- 1025 hyphenation exceptions out of 8191
- 39i,10n,43p,2641b,926s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontname/8r
-.enc}<C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/prana/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/prana/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/prana/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/prana
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/pr
-ana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/User
-s/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:
-/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
-><C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8
-a.pfb>
-Output written on 00-Dissertation.pdf (149 pages, 12859980 bytes).
-PDF statistics:
- 1741 PDF objects out of 2073 (max. 8388607)
- 429 named destinations out of 1000 (max. 500000)
- 867 words of extra memory for PDF output out of 10000 (max. 10000000)
+)
+
+Here is how much of LuaTeX's memory you used:
+ 14030 strings out of 494933
+ 100000,383344 words of node,token memory allocated
+ 852 words of node memory still in use:
+    nodes
+   avail lists: 2:27,3:672,4:795,5:198,6:4496,7:564,8:43,9:296,10:531
+ 15941 multiletter control sequences out of 65536+200000
+ 175 fonts using 4894163 bytes
+ 39i,10n,44p,2636b,929s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.en
+c}<<C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb><<C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><<C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><<C:/Users/prana/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><<C:/Users/prana/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><<C:/Users/prana/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><<C:/Users/prana/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><<C:/Users/prana
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><<C:/Users/p
+rana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><<C:/Us
+ers/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><<C
+:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on 00-Dissertation.pdf (152 pages, 13725279 bytes).
+
+PDF statistics: 1792 PDF objects out of 2073 (max. 8388607)
+ 435 named destinations out of 1000 (max. 131072)
+ 617 words of extra memory for PDF output out of 10000 (max. 10000000)
 

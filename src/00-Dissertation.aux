@@ -180,232 +180,239 @@
 \newlabel{fig:cop_execution_semantics}{{4}{44}{Component Operation Execution Semantics: This figure shows the effects of the ROSMOD component scheduling on an incoming operation request. $t\_{req}$ represents the arrival time of a remote request. $t\_{wait}$ is the wait time of this request in the message queue while the current operation is still executing. $t\_{timer\_cmpl}$ is the time stamp at which the current operation completes executing. At this time, the remote request is finally scheduled for execution. $t\_{req\_cmpl}$ is the time stamp at which the remote request completes. The execution time, $t\_{exec}$ of this request is calculated as the difference in time stamps between $t\_{req\_cmpl}$ and $t\_{req}$.\relax }{figure.4}{}}
 \citation{ARINC-653}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}Temporal Partition Scheduler}{45}{section.4.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Sample Temporal Partition Schedule with Hyperperiod = 300 ms\relax }}{46}{figure.5}}
+\newlabel{fig:partition_scheduling}{{5}{46}{Sample Temporal Partition Schedule with Hyperperiod = 300 ms\relax }{figure.5}{}}
 \citation{CIAO_Chap:04}
 \citation{ACM_SPE:10}
 \citation{ISIS_F6_ISORC:13}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Sample Temporal Partition Schedule with Hyperperiod = 300 ms\relax }}{46}{figure.5}}
-\newlabel{fig:partition_scheduling}{{5}{46}{Sample Temporal Partition Schedule with Hyperperiod = 300 ms\relax }{figure.5}{}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {V}Colored Petri net-based Modeling Methodology}{48}{chapter.V}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chapter:modeling}{{V}{48}{Colored Petri net-based Modeling Methodology}{chapter.V}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.1}Problem Statement}{48}{section.5.1}}
 \@writefile{toc}{\contentsline {paragraph}{System Assumptions:}{48}{section*.4}}
-\citation{CPNTools}
+\citation{CPN}
 \@writefile{toc}{\contentsline {section}{\numberline {5.2}Colored Petri Net-based Analysis Model}{50}{section.5.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Model of Time}{51}{subsection.5.2.1}}
-\newlabel{sec:model_of_time}{{5.2.1}{51}{Model of Time}{subsection.5.2.1}{}}
+\citation{CPNTools}
+\citation{milner1997definition}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Colored Petri Net Analysis Model\relax }}{52}{figure.6}}
 \newlabel{fig:hlcpn}{{6}{52}{Colored Petri Net Analysis Model\relax }{figure.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Modeling Temporal Partitioning}{52}{subsection.5.2.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Analysis Model - Structural Aspects\relax }}{53}{figure.7}}
 \newlabel{fig:hlcpn_structure}{{7}{53}{Analysis Model - Structural Aspects\relax }{figure.7}{}}
-\newlabel{eq:NC}{{1}{53}{Modeling Temporal Partitioning}{equation.1}{}}
-\newlabel{eq:TP}{{2}{53}{Modeling Temporal Partitioning}{equation.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Modeling Component Thread Behavior}{54}{subsection.5.2.3}}
-\newlabel{eq:CT}{{3}{54}{Modeling Component Thread Behavior}{equation.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Component Thread Execution Cycle\relax }}{55}{figure.8}}
-\newlabel{fig:Thread_Execution}{{8}{55}{Component Thread Execution Cycle\relax }{figure.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Modeling Component Operations}{55}{subsection.5.2.4}}
-\newlabel{sec:Modeling_Component_Operations}{{5.2.4}{55}{Modeling Component Operations}{subsection.5.2.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces RMI Application\relax }}{57}{figure.9}}
-\newlabel{fig:rmi_application}{{9}{57}{RMI Application\relax }{figure.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces RMI Application - Client Timer Operation\relax }}{57}{figure.10}}
-\newlabel{fig:cpn_rmi_app_timer_token}{{10}{57}{RMI Application - Client Timer Operation\relax }{figure.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces RMI Application - Server Operation\relax }}{58}{figure.11}}
-\newlabel{fig:cpn_rmi_app_server_token}{{11}{58}{RMI Application - Server Operation\relax }{figure.11}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}Modeling Component Interactions}{58}{subsection.5.2.5}}
-\newlabel{eq:component_interactions}{{6}{59}{Modeling Component Interactions}{equation.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Operation Induction\relax }}{59}{figure.12}}
-\newlabel{fig:cpn_iop}{{12}{59}{Operation Induction\relax }{figure.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Operation Induction Token\relax }}{60}{figure.13}}
-\newlabel{fig:cpn_rmi_app_iop}{{13}{60}{Operation Induction Token\relax }{figure.13}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.6}Modeling Timers}{60}{subsection.5.2.6}}
-\newlabel{eq:TMR}{{7}{60}{Modeling Timers}{equation.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Timer Operations\relax }}{61}{figure.14}}
-\newlabel{fig:cpn_timers}{{14}{61}{Timer Operations\relax }{figure.14}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Modeling Component Operation Business Logic}{61}{section.5.3}}
-\newlabel{sec:BL_Model}{{5.3}{61}{Modeling Component Operation Business Logic}{section.5.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Problem Statement}{61}{subsection.5.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Challenges}{62}{subsection.5.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Outline of Solution}{62}{subsection.5.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Model of Time}{53}{subsection.5.2.1}}
+\newlabel{sec:model_of_time}{{5.2.1}{53}{Model of Time}{subsection.5.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Modeling Temporal Partitioning}{54}{subsection.5.2.2}}
+\newlabel{eq:NC}{{1}{54}{Modeling Temporal Partitioning}{equation.1}{}}
+\newlabel{eq:TP}{{2}{54}{Modeling Temporal Partitioning}{equation.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Temporal Partition Schedule Data Structure\relax }}{55}{figure.8}}
+\newlabel{fig:tps_dt}{{8}{55}{Temporal Partition Schedule Data Structure\relax }{figure.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Modeling Component Thread Behavior}{55}{subsection.5.2.3}}
+\newlabel{eq:CT}{{3}{55}{Modeling Component Thread Behavior}{equation.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Component Thread Execution Cycle\relax }}{56}{figure.9}}
+\newlabel{fig:Thread_Execution}{{9}{56}{Component Thread Execution Cycle\relax }{figure.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Modeling Component Operations}{57}{subsection.5.2.4}}
+\newlabel{sec:Modeling_Component_Operations}{{5.2.4}{57}{Modeling Component Operations}{subsection.5.2.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Component Operation Scheduling Cycle\relax }}{58}{figure.10}}
+\newlabel{fig:Operation_Scheduling}{{10}{58}{Component Operation Scheduling Cycle\relax }{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces RMI Application\relax }}{59}{figure.11}}
+\newlabel{fig:rmi_application}{{11}{59}{RMI Application\relax }{figure.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces RMI Application - Client Timer Operation\relax }}{60}{figure.12}}
+\newlabel{fig:cpn_rmi_app_timer_token}{{12}{60}{RMI Application - Client Timer Operation\relax }{figure.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces RMI Application - Server Operation\relax }}{61}{figure.13}}
+\newlabel{fig:cpn_rmi_app_server_token}{{13}{61}{RMI Application - Server Operation\relax }{figure.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}Modeling Component Interactions}{61}{subsection.5.2.5}}
+\newlabel{sec:operation_induction}{{5.2.5}{61}{Modeling Component Interactions}{subsection.5.2.5}{}}
+\newlabel{eq:component_interactions}{{6}{61}{Modeling Component Interactions}{equation.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Operation Induction\relax }}{62}{figure.14}}
+\newlabel{fig:cpn_iop}{{14}{62}{Operation Induction\relax }{figure.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Operation Induction Token\relax }}{62}{figure.15}}
+\newlabel{fig:cpn_rmi_app_iop}{{15}{62}{Operation Induction Token\relax }{figure.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.6}Modeling Timers}{62}{subsection.5.2.6}}
+\newlabel{eq:TMR}{{7}{63}{Modeling Timers}{equation.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Timer Operations\relax }}{63}{figure.16}}
+\newlabel{fig:cpn_timers}{{16}{63}{Timer Operations\relax }{figure.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Modeling Component Operation Business Logic}{64}{section.5.3}}
+\newlabel{sec:BL_Model}{{5.3}{64}{Modeling Component Operation Business Logic}{section.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Problem Statement}{64}{subsection.5.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Challenges}{64}{subsection.5.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Outline of Solution}{65}{subsection.5.3.3}}
 \citation{SEUS}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Modeling the Business Logic of Component Operations\relax }}{64}{figure.15}}
-\newlabel{fig:ebnf}{{15}{64}{Modeling the Business Logic of Component Operations\relax }{figure.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Sample Business Logic Model\relax }}{65}{figure.16}}
-\newlabel{fig:sblm}{{16}{65}{Sample Business Logic Model\relax }{figure.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces CPN Business Logic Representation\relax }}{66}{figure.17}}
-\newlabel{fig:blte}{{17}{66}{CPN Business Logic Representation\relax }{figure.17}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {VI}State Space Analysis and Verification}{67}{chapter.VI}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Modeling the Business Logic of Component Operations\relax }}{66}{figure.17}}
+\newlabel{fig:ebnf}{{17}{66}{Modeling the Business Logic of Component Operations\relax }{figure.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Sample Business Logic Model\relax }}{68}{figure.18}}
+\newlabel{fig:sblm}{{18}{68}{Sample Business Logic Model\relax }{figure.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces CPN Business Logic Representation\relax }}{69}{figure.19}}
+\newlabel{fig:blte}{{19}{69}{CPN Business Logic Representation\relax }{figure.19}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {VI}State Space Analysis and Verification}{70}{chapter.VI}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:analysis}{{VI}{67}{State Space Analysis and Verification}{chapter.VI}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Bounded State Space for a Multi-component Timer example -- The component threads have the same real-time priority and are executed in the same device. Each component is triggered with a 100 Hz periodic timer and all three timers are synchronized to illustrate non-determinism. 'Mark' is a state space query function that provides the \emph  {marking} of a place in a particular state space node.\relax }}{69}{figure.18}}
-\newlabel{fig:SSScreenshot}{{18}{69}{Bounded State Space for a Multi-component Timer example -- The component threads have the same real-time priority and are executed in the same device. Each component is triggered with a 100 Hz periodic timer and all three timers are synchronized to illustrate non-determinism. 'Mark' is a state space query function that provides the \emph {marking} of a place in a particular state space node.\relax }{figure.18}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.1}Searching the State Space}{70}{subsection.6.0.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces SearchNodes function provided by CPNTools\relax }}{70}{figure.19}}
-\newlabel{fig:SSSearching}{{19}{70}{SearchNodes function provided by CPNTools\relax }{figure.19}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.2}Deadline Violations and System-wide Deadlocks}{71}{subsection.6.0.2}}
-\newlabel{eq:DLV}{{8}{71}{Deadline Violations and System-wide Deadlocks}{equation.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Deadline Violation Observer place\relax }}{72}{figure.20}}
-\newlabel{fig:DL}{{20}{72}{Deadline Violation Observer place\relax }{figure.20}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.3}Response-time Analysis}{72}{subsection.6.0.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.4}Incomplete Designs}{73}{subsection.6.0.4}}
+\newlabel{chapter:analysis}{{VI}{70}{State Space Analysis and Verification}{chapter.VI}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Bounded State Space for a Multi-component Timer example -- The component threads have the same real-time priority and are executed in the same device. Each component is triggered with a 100 Hz periodic timer and all three timers are synchronized to illustrate non-determinism. 'Mark' is a state space query function that provides the \emph  {marking} of a place in a particular state space node.\relax }}{72}{figure.20}}
+\newlabel{fig:SSScreenshot}{{20}{72}{Bounded State Space for a Multi-component Timer example -- The component threads have the same real-time priority and are executed in the same device. Each component is triggered with a 100 Hz periodic timer and all three timers are synchronized to illustrate non-determinism. 'Mark' is a state space query function that provides the \emph {marking} of a place in a particular state space node.\relax }{figure.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.1}Searching the State Space}{73}{subsection.6.0.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces SearchNodes function provided by CPNTools\relax }}{73}{figure.21}}
+\newlabel{fig:SSSearching}{{21}{73}{SearchNodes function provided by CPNTools\relax }{figure.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.2}Deadline Violations and System-wide Deadlocks}{74}{subsection.6.0.2}}
+\newlabel{eq:DLV}{{8}{74}{Deadline Violations and System-wide Deadlocks}{equation.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Deadline Violation Observer place\relax }}{75}{figure.22}}
+\newlabel{fig:DL}{{22}{75}{Deadline Violation Observer place\relax }{figure.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.3}Response-time Analysis}{75}{subsection.6.0.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.0.4}Incomplete Designs}{76}{subsection.6.0.4}}
 \citation{kumar2014colored}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Modeling and Analysis Improvements}{74}{section.6.1}}
-\newlabel{sec:Improvements}{{6.1}{74}{Modeling and Analysis Improvements}{section.6.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Problem Statement}{74}{subsection.6.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Modeling and Analysis Improvements}{77}{section.6.1}}
+\newlabel{sec:Improvements}{{6.1}{77}{Modeling and Analysis Improvements}{section.6.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Problem Statement}{77}{subsection.6.1.1}}
 \citation{SEUS}
 \citation{Kristensen2000}
 \citation{SEUS}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Outline of Solution}{75}{subsection.6.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Outline of Solution}{78}{subsection.6.1.2}}
 \citation{ARINC-653}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.3}Handling Time}{76}{subsection.6.1.3}}
-\newlabel{handling_time}{{6.1.3}{76}{Handling Time}{subsection.6.1.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces A Clock Token with Temporal Partitioning\relax }}{77}{figure.21}}
-\newlabel{fig:clock}{{21}{77}{A Clock Token with Temporal Partitioning\relax }{figure.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Dynamic Time Progression\relax }}{78}{figure.22}}
-\newlabel{fig:time}{{22}{78}{Dynamic Time Progression\relax }{figure.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.3}Handling Time}{79}{subsection.6.1.3}}
+\newlabel{handling_time}{{6.1.3}{79}{Handling Time}{subsection.6.1.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces A Clock Token with Temporal Partitioning\relax }}{80}{figure.23}}
+\newlabel{fig:clock}{{23}{80}{A Clock Token with Temporal Partitioning\relax }{figure.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Dynamic Time Progression\relax }}{81}{figure.24}}
+\newlabel{fig:time}{{24}{81}{Dynamic Time Progression\relax }{figure.24}{}}
 \citation{kumar2014colored}
 \citation{Kristensen2000}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.4}Distributed Deployment}{79}{subsection.6.1.4}}
-\newlabel{distributed_deployment}{{6.1.4}{79}{Distributed Deployment}{subsection.6.1.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Structural Reductions in CPN\relax }}{80}{figure.23}}
-\newlabel{fig:dd}{{23}{80}{Structural Reductions in CPN\relax }{figure.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.4}Distributed Deployment}{82}{subsection.6.1.4}}
+\newlabel{distributed_deployment}{{6.1.4}{82}{Distributed Deployment}{subsection.6.1.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Structural Reductions in CPN\relax }}{83}{figure.25}}
+\newlabel{fig:dd}{{25}{83}{Structural Reductions in CPN\relax }{figure.25}{}}
 \citation{CPN_0}
 \citation{CPN_1}
 \citation{CPN_Sweepline}
 \citation{CPN_Symmetry}
 \citation{ASAP}
 \citation{Christensen2001}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Investigating Advanced State Space Analysis Methods}{82}{section.6.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Problem Statement}{82}{subsection.6.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Outline of Solution}{82}{subsection.6.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Investigating Advanced State Space Analysis Methods}{85}{section.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Problem Statement}{85}{subsection.6.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Outline of Solution}{85}{subsection.6.2.2}}
 \citation{Christensen2001}
 \citation{CPN_Bitstate_Hashing}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Evaluation of Solution}{83}{subsection.6.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Evaluation of Solution}{86}{subsection.6.2.3}}
 \citation{SEUS}
 \citation{DREMS13Software,kumar2014colored}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.4}Contributions}{84}{subsection.6.2.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Generated CPN model for a Distributed Application Deployment\relax }}{85}{figure.24}}
-\newlabel{fig:gm}{{24}{85}{Generated CPN model for a Distributed Application Deployment\relax }{figure.24}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Sweep-Line Method\relax }}{86}{figure.25}}
-\newlabel{fig:sl}{{25}{86}{Sweep-Line Method\relax }{figure.25}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Dead States Checking in a Component-based application\relax }}{87}{figure.26}}
-\newlabel{fig:ds}{{26}{87}{Dead States Checking in a Component-based application\relax }{figure.26}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.4}Contributions}{87}{subsection.6.2.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Generated CPN model for a Distributed Application Deployment\relax }}{88}{figure.26}}
+\newlabel{fig:gm}{{26}{88}{Generated CPN model for a Distributed Application Deployment\relax }{figure.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Sweep-Line Method\relax }}{89}{figure.27}}
+\newlabel{fig:sl}{{27}{89}{Sweep-Line Method\relax }{figure.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Dead States Checking in a Component-based application\relax }}{90}{figure.28}}
+\newlabel{fig:ds}{{28}{90}{Dead States Checking in a Component-based application\relax }{figure.28}{}}
 \citation{kumarTestbed}
 \citation{BBB}
 \citation{ROS}
 \citation{kumarROSMOD}
 \citation{ISIS_F6_ISORC:13}
-\@writefile{toc}{\contentsline {chapter}{\numberline {VII}Experimental Evaluation}{88}{chapter.VII}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {VII}Experimental Evaluation}{91}{chapter.VII}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:evaluation}{{VII}{88}{Experimental Evaluation}{chapter.VII}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.0.1}Challenges}{88}{subsection.7.0.1}}
+\newlabel{chapter:evaluation}{{VII}{91}{Experimental Evaluation}{chapter.VII}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.0.1}Challenges}{91}{subsection.7.0.1}}
 \citation{autosar}
 \citation{Simulink}
 \citation{BBB}
 \citation{kumarROSMOD}
 \citation{CubeSat}
 \citation{CubeSat_Mars}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}Resilient Cyber-Physical Systems (RCPS) Testbed}{91}{section.7.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.1}Architecture}{91}{subsection.7.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Resilient Cyber-Physical Systems (RCPS) Testbed}{94}{section.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.1}Architecture}{94}{subsection.7.1.1}}
 \citation{openflow}
-\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Testbed Architecture\relax }}{92}{figure.27}}
-\newlabel{fig:architecture}{{27}{92}{Testbed Architecture\relax }{figure.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Beaglebone Black Boards - Custom Mounting\relax }}{93}{figure.28}}
-\newlabel{fig:boards}{{28}{93}{Beaglebone Black Boards - Custom Mounting\relax }{figure.28}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.2}Design and Construction}{94}{subsection.7.1.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Constructed Testbed\relax }}{94}{figure.29}}
-\newlabel{fig:testbed}{{29}{94}{Constructed Testbed\relax }{figure.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Testbed Architecture\relax }}{95}{figure.29}}
+\newlabel{fig:architecture}{{29}{95}{Testbed Architecture\relax }{figure.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Beaglebone Black Boards - Custom Mounting\relax }}{96}{figure.30}}
+\newlabel{fig:boards}{{30}{96}{Beaglebone Black Boards - Custom Mounting\relax }{figure.30}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.2}Design and Construction}{97}{subsection.7.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Constructed Testbed\relax }}{97}{figure.31}}
+\newlabel{fig:testbed}{{31}{97}{Constructed Testbed\relax }{figure.31}{}}
 \citation{kumarROSMOD}
 \citation{ROS}
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}ROSMOD Software Infrastructure}{95}{section.7.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.1}ROSMOD Modeling Language}{95}{subsubsection.7.2.0.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces ROSMOD Metamodel. Containment is specified from \emph  {src} to \emph  {dst} where the source has a containment attribute \emph  {quantity}, meaning that \emph  {quantity} objects of type \emph  {src} can be contained in an object of type \emph  {dst}. Pointers are specified as a one to one mapping from source to destination, using the name of the pointer. Sets allow for pointer containment. All objects contain a \emph  {name} attribute of type \emph  {string}, not shown for clarity. Note: the meta-model is used to create the ROSMOD Modeling Language, but users do not see or interact with it; it is used to enforce proper model creation semantics. \relax }}{96}{figure.30}}
-\newlabel{fig:ROSMOD_Project}{{30}{96}{ROSMOD Metamodel. Containment is specified from \emph {src} to \emph {dst} where the source has a containment attribute \emph {quantity}, meaning that \emph {quantity} objects of type \emph {src} can be contained in an object of type \emph {dst}. Pointers are specified as a one to one mapping from source to destination, using the name of the pointer. Sets allow for pointer containment. All objects contain a \emph {name} attribute of type \emph {string}, not shown for clarity. Note: the meta-model is used to create the ROSMOD Modeling Language, but users do not see or interact with it; it is used to enforce proper model creation semantics. \relax }{figure.30}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.2}Software Model}{97}{subsubsection.7.2.0.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.3}System Model}{99}{subsubsection.7.2.0.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.4}Deployment and Experimentation}{100}{subsubsection.7.2.0.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Software Infrastructure}{101}{subsection.7.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.1.1}ROSMOD Workspace}{101}{subsubsection.7.2.1.1}}
-\newlabel{sec:code_generation}{{7.2.1.1}{101}{ROSMOD Workspace}{subsubsection.7.2.1.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Workspace Code Generation. In this figure, the \emph  {image\_processor} package and its children messages (red), components (blue), and services (purple) are generated into a catkin package for compilation. The msg and srv files are automatically filled out from the definitions of the messages and services, as are the header and source files for the components.\relax }}{103}{figure.31}}
-\newlabel{fig:Code_Generation}{{31}{103}{Workspace Code Generation. In this figure, the \emph {image\_processor} package and its children messages (red), components (blue), and services (purple) are generated into a catkin package for compilation. The msg and srv files are automatically filled out from the definitions of the messages and services, as are the header and source files for the components.\relax }{figure.31}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Deployment Infrastructure}{104}{subsection.7.2.2}}
-\newlabel{sec:Deployment_Infrastructure}{{7.2.2}{104}{Deployment Infrastructure}{subsection.7.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Software Deployment Workflow\relax }}{105}{figure.32}}
-\newlabel{fig:workflow}{{32}{105}{Software Deployment Workflow\relax }{figure.32}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}ROSMOD Software Infrastructure}{98}{section.7.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.1}ROSMOD Modeling Language}{98}{subsubsection.7.2.0.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces ROSMOD Metamodel. Containment is specified from \emph  {src} to \emph  {dst} where the source has a containment attribute \emph  {quantity}, meaning that \emph  {quantity} objects of type \emph  {src} can be contained in an object of type \emph  {dst}. Pointers are specified as a one to one mapping from source to destination, using the name of the pointer. Sets allow for pointer containment. All objects contain a \emph  {name} attribute of type \emph  {string}, not shown for clarity. Note: the meta-model is used to create the ROSMOD Modeling Language, but users do not see or interact with it; it is used to enforce proper model creation semantics. \relax }}{99}{figure.32}}
+\newlabel{fig:ROSMOD_Project}{{32}{99}{ROSMOD Metamodel. Containment is specified from \emph {src} to \emph {dst} where the source has a containment attribute \emph {quantity}, meaning that \emph {quantity} objects of type \emph {src} can be contained in an object of type \emph {dst}. Pointers are specified as a one to one mapping from source to destination, using the name of the pointer. Sets allow for pointer containment. All objects contain a \emph {name} attribute of type \emph {string}, not shown for clarity. Note: the meta-model is used to create the ROSMOD Modeling Language, but users do not see or interact with it; it is used to enforce proper model creation semantics. \relax }{figure.32}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.2}Software Model}{100}{subsubsection.7.2.0.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.3}System Model}{102}{subsubsection.7.2.0.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.0.4}Deployment and Experimentation}{103}{subsubsection.7.2.0.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Software Infrastructure}{104}{subsection.7.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.1.1}ROSMOD Workspace}{104}{subsubsection.7.2.1.1}}
+\newlabel{sec:code_generation}{{7.2.1.1}{104}{ROSMOD Workspace}{subsubsection.7.2.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces Workspace Code Generation. In this figure, the \emph  {image\_processor} package and its children messages (red), components (blue), and services (purple) are generated into a catkin package for compilation. The msg and srv files are automatically filled out from the definitions of the messages and services, as are the header and source files for the components.\relax }}{106}{figure.33}}
+\newlabel{fig:Code_Generation}{{33}{106}{Workspace Code Generation. In this figure, the \emph {image\_processor} package and its children messages (red), components (blue), and services (purple) are generated into a catkin package for compilation. The msg and srv files are automatically filled out from the definitions of the messages and services, as are the header and source files for the components.\relax }{figure.33}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Deployment Infrastructure}{107}{subsection.7.2.2}}
+\newlabel{sec:Deployment_Infrastructure}{{7.2.2}{107}{Deployment Infrastructure}{subsection.7.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces Software Deployment Workflow\relax }}{108}{figure.34}}
+\newlabel{fig:workflow}{{34}{108}{Software Deployment Workflow\relax }{figure.34}{}}
 \citation{SEUS}
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}Evaluation of Timing Analysis Results}{107}{section.7.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Evaluation of Timing Analysis Results}{110}{section.7.3}}
 \citation{SEUS}
 \citation{ROS}
 \citation{kumarROSMOD}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Understanding the CPN Analysis Plots}{108}{subsection.7.3.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces Interpreting Execution Time Plots\relax }}{109}{figure.33}}
-\newlabel{fig:understanding-the-plots}{{33}{109}{Interpreting Execution Time Plots\relax }{figure.33}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Client-Server Interactions}{109}{subsection.7.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces Experimental Observation: Client-Server Interactions\relax }}{110}{figure.34}}
-\newlabel{fig:client-server}{{34}{110}{Experimental Observation: Client-Server Interactions\relax }{figure.34}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces CPN Analysis Results: Client-Server Interactions\relax }}{111}{figure.35}}
-\newlabel{fig:client-server-cpn}{{35}{111}{CPN Analysis Results: Client-Server Interactions\relax }{figure.35}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2.1}Bad Designs}{111}{subsubsection.7.3.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces CPN Analysis Results: Client-Server Response Times in Bad Designs\relax }}{112}{figure.36}}
-\newlabel{fig:client-server-bad-case}{{36}{112}{CPN Analysis Results: Client-Server Response Times in Bad Designs\relax }{figure.36}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.3}Publish-Subscribe Interactions}{112}{subsection.7.3.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{113}{figure.37}}
-\newlabel{fig:publish-subscribe}{{37}{113}{Experimental Observation: Publish-Subscribe Interactions\relax }{figure.37}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{114}{figure.38}}
-\newlabel{fig:publish-subscribe-cpn}{{38}{114}{CPN Analysis Results: Publish-Subscribe Interactions\relax }{figure.38}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.3.1}Bad Designs}{114}{subsubsection.7.3.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Understanding the CPN Analysis Plots}{111}{subsection.7.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces Interpreting Execution Time Plots\relax }}{112}{figure.35}}
+\newlabel{fig:understanding-the-plots}{{35}{112}{Interpreting Execution Time Plots\relax }{figure.35}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Client-Server Interactions}{112}{subsection.7.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces Experimental Observation: Client-Server Interactions\relax }}{113}{figure.36}}
+\newlabel{fig:client-server}{{36}{113}{Experimental Observation: Client-Server Interactions\relax }{figure.36}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces CPN Analysis Results: Client-Server Interactions\relax }}{114}{figure.37}}
+\newlabel{fig:client-server-cpn}{{37}{114}{CPN Analysis Results: Client-Server Interactions\relax }{figure.37}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2.1}Bad Designs}{114}{subsubsection.7.3.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces CPN Analysis Results: Client-Server Response Times in Bad Designs\relax }}{115}{figure.38}}
+\newlabel{fig:client-server-bad-case}{{38}{115}{CPN Analysis Results: Client-Server Response Times in Bad Designs\relax }{figure.38}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.3}Publish-Subscribe Interactions}{115}{subsection.7.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{116}{figure.39}}
+\newlabel{fig:publish-subscribe}{{39}{116}{Experimental Observation: Publish-Subscribe Interactions\relax }{figure.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{117}{figure.40}}
+\newlabel{fig:publish-subscribe-cpn}{{40}{117}{CPN Analysis Results: Publish-Subscribe Interactions\relax }{figure.40}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.3.1}Bad Designs}{117}{subsubsection.7.3.3.1}}
 \citation{kumar2014colored}
-\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces CPN Analysis Results: Time-triggered Publisher -- Periodicity Issues\relax }}{115}{figure.39}}
-\newlabel{fig:publish-subscribe-bad-case}{{39}{115}{CPN Analysis Results: Time-triggered Publisher -- Periodicity Issues\relax }{figure.39}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.4}Trajectory Planner}{115}{subsection.7.3.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces Trajectory Planner Test\relax }}{116}{figure.40}}
-\newlabel{fig:trajectory-planner-components}{{40}{116}{Trajectory Planner Test\relax }{figure.40}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{117}{figure.41}}
-\newlabel{fig:trajectory-planner}{{41}{117}{Experimental Observation: Trajectory Planner\relax }{figure.41}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{118}{figure.42}}
-\newlabel{fig:trajectory-planner-cpn}{{42}{118}{CPN Analysis Results: Trajectory Planner\relax }{figure.42}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {43}{\ignorespaces CPN Analysis - Sensor firing too frequently\relax }}{119}{figure.43}}
-\newlabel{fig:trajectory-planner-bad-case}{{43}{119}{CPN Analysis - Sensor firing too frequently\relax }{figure.43}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.5}Time-triggered Operations}{119}{subsection.7.3.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {44}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{120}{figure.44}}
-\newlabel{fig:periodic-timers}{{44}{120}{Experimental Observation: Periodic Timers\relax }{figure.44}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {45}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{121}{figure.45}}
-\newlabel{fig:periodic-timers-cpn}{{45}{121}{CPN Analysis Results: Periodic Timers\relax }{figure.45}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.6}Long-Running Operations}{121}{subsection.7.3.6}}
-\newlabel{sec:long_running_operations}{{7.3.6}{121}{Long-Running Operations}{subsection.7.3.6}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.6.1}Challenges}{122}{subsubsection.7.3.6.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {46}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{123}{figure.46}}
-\newlabel{fig:lro-semantics}{{46}{123}{Long Running Operations - Timing Diagram\relax }{figure.46}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.6.2}Implementation and Results}{123}{subsubsection.7.3.6.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {47}{\ignorespaces Long Running Operation - Software Model\relax }}{124}{figure.47}}
-\newlabel{fig:three-components-lro-rosmod}{{47}{124}{Long Running Operation - Software Model\relax }{figure.47}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {48}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{125}{figure.48}}
-\newlabel{fig:three-components-lro}{{48}{125}{Experimental Observation: Composed Component Assembly\relax }{figure.48}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {49}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{126}{figure.49}}
-\newlabel{fig:three-components-lro-cpn}{{49}{126}{CPN Analysis Results: Composed Component Assembly\relax }{figure.49}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.4}Analysis Limitations}{126}{section.7.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces CPN Analysis Results: Time-triggered Publisher -- Periodicity Issues\relax }}{118}{figure.41}}
+\newlabel{fig:publish-subscribe-bad-case}{{41}{118}{CPN Analysis Results: Time-triggered Publisher -- Periodicity Issues\relax }{figure.41}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.4}Trajectory Planner}{118}{subsection.7.3.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces Trajectory Planner Test\relax }}{119}{figure.42}}
+\newlabel{fig:trajectory-planner-components}{{42}{119}{Trajectory Planner Test\relax }{figure.42}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {43}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{120}{figure.43}}
+\newlabel{fig:trajectory-planner}{{43}{120}{Experimental Observation: Trajectory Planner\relax }{figure.43}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {44}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{121}{figure.44}}
+\newlabel{fig:trajectory-planner-cpn}{{44}{121}{CPN Analysis Results: Trajectory Planner\relax }{figure.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {45}{\ignorespaces CPN Analysis - Sensor firing too frequently\relax }}{122}{figure.45}}
+\newlabel{fig:trajectory-planner-bad-case}{{45}{122}{CPN Analysis - Sensor firing too frequently\relax }{figure.45}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.5}Time-triggered Operations}{122}{subsection.7.3.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {46}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{123}{figure.46}}
+\newlabel{fig:periodic-timers}{{46}{123}{Experimental Observation: Periodic Timers\relax }{figure.46}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {47}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{124}{figure.47}}
+\newlabel{fig:periodic-timers-cpn}{{47}{124}{CPN Analysis Results: Periodic Timers\relax }{figure.47}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.6}Long-Running Operations}{124}{subsection.7.3.6}}
+\newlabel{sec:long_running_operations}{{7.3.6}{124}{Long-Running Operations}{subsection.7.3.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.6.1}Challenges}{125}{subsubsection.7.3.6.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {48}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{126}{figure.48}}
+\newlabel{fig:lro-semantics}{{48}{126}{Long Running Operations - Timing Diagram\relax }{figure.48}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.6.2}Implementation and Results}{126}{subsubsection.7.3.6.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {49}{\ignorespaces Long Running Operation - Software Model\relax }}{127}{figure.49}}
+\newlabel{fig:three-components-lro-rosmod}{{49}{127}{Long Running Operation - Software Model\relax }{figure.49}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {50}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{128}{figure.50}}
+\newlabel{fig:three-components-lro}{{50}{128}{Experimental Observation: Composed Component Assembly\relax }{figure.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {51}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{129}{figure.51}}
+\newlabel{fig:three-components-lro-cpn}{{51}{129}{CPN Analysis Results: Composed Component Assembly\relax }{figure.51}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Analysis Limitations}{129}{section.7.4}}
 \citation{ISIS_F6_CYPHY:14}
-\@writefile{toc}{\contentsline {chapter}{\numberline {VIII}Future Work and Conclusions}{128}{chapter.VIII}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {VIII}Future Work and Conclusions}{131}{chapter.VIII}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{Appendices}{129}{section*.5}}
+\@writefile{toc}{\contentsline {chapter}{Appendices}{132}{section*.5}}
 \citation{kumar2014colored}
 \citation{SEUS}
 \citation{SEUS2016}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Publications}{130}{APPENDIX.A}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Publications}{133}{APPENDIX.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:publications}{{A}{130}{Publications}{APPENDIX.A}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.1}Workshop Papers}{130}{section.1.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.2}Conference Papers}{130}{section.1.2}}
+\newlabel{ch:publications}{{A}{133}{Publications}{APPENDIX.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Workshop Papers}{133}{section.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Conference Papers}{133}{section.1.2}}
 \citation{balasubramanian2015drems}
-\@writefile{toc}{\contentsline {section}{\numberline {1.3}Journal Papers}{131}{section.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.1}Awaiting Reviews}{131}{subsection.1.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Journal Papers}{134}{section.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.1}Awaiting Reviews}{134}{subsection.1.3.1}}
 \bibstyle{abbrv}
 \bibdata{00-Dissertation}
 \bibcite{BBB}{{1}{}{{}}{{}}}
@@ -423,7 +430,7 @@
 \bibcite{bause1996stochastic}{{13}{}{{}}{{}}}
 \bibcite{UML}{{14}{}{{}}{{}}}
 \bibcite{bengtsson1996uppaal}{{15}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{REFERENCES}{133}{chapter*.6}}
+\@writefile{toc}{\contentsline {chapter}{REFERENCES}{136}{chapter*.6}}
 \bibcite{beydeda2005model}{{16}{}{{}}{{}}}
 \bibcite{bjorner2001deductive}{{17}{}{{}}{{}}}
 \bibcite{boehm1988spiral}{{18}{}{{}}{{}}}
@@ -488,48 +495,44 @@
 \bibcite{mcmillan1993symbolic}{{77}{}{{}}{{}}}
 \bibcite{mcmillan1999getting}{{78}{}{{}}{{}}}
 \bibcite{medina2011}{{79}{}{{}}{{}}}
-\bibcite{morrison1996board}{{80}{}{{}}{{}}}
-\bibcite{murata1989petri}{{81}{}{{}}{{}}}
-\bibcite{navet2008automotive}{{82}{}{{}}{{}}}
-\bibcite{CCM-light:03}{{83}{}{{}}{{}}}
+\bibcite{milner1997definition}{{80}{}{{}}{{}}}
+\bibcite{morrison1996board}{{81}{}{{}}{{}}}
+\bibcite{murata1989petri}{{82}{}{{}}{{}}}
+\bibcite{navet2008automotive}{{83}{}{{}}{{}}}
 \bibcite{MARTE:05}{{84}{}{{}}{{}}}
-\bibcite{dds4ccm:09}{{85}{}{{}}{{}}}
-\bibcite{ISIS_F6_ISORC:13}{{86}{}{{}}{{}}}
-\bibcite{Connectors}{{87}{}{{}}{{}}}
-\bibcite{Yassine2013}{{88}{}{{}}{{}}}
-\bibcite{owre1992pvs}{{89}{}{{}}{{}}}
-\bibcite{palencia1998schedulability}{{90}{}{{}}{{}}}
-\bibcite{palencia1999exploiting}{{91}{}{{}}{{}}}
-\bibcite{peterson1977petri}{{92}{}{{}}{{}}}
-\bibcite{reviewWCET}{{93}{}{{}}{{}}}
-\bibcite{puschner1998testing}{{94}{}{{}}{{}}}
-\bibcite{ROS}{{95}{}{{}}{{}}}
-\bibcite{raje1997asynchronous}{{96}{}{{}}{{}}}
-\bibcite{CPNTools}{{97}{}{{}}{{}}}
-\bibcite{reineke2006definition}{{98}{}{{}}{{}}}
-\bibcite{reisig2012petri}{{99}{}{{}}{{}}}
-\bibcite{kordon2009}{{100}{}{{}}{{}}}
-\bibcite{kordon_sn}{{101}{}{{}}{{}}}
-\bibcite{TAO:02}{{102}{}{{}}{{}}}
-\bibcite{selic2000generic}{{103}{}{{}}{{}}}
-\bibcite{shelleyacl2}{{104}{}{{}}{{}}}
-\bibcite{simulink1993mathworks}{{105}{}{{}}{{}}}
-\bibcite{Cheddar}{{106}{}{{}}{{}}}
-\bibcite{sistla2004symmetry}{{107}{}{{}}{{}}}
-\bibcite{sklaroff1976redundancy}{{108}{}{{}}{{}}}
-\bibcite{tindell1994holistic}{{109}{}{{}}{{}}}
-\bibcite{waldo1998remote}{{110}{}{{}}{{}}}
-\bibcite{wang2012timed}{{111}{}{{}}{{}}}
-\bibcite{RT_CIAO:04}{{112}{}{{}}{{}}}
-\bibcite{CIAO_Chap:04}{{113}{}{{}}{{}}}
-\bibcite{wegener1998verifying}{{114}{}{{}}{{}}}
-\bibcite{wegener1997testing}{{115}{}{{}}{{}}}
-\bibcite{ASAP}{{116}{}{{}}{{}}}
-\bibcite{wilhelm2008worst}{{117}{}{{}}{{}}}
-\bibcite{yovine1997kronos}{{118}{}{{}}{{}}}
-\bibcite{zhou1999modeling}{{119}{}{{}}{{}}}
-\bibcite{zimmermann2003train}{{120}{}{{}}{{}}}
-\bibcite{zoitl2008real}{{121}{}{{}}{{}}}
-\bibcite{zuberek1991timed}{{122}{}{{}}{{}}}
-\bibcite{zurawski1994petri}{{123}{}{{}}{{}}}
+\bibcite{ISIS_F6_ISORC:13}{{85}{}{{}}{{}}}
+\bibcite{Yassine2013}{{86}{}{{}}{{}}}
+\bibcite{owre1992pvs}{{87}{}{{}}{{}}}
+\bibcite{palencia1998schedulability}{{88}{}{{}}{{}}}
+\bibcite{palencia1999exploiting}{{89}{}{{}}{{}}}
+\bibcite{peterson1977petri}{{90}{}{{}}{{}}}
+\bibcite{reviewWCET}{{91}{}{{}}{{}}}
+\bibcite{puschner1998testing}{{92}{}{{}}{{}}}
+\bibcite{ROS}{{93}{}{{}}{{}}}
+\bibcite{raje1997asynchronous}{{94}{}{{}}{{}}}
+\bibcite{CPNTools}{{95}{}{{}}{{}}}
+\bibcite{reineke2006definition}{{96}{}{{}}{{}}}
+\bibcite{reisig2012petri}{{97}{}{{}}{{}}}
+\bibcite{kordon2009}{{98}{}{{}}{{}}}
+\bibcite{kordon_sn}{{99}{}{{}}{{}}}
+\bibcite{selic2000generic}{{100}{}{{}}{{}}}
+\bibcite{shelleyacl2}{{101}{}{{}}{{}}}
+\bibcite{simulink1993mathworks}{{102}{}{{}}{{}}}
+\bibcite{Cheddar}{{103}{}{{}}{{}}}
+\bibcite{sistla2004symmetry}{{104}{}{{}}{{}}}
+\bibcite{sklaroff1976redundancy}{{105}{}{{}}{{}}}
+\bibcite{tindell1994holistic}{{106}{}{{}}{{}}}
+\bibcite{waldo1998remote}{{107}{}{{}}{{}}}
+\bibcite{wang2012timed}{{108}{}{{}}{{}}}
+\bibcite{CIAO_Chap:04}{{109}{}{{}}{{}}}
+\bibcite{wegener1998verifying}{{110}{}{{}}{{}}}
+\bibcite{wegener1997testing}{{111}{}{{}}{{}}}
+\bibcite{ASAP}{{112}{}{{}}{{}}}
+\bibcite{wilhelm2008worst}{{113}{}{{}}{{}}}
+\bibcite{yovine1997kronos}{{114}{}{{}}{{}}}
+\bibcite{zhou1999modeling}{{115}{}{{}}{{}}}
+\bibcite{zimmermann2003train}{{116}{}{{}}{{}}}
+\bibcite{zoitl2008real}{{117}{}{{}}{{}}}
+\bibcite{zuberek1991timed}{{118}{}{{}}{{}}}
+\bibcite{zurawski1994petri}{{119}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers

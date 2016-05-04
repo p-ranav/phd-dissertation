@@ -445,6 +445,11 @@ J.~L. Medina and A.~G. Cuesta.
   the uml profile for marte.
 \newblock {\em SIGBED Rev.}, 8(1):64--68, Mar. 2011.
 
+\bibitem{milner1997definition}
+R.~Milner.
+\newblock {\em The definition of standard ML: revised}.
+\newblock MIT press, 1997.
+
 \bibitem{morrison1996board}
 J.~Morrison and T.~Nguyen.
 \newblock On-board software for the mars pathfinder microrover.
@@ -461,21 +466,10 @@ N.~Navet and F.~Simonot-Lion.
 \newblock {\em Automotive embedded systems handbook}.
 \newblock CRC press, 2008.
 
-\bibitem{CCM-light:03}
-{Object Management Group}.
-\newblock {\em {Light Weight CORBA Component Model Revised Submission}}, {OMG
-  Document realtime/03-05-05} edition, May 2003.
-
 \bibitem{MARTE:05}
 {Object Management Group}.
 \newblock {\em {UML Profile for Modeling and Analysis of Real-Time and Embedded
   systems (MARTE)}}, {OMG Document realtime/05-02-06} edition, May 2005.
-
-\bibitem{dds4ccm:09}
-{Object Management Group}.
-\newblock {\em {DDS for Lightweight CCM Version 1.0 Beta 2}}.
-\newblock {Object Management Group}, {OMG Document ptc/2009-10-25} edition,
-  Oct. 2009.
 
 \bibitem{ISIS_F6_ISORC:13}
 W.~R. Otte, A.~Dubey, S.~Pradhan, P.~Patil, A.~Gokhale, G.~Karsai, and
@@ -485,13 +479,6 @@ W.~R. Otte, A.~Dubey, S.~Pradhan, P.~Patil, A.~Gokhale, G.~Karsai, and
 \newblock In {\em Proceedings of the 16th IEEE International Symposium on
   Object-oriented Real-time Distributed Computing (ISORC '13)}, Paderborn,
   Germany, June 2013.
-
-\bibitem{Connectors}
-W.~R. Otte, A.~Gokhale, D.~C. Schmidt, and J.~Willemsen.
-\newblock {Infrastructure for Component-based DDS Application Development}.
-\newblock In {\em Proceedings of the 10th ACM international conference on
-  Generative programming and component engineering}, GPCE '11, pages 53--62,
-  New York, NY, USA, 2011. ACM.
 
 \bibitem{Yassine2013}
 Y.~Ouhammou, E.~Grolleau, and J.~Hugues.
@@ -580,12 +567,6 @@ X.~Renault, F.~Kordon, and J.~Hugues.
   Computing, 2009. ISORC '09. IEEE International Symposium on}, pages 313--320,
   March 2009.
 
-\bibitem{TAO:02}
-D.~C. Schmidt, B.~Natarajan, A.~Gokhale, N.~Wang, and C.~Gill.
-\newblock {TAO: A Pattern-Oriented Object Request Broker for Distributed
-  Real-time and Embedded Systems}.
-\newblock {\em IEEE Distributed Systems Online}, 3(2), Feb. 2002.
-
 \bibitem{selic2000generic}
 B.~Selic.
 \newblock A generic framework for modeling resources with uml.
@@ -633,13 +614,6 @@ J.~Waldo.
 J.~Wang.
 \newblock {\em Timed Petri nets: Theory and application}, volume~9.
 \newblock Springer Science \& Business Media, 2012.
-
-\bibitem{RT_CIAO:04}
-N.~Wang, C.~Gill, D.~C. Schmidt, and V.~Subramonian.
-\newblock {Configuring Real-time Aspects in Component Middleware}.
-\newblock In {\em {Proc. of the International Symposium on Distributed Objects
-  and Applications (DOA)}}, volume 3291, pages 1520--1537, Agia Napa, Cyprus,
-  Oct. 2004. Springer-Verlag.
 
 \bibitem{CIAO_Chap:04}
 N.~Wang, D.~C. Schmidt, A.~Gokhale, C.~Rodrigues, B.~Natarajan, J.~P. Loyall,
