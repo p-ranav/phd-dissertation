@@ -14,10 +14,6 @@
 \newblock
   \url{http://www.nasa.gov/press-release/nasa-prepares-for-first-interplanetary-cubesats-on-agency-s-next-mission-to-mars}.
 
-\bibitem{Simulink}
-{Simulink}.
-\newblock \url{http://www.mathworks.com/products/simulink/}.
-
 \bibitem{abrahammathworks}
 J.~Abraham.
 \newblock Mathworks, natick, ma, 01760.
@@ -386,6 +382,12 @@ K.~G. Larsen, P.~Pettersson, and W.~Yi.
 \newblock {\em International Journal on Software Tools for Technology Transfer
   (STTT)}, 1(1):134--152, 1997.
 
+\bibitem{Ledeczi01thegeneric}
+A.~Ledeczi, M.~Maroti, A.~Bakay, G.~Karsai, J.~Garrett, C.~Thomason,
+  G.~Nordstrom, J.~Sprinkle, and P.~Volgyesi.
+\newblock The generic modeling environment.
+\newblock In {\em Workshop on Intelligent Signal Processing}, 2001.
+
 \bibitem{lin1987protocol}
 F.~J. Lin, P.~Chu, and M.~T. Liu.
 \newblock Protocol verification using reachability analysis: the state space
@@ -418,6 +420,13 @@ P.~S. Magnusson, M.~Christensson, J.~Eskilson, D.~Forsgren, G.~Hallberg,
   J.~Hogberg, F.~Larsson, A.~Moestedt, and B.~Werner.
 \newblock Simics: A full system simulation platform.
 \newblock {\em Computer}, 35(2):50--58, 2002.
+
+\bibitem{maroti2014next}
+M.~Mar{\'o}ti, T.~Kecsk{\'e}s, R.~Keresk{\'e}nyi, B.~Broll, P.~V{\"o}lgyesi,
+  L.~Jur{\'a}cz, T.~Levendovszky, and {\'A}.~L{\'e}deczi.
+\newblock Next generation (meta) modeling: Web-and cloud-based collaborative
+  tool infrastructure.
+\newblock In {\em MPM@ MoDELS}, pages 41--60, 2014.
 
 \bibitem{marsan1994modelling}
 M.~A. Marsan, G.~Balbo, G.~Conte, S.~Donatelli, and G.~Franceschinis.
@@ -652,6 +661,11 @@ R.~Wilhelm, J.~Engblom, A.~Ermedahl, N.~Holsti, S.~Thesing, D.~Whalley,
   survey of tools.
 \newblock {\em ACM Transactions on Embedded Computing Systems (TECS)}, 7(3):36,
   2008.
+
+\bibitem{ylonen2006secure}
+T.~Ylonen and C.~Lonvick.
+\newblock The secure shell (ssh) protocol architecture.
+\newblock 2006.
 
 \bibitem{yovine1997kronos}
 S.~Yovine.

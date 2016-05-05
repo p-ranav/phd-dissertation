@@ -29,7 +29,7 @@ Obtaining the WCET values by this method is not only more realistic but also an 
 
 \subsection{Architecture}
 
-The testbed consists of 32 \emph{RCPS nodes}, each of which is a Beaglebone Black (BBB) \cite{BBB} development board running Linux, as shown in Figure \ref{fig:boards}. We execute a full software stack including a ROS-based middleware, called ROSMOD \cite{kumarROSMOD} and the DREMS component model. For the subset of CPS we are interested in, the behavior of the CPS can be much more precisely emulated with these boards compared to running the applications inside of a standalone simulation. For example, NASA's CubeSat Launch Initiative (CSLI) \cite{CubeSat} provides opportunities for nanosatellites to be deployed into space for research. CubeSats are small (4-inch long) satellites running low-power embedded boards and being prepared for interplanetary missions \cite{CubeSat_Mars} to Mars. A distributed set of CubeSats can be easily tested with this architecture if it can be integrated with a high-fidelity space flight simulator.  
+The testbed consists of 32 \emph{RCPS nodes}, each of which is a Beaglebone Black (BBB) \cite{BBB} development board. We execute a full software stack including a ROS-based middleware, called ROSMOD \cite{kumarROSMOD} and the DREMS component model. For the subset of CPS we are interested in, the behavior of the CPS can be much more precisely emulated with these boards compared to running the applications inside of a standalone simulation. For example, NASA's CubeSat Launch Initiative (CSLI) \cite{CubeSat} provides opportunities for nanosatellites to be deployed into space for research. CubeSats are small (4-inch long) satellites running low-power embedded boards and being prepared for interplanetary missions \cite{CubeSat_Mars} to Mars. A distributed set of CubeSats can be easily tested with this architecture if it can be integrated with a high-fidelity space flight simulator.  
 
 \begin{figure}[h]
     \centering
@@ -43,15 +43,14 @@ The Gigabit Ethernet port of each BBB is connected to a \emph{Communication Netw
 Each RCPS node is also connected to a \emph{Physics Network} using a 10/100 USB-to-Ethernet adapter, since the BBBs only have one gigabit ethernet port. This network is connected to a \emph{Physics Simulation Machine} running Cyber-Physical Systems simulations. This network provides the infrastructure necessary to emulate CPS sensing and actuation in the loop, allowing application software to periodically receive sensor data and open interfaces to output actuator commands to the simulation.
 
 The Physics Simulation Machine closes the interaction loop for the testbed nodes, allowing the physical dynamics of the RCPS nodes to be simulated in the environment in which it would be deployed, \emph{e.g.} satellites' orbital mechanics and interactions can be simulated for a satellite cluster in low Earth orbit (LEO). 
-\
-section{ROSMOD Software Infrastructure}
+
+\section{ROSMOD Software Infrastructure}
 
 The software infrastructure includes our model-driven toolsuite and DREMS-style component model called ROSMOD \cite{kumarROSMOD}, the Robot Operating System middleware \cite{ROS}, and component-based software applications developed for ROSMOD. The applications are cross-compiled for Beaglebone Black and the relevant processes are started at real-time priority with \emph{SCHED\_RR} linux real-time process scheduling using our ROSMOD deployment framework (Figure \ref{fig:workflow}).
 
 \subsubsection{ROSMOD Modeling Language}
 
-To enable the design, development, and testing of software on distributed CPS, we have developed a modeling language specific to the domain of distributed CPS which utilize ROS, the ROSMOD Modeling Language (RML), shown in Figure~\ref{fig:ROSMOD_Project}. RML captures all the relevant aspects of the sofware, the system (hardware and network), and the deployment which specifies how the software will be executed on the selected system.  Using ROSMOD, developers can
-create models which contain instances of the objects defined in RML. This approach of using a domain specific modeling language to define the semantics of the models allows us to check and enforce the models for correctness.  Furthermore, this approach allows us to develop generic utilities or extensions, called \emph{plugins} \cite{maroti2014next} which can act on any models created using ROSMOD, for instance generating and compiling the software automatically or automatically deploying and managing the software on the defined system. The rest of this section goes into the specific parts of the modeling language, called the metamodel, and how they define the entities in a ROSMOD Model.
+To enable the design, development, and testing of software on distributed CPS, we have developed a modeling language specific to the domain of distributed CPS which utilize ROS, the ROSMOD Modeling Language (RML). Figure \ref{fig:ROSMOD_Project} shows the metamodel for this language using GME \cite{Ledeczi01thegeneric} notation; the GME-based metamodel figure is very similar to a traditional UML class diagram with some minor differences in notation. RML captures all the relevant aspects of the sofware, the system (hardware and network), and the deployment which specifies how the software will be executed on the selected system.  Using ROSMOD, developers can create models which contain instances of the objects defined in RML. This approach of using a domain specific modeling language to define the semantics of the models allows us to check and enforce the models for correctness.  Furthermore, this approach allows us to develop generic utilities or extensions, called \emph{plugins} \cite{maroti2014next} which can act on any models created using ROSMOD, for instance generating and compiling the software automatically or automatically deploying and managing the software on the defined system. The rest of this section goes into the specific parts of the modeling language, called the metamodel, and how they define the entities in a ROSMOD Model.
 
 \begin{figure*}[ht]
 	\centering
@@ -66,275 +65,39 @@ ports or local timers. Below, we describe in detail the various aspects of this 
 
 \subsubsection{Motivation for ROSMOD Software Model}
 
+The goal of the ROSMOD software model is to provide a language to precisely model the application software. When using a DREMS-style component model, the software is primarily a collection of components, where each component is defined by its ports and timers. Building a precise model of the software has various benefits. Firstly, applying model-driven development techniques enables reuse of previously defined components i.e. a single component can be instantiated or copied or modified as required and executed on the runtime system. Secondly, the development time of the application can be reduced significantly as a large part of the runtime code can be fully generated based on templates. Lastly, a clear model of the software provides a canvas for design-time analysis. If the structural aspects of the software are captured in the model of the component assembly, and the behavioral properties of the components are encoded in the attributes of its ports and timers, then using translation rules, a design-time analysis model can be fully generated. 
+
 \subsubsection{Software Model}
 
-The \emph{Software} class in Figure \ref{fig:ROSMOD_Project} models a
-software workspace. A workspace, following ROS terminology, is a
-collection of applications that are developed and compiled together
-into binaries. Thus, each Software class can contain ROS applications,
-called \emph{Packages}, and \emph{Libraries} required for the
-applications. Packages consist of \emph{Messages}, \emph{Services} and
-\emph{Components}. Components contain a set of pointers to Libraries
-to establish dependence e.g. an \emph{ImageProcessor} component
-\emph{requires} OpenCV, an open-source computer vision
-library. Libraries are of two types: Source libraries and System
-libraries. Source libraries are standalone archives that can be
-retrieved, extracted and integrated into the software build system
-with no additional changes. System libraries are assumptions made by a
-software developer regarding the libraries pre-installed in the
-system. Here, system refers to the embedded device on which the
-component is intended to execute.
+The \emph{Software} class in Figure \ref{fig:ROSMOD_Project} models a software workspace. A workspace, following ROS terminology, is a collection of applications that are developed and compiled together into binaries. Thus, each Software class can contain ROS applications, called \emph{Packages}, and \emph{Libraries} required for the applications. Packages consist of \emph{Messages}, \emph{Services} and \emph{Components}. Components contain a set of pointers to Libraries to establish dependence e.g. an \emph{ImageProcessor} component \emph{requires} OpenCV, an open-source computer vision library. Libraries are of two types: Source libraries and System libraries. Source libraries are standalone archives that can be retrieved, extracted and integrated into the software build system with no additional changes. System libraries are assumptions made by a software developer regarding the libraries pre-installed in the system. Here, system refers to the embedded device on which the component is intended to execute.
 
-\emph{Messages} represent the ROS message description language for
-describing the data values used by the ROS publish-subscribe
-interactions. Similarly, \emph{Services} describe the ROS peer-to-peer
-request-reply interaction pattern. Each service is characterized by a
-pair of messages, \emph{request} and \emph{response}. A client entity
-can call a service by sending a request message and awaiting a
-response. This interaction is presented to the user as a remote
-procedure call. Each ROSMOD component, as described in the component
-model (Figure \ref{fig:ROSMOD_Component}), contains a finite set of
-communication ports. These ports refer to messages and services to
-concretize the communication interface. Components can also contain
-\emph{Timers} for time-triggered operation e.g. periodically sampling
-inertial measurment sensors while operating an unmanned aerial vehicle
-(UAV). Lastly, components can be characterized by
-\emph{Constraints}. Currently, ROSMOD constraints are a simple way to
-establish hardware requirements for operation e.g. fast multi-core
-processor, quadrature encoded pulse hardware, camera interface
-etc. When starting such components at runtime, ROSMOD will try to map
-each component to one of the available devices that satisfies all of
-the component's constraints. Specifying constraints for a component
-can be arbitrarily complex but currently we support simple
-feature-specific constraints e.g. \emph{This component needs a device
-	with atleast 12 open GPIO pins to enable motor control}. In such
-cases, ROSMOD will simply scan the set of devices in the hardware
-model and find a candidate host that \emph{provides} such a
-\emph{capability}.  More about the deployment infrastructure and the
-mapping of constraints to capabilities is described in
-Section~\ref{sec:Deployment_Infrastructure}.
+\emph{Messages} represent ROS message types used by publisher and subscriber ports for topic-based communication. Similarly, \emph{Services} describe the ROS peer-to-peer request-reply interaction pattern. Each service is characterized by a pair of messages, \emph{request} and \emph{response}. A client entity can call a service by sending a request message and awaiting a response. This interaction is presented to the user as a remote procedure call. Each ROSMOD component contains a finite set of communication ports. These ports refer to messages and services to concretize the communication interface. Components can also contain \emph{Timers} for time-triggered operation e.g. periodically sampling inertial measurement sensors while operating an unmanned aerial vehicle
+(UAV).
 
-All requests received by a component, via subscribers or servers, and
-all timed triggers can be prioritized. The prioritization is used
-primarily by the component scheduler and the chosen scheduling
-scheme. First-in-first-out (FIFO) scheduling of received operations
-prioritizes based on the arrival time of the requests. Priority-based
-FIFO resolves conflicts between received operations by using the
-\emph{Priority} attribute of the relevant ports. Similary,
-deadline-based schemes like the Earliest-Deadline-First (EDF) scheme
-uses the \emph{deadline} of the received operation requests to resolve
-conflicts and operate safely. The scheduling scheme and operation
-priorities within a component are important choices to make since
-these choices directly affect the efficiency and safe operation of
-components. Highly critical operations need acceptable response times
-for robotic systems to meet quality and timing specifications. This
-design criteria is our primary motivation for integrating timing and
-performance characterization techniques into our software
-specification and tool suite.  The integrated performance and timing
-measurement system allows for the logging and visualization of system
-execution traces and to show the enqueue, dequeue, and completion of
-operations being executed by the component executor thread.  As these
-operations trigger each other, these traces provide valuable feedback
-to the users about the performance and timing characteristics of the
-system, allowing the determination of performance bottlenecks and
-resource contention.
+\subsubsection{Motivation for ROSMOD System Model}
+
+The goal of the ROSMOD system model is to provide a language to precisely model the network of computers capable of executing applications defined in the software model. The system model is necessary for both compilation and deployment. The software defined in the software model, and therefore the generated source code must be compiled down to a binary for runtime execution. An accurate model of the available runtime system provides necessary information for cross-compilation requirements and any integrated runtime load balancing features. The deployment framework can use the system model to find a suitable candidate device onto which the application processes are deployed. To automate this process, the system model must capture fine-grained details about each available device, including information such as the IP address, the user permissions, and means to access the device e.g. Secure Shell Protocol (SSH) \cite{ylonen2006secure}. As with the software model, this system model can be reused in all ROSMOD projects for a given hardware assembly, such as the RCPS tested. 
 
 \subsubsection{System Model} 
 
-A \emph{System Model} completely describes the hardware architecture
-of a system onto which the software can be deployed. A ROSMOD Project
-contains one or more \emph{Systems}. Each System contains one or
-more \emph{Hosts}, one or more \emph{Users}, one or more
-\emph{Networks}, and one or more \emph{Links}.  A host can contain one
-or more \emph{Network Interfaces}, which connect through a link to a
-network.  On this link the host's interface is assigned an IP, which
-matches the subnet and netmask specification of the network.
-Additionally, a host has a set of references to users, which define
-the user-name, home directory, and ssh-key location for that user.
-The host itself has attributes which determine what kind of processor
-architecture it has, e.g. \emph{armv7l}, what operating system it is
-running, and lastly a combination of Device ID and Device ID Command
-which provide an additional means for specifying the type of host (and
-a way to determine it), for instance specifying the difference between
-a BeagleBone Black and an NVIDIA Jetson TK1 which both have armv7l
-architecture but can be separated by looking at the model name in the
-device tree.  Finally, a host may contain zero or more
-\emph{Capabilities} to which the component constraints (described in
-the previous section) are mapped.  The final relevant attribute is the
-\emph{Network Profile} attribute of a link.  Using the network
-profile, which is specified as a time-series of bandwdith and latency
-values, we can configure the links of the network using the Linux TC
-to enforce time-varying bandwidth and latency.  This network
-configuration is useful when running experiments on labratory hardware
-for which the network is not representative of the deployed system's
+A \emph{System Model} completely describes the hardware architecture of a system onto which the software can be deployed. A ROSMOD Project contains one or more \emph{Systems}. Each System contains one or more \emph{Hosts}, one or more \emph{Users}, one or more \emph{Networks}, and one or more \emph{Links}.  A host can contain one or more \emph{Network Interfaces}, which connect through a link to a network.  On this link the host's interface is assigned an IP address, which matches the subnet and netmask specification of the network. Additionally, a host has a set of references to users, which define the user-name, home directory, and ssh-key location for that user. The host itself has attributes which determine what kind of processor architecture it has, e.g. \emph{armv7l}, what operating system it is running, and lastly a combination of Device ID and Device ID Command which provide an additional means for specifying the type of host (and a way to determine it), for instance specifying the difference between a BeagleBone Black and an NVIDIA Jetson TK1 which both have armv7l architecture but can be separated by looking at the model name in the device tree.  Finally, a host may contain zero or more \emph{Capabilities} to which the component constraints (described in the previous section) are mapped.  The final relevant attribute is the \emph{Network Profile} attribute of a link. Using the network profile, which is specified as a time-series of bandwidth and latency values, we can configure the links of the network using the Linux TC to enforce time-varying bandwidth and latency. This network configuration is useful when running experiments on laboratory hardware for which the network is not representative of the deployed system's
 network.
 
 \subsubsection{Deployment and Experimentation}
 
-\emph{Deployment} refers to the act of starting application processes
-on candidate hosts, where each host can provide for and satisfy all of
-the constraints of the processes e.g. general purpose input/output
-(GPIO) ports, CPU speed etc. Therefore, a deployment is a mapping
-between application processes and system hosts on which the
-application processes run.  The ROSMOD Deployment Model makes this map
-a loose coupling to enable rapid testing and experimentation. Each
-Deployment consists of a set of \emph{Containers}. Each container,
-conceptually, is a set of processes that need to be
-collocated. Containers also ensure that no process outside a container
-is deployed along with the container once it has been mapped to a
-host. Each container, therefore, contains a set of \emph{Nodes} (ROS
-terminology for processes). In each node, application developers
-instantiate one or more components previously defined in the Software
-model. Following the ROSMOD component model, each such instance maps to an
-executor thread that executes the operations in the component's
-operation queue.  Note that the same component can be instantiated
-multiple times even within the same node. Also note the container is
-not mapped to a specific host within the deployment model, but rather
-is automatically mapped to a host by the deployment infrastructure
-within an \emph{Experiment}.
+\emph{Deployment} refers to the act of starting application processes on candidate hosts, where each host can provide for and satisfy all of the constraints of the processes e.g. general purpose input/output (GPIO) ports, CPU speed etc. Therefore, a deployment is a mapping between application processes and system hosts on which the application processes run. The ROSMOD Deployment Model makes this map a loose coupling to enable rapid testing and experimentation. Each Deployment consists of a set of \emph{Containers}. Each container, conceptually, is a set of processes that need to be
+colocated. Containers also ensure that no process outside a container is deployed along with the container once it has been mapped to a host. Each container, therefore, contains a set of \emph{Nodes} (ROS terminology for processes). In each node, application developers instantiate one or more components previously defined in the Software model. Following the ROSMOD component model, each such instance maps to an executor thread that executes the operations in the component's operation queue.  Note that the same component can be instantiated multiple times even within the same node. Also note the container is not mapped to a specific host within the deployment model, but rather is automatically mapped to a host by the deployment infrastructure within an \emph{Experiment}.
 
-As shown in Figure \ref{fig:ROSMOD_Project}, each project supports a
-set of \emph{Experiments}. Each experiment has pointers to one System
-model and one Deployment model. The system model provides the set of
-available devices and the deployment model provides the set of
-containers, where each container contains a set of component
-constraints that need satisfying (the union of all the container's
-nodes' component constraints). ROSMOD uses these sets to find a
-suitable mapping and then deploys the containers on the chosen host
-devices, if a mapping can be found which satisfies all the constraints
-of all the containers.  When the deployment infrastructure selects
-hosts from the system model for mapping, it first checks to see which
-of the system model's hosts are 1) reachable, 2) have valid login
-credentials, 3) have the correct architecture, operating system, and
-device ID, and 3) are not currently running any other compilation or
-experiment processes from any other user.  In the case that there are
-no available hosts in the system or the deployment's constraints
-cannot be satisfied, the infrastructure informs the user.  Upon
-successful deployment of the experiment, the infrastructure
-automatically stores the specific mapping relevant to the deployed
-experiment for later management and destruction. When such experiments
-are stopped, ROSMOD retrieves the component logs from the hosts and
-displays results. We are currently working on improving our runtime
-monitoring features to enable real-time component execution plots and
-network performance measurements at runtime.
+As shown in Figure \ref{fig:ROSMOD_Project}, each project supports a set of \emph{Experiments}. Each experiment has pointers to one System model and one Deployment model. The system model provides the set of available devices and the deployment model provides the set of containers, where each container contains a set of component constraints that need satisfying (the union of all the container's nodes' component constraints). ROSMOD uses these sets to find a suitable mapping and then deploys the containers on the chosen host devices, if a mapping can be found which satisfies all the constraints of all the containers.  When the deployment infrastructure selects hosts from the system model for mapping, it first checks to see which of the system model's hosts are 1) reachable, 2) have valid login credentials, 3) have the correct architecture, operating system, and device ID, and 3) are not currently running any other compilation or experiment processes from any other user.  In the case that there are no available hosts in the system or the deployment's constraints cannot be satisfied, the infrastructure informs the user. Upon successful deployment of the experiment, the infrastructure automatically stores the specific mapping relevant to the deployed experiment for later management and destruction. When such experiments are stopped, ROSMOD retrieves the component logs from the hosts and displays results. 
 
-Such a loose coupling between the deployment model and the system
-model, along with the infrastructure automatically mapping the
-containers to valid, unused hosts enables the execution of the same
-deployment onto subsets of a large system, for instance running many
-instances of the same deployment as separate experiments in parallel
-on a large cluster of embedded devices.  Additionally such a loose
-coupling enables redeployment onto a completely different system by
-simply changing the experiment's system model reference; the
-infrastructure will automatically verify that the new system meets the
-constraints of the deployment and has available hosts.
-
-\subsection{Software Infrastructure} 
-
-The ROSMOD software infrastructure provides the user with the tools to
-generate source code corresponding to the software model, compile that
-source code to produce binaries that can run on the hosts defined in
-the system models, and also generate documentation for the software
-and associated libraries.
-
-\subsubsection{ROSMOD Workspace}
-\label{sec:code_generation}
-
-The Software generator in ROSMOD is a plugin that produces a complete
-ROSMOD workspace. The application software, as defined in the model,
-is a collection of packages, each with messages, services, components
-and required libraries. When invoking the workspace code generation,
-ROSMOD first generates the ROSMOD packages including C++ classes for
-each component, package-specific messages and services, and logging
-and XML parser-specific files. Then, for each external library, the
-URL of the library archive is used to fetch the library and inject
-this code as a package into the generated workspace. Assuming the
-library is stable and the target devices have the necessary system
-libraries, this generated code compiles without errors out of the
-box. The meta-model for the software is fully specified to include
-attributes for user code, the business logic for the components'
-operations, additional class members, etc. Because these pieces of
-user code are all captured within the model, they are placed into the
-proper sections of the generated code.  For this reason, it is not
-necessary to alter the generated code before compilation into
-binaries.  If the user chooses, the software infrastructure for ROSMOD
-will automatically determine the different types of hosts in all the
-current project's system models, determine which of those hosts are
-available that match the model specifications and will compile the
-source code into binaries for those architectures.  The compilation is
-performed as a remote procedure on the host; therefore the compilation
-will not select hosts which are currently running other compilation or
-deployment processes.  To enable the user to multi-task, compilation
-is an asynchronous non-blocking process allowing further interaction
-with the model or other plugins.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=\textwidth]{Code_Generation.png}
-	\caption{Workspace Code Generation.  In this figure, the
-		\emph{image\_processor} package and its children messages
-		(red), components (blue), and services (purple) are
-		generated into a catkin package for compilation.  The msg
-		and srv files are automatically filled out from the
-		definitions of the messages and services, as are the header
-		and source files for the components.}
-	\label{fig:Code_Generation}
-\end{figure}
-\FloatBarrier
-
-Figure \ref{fig:Code_Generation} shows the generated code tree for an
-\emph{image\_processor} package. This package has three components -
-\emph{userDisplay}, \emph{imageProcessor}, \emph{imageSensor}, and
-associated messages and services. For each component, ROSMOD generates
-a unique class that inherits from a base \emph{Component} class and
-contains member objects for every component port and timer. Unlike
-earlier versions of ROSMOD, this generated code is not a
-skeleton. Rather, it includes all of the operation execution code
-embedded in the model. So, all changes to this business logic code are
-done from the model, instead of modifying a skeleton. This ensures
-code consistency and avoids synchronization issues between the model
-and the generated code.  Furthermore, this enables faster training and
-use of the ROSMOD tool suite, since users no longer need to know into
-what folders and files the generated code goes.  In the competition
-version of ROSMOD, a user would have to generate the skeleton code for
-the workspace, open up the relevant files manually, find the specific
-places into which to place the business logic for the operations and
-added members, add extra library code into the generated build files
-manually, and then inform the infrastructure that the code was ready
-for compilation.  This process was error prone and required detailed
-knowledge of what files are generated, how to integrate libraries into
-the build system, and other details that were specific to both ROS'
-package system and our component implmentation.  In the current
-version of ROSMOD, the user is given direct access to only the code
-relevant for the specific object (component, message, service) they
-are editing.  Furthermore, the library system now enables the creation
-and use of libraries without knowledge of how the underlying ROSMOD
-build system works.
+Such a loose coupling between the deployment model and the system model, along with the infrastructure automatically mapping the containers to valid, unused hosts enables the execution of the same
+deployment onto subsets of a large system, for instance running many instances of the same deployment as separate experiments in parallel on a large cluster of embedded devices.  Additionally such a loose coupling enables redeployment onto a completely different system by simply changing the experiment's system model reference; the infrastructure will automatically verify that the new system meets the constraints of the deployment and has available hosts.
 
 \subsection{Deployment Infrastructure}
 \label{sec:Deployment_Infrastructure}
 
-The workflow for software deployment is as shown Figure
-\ref{fig:workflow}. After the user has generated and compiled the
-software model into binary executables, they can run an experiment
-that has valid deployment model and system model references. Every
-ROSMOD workspace is generated with an additional \emph{node}
-package. This builds a generic node executable that can dynamically
-load libraries. When the software infrastructure generates and
-compiles the source code for the software model, the components are
-compiled into dynamically loadable libraries, one for each component
-definition along with a single executable corresponding to the generic
-node package. The first step the deployment infrastructure performs
-when running an experiment is generating the XML files which contain
-metadata about each ROS node modeled in the ROSMOD Deployment
-Model. This metadata includes the component instances in each node and the
-appropriate component libraries to be loaded. Based on the XML file
-supplied to the node executable, the node will behave as one of the
-ROS nodes in the deployment model. This allows for a reusable
-framework where a generic executable (1) loads an XML file, (2)
-identifies the component instances in the node, (3) finds the
-necessary component libraries to load and (4) spawns the executor
-threads bound to each component.
+The workflow for software deployment is as shown Figure \ref{fig:workflow}. After the user has generated and compiled the software model into binary executables, they can run an experiment that has valid deployment model and system model references. Every ROSMOD workspace is generated with an additional \emph{node} package. This builds a generic node executable that can dynamically load libraries. When the software infrastructure generates and compiles the source code for the software model, the components are compiled into dynamically loadable libraries, one for each component
+definition along with a single executable corresponding to the generic node package. The first step the deployment infrastructure performs when running an experiment is generating the XML files which contain metadata about each ROS node modeled in the ROSMOD Deployment Model. This metadata includes the component instances in each node and the appropriate component libraries to be loaded. Based on the XML file supplied to the node executable, the node will behave as one of the ROS nodes in the deployment model. This allows for a reusable framework where a generic executable (1) loads an XML file, (2) identifies the component instances in the node, (3) finds the necessary component libraries to load and (4) spawns the executor threads bound to each component.
 
 \begin{figure}[ht]
 	\centering
@@ -344,31 +107,10 @@ threads bound to each component.
 \end{figure}
 \FloatBarrier
 
-The reason for having the components be libraries that are loaded at
-run-time by a node executable is 1) to help enforce separation between
-each component's code, 2) to shorten the compilation time (which may
-be quite long for embedded processors and complex models), and most
-importantly 3) to enable the ability for users to change the mapping
-of component instances to processes without the need to recompile any
-of the code.  Because ROSMOD is focused on the rapid development and
-deployment of reusable software components, we designed the
-infrastructure to allow users to experiment with which components are
-collocated within processes dynamically and rapidly iterate through
-several scenarios and experiments without having to wait for code
-compilations between experiments.  Finally, such a component-based
-deployment framework enables unit testing and integration testing in a
-very well-defined manner for the software components.  If an error
-occurs during the execution of an application on a system, the user
-can easily and quickly break the deployment down into sub-deployments
-for unit-testing of only the relevant components to determine the
-source of the error.
+The reason for having the components be libraries that are loaded at run-time by a node executable is 1) to help enforce separation between each component's code, 2) to shorten the compilation time (which may be quite long for embedded processors and complex models), and most importantly 3) to enable the ability for users to change the mapping of component instances to processes without the need to recompile any of the code.  Because ROSMOD is focused on the rapid development and deployment of reusable software components, we designed the infrastructure to allow users to experiment with which components are collocated within processes dynamically and rapidly iterate through several scenarios and experiments without having to wait for code compilations between experiments.  Finally, such a component-based deployment framework enables unit testing and integration testing in a very well-defined manner for the software components.  If an error occurs during the execution of an application on a system, the user can easily and quickly break the deployment down into sub-deployments for unit-testing of only the relevant components to determine the source of the error.
 
-In the above architecture, the deployment needs three primary
-ingredients: (1) the generic node executable, (2) dynamically loadable
-component libraries, and (3) an XML file for each ROS node in the
-deployment model. For each new node added to the deployment model, by
-merely regenerating the XML files, we can establish a new
-deployment. The ROS workspace is rebuilt only if new component
+In the above architecture, the deployment needs three primary ingredients: (1) the generic node executable, (2) dynamically loadable component libraries, and (3) an XML file for each ROS node in the
+deployment model. For each new node added to the deployment model, by merely regenerating the XML files, we can establish a new deployment. The ROS workspace is rebuilt only if new component
 definitions are added to the Software Model. This architecture not
 only accelerates the development process but also ensures a separation
 between the Software Model (i.e. the application structure) and
@@ -403,17 +145,15 @@ and removing the saved experiment mapping from the model.
 
 \section{Evaluation of Timing Analysis Results}
 
-Experimental validation should demonstrate that online measurements of the real-time system match with the timing analysis results in a way that the timing analysis results are always close but conservative. One of the biggest assumptions in our CPN work is the knowledge of worst-case execution times of the individual steps in the component operations. We have previously designed \cite{SEUS} a business-logic modeling grammar that captures the temporal behavior of component operations, especially WCET metrics for the different code blocks inside an operation. For example, consider a simple client-server example as shown in Figure \ref{fig:rmi_application}. The client component is periodically triggered by an internal timer and executes a synchronous remote method invocation to a remote server component. The interaction here demands that the client component be blocked for the duration of time it takes the server to receive the operation, process its message queue, execute the relevant callback, and respond with output. 
+Experimental validation should demonstrate that online measurements of the real-time system match with the timing analysis results in a way that the timing analysis results are always close but conservative. The goal of the analysis is to obtain a fairly accurate estimation of the runtime behavior i.e. estimates of component timing behavior that isn't so conservative that the results are useless. If the real execution of a specific operation takes 100 milliseconds and the timing analysis is 135 milliseconds, then this is close but conservative. On the other hand, if the design-time analysis predicts the execution time to be in the order of seconds or tens of seconds, then the analysis is conservative but grossly over-estimate. One of the biggest assumptions in our CPN work is the knowledge of worst-case execution times of the individual steps in the component operations. We have previously designed \cite{SEUS} a business-logic modeling grammar that captures the temporal behavior of component operations, especially WCET metrics for the different code blocks inside an operation. For example, consider a simple client-server example as shown in Figure \ref{fig:rmi_application}. The client component is periodically triggered by an internal timer and executes a synchronous remote method invocation to a remote server component. The interaction here demands that the client component be blocked for the duration of time it takes the server to receive the operation, process its message queue, execute the relevant callback, and respond with output. 
 
 Note that in Figure \ref{fig:rmi_application}, we only annotate isolated code blocks that take a fixed amount of execution time on a specific hardware architecture. These are the only measurements that we can reliably make with repeated testing and instrumentation. The client-side blocking delay is not measured because the number of factors responsible for this delay are numerous e.g. server's message queue state, scheduling non-determinism, network delays etc. In order to be able to predict this delay, we need to use state space analysis and search through the tree of possible executions to identify the worst-case blocking delay. This also means that our CPN model must capture and account for such delay-causing factors. 
-
-WCET of component operational steps needs to be measured by having the component operation execute at real-time priority with no other component threads intervening this process. This measurement gives us a \emph{pure execution time} of the code block. The process must be repeated for all component operations to obtain meaningful worst-case estimates that are tailored to the target platform. Obtaining the WCET values by this method is not only more realistic but also an accurate representation of the target system. Once these individual numbers are obtained, the values are plugged into the CPN through our business-logic models. 
 
 The remainder of this section presents various primitive interaction patterns and assemblies that have been evaluated. The results are restricted to simple cases, though we have tested on medium-to-large scale examples spanning 25-30 computing nodes, and with up to a 100 components. The scalability of our model, however, is not within the scope of this paper as we have previously evaluated this metric \cite{SEUS}. As mentioned earlier, in all of our tests, we use the ROS \cite{ROS} middleware and our ROSMOD \cite{kumarROSMOD} component model. 
 
 \subsection{Understanding the CPN Analysis Plots}
 
-By performing state space analysis, we are analyzing a bounded tree of possibilities. A tree of execution traces provided by the non-deterministic execution of our timing analysis model. By identifying the worst-case execution trace in this tree, we're able to obtain a suitable conservative candidate execution that represents a possible behavior. Once this trace is identified, we plot the execution time behavior of all components in this trace. This pattern is followed in all of the following plots. Figure \ref{fig:understanding-the-plots} describes the analysis plots presented later in this chapter. Each subplot in this figure represents the execution of a component operation. The x axis of this plot represents the analysis time, and the y axis represents the execution time of the operation. Each execution is shown as a rectangular pulse, the amplitude of which is the execution time of the operation. The rising edge of the pulse represents the enqueue time stamp of the operation i.e. the time instant when a request for this operation was enqueued onto the component message queue. The falling edge of the pulse represents the completion time stamp i.e. the time instant when the component executor thread has completed execution of the operation and is ready to service the next request waiting in the queue. Since the execution time of the operation is calculated from the enqueue time instant, the plot can have intersecting pulses, as shown in the second subplot. Here a new operation request is enqueued onto the message queue while an existing instance of the operation request is being executed by the component executor thread. 
+By performing state space analysis, we are analyzing a bounded tree of possible component behaviors. By identifying the worst-case execution trace in this tree, we're able to obtain a suitable conservative candidate execution that represents a possible behavior. Once this trace is identified, we plot the execution time behavior of all components in this trace. This pattern is followed in all of the following plots. Figure \ref{fig:understanding-the-plots} describes the analysis plots presented later in this chapter. Each subplot in this figure represents the execution of a component operation. The x axis of this plot represents the analysis time, and the y axis represents the execution time of the operation. Each execution is shown as a rectangular pulse, the amplitude of which is the execution time of the operation. The rising edge of the pulse represents the enqueue time stamp of the operation i.e. the time instant when a request for this operation was enqueued onto the component message queue. The falling edge of the pulse represents the completion time stamp i.e. the time instant when the component executor thread has completed execution of the operation and is ready to service the next request waiting in the queue. Since the execution time of the operation is calculated from the enqueue time instant, the plot can have intersecting pulses, as shown in the second subplot. Here a new operation request is enqueued onto the message queue while an existing instance of the operation request is being executed by the component executor thread. 
 
 \begin{figure}[h]
 	\centering
@@ -447,6 +187,20 @@ Figure \ref{fig:client-server-cpn} shows the execution time plot derived from ou
 \end{figure}
 \FloatBarrier
 
+Table \ref{tbl:client-server} shows a summary of these results. Similar tables are included as part of all other experiments in this section. 
+
+\begin{table}[]
+\centering
+\caption{Client Server Example - Summary of Results}
+\label{tbl:client-server}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}}  & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental \\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
+\begin{tabular}[c]{@{}c@{}}Power\\ Operation\end{tabular}          & Server                                                            & 829.155041                                                                                  & 852.0                                                                                                & 2000                                                             \\ \hline
+\begin{tabular}[c]{@{}c@{}}Client\\ Timer\\ Operation\end{tabular} & Client                                                            & 1121.306376                                                                                 & 1152.0                                                                                               & 3000                                                             \\ \hline
+\end{tabular}
+\end{table}
+
 \subsubsection{Bad Designs}
 
 The goal of our CPN timing analysis is to identify bad component designs, unacceptable execution times, response times etc. There are various ways in which we can accidentally design a poorly performing client-server interaction. In the above case, the server operation takes 852 ms in its worst-case before responding to the client and unblocking the client executor thread. If instead, the server operation took 8.5 seconds, the client component will stay blocked for 10 times longer and the client timer expiries will not be serviced faster than the timer periods. This shows a simple use-case where the currently blocked client timer operation is starving subsequent timer expiries from being handled promptly. Figure \ref{fig:client-server-bad-case} shows our CPN predictions after simply changing this server execution time. 
@@ -473,7 +227,7 @@ Similar to the earlier example, consider the ROSMOD publish-subscribe interactio
 \end{figure}
 \FloatBarrier
 
-Figure \ref{fig:publish-subscribe} shows our testbed observations and Figure \ref{fig:publish-subscribe-cpn} shows our CPN analysis results. As evident, the CPN results closely match and validate this sample. 
+Figure \ref{fig:publish-subscribe} shows our testbed observations and Figure \ref{fig:publish-subscribe-cpn} shows our CPN analysis results. As evident, the CPN results closely match and validate this sample. Table \ref{tbl:publish_subscribe} summarizes the results.
 
 \begin{figure}[h]
 	\centering
@@ -482,6 +236,18 @@ Figure \ref{fig:publish-subscribe} shows our testbed observations and Figure \re
 	\label{fig:publish-subscribe-cpn}
 \end{figure}
 \FloatBarrier
+
+\begin{table}[]
+\centering
+\caption{Publish Subscribe Example -- Summary of Results}
+\label{tbl:publish_subscribe}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
+\begin{tabular}[c]{@{}c@{}}Subscriber\\ Port\\ Operation\end{tabular} & Subscriber & 194.718958 & 200.0 & 1000 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Publisher\\ Timer\\ Operation\end{tabular} & Publisher & 249.2155 & 252.0 & 1000 \\ \hline
+\end{tabular}
+\end{table}
 
 \subsubsection{Bad Designs}
 
@@ -509,7 +275,7 @@ In the past \cite{kumar2014colored}, we have used a \emph{Trajectory Planner} de
 \end{figure}
 \FloatBarrier
 
-Figure \ref{fig:trajectory-planner} shows the execution time plot of this sample where the sensor updates happen once a second. 
+Figure \ref{fig:trajectory-planner} shows the execution time plot of this sample where the sensor updates happen once a second. Figure \ref{fig:trajectory-planner-cpn} presents the CPN analysis plot and Table \ref{tbl:trajectory-planner} summarizes the results.
 
 \begin{figure}[h]
 	\centering
@@ -519,7 +285,7 @@ Figure \ref{fig:trajectory-planner} shows the execution time plot of this sample
 \end{figure}
 \FloatBarrier
 
-This is a common interaction pattern in Cyber-Physical systems since embedded sensors are updated at a much higher frequency than a path planning entity. Thus, the planner can query the sensor at a lower rate to sample the sensor state. In this example, the planner is matching the frequency of the sensor since the execution cost is low. However, when more components are added to this deployment, the planner would have to fetch sensor state less frequently so as to not affect other system-level deadlines.  
+This is a common interaction pattern in Cyber-Physical systems since embedded sensors are updated at a much higher frequency than a path planning entity. Thus, the planner can query the sensor at a lower rate to sample the sensor state. In this example, the planner is matching the frequency of the sensor since the execution cost is low. However, when more components are added to this deployment, the planner would have to fetch sensor state less frequently so as to not affect other system-level deadlines. 
 
 \begin{figure}[h]
 	\centering
@@ -528,6 +294,19 @@ This is a common interaction pattern in Cyber-Physical systems since embedded se
 	\label{fig:trajectory-planner-cpn}
 \end{figure}
 \FloatBarrier
+
+\begin{table}[]
+	\centering
+	\caption{Trajectory Planner Example -- Summary of Results}
+	\label{tbl:trajectory-planner}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
+		\begin{tabular}[c]{@{}c@{}}Sensor\\ Timer\\ Operation\end{tabular} & Sensor & 199.00875 & 199.05 & 400 \\ \hline
+		\begin{tabular}[c]{@{}c@{}}Compute\\ Operation\end{tabular} & Sensor & 445.373417 & 448.95 & 600 \\ \hline
+		\begin{tabular}[c]{@{}c@{}}State\\ Subscriber\\ Operation\end{tabular} & \begin{tabular}[c]{@{}c@{}}Trajectory\\ Planner\end{tabular} & 446.874334 & 450.95 & 1000 \\ \hline
+	\end{tabular}
+\end{table}
 
 If the sensor update frequency is increased to 100 ms, the sensor begins to notify the planner at a much higher frequency than expected. If there is no down-sampling on the planner's side, every single update will be handled by the planner, leading to dangerous queue size growth on the planner. Figure \ref{fig:trajectory-planner-bad-case} shows this deployment, as observed in the CPN analysis. 
 
@@ -543,9 +322,7 @@ If the sensor update frequency is increased to 100 ms, the sensor begins to noti
 
 Time-triggered operations are an integral part of our component model. DREMS components are dormant by default. A timer has to trigger a inactive component for all subsequent interactions to happen. Since the DREMS component model supports various scheduling schemes on a single component message queue, this following test evaluates a priority first-in first-out (PFIFO) scheme. Multiple timers are created in a single component, each with a unique priority and period. A timer with a high frequency is assigned a high priority. Figure \ref{fig:periodic-timers} shows our experimental observations on a 5-timer example. 
 
-Since ROSMOD components are associated with a single executor thread and component operations are also non-preemptive, a low-priority operation could theoretically run forever, starving a higher priority operation from ever executing, leading to deadline violations e.g. \emph{Timer\_1\_operation} can affect all other higher priority timers. Figure \ref{fig:periodic-timers-cpn} shows our CPN prediction where such a scenario is evident. It can be seen that \emph{Timer\_5\_operation}, the timer with the highest priority is periodically seeing spikes in execution time, courtesy of other lower priority operations consuming CPU without preemption.
-
-It must be noted here that the execution time values assigned to each timer operation in our CPN is the pure execution time i.e. the time taken for each timer operation to execute on the target CPU without interruption. This is the case for all operational execution times injected into the analysis model. If this is not done, then due to scheduling delays and interaction patterns, the CPN results will become gross overestimates. 
+Since ROSMOD components are associated with a single executor thread and component operations are also non-preemptive, a low-priority operation could theoretically run forever, starving a higher priority operation from ever executing, leading to deadline violations e.g. \emph{Timer\_1\_operation} can affect all other higher priority timers. Figure \ref{fig:periodic-timers-cpn} shows our CPN prediction where such a scenario is evident. It can be seen that \emph{Timer\_5\_operation}, the timer with the highest priority is periodically seeing spikes in execution time, courtesy of other lower priority operations consuming CPU without preemption. Table \ref{tbl:periodic-timers} summarizes the results.
 
 \begin{figure}[h]
 	\centering
@@ -562,6 +339,21 @@ It must be noted here that the execution time values assigned to each timer oper
 	\label{fig:periodic-timers-cpn}
 \end{figure}
 \FloatBarrier
+
+\begin{table}[]
+	\centering
+	\caption{Periodic Timers -- Summary of Results}
+	\label{tbl:periodic-timers}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
+		Timer\_1                                                          & Component\_1                                                      & 243.160041                                                                & 253.0                                                                        & 300                                                              \\ \hline
+		Timer\_2                                                          & Component\_1                                                      & 122.4165                                                                  & 138.0                                                                        & 150                                                              \\ \hline
+		Timer\_3                                                          & Component\_1                                                      & 62.789916                                                                 & 69.5                                                                         & 75                                                               \\ \hline
+		Timer\_4                                                          & Component\_1                                                      & 28.962792                                                                 & 29.54                                                                        & 37.5                                                             \\ \hline
+		Timer\_5                                                          & Component\_1                                                      & 5.15275                                                                   & 9.89                                                                         & 10                                                               \\ \hline
+	\end{tabular}
+\end{table}
 
 \subsection{Long-Running Operations}
 \label{sec:long_running_operations}

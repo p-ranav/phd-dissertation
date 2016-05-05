@@ -26,7 +26,6 @@ Repeated entry---line 6796 of file 00-Dissertation.bib
  :                 ,
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in BBB
-Warning--to sort, need author or key in Simulink
 Warning--to sort, need author or key in CubeSat
 Warning--to sort, need author or key in CubeSat_Mars
 Warning--empty journal in abrahammathworks
@@ -41,4 +40,5 @@ Warning--empty journal in reineke2006definition
 Warning--empty year in reineke2006definition
 Warning--empty journal in shelleyacl2
 Warning--empty year in shelleyacl2
+Warning--empty journal in ylonen2006secure
 (There were 6 error messages)

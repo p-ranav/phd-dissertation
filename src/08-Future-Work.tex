@@ -1,4 +1,7 @@
-\chapter{Future Work and Conclusions}
+\chapter{Summary and Future Work}
+
+% Summarize Contributions first
+\emph{Summarize contributions first}
 
 All of the results presented in this dissertation make an important assumption about the network -- the network resources available to each component is much larger than the requirements of the application i.e. there are no buffering delays on the network queues when components periodically produce data. The current analysis model, in this respect, is quite lacking. When a component publishes a message on a topic, the analysis immediately generates a reception message that waits to enqueue on the receiver's message queue. In reality, this interaction could be a lot more involved -- the published message is sent to the kernel network queue on the sender's side and removed from this queue following a data production \emph{profile} i.e. available bandwidth as a function of time. When dequeued, the packets take a finite worst-case transmission time before being noticed on the receiver's side. The buffering delays on the sender's side and the transmission time on the network are completely ignored by the timing analysis model. In order to improve on this design, we have attempted to integrate existing Network Calculus-based analysis methods \cite{ISIS_F6_CYPHY:14} into our CPN. Specifically, a place is added to model the \emph{Network Queue} and a \emph{Dequeue} transition fires when the network is ready to transport more packets from the sender. The dequeuing follows a strict network profile and ceases transmission when the data production rate is larger than the available bandwidth. 
 
