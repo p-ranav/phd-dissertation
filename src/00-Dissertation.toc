@@ -6,93 +6,87 @@
 \flushleft Chapter
 \contentsline {chapter}{\numberline {I}Introduction}{1}{chapter.I}
 \contentsline {chapter}{\numberline {II}Fundamentals}{7}{chapter.II}
-\contentsline {chapter}{\numberline {III}Related Research}{11}{chapter.III}
-\contentsline {section}{\numberline {3.1}General Analysis Methodologies}{11}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Testing and Evaluation}{11}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Simulation}{14}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Formal Analysis Methods}{16}{subsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.3.1}Model Checking}{18}{subsubsection.3.1.3.1}
-\contentsline {subsubsection}{\numberline {3.1.3.2}Theorem Proving}{20}{subsubsection.3.1.3.2}
-\contentsline {subsection}{\numberline {3.1.4}Static Code Analysis}{21}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}Fundamental Timing Analysis Tools}{24}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Cheddar Real-Time Scheduling Framework}{24}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}UPPAAL}{25}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}TIMES}{26}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}System-level Timing Analysis Methodologies}{27}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Petri net-based Timing Analysis for Concurrent Systems}{27}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Example High-level Petri net Tool: CPN Tools}{29}{subsubsection.3.3.1.1}
-\contentsline {subsection}{\numberline {3.3.2}Analyzing AADL models with Petri nets}{30}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Translating AADL models to Petri nets: }{31}{subsubsection.3.3.2.1}
-\contentsline {subsection}{\numberline {3.3.3}Analyzing AADL Models with Timed Petri nets}{33}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Mapping AADL Models to Analysis Repository - MoSaRT Framework}{34}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}MAST: Modeling and Analysis Suite}{35}{subsection.3.3.5}
-\contentsline {subsubsection}{\numberline {3.3.5.1}MAST Modeling Methodology}{36}{subsubsection.3.3.5.1}
-\contentsline {subsection}{\numberline {3.3.6}Verification in AutoFocus 3}{38}{subsection.3.3.6}
-\contentsline {chapter}{\numberline {IV}Design Model: Distributed Managed Systems (DREMS)}{41}{chapter.IV}
-\contentsline {section}{\numberline {4.1}DREMS Component Model}{41}{section.4.1}
-\contentsline {section}{\numberline {4.2}Component Execution Semantics}{43}{section.4.2}
-\contentsline {section}{\numberline {4.3}Temporal Partition Scheduler}{45}{section.4.3}
-\contentsline {chapter}{\numberline {V}Colored Petri net-based Modeling Methodology}{48}{chapter.V}
-\contentsline {section}{\numberline {5.1}Problem Statement}{48}{section.5.1}
-\contentsline {paragraph}{System Assumptions:}{48}{section*.4}
-\contentsline {section}{\numberline {5.2}Colored Petri Net-based Analysis Model}{50}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Model of Time}{53}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Modeling Temporal Partitioning}{54}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Modeling Component Thread Behavior}{55}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Modeling Component Operations}{57}{subsection.5.2.4}
-\contentsline {subsection}{\numberline {5.2.5}Modeling Component Interactions}{61}{subsection.5.2.5}
-\contentsline {subsection}{\numberline {5.2.6}Modeling Timers}{62}{subsection.5.2.6}
-\contentsline {section}{\numberline {5.3}Modeling Component Operation Business Logic}{64}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Problem Statement}{64}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Challenges}{64}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Outline of Solution}{65}{subsection.5.3.3}
-\contentsline {chapter}{\numberline {VI}State Space Analysis and Verification}{70}{chapter.VI}
-\contentsline {subsection}{\numberline {6.0.1}Searching the State Space}{73}{subsection.6.0.1}
-\contentsline {subsection}{\numberline {6.0.2}Deadline Violations}{74}{subsection.6.0.2}
-\contentsline {subsection}{\numberline {6.0.3}System-wide Deadlocks}{75}{subsection.6.0.3}
-\contentsline {subsection}{\numberline {6.0.4}Response-time Analysis}{76}{subsection.6.0.4}
-\contentsline {subsection}{\numberline {6.0.5}Incomplete Designs}{77}{subsection.6.0.5}
-\contentsline {section}{\numberline {6.1}Modeling and Analysis Improvements}{78}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Problem Statement}{78}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Outline of Solution}{78}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Handling Time}{80}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Distributed Deployment}{83}{subsection.6.1.4}
-\contentsline {section}{\numberline {6.2}Investigating Advanced State Space Analysis Methods}{86}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Problem Statement}{86}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Outline of Solution}{86}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Evaluation of Solution}{87}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Contributions}{88}{subsection.6.2.4}
-\contentsline {chapter}{\numberline {VII}Experimental Evaluation}{92}{chapter.VII}
-\contentsline {subsection}{\numberline {7.0.1}Challenges}{92}{subsection.7.0.1}
-\contentsline {section}{\numberline {7.1}Resilient Cyber-Physical Systems (RCPS) Testbed}{94}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Architecture}{94}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}ROSMOD Software Infrastructure}{95}{section.7.2}
-\contentsline {subsubsection}{\numberline {7.2.0.1}ROSMOD Modeling Language}{96}{subsubsection.7.2.0.1}
-\contentsline {subsubsection}{\numberline {7.2.0.2}Motivation for ROSMOD Software Model}{98}{subsubsection.7.2.0.2}
-\contentsline {subsubsection}{\numberline {7.2.0.3}Software Model}{98}{subsubsection.7.2.0.3}
-\contentsline {subsubsection}{\numberline {7.2.0.4}Motivation for ROSMOD System Model}{99}{subsubsection.7.2.0.4}
-\contentsline {subsubsection}{\numberline {7.2.0.5}System Model}{100}{subsubsection.7.2.0.5}
-\contentsline {subsubsection}{\numberline {7.2.0.6}Deployment and Experimentation}{101}{subsubsection.7.2.0.6}
-\contentsline {subsection}{\numberline {7.2.1}Software Infrastructure}{102}{subsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.1.1}ROSMOD Workspace}{103}{subsubsection.7.2.1.1}
-\contentsline {subsection}{\numberline {7.2.2}Deployment Infrastructure}{105}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}Evaluation of Timing Analysis Results}{108}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Understanding the CPN Analysis Plots}{109}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Client-Server Interactions}{110}{subsection.7.3.2}
-\contentsline {subsubsection}{\numberline {7.3.2.1}Bad Designs}{112}{subsubsection.7.3.2.1}
-\contentsline {subsection}{\numberline {7.3.3}Publish-Subscribe Interactions}{114}{subsection.7.3.3}
-\contentsline {subsubsection}{\numberline {7.3.3.1}Bad Designs}{115}{subsubsection.7.3.3.1}
-\contentsline {subsection}{\numberline {7.3.4}Trajectory Planner}{117}{subsection.7.3.4}
-\contentsline {subsection}{\numberline {7.3.5}Time-triggered Operations}{120}{subsection.7.3.5}
-\contentsline {subsection}{\numberline {7.3.6}Long-Running Operations}{122}{subsection.7.3.6}
-\contentsline {subsubsection}{\numberline {7.3.6.1}Challenges}{123}{subsubsection.7.3.6.1}
-\contentsline {subsubsection}{\numberline {7.3.6.2}Implementation and Results}{124}{subsubsection.7.3.6.2}
-\contentsline {section}{\numberline {7.4}Analysis Limitations}{127}{section.7.4}
-\contentsline {chapter}{\numberline {VIII}Summary and Future Work}{129}{chapter.VIII}
-\contentsline {chapter}{Appendices}{130}{section*.9}
-\contentsline {chapter}{\numberline {A}Publications}{131}{APPENDIX.A}
-\contentsline {section}{\numberline {1.1}Workshop Papers}{131}{section.1.1}
-\contentsline {section}{\numberline {1.2}Conference Papers}{131}{section.1.2}
-\contentsline {section}{\numberline {1.3}Journal Papers}{132}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Awaiting Reviews}{132}{subsection.1.3.1}
-\contentsline {chapter}{REFERENCES}{134}{chapter*.10}
+\contentsline {chapter}{\numberline {III}Related Research}{10}{chapter.III}
+\contentsline {section}{\numberline {3.1}General Analysis Methodologies}{10}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Testing and Evaluation}{10}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Simulation}{12}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Formal Analysis Methods}{15}{subsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.3.1}Model Checking}{16}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.2}Theorem Proving}{18}{subsubsection.3.1.3.2}
+\contentsline {subsection}{\numberline {3.1.4}Static Code Analysis}{20}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Fundamental Timing Analysis Tools}{22}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Cheddar Real-Time Scheduling Framework}{22}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}UPPAAL}{23}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}System-level Timing Analysis Methodologies}{23}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Petri net-based Timing Analysis for Concurrent Systems}{23}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Example High-level Petri net Tool: CPN Tools}{26}{subsubsection.3.3.1.1}
+\contentsline {subsection}{\numberline {3.3.2}Analyzing AADL models with Petri nets}{27}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Analyzing AADL Models with Timed Petri nets}{29}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}MAST: Modeling and Analysis Suite}{30}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Verification in AutoFocus 3}{32}{subsection.3.3.5}
+\contentsline {chapter}{\numberline {IV}Design Model: Distributed Managed Systems (DREMS)}{34}{chapter.IV}
+\contentsline {section}{\numberline {4.1}DREMS Component Model}{34}{section.4.1}
+\contentsline {section}{\numberline {4.2}Component Execution Semantics}{36}{section.4.2}
+\contentsline {section}{\numberline {4.3}Temporal Partition Scheduler}{38}{section.4.3}
+\contentsline {chapter}{\numberline {V}Colored Petri net-based Modeling Methodology}{41}{chapter.V}
+\contentsline {section}{\numberline {5.1}Problem Statement}{41}{section.5.1}
+\contentsline {paragraph}{System Assumptions:}{41}{section*.4}
+\contentsline {section}{\numberline {5.2}Colored Petri Net-based Analysis Model}{43}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Model of Time}{46}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Modeling Temporal Partitioning}{47}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Modeling Component Thread Behavior}{48}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Modeling Component Operations}{50}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Modeling Component Interactions}{54}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Modeling Timers}{55}{subsection.5.2.6}
+\contentsline {section}{\numberline {5.3}Modeling Component Operation Business Logic}{57}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Problem Statement}{57}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Challenges}{57}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Outline of Solution}{58}{subsection.5.3.3}
+\contentsline {chapter}{\numberline {VI}State Space Analysis and Verification}{63}{chapter.VI}
+\contentsline {subsection}{\numberline {6.0.1}Searching the State Space}{66}{subsection.6.0.1}
+\contentsline {subsection}{\numberline {6.0.2}Deadline Violations}{67}{subsection.6.0.2}
+\contentsline {subsection}{\numberline {6.0.3}System-wide Deadlocks}{68}{subsection.6.0.3}
+\contentsline {subsection}{\numberline {6.0.4}Response-time Analysis}{69}{subsection.6.0.4}
+\contentsline {subsection}{\numberline {6.0.5}Incomplete Designs}{70}{subsection.6.0.5}
+\contentsline {section}{\numberline {6.1}Modeling and Analysis Improvements}{71}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Problem Statement}{71}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Outline of Solution}{71}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Handling Time}{73}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Distributed Deployment}{76}{subsection.6.1.4}
+\contentsline {section}{\numberline {6.2}Investigating Advanced State Space Analysis Methods}{79}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Problem Statement}{79}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Outline of Solution}{79}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Evaluation of Solution}{80}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Contributions}{81}{subsection.6.2.4}
+\contentsline {chapter}{\numberline {VII}Experimental Evaluation}{85}{chapter.VII}
+\contentsline {subsection}{\numberline {7.0.1}Challenges}{85}{subsection.7.0.1}
+\contentsline {section}{\numberline {7.1}Resilient Cyber-Physical Systems (RCPS) Testbed}{87}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Architecture}{87}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}ROSMOD Software Infrastructure}{88}{section.7.2}
+\contentsline {subsubsection}{\numberline {7.2.0.1}ROSMOD Modeling Language}{89}{subsubsection.7.2.0.1}
+\contentsline {subsubsection}{\numberline {7.2.0.2}Motivation for ROSMOD Software Model}{91}{subsubsection.7.2.0.2}
+\contentsline {subsubsection}{\numberline {7.2.0.3}Software Model}{91}{subsubsection.7.2.0.3}
+\contentsline {subsubsection}{\numberline {7.2.0.4}Motivation for ROSMOD System Model}{92}{subsubsection.7.2.0.4}
+\contentsline {subsubsection}{\numberline {7.2.0.5}System Model}{93}{subsubsection.7.2.0.5}
+\contentsline {subsubsection}{\numberline {7.2.0.6}Deployment and Experimentation}{94}{subsubsection.7.2.0.6}
+\contentsline {subsection}{\numberline {7.2.1}Deployment Infrastructure}{95}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.3}Evaluation of Timing Analysis Results}{98}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Understanding the CPN Analysis Plots}{99}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Client-Server Interactions}{101}{subsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.2.1}Bad Designs}{102}{subsubsection.7.3.2.1}
+\contentsline {subsection}{\numberline {7.3.3}Publish-Subscribe Interactions}{104}{subsection.7.3.3}
+\contentsline {subsubsection}{\numberline {7.3.3.1}Bad Designs}{105}{subsubsection.7.3.3.1}
+\contentsline {subsection}{\numberline {7.3.4}Trajectory Planner}{107}{subsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3.5}Time-triggered Operations}{110}{subsection.7.3.5}
+\contentsline {subsection}{\numberline {7.3.6}Long-Running Operations}{112}{subsection.7.3.6}
+\contentsline {subsubsection}{\numberline {7.3.6.1}Challenges}{113}{subsubsection.7.3.6.1}
+\contentsline {subsubsection}{\numberline {7.3.6.2}Implementation and Results}{114}{subsubsection.7.3.6.2}
+\contentsline {section}{\numberline {7.4}Analysis Limitations}{117}{section.7.4}
+\contentsline {chapter}{\numberline {VIII}Summary and Future Work}{119}{chapter.VIII}
+\contentsline {chapter}{Appendices}{120}{section*.9}
+\contentsline {chapter}{\numberline {A}Publications}{121}{APPENDIX.A}
+\contentsline {section}{\numberline {1.1}Workshop Papers}{121}{section.1.1}
+\contentsline {section}{\numberline {1.2}Conference Papers}{121}{section.1.2}
+\contentsline {section}{\numberline {1.3}Journal Papers}{122}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Awaiting Reviews}{122}{subsection.1.3.1}
+\contentsline {chapter}{REFERENCES}{124}{chapter*.10}

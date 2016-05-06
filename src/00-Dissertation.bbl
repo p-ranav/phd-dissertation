@@ -14,10 +14,6 @@
 \newblock
   \url{http://www.nasa.gov/press-release/nasa-prepares-for-first-interplanetary-cubesats-on-agency-s-next-mission-to-mars}.
 
-\bibitem{abrahammathworks}
-J.~Abraham.
-\newblock Mathworks, natick, ma, 01760.
-
 \bibitem{Alpern1989}
 B.~Alpern and F.~B. Schneider.
 \newblock Verifying temporal properties without temporal logic.
@@ -27,14 +23,6 @@ B.~Alpern and F.~B. Schneider.
 R.~Alur and D.~L. Dill.
 \newblock A theory of timed automata.
 \newblock {\em Theoretical Computer Science}, 126:183--235, 1994.
-
-\bibitem{TIMES}
-T.~Amnell, E.~Fersman, L.~Mokrushin, P.~Pettersson, and W.~Yi.
-\newblock Times: A tool for schedulability analysis and code generation of
-  real-time systems.
-\newblock In K.~Larsen and P.~Niebert, editors, {\em Formal Modeling and
-  Analysis of Timed Systems}, volume 2791 of {\em Lecture Notes in Computer
-  Science}, pages 60--72. Springer Berlin Heidelberg, 2004.
 
 \bibitem{appenzeller1995formal}
 D.~P. Appenzeller and A.~Kuehlmann.
@@ -214,6 +202,13 @@ A.~German.
 \newblock Software static code analysis lessons learned.
 \newblock {\em Crosstalk}, 16(11), 2003.
 
+\bibitem{5328605}
+S.~Ghanavati, D.~Amyot, and L.~Peyton.
+\newblock Compliance analysis based on a goal-oriented requirement language
+  evaluation methodology.
+\newblock In {\em 2009 17th IEEE International Requirements Engineering
+  Conference}, pages 133--142, Aug 2009.
+
 \bibitem{girault2013petri}
 C.~Girault and R.~Valk.
 \newblock {\em Petri nets for systems engineering: a guide to modeling,
@@ -226,11 +221,6 @@ M.~Gonzalez~Harbour, J.~Gutierrez~Garcia, J.~Palencia~Gutierrez, and
 \newblock Mast: Modeling and analysis suite for real time applications.
 \newblock In {\em Real-Time Systems, 13th Euromicro Conference on, 2001.},
   pages 125--134, 2001.
-
-\bibitem{goodenough1975exception}
-J.~B. Goodenough.
-\newblock Exception handling: issues and a proposed notation.
-\newblock {\em Communications of the ACM}, 18(12):683--696, 1975.
 
 \bibitem{gordon1993introduction}
 M.~J. Gordon and T.~F. Melham.
@@ -275,6 +265,12 @@ G.~J. Holzmann.
 \newblock {\em The SPIN model checker: Primer and reference manual}, volume
   1003.
 \newblock Addison-Wesley Reading, 2004.
+
+\bibitem{huber1996autofocus}
+F.~Huber, B.~Sch{\"a}tz, A.~Schmidt, and K.~Spies.
+\newblock Autofocus—a tool for distributed systems specification.
+\newblock In {\em Formal Techniques in Real-Time and Fault-Tolerant Systems},
+  pages 467--470. Springer, 1996.
 
 \bibitem{CPN_Symmetry}
 K.~Jensen.
@@ -495,14 +491,6 @@ W.~R. Otte, A.~Dubey, S.~Pradhan, P.~Patil, A.~Gokhale, G.~Karsai, and
   Object-oriented Real-time Distributed Computing (ISORC '13)}, Paderborn,
   Germany, June 2013.
 
-\bibitem{Yassine2013}
-Y.~Ouhammou, E.~Grolleau, and J.~Hugues.
-\newblock Mapping aadl models to a repository of multiple schedulability
-  analysis techniques.
-\newblock In {\em Object/Component/Service-Oriented Real-Time Distributed
-  Computing (ISORC), 2013 IEEE 16th International Symposium on}, pages 1--8.
-  IEEE, 2013.
-
 \bibitem{owre1992pvs}
 S.~Owre, J.~M. Rushby, and N.~Shankar.
 \newblock Pvs: A prototype verification system.
@@ -531,12 +519,6 @@ J.~L. Peterson.
 P.~Puschner and A.~Burns.
 \newblock Guest editorial: A review of worst-case execution-time analysis.
 \newblock {\em Real-Time Systems}, 18(2-3):115--128, 2000.
-
-\bibitem{puschner1998testing}
-P.~Puschner and R.~Nossal.
-\newblock Testing the results of static worst-case execution-time analysis.
-\newblock In {\em Real-Time Systems Symposium, 1998. Proceedings., The 19th
-  IEEE}, pages 134--143. IEEE, 1998.
 
 \bibitem{ROS}
 M.~Quigley, K.~Conley, B.~P. Gerkey, J.~Faust, T.~Foote, J.~Leibs, R.~Wheeler,
@@ -582,6 +564,11 @@ X.~Renault, F.~Kordon, and J.~Hugues.
   Computing, 2009. ISORC '09. IEEE International Symposium on}, pages 313--320,
   March 2009.
 
+\bibitem{seacord2005secure}
+R.~C. Seacord.
+\newblock {\em Secure Coding in C and C++}.
+\newblock Pearson Education, 2005.
+
 \bibitem{selic2000generic}
 B.~Selic.
 \newblock A generic framework for modeling resources with uml.
@@ -609,11 +596,6 @@ A.~P. Sistla and P.~Godefroid.
 \newblock {\em ACM Transactions on Programming Languages and Systems (TOPLAS)},
   26(4):702--734, 2004.
 
-\bibitem{sklaroff1976redundancy}
-J.~R. Sklaroff.
-\newblock Redundancy management technique for space shuttle computers.
-\newblock {\em IBM Journal of Research and Development}, 20(1):20--28, 1976.
-
 \bibitem{tindell1994holistic}
 K.~Tindell and J.~Clark.
 \newblock Holistic schedulability analysis for distributed hard real-time
@@ -636,17 +618,6 @@ N.~Wang, D.~C. Schmidt, A.~Gokhale, C.~Rodrigues, B.~Natarajan, J.~P. Loyall,
 \newblock {QoS-enabled Middleware}.
 \newblock In Q.~Mahmoud, editor, {\em Middleware for Communications}, pages
   131--162. Wiley and Sons, New York, 2004.
-
-\bibitem{wegener1998verifying}
-J.~Wegener and M.~Grochtmann.
-\newblock Verifying timing constraints of real-time systems by means of
-  evolutionary testing.
-\newblock {\em Real-Time Systems}, 15(3):275--298, 1998.
-
-\bibitem{wegener1997testing}
-J.~Wegener, H.~Sthamer, B.~F. Jones, and D.~E. Eyres.
-\newblock Testing real-time systems using genetic algorithms.
-\newblock {\em Software Quality Journal}, 6(2):127--135, 1997.
 
 \bibitem{ASAP}
 M.~Westergaard, S.~Evangelista, and L.~M. Kristensen.
