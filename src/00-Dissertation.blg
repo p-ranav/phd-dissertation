@@ -1,14 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: 00-Dissertation.aux
 The style file: abbrv.bst
 Database file #1: 00-Dissertation.bib
-Repeated entry---line 6389 of file 00-Dissertation.bib
- : @article{larsen1997uppaal
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6470 of file 00-Dissertation.bib
- : @inproceedings{Christensen2001
- :                               ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 6665 of file 00-Dissertation.bib
  : @article{peterson1977petri
  :                           ,
@@ -27,12 +19,7 @@ Warning--to sort, need author or key in CubeSat_Mars
 Warning--empty journal in UML
 Warning--empty journal in de2001object
 Warning--empty journal in feilkas2009top
-Warning--empty journal in gordon1993introduction
 Warning--can't use both volume and number fields in lin1987protocol
 Warning--empty journal in liu2000real
-Warning--empty journal in reineke2006definition
-Warning--empty year in reineke2006definition
-Warning--empty journal in shelleyacl2
-Warning--empty year in shelleyacl2
 Warning--empty journal in ylonen2006secure
-(There were 5 error messages)
+(There were 3 error messages)

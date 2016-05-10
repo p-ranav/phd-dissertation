@@ -1,6 +1,7 @@
 \chapter{Related Research}
 \label{chapter:related-research}
 
+\if 0
 \section{General Analysis Methodologies}
 
 There are several methods and techniques to analyze the design of a DRE system, studying various structural and behavioral properties for correctness. Methods include prototype testing, system simulation, and formal verification. 
@@ -99,9 +100,11 @@ UPPAAL \cite{larsen1997uppaal, bengtsson1996uppaal, david2009model} was develope
 
 %TIMES is capable of code generation. From a validated design model, executable code can be generated for a target platform and the code execution preserves the behavior of the model. Given a system design, TIMES also generates a scheduler pertaining to the set the application tasks, tasks constraints and arrival patterns, and adopts a scheduling policy. Lastly, TIMES uses the UPPAAL verification engine to verify schedulability. However, so far the tool only supports single-processor scheduling with limited dependencies between tasks. 
 
-\section{System-level Timing Analysis Methodologies}
+\fi
 
-\subsection{Petri net-based Timing Analysis for Concurrent Systems}
+%\section{System-level Timing Analysis Methodologies}
+
+\section{Petri net-based Timing Analysis for Concurrent Systems}
 \label{sec:petri_nets}
 
 A Petri net \cite{peterson1977petri} is an abstract, formal paradigm to model concurrent systems. The properties, concepts, and techniques of Petri nets are developed in search for natural, simple and powerful methods for describing and analyzing the flow of information and control in systems, particularly systems that exhibit asynchronous and concurrent activities. The major use of Petri nets has been the modeling of systems of events in which it is possible for some events to occur concurrently but there are constraints on the concurrence, precedence, or frequency of these occurrences. 
@@ -127,7 +130,7 @@ Petri nets enable the modeling and visualization of dynamic system behaviors tha
 
 Petri nets have evolved through several generations from low-level Petri nets for control systems \cite{reisig2012petri} to high-level Petri nets for modeling dynamic systems \cite{jensen2012high} to hierarchical and object-oriented Petri net structures \cite{de2001object} that support class hierarchies and subnet reuse. Several extensions to Petri nets exist, depending on the system model and the relevant properties being studied e.g. Timed Petri nets \cite{wang2012timed}, Stochastic Petri nets \cite{bause1996stochastic, marsan1994modelling} etc. High-level Petri nets are a powerful modeling formalism for concurrent systems and have been widely accepted and integrated into many modeling tool suites for system design, analysis and verification. 
 
-\subsubsection{Example High-level Petri net Tool: CPN Tools}
+\subsection{Example High-level Petri net Tool: CPN Tools}
 
 CPN Tools \cite{CPNTools} is an open source tool for editing, simulating and analysis of Colored Petri nets (CPN) \cite{CPN}. A Colored Petri Net is a tuple $(\Sigma, P, T, A, N, C, G, E, IN)$ where: \Sigma is a finite set of non-empty types called \textbf{color sets}. Color sets determine the types of tokens, operations, and functions that can be used in the net inscriptions (arc expressions, guards, etc.). \textbf{Places}, \textbf{transitions} and \textbf{arcs} are defined by three finite sets P, T, and A respectively. N is a \textbf{node function} that maps each arc into a pair where the first element is the source node and the second a destination node. The two nodes must be of different types i.e. arcs can exist only between a place and a transition. The \textbf{color function} C maps each place p into a set of possible token colors C(p) i.e. each token on p must belong to the type C(p). The \textbf{guard function} G maps each transition t into an expression of type boolean i.e. a predicate. The \textbf{arc expression} function E maps each arc a into an expression which must be of type C(p(a)) i.e. evaluation of the arc expression must yield a resultant token that can be attached to the corresponding place. Lastly, the \textbf{initialization function} IN maps each place p into an expression which must be of type C(p) i.e. this function initializes each place with a token value of the appropriate color set type. 
 
@@ -166,7 +169,7 @@ CPN Tools currently supports two types of analysis for CPNs: simulation and stat
 
 CPN Tools also contains facilities for generating and analyzing full and partial state spaces for CPN. To facilitate the implementation of the state space facilities, CPN Tools uses syntactical constraints which are important for state space generation but not for simulation e.g. a state space cannot be generated unless all places and transitions have unique names, and all arcs have inscriptions i.e. expressions that evaluate to some token value. Standard state space reports can be generated automatically and saved. Such reports contain statistical information about the net e.g. boundedness properties, home properties, liveness properties and fairness properties. Querying facilities enable searching a generated state space for the presence or absence of interesting system properties. 
 
-\subsection{Analyzing AADL models with Petri nets}
+\section{Analyzing AADL models with Petri nets}
 
 Teams of researchers have, in the past, identified the need for in-depth timing analysis tools that integrate with complex system design challenges, especially in model-driven architectures \cite{kordon_sn}. Modeling languages like MARTE \cite{MARTE:05} and AADL \cite{AADL_Intro:06} provide a high-level formalism to describe a DRE system, at both the functional and non-functional level. MARTE (Modeling and Analysis of Real-time Embedded Systems) defines the foundations for model-based description of real-time and embedded systems. MARTE supports the annotation of models with information required to perform specific types of analysis such as performance and schedulability analysis.
 
@@ -176,7 +179,7 @@ The execution behavior of the software in AADL is represented by AADL components
 
 However, there are some potential improvements to this work. Not only is the generated Petri net structure hard to follow, it is seemingly composed of sub-Petri nets, one for each thread (and its lifecycle) in each process. It is clear that although the transformation is sound, the generated Petri net models are going to be intractably large for complicated scenarios. The state space of the Petri net is dependent on the number of places in the net and the corresponding internal states. The generated net would not scale well for large process sets or distributed scenarios without using state space reduction techniques that rely on symmetry \cite{sistla2004symmetry}. Such troubles can be alleviated by using a high-level Petri net such as Colored Petri nets where much more information can be packed in a Petri net token. Complex token data structures reduce the number of places required to describe a system model e.g. a list of C-style struct data structures can abstractly model a set of processors. This reduces the number of places that would be required to represent a full system. Such modeling constructs are essential in component-based systems where the full system is typically a large assembly of tested black box components. Lastly, the modeling constructs used are strictly bound to AADL and cannot be easily modified for systems not modeled using AADL, especially strictly-defined component models with precise execution semantics. 
 
-\subsection{Analyzing AADL Models with Timed Petri nets}
+\section{Analyzing AADL Models with Timed Petri nets}
 
 The authors in \cite{kordon_sn}, have also investigated AADL model analysis using Petri net extensions such as Timed Petri nets \cite{kordon2009}. Using the modeling concepts and analysis capabilities of Petri net extensions means that developers can analyze for a larger set of system-level properties such as schedulability dimensioning, and deadlock detection. This work allows for efficient model-driven development and prototyping of real-time systems. 
 
@@ -188,7 +191,7 @@ Analysis techniques using Petri nets need to record/detects errors in Petri net 
 
 Similar to this work, our Colored Petri net-based analysis work uses bounded observer places \cite{Alpern1989} that observe the system behavior for property violations and prompt completion of operations. However, this work \cite{kordon2009} only considers periodic threads in systems that are not preemptive. The non-preempt-able thread execution is evident in the need to check for missed activations. Our analysis aims to improve on this work by (1) generating a more scalable and efficient pattern-based analysis model and (2) supporting various types of hierarchical scheduling algorithms, both preemptable and non-preemptable with (3) complex periodic and aperiodic interaction patterns.
 
-\subsection{MAST: Modeling and Analysis Suite}
+\section{MAST: Modeling and Analysis Suite}
 
 MAST \cite{934015} is a modeling and analysis suite for real-time applications. MAST, still in development, aims to provide a set of tools that enable engineers and system integrators to developing real-time applications to check the timing behavior of their system, including schedulability analysis. The techniques implemented by this tool focus on fixed-priority scheduled systems, such as the ones in commercial operating systems. The tools aims to address the timing analysis results developed for both single processor \cite{liu1973scheduling, klein2012practitioner} and distributed real-time systems \cite{palencia1999exploiting, tindell1994holistic}. 
 
@@ -198,7 +201,7 @@ For analysis, the MAST suite includes schedulability analysis tools that use new
 
 Using UML, the real-time \emph{view} of the DRE is described \cite{selic2000generic} by adding appropriate behavior specifying classes. The application design is linked with the real-time view to get a full description of the modeled system, along with its timing behavior and requirements. Some of the tools in Figure \ref{fig:mast} like the graphical editor and results display interfaces are not available or incomplete.
 
-\subsection{Verification in AutoFocus 3}
+\section{Verification in AutoFocus 3}
 
 FOCUS is a general theory providing a model of computation based on the notion of streams and stream processing functions \cite{broy2012specification}. It is suitable to describe models of distributed, reactive systems. Based on this mathematical foundation, a tool called AutoFocus 3 \cite{huber1996autofocus} allows for a graphical description of systems according to this model of computation. 
 

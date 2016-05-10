@@ -4415,6 +4415,20 @@ TextIO.closeOut writestream</text>
         <text>val clock = {node=&quot;1&quot;, value=0, next_tick=4000};
 (ProgressClock 9000 clock)</text>
       </Aux>
+      <Aux id="ID1436220080">
+        <posattr x="-562.506250"
+                 y="-726.953906"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>1=1</text>
+      </Aux>
     </page>
     <instances>
       <instance id="ID2149"
@@ -4441,6 +4455,21 @@ TextIO.closeOut writestream</text>
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
+      <option name="extensions.10008.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10007.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
       <option name="extensions.10005.enable">
         <value>
           <boolean>true</boolean>
@@ -4451,17 +4480,7 @@ TextIO.closeOut writestream</text>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10007.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10003.enable">
+      <option name="extensions.10011.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4471,17 +4490,12 @@ TextIO.closeOut writestream</text>
           <boolean>true</boolean>
         </value>
       </option>
+      <option name="extensions.10006.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
       <option name="extensions.10001.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10008.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10011.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4696,12 +4710,12 @@ TextIO.closeOut writestream</text>
       <cpnbinder id="ID2222"
                  x="170"
                  y="-41"
-                 width="1636"
-                 height="1101">
+                 width="1366"
+                 height="829">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-74.995000"
-                    pany="-423.563125"
+                    panx="-1176.995000"
+                    pany="132.436875"
                     zoom="0.800000"
                     instance="ID2149">
             <zorder>

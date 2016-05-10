@@ -4,56 +4,54 @@ Figure \hfill Page
 \contentsline {figure}{\numberline {1}{\ignorespaces Embedded Software Development Lifecycle Comparison\relax }}{4}{figure.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2}{\ignorespaces Sample Petri Net, reprinted from \cite {peterson1977petri}\relax }}{24}{figure.2}
+\contentsline {figure}{\numberline {2}{\ignorespaces Sample Petri Net, reprinted from \cite {peterson1977petri}\relax }}{11}{figure.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3}{\ignorespaces DREMS Component\relax }}{35}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Component Operation Execution Semantics: This figure shows the DREMS operation scheduling on an incoming operation request. At some time $t_{i}$, the component executor thread is busy executing an operation -- component operations can be triggered into execution by the (1) expiry of a timer, (2) the arrival of a subscription message, or (3) the arrival of a service request. $t\_{req}$ represents the arrival time of a remote request. $t\_{wait}$ is the wait time of this request in the message queue while the current operation is still executing. $t\_{req\_schld}$ is the time stamp at which the current operation completes executing. At this time, the remote request is finally scheduled for execution. $t\_{req\_cmpl}$ is the time stamp at which the remote request completes. The overall time taken by the component to respond to this request is calculated as: $t\_{wait} + t\_{exec} = t\_{req\_cmpl} - t\_{req}$.\relax }}{37}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Sample Temporal Partition Schedule with Hyperperiod = 300 ms\relax }}{39}{figure.5}
+\contentsline {figure}{\numberline {3}{\ignorespaces DREMS Component\relax }}{22}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Component Operation Execution Semantics: This figure shows the DREMS operation scheduling on an incoming operation request. At some time $t_{i}$, the component executor thread is busy executing an operation -- component operations can be triggered into execution by the (1) expiry of a timer, (2) the arrival of a subscription message, or (3) the arrival of a service request. $t\_{req}$ represents the arrival time of a remote request. $t\_{wait}$ is the wait time of this request in the message queue while the current operation is still executing. $t\_{req\_schld}$ is the time stamp at which the current operation completes executing. At this time, the remote request is finally scheduled for execution. $t\_{req\_cmpl}$ is the time stamp at which the remote request completes. The overall time taken by the component to respond to this request is calculated as: $t\_{wait} + t\_{exec} = t\_{req\_cmpl} - t\_{req}$.\relax }}{24}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Sample Temporal Partition Schedule with Hyperperiod = 300 ms\relax }}{26}{figure.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6}{\ignorespaces Colored Petri Net Analysis Model\relax }}{44}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Analysis Model - Structural Aspects\relax }}{45}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Temporal Partition Schedule Data Structure\relax }}{47}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Component Thread Execution Cycle\relax }}{48}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Component Operation Scheduling Cycle\relax }}{50}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces RMI Application\relax }}{51}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces RMI Application - Client Timer Operation\relax }}{52}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces RMI Application - Server Operation\relax }}{53}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Operation Induction\relax }}{54}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Operation Induction Token\relax }}{54}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Timer Operations\relax }}{55}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Modeling the Business Logic of Component Operations\relax }}{58}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Sample Business Logic Model\relax }}{60}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces CPN Business Logic Representation\relax }}{61}{figure.19}
+\contentsline {figure}{\numberline {6}{\ignorespaces Colored Petri Net Analysis Model\relax }}{31}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Analysis Model - Structural Aspects\relax }}{32}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Temporal Partition Schedule Data Structure\relax }}{34}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Component Thread Execution Cycle\relax }}{35}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Component Operation Scheduling Cycle\relax }}{37}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces RMI Application\relax }}{38}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces RMI Application - Client Timer Operation\relax }}{39}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces RMI Application - Server Operation\relax }}{40}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Operation Induction\relax }}{41}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Operation Induction Token\relax }}{41}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Timer Operations\relax }}{42}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Modeling the Business Logic of Component Operations\relax }}{45}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Sample Business Logic Model\relax }}{47}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces CPN Business Logic Representation\relax }}{48}{figure.19}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {20}{\ignorespaces Bounded State Space for a Multi-component Timer example -- The component threads have the same real-time priority and are executed in the same device. Each component is triggered with a 100 Hz periodic timer and all three timers are synchronized to illustrate non-determinism. The round robin scheduling quantum is set to 4 milliseconds. 'Mark' is a state space query function that provides the \emph {marking} of a place in a particular state space node.\relax }}{64}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces SearchNodes function provided by CPNTools\relax }}{65}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Deadline Violation Observer place\relax }}{67}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces A Clock Token with Temporal Partitioning\relax }}{73}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Dynamic Time Progression\relax }}{74}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces Structural Reductions in CPN\relax }}{76}{figure.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Generated CPN model for a Distributed Application Deployment\relax }}{81}{figure.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces Sweep-Line Method\relax }}{82}{figure.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces Dead States Checking in a Component-based application\relax }}{83}{figure.28}
+\contentsline {figure}{\numberline {20}{\ignorespaces Bounded State Space for a Multi-component Timer example -- The component threads have the same real-time priority and are executed in the same device. Each component is triggered with a 100 Hz periodic timer and all three timers are synchronized to illustrate non-determinism. The round robin scheduling quantum is set to 4 milliseconds. 'Mark' is a state space query function that provides the \emph {marking} of a place in a particular state space node.\relax }}{51}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces SearchNodes function provided by CPNTools\relax }}{52}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Deadline Violation Observer place\relax }}{54}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces SML Query to detect system-wide deadlocks caused by (blocking) cyclic dependencies between components\relax }}{55}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces A Clock Token with Temporal Partitioning\relax }}{59}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Dynamic Time Progression\relax }}{61}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Structural Reductions in CPN\relax }}{63}{figure.26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {29}{\ignorespaces Testbed Architecture\relax }}{86}{figure.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces ROSMOD Metamodel. Containment is specified from \emph {src} to \emph {dst} where the source has a containment attribute \emph {quantity}, meaning that \emph {quantity} objects of type \emph {src} can be contained in an object of type \emph {dst}. Pointers are specified as a one to one mapping from source to destination, using the name of the pointer. Sets allow for pointer containment. All objects contain a \emph {name} attribute of type \emph {string}, not shown for clarity. Note: the metamodel is used to create the ROSMOD Modeling Language, but users do not see or interact with it; it is used to enforce proper model creation semantics.\relax }}{89}{figure.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces Software Deployment Workflow\relax }}{95}{figure.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces Interpreting Execution Time Plots\relax }}{99}{figure.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces Experimental Observation: Client-Server Interactions\relax }}{100}{figure.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces CPN Analysis Results: Client-Server Interactions\relax }}{101}{figure.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces CPN Analysis Results: Client-Server Response Times in Bad Designs\relax }}{102}{figure.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{103}{figure.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{104}{figure.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces CPN Analysis Results: Time-triggered Publisher -- Periodicity Issues\relax }}{105}{figure.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces Trajectory Planner Test\relax }}{106}{figure.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{107}{figure.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{108}{figure.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces CPN Analysis - Sensor firing too frequently\relax }}{109}{figure.42}
-\contentsline {figure}{\numberline {43}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{110}{figure.43}
-\contentsline {figure}{\numberline {44}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{111}{figure.44}
-\contentsline {figure}{\numberline {45}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{113}{figure.45}
-\contentsline {figure}{\numberline {46}{\ignorespaces Long Running Operation - Software Model\relax }}{114}{figure.46}
-\contentsline {figure}{\numberline {47}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{115}{figure.47}
-\contentsline {figure}{\numberline {48}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{116}{figure.48}
+\contentsline {figure}{\numberline {27}{\ignorespaces Testbed Architecture\relax }}{69}{figure.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces ROSMOD Metamodel. Containment is specified from \emph {src} to \emph {dst} where the source has a containment attribute \emph {quantity}, meaning that \emph {quantity} objects of type \emph {src} can be contained in an object of type \emph {dst}. Pointers are specified as a one to one mapping from source to destination, using the name of the pointer. Sets allow for pointer containment. All objects contain a \emph {name} attribute of type \emph {string}, not shown for clarity. Note: the metamodel is used to create the ROSMOD Modeling Language, but users do not see or interact with it; it is used to enforce proper model creation semantics.\relax }}{72}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Software Deployment Workflow\relax }}{78}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces Interpreting Execution Time Plots\relax }}{82}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces Experimental Observation: Client-Server Interactions\relax }}{83}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces CPN Analysis Results: Client-Server Interactions\relax }}{84}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces CPN Analysis Results: Client-Server Response Times in Bad Designs\relax }}{85}{figure.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Experimental Observation: Publish-Subscribe Interactions\relax }}{86}{figure.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces CPN Analysis Results: Publish-Subscribe Interactions\relax }}{87}{figure.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces CPN Analysis Results: Time-triggered Publisher -- Periodicity Issues\relax }}{88}{figure.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces Trajectory Planner Test\relax }}{89}{figure.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces Experimental Observation: Trajectory Planner\relax }}{90}{figure.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces CPN Analysis Results: Trajectory Planner\relax }}{91}{figure.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces CPN Analysis - Sensor firing too frequently\relax }}{92}{figure.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces Experimental Observation: Periodic Timers\relax }}{93}{figure.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces CPN Analysis Results: Periodic Timers\relax }}{94}{figure.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces Long Running Operations - Timing Diagram\relax }}{96}{figure.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces Long Running Operation - Software Model\relax }}{97}{figure.44}
+\contentsline {figure}{\numberline {45}{\ignorespaces Experimental Observation: Composed Component Assembly\relax }}{98}{figure.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces CPN Analysis Results: Composed Component Assembly\relax }}{99}{figure.46}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

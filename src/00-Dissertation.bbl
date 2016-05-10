@@ -1,4 +1,4 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{10}
 
 \bibitem{BBB}
 {Beaglebone Black}.
@@ -18,18 +18,6 @@
 B.~Alpern and F.~B. Schneider.
 \newblock Verifying temporal properties without temporal logic.
 \newblock {\em ACM Trans. Program. Lang. Syst.}, 11(1):147--167, Jan. 1989.
-
-\bibitem{Alur1994}
-R.~Alur and D.~L. Dill.
-\newblock A theory of timed automata.
-\newblock {\em Theoretical Computer Science}, 126:183--235, 1994.
-
-\bibitem{appenzeller1995formal}
-D.~P. Appenzeller and A.~Kuehlmann.
-\newblock Formal verification of a powerpc microprocessor.
-\newblock In {\em Computer Design: VLSI in Computers and Processors, 1995.
-  ICCD'95. Proceedings., 1995 IEEE International Conference on}, pages 79--84.
-  IEEE, 1995.
 
 \bibitem{ARINC-653}
 {ARINC Incorporated}, Annapolis, Maryland, USA.
@@ -58,21 +46,10 @@ D.~Bell.
 \newblock Uml basics: An introduction to the unified modeling language.
 \newblock 2003.
 
-\bibitem{bengtsson1996uppaal}
-J.~Bengtsson, K.~Larsen, F.~Larsson, P.~Pettersson, and W.~Yi.
-\newblock {\em UPPAAL-a tool suite for automatic verification of real-time
-  systems}.
-\newblock Springer, 1996.
-
 \bibitem{beydeda2005model}
 S.~Beydeda, M.~Book, V.~Gruhn, et~al.
 \newblock {\em Model-driven software development}, volume~15.
 \newblock Springer, 2005.
-
-\bibitem{bjorner2001deductive}
-N.~S. Bj{\o}rner, Z.~Manna, H.~B. Sipma, and T.~E. Uribe.
-\newblock Deductive verification of real-time systems using step.
-\newblock {\em Theoretical Computer Science}, 253(1):27--60, 2001.
 
 \bibitem{boehm1988spiral}
 B.~W. Boehm.
@@ -90,26 +67,6 @@ M.~Burke and N.~Audsley.
 \newblock Distributed fault-tolerant avionic systems-a real-time perspective.
 \newblock {\em arXiv preprint arXiv:1004.1324}, 2010.
 
-\bibitem{chen1996verification}
-Y.-A. Chen, E.~Clarke, P.-H. Ho, Y.~Hoskote, T.~Kam, M.~Khaira, J.~O'Leary, and
-  X.~Zhao.
-\newblock Verification of all circuits in a floating-point unit using
-  word-level model checking.
-\newblock In {\em Formal Methods in Computer-Aided Design}, pages 19--33.
-  Springer, 1996.
-
-\bibitem{CPN_Sweepline}
-S.~Christensen, L.~M. Kristensen, and T.~Mailund.
-\newblock {\em A sweep-line method for state space exploration}.
-\newblock Springer, 2001.
-
-\bibitem{Christensen2001}
-S.~Christensen, L.~M. Kristensen, and T.~Mailund.
-\newblock A sweep-line method for state space exploration.
-\newblock In {\em Proceedings of the 7th International Conference on Tools and
-  Algorithms for the Construction and Analysis of Systems}, TACAS 2001, pages
-  450--464, London, UK, UK, 2001. Springer-Verlag.
-
 \bibitem{clemens1998component}
 S.~Clemens, G.~Dominik, and M.~Stephan.
 \newblock Component software: beyond object-oriented programming, 1998.
@@ -124,11 +81,6 @@ K.~Correll, N.~Barendt, and M.~Branicky.
 M.~A. Cusumano.
 \newblock Reflections on the toyota debacle.
 \newblock {\em Commun. ACM}, 54(1):33--35, Jan. 2011.
-
-\bibitem{david2009model}
-A.~David, J.~Illum, K.~G. Larsen, and A.~Skou.
-\newblock Model-based framework for schedulability analysis using uppaal 4.1.
-\newblock {\em Model-based design for embedded systems}, 1(1):93--119, 2009.
 
 \bibitem{david1994petri}
 R.~David and H.~Alla.
@@ -197,18 +149,6 @@ D.~M. Gabbay, I.~Hodkinson, M.~Reynolds, and M.~Finger.
   aspects}, volume~1.
 \newblock Clarendon Press Oxford, 1994.
 
-\bibitem{german2003software}
-A.~German.
-\newblock Software static code analysis lessons learned.
-\newblock {\em Crosstalk}, 16(11), 2003.
-
-\bibitem{5328605}
-S.~Ghanavati, D.~Amyot, and L.~Peyton.
-\newblock Compliance analysis based on a goal-oriented requirement language
-  evaluation methodology.
-\newblock In {\em 2009 17th IEEE International Requirements Engineering
-  Conference}, pages 133--142, Aug 2009.
-
 \bibitem{girault2013petri}
 C.~Girault and R.~Valk.
 \newblock {\em Petri nets for systems engineering: a guide to modeling,
@@ -222,49 +162,15 @@ M.~Gonzalez~Harbour, J.~Gutierrez~Garcia, J.~Palencia~Gutierrez, and
 \newblock In {\em Real-Time Systems, 13th Euromicro Conference on, 2001.},
   pages 125--134, 2001.
 
-\bibitem{gordon1993introduction}
-M.~J. Gordon and T.~F. Melham.
-\newblock Introduction to hol a theorem proving environment for higher order
-  logic.
-\newblock 1993.
-
 \bibitem{heineman2001component}
 G.~T. Heineman and W.~T. Councill.
 \newblock Component-based software engineering.
 \newblock {\em Putting the Pieces Together, Addison-Westley}, 2001.
 
-\bibitem{hennessy2011computer}
-J.~L. Hennessy and D.~A. Patterson.
-\newblock {\em Computer architecture: a quantitative approach}.
-\newblock Elsevier, 2011.
-
-\bibitem{henriksson2002truetime}
-D.~Henriksson, A.~Cervin, and K.-E. {\AA}rz{\'e}n.
-\newblock Truetime: Simulation of control loops under shared computer
-  resources.
-\newblock In {\em Proceedings of the 15th IFAC World Congress on Automatic
-  Control. Barcelona, Spain}, 2002.
-
-\bibitem{henriksson2003truetime}
-D.~Henriksson, A.~Cervin, and K.-E. {\AA}rz{\'e}n.
-\newblock Truetime: Real-time control system simulation with matlab/simulink.
-\newblock In {\em Proceedings of the Nordic Matlab conference}, 2003.
-
 \bibitem{holloway1997survey}
 L.~E. Holloway, B.~H. Krogh, and A.~Giua.
 \newblock A survey of petri net methods for controlled discrete event systems.
 \newblock {\em Discrete Event Dynamic Systems}, 7(2):151--190, 1997.
-
-\bibitem{CPN_Bitstate_Hashing}
-G.~J. Holzmann.
-\newblock An analysis of bitstate hashing.
-\newblock {\em Formal methods in system design}, 13(3):289--307, 1998.
-
-\bibitem{holzmann2004spin}
-G.~J. Holzmann.
-\newblock {\em The SPIN model checker: Primer and reference manual}, volume
-  1003.
-\newblock Addison-Wesley Reading, 2004.
 
 \bibitem{huber1996autofocus}
 F.~Huber, B.~Sch{\"a}tz, A.~Schmidt, and K.~Spies.
@@ -272,16 +178,10 @@ F.~Huber, B.~Sch{\"a}tz, A.~Schmidt, and K.~Spies.
 \newblock In {\em Formal Techniques in Real-Time and Fault-Tolerant Systems},
   pages 467--470. Springer, 1996.
 
-\bibitem{CPN_Symmetry}
+\bibitem{jensen1996condensed}
 K.~Jensen.
 \newblock Condensed state spaces for symmetrical coloured petri nets.
 \newblock {\em Formal Methods in System Design}, 9(1-2):7--40, 1996.
-
-\bibitem{CPN_0}
-K.~Jensen.
-\newblock An introduction to the practical use of coloured petri nets.
-\newblock In {\em Lectures on Petri Nets II: Applications}, pages 237--292.
-  Springer, 1998.
 
 \bibitem{CPN}
 K.~Jensen and L.~M. Kristensen.
@@ -289,48 +189,21 @@ K.~Jensen and L.~M. Kristensen.
   Systems}.
 \newblock Springer, 2009.
 
-\bibitem{CPN_1}
-K.~Jensen, L.~M. Kristensen, and L.~Wells.
-\newblock Coloured petri nets and cpn tools for modelling and validation of
-  concurrent systems.
-\newblock {\em International Journal on Software Tools for Technology
-  Transfer}, 9(3-4):213--254, 2007.
-
 \bibitem{jensen2012high}
 K.~Jensen and G.~Rozenberg.
 \newblock {\em High-level Petri nets: theory and application}.
 \newblock Springer Science \& Business Media, 2012.
-
-\bibitem{johnson1977lint}
-S.~C. Johnson.
-\newblock {\em Lint, a C program checker}.
-\newblock Citeseer, 1977.
-
-\bibitem{jones1997really}
-M.~B. Jones.
-\newblock What really happened on mars, 1997.
 
 \bibitem{joseph1986finding}
 M.~Joseph and P.~Pandya.
 \newblock Finding response times in a real-time system.
 \newblock {\em The Computer Journal}, 29(5):390--395, 1986.
 
-\bibitem{kim1994simulation}
-M.~H. Kim and Y.-D. Kim.
-\newblock Simulation-based real-time scheduling in a flexible manufacturing
-  system.
-\newblock {\em Journal of manufacturing Systems}, 13(2):85--93, 1994.
-
 \bibitem{klein2012practitioner}
 M.~Klein, T.~Ralya, B.~Pollak, R.~Obenza, and M.~G. Harbour.
 \newblock {\em A practitioner’s handbook for real-time analysis: guide to
   rate monotonic analysis for real-time systems}.
 \newblock Springer Science \& Business Media, 2012.
-
-\bibitem{krichen2004black}
-M.~Krichen and S.~Tripakis.
-\newblock Black-box conformance testing for real-time systems.
-\newblock In {\em Model Checking Software}, pages 109--126. Springer, 2004.
 
 \bibitem{Kristensen2000}
 L.~M. Kristensen.
@@ -372,12 +245,6 @@ P.~S. Kumar, A.~Dubey, and G.~Karsai.
 \newblock In {\em 11th Workshop on Model Driven Engineering, Verification and
   Validation MoDeVVa 2014}, page~79, 2014.
 
-\bibitem{larsen1997uppaal}
-K.~G. Larsen, P.~Pettersson, and W.~Yi.
-\newblock Uppaal in a nutshell.
-\newblock {\em International Journal on Software Tools for Technology Transfer
-  (STTT)}, 1(1):134--152, 1997.
-
 \bibitem{Ledeczi01thegeneric}
 A.~Ledeczi, M.~Maroti, A.~Bakay, G.~Karsai, J.~Garrett, C.~Thomason,
   G.~Nordstrom, J.~Sprinkle, and P.~Volgyesi.
@@ -391,10 +258,6 @@ F.~J. Lin, P.~Chu, and M.~T. Liu.
 \newblock In {\em ACM SIGCOMM Computer Communication Review}, volume~17, pages
   126--135. ACM, 1987.
 
-\bibitem{lions1996ariane}
-J.-L. Lions et~al.
-\newblock Ariane 5 flight 501 failure, 1996.
-
 \bibitem{liu1973scheduling}
 C.~L. Liu and J.~W. Layland.
 \newblock Scheduling algorithms for multiprogramming in a hard-real-time
@@ -405,17 +268,6 @@ C.~L. Liu and J.~W. Layland.
 F.~Liu, A.~Narayanan, and Q.~Bai.
 \newblock Real-time systems.
 \newblock 2000.
-
-\bibitem{Static_Code_Analysis}
-P.~Louridas.
-\newblock Static code analysis.
-\newblock {\em Software, IEEE}, 23(4):58--61, July 2006.
-
-\bibitem{magnusson2002simics}
-P.~S. Magnusson, M.~Christensson, J.~Eskilson, D.~Forsgren, G.~Hallberg,
-  J.~Hogberg, F.~Larsson, A.~Moestedt, and B.~Werner.
-\newblock Simics: A full system simulation platform.
-\newblock {\em Computer}, 35(2):50--58, 2002.
 
 \bibitem{maroti2014next}
 M.~Mar{\'o}ti, T.~Kecsk{\'e}s, R.~Keresk{\'e}nyi, B.~Broll, P.~V{\"o}lgyesi,
@@ -428,11 +280,6 @@ M.~Mar{\'o}ti, T.~Kecsk{\'e}s, R.~Keresk{\'e}nyi, B.~Broll, P.~V{\"o}lgyesi,
 M.~A. Marsan, G.~Balbo, G.~Conte, S.~Donatelli, and G.~Franceschinis.
 \newblock {\em Modelling with generalized stochastic Petri nets}.
 \newblock John Wiley \& Sons, Inc., 1994.
-
-\bibitem{massol2003junit}
-V.~Massol and T.~Husted.
-\newblock {\em Junit in action}.
-\newblock Manning Publications Co., 2003.
 
 \bibitem{openflow}
 N.~McKeown, T.~Anderson, H.~Balakrishnan, G.~Parulkar, L.~Peterson, J.~Rexford,
@@ -461,12 +308,6 @@ R.~Milner.
 \newblock {\em The definition of standard ML: revised}.
 \newblock MIT press, 1997.
 
-\bibitem{morrison1996board}
-J.~Morrison and T.~Nguyen.
-\newblock On-board software for the mars pathfinder microrover.
-\newblock In {\em Proceedings of the Second IAA International Conference on
-  Low-Cost Planetary Missions}, 1996.
-
 \bibitem{murata1989petri}
 T.~Murata.
 \newblock Petri nets: Properties, analysis and applications.
@@ -491,12 +332,6 @@ W.~R. Otte, A.~Dubey, S.~Pradhan, P.~Patil, A.~Gokhale, G.~Karsai, and
   Object-oriented Real-time Distributed Computing (ISORC '13)}, Paderborn,
   Germany, June 2013.
 
-\bibitem{owre1992pvs}
-S.~Owre, J.~M. Rushby, and N.~Shankar.
-\newblock Pvs: A prototype verification system.
-\newblock In {\em Automated Deduction—CADE-11}, pages 748--752. Springer,
-  1992.
-
 \bibitem{palencia1998schedulability}
 J.~C. Palencia and M.~G. Harbour.
 \newblock Schedulability analysis for tasks with static and dynamic offsets.
@@ -510,15 +345,15 @@ J.~C. Palencia and M.~G. Harbour.
 \newblock In {\em Real-Time Systems Symposium, 1999. Proceedings. The 20th
   IEEE}, pages 328--339. IEEE, 1999.
 
+\bibitem{peled1993all}
+D.~Peled.
+\newblock All from one, one for all: on model checking using representatives.
+\newblock In {\em Computer Aided Verification}, pages 409--423. Springer, 1993.
+
 \bibitem{peterson1977petri}
 J.~L. Peterson.
 \newblock Petri nets.
 \newblock {\em ACM Computing Surveys (CSUR)}, 9(3):223--252, 1977.
-
-\bibitem{reviewWCET}
-P.~Puschner and A.~Burns.
-\newblock Guest editorial: A review of worst-case execution-time analysis.
-\newblock {\em Real-Time Systems}, 18(2-3):115--128, 2000.
 
 \bibitem{ROS}
 M.~Quigley, K.~Conley, B.~P. Gerkey, J.~Faust, T.~Foote, J.~Leibs, R.~Wheeler,
@@ -538,11 +373,6 @@ A.~V. Ratzer, L.~Wells, H.~M. Lassen, M.~Laursen, J.~F. Qvortrup, M.~S.
 \newblock In {\em Proceedings of the 24th International Conference on
   Applications and Theory of Petri Nets}, ICATPN'03, pages 450--462, Berlin,
   Heidelberg, 2003. Springer-Verlag.
-
-\bibitem{reineke2006definition}
-J.~Reineke, B.~Wachter, S.~Thesing, R.~Wilhelm, I.~Polian, J.~Eisinger, and
-  B.~Becker.
-\newblock A definition and classification of timing anomalies.
 
 \bibitem{reisig2012petri}
 W.~Reisig.
@@ -564,31 +394,14 @@ X.~Renault, F.~Kordon, and J.~Hugues.
   Computing, 2009. ISORC '09. IEEE International Symposium on}, pages 313--320,
   March 2009.
 
-\bibitem{seacord2005secure}
-R.~C. Seacord.
-\newblock {\em Secure Coding in C and C++}.
-\newblock Pearson Education, 2005.
-
 \bibitem{selic2000generic}
 B.~Selic.
 \newblock A generic framework for modeling resources with uml.
 \newblock {\em Computer}, 33(6):64--69, 2000.
 
-\bibitem{shelleyacl2}
-G.~Shelley and S.~Forrest.
-\newblock Acl2 theorem prover.
-
 \bibitem{simulink1993mathworks}
 M.~Simulink and M.~Natick.
 \newblock The mathworks, 1993.
-
-\bibitem{Cheddar}
-F.~Singhoff, J.~Legrand, L.~Nana, and L.~Marc{\'e}.
-\newblock Cheddar: A flexible real time scheduling framework.
-\newblock In {\em Proceedings of the 2004 Annual ACM SIGAda International
-  Conference on Ada: The Engineering of Correct and Reliable Software for
-  Real-time \&Amp; Distributed Systems Using Ada and Related Technologies},
-  SIGAda '04, pages 1--8, New York, NY, USA, 2004. ACM.
 
 \bibitem{sistla2004symmetry}
 A.~P. Sistla and P.~Godefroid.
@@ -601,6 +414,11 @@ K.~Tindell and J.~Clark.
 \newblock Holistic schedulability analysis for distributed hard real-time
   systems.
 \newblock {\em Microprocessing and microprogramming}, 40(2):117--134, 1994.
+
+\bibitem{valmari1990stubborn}
+A.~Valmari.
+\newblock A stubborn attack on state explosion.
+\newblock In {\em Computer-Aided Verification}, pages 156--165. Springer, 1990.
 
 \bibitem{waldo1998remote}
 J.~Waldo.
@@ -633,16 +451,15 @@ R.~Wilhelm, J.~Engblom, A.~Ermedahl, N.~Holsti, S.~Thesing, D.~Whalley,
 \newblock {\em ACM Transactions on Embedded Computing Systems (TECS)}, 7(3):36,
   2008.
 
+\bibitem{wolper1993partial}
+P.~Wolper and P.~Godefroid.
+\newblock Partial-order methods for temporal verification.
+\newblock In {\em CONCUR'93}, pages 233--246. Springer, 1993.
+
 \bibitem{ylonen2006secure}
 T.~Ylonen and C.~Lonvick.
 \newblock The secure shell (ssh) protocol architecture.
 \newblock 2006.
-
-\bibitem{yovine1997kronos}
-S.~Yovine.
-\newblock Kronos: A verification tool for real-time systems.
-\newblock {\em International Journal on Software Tools for Technology Transfer
-  (STTT)}, 1(1):123--133, 1997.
 
 \bibitem{zhou1999modeling}
 M.~Zhou and K.~Venkatesh.

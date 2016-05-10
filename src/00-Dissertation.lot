@@ -6,10 +6,11 @@ Table \hfill Page
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {1}{\ignorespaces Scalability Testing with CPNTools and ASAP -- A bounded state space covering 10 hyperperiods of component interactions is generated\relax }}{65}{table.caption.5}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1}{\ignorespaces Client Server Example - Summary of Results\relax }}{101}{table.caption.5}
-\contentsline {table}{\numberline {2}{\ignorespaces Publish Subscribe Example -- Summary of Results\relax }}{104}{table.caption.6}
-\contentsline {table}{\numberline {3}{\ignorespaces Trajectory Planner Example -- Summary of Results\relax }}{108}{table.caption.7}
-\contentsline {table}{\numberline {4}{\ignorespaces Periodic Timers -- Summary of Results\relax }}{111}{table.caption.8}
+\contentsline {table}{\numberline {2}{\ignorespaces Client Server Example - Summary of Results\relax }}{84}{table.caption.6}
+\contentsline {table}{\numberline {3}{\ignorespaces Publish Subscribe Example -- Summary of Results\relax }}{87}{table.caption.7}
+\contentsline {table}{\numberline {4}{\ignorespaces Trajectory Planner Example -- Summary of Results\relax }}{91}{table.caption.8}
+\contentsline {table}{\numberline {5}{\ignorespaces Periodic Timers -- Summary of Results\relax }}{94}{table.caption.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
