@@ -172,6 +172,11 @@ L.~E. Holloway, B.~H. Krogh, and A.~Giua.
 \newblock A survey of petri net methods for controlled discrete event systems.
 \newblock {\em Discrete Event Dynamic Systems}, 7(2):151--190, 1997.
 
+\bibitem{huber1998traffic}
+F.~Huber, S.~Molterer, B.~Sch{\"a}tz, O.~Slotosch, and A.~Vilbig.
+\newblock Traffic lights-an autofocus case study.
+\newblock In {\em csd}, page 282. IEEE, 1998.
+
 \bibitem{huber1996autofocus}
 F.~Huber, B.~Sch{\"a}tz, A.~Schmidt, and K.~Spies.
 \newblock Autofocus—a tool for distributed systems specification.
@@ -398,6 +403,13 @@ X.~Renault, F.~Kordon, and J.~Hugues.
 B.~Selic.
 \newblock A generic framework for modeling resources with uml.
 \newblock {\em Computer}, 33(6):64--69, 2000.
+
+\bibitem{sharp1998reducing}
+D.~C. Sharp.
+\newblock Reducing avionics software cost through component based product line
+  development.
+\newblock In {\em Digital Avionics Systems Conference, 1998. Proceedings., 17th
+  DASC. The AIAA/IEEE/SAE}, volume~2, pages G32--1. IEEE, 1998.
 
 \bibitem{simulink1993mathworks}
 M.~Simulink and M.~Natick.
