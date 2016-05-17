@@ -9,6 +9,10 @@ Repeated entry---line 6781 of file 00-Dissertation.bib
  : @misc{BBB
  :          ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 6786 of file 00-Dissertation.bib
+ : @misc{KSP
+ :          ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 6796 of file 00-Dissertation.bib
  : @conference {ROS
  :                 ,
@@ -16,10 +20,14 @@ I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in BBB
 Warning--to sort, need author or key in CubeSat
 Warning--to sort, need author or key in CubeSat_Mars
+Warning--to sort, need author or key in KSP
+Warning--to sort, need author or key in kRPC
 Warning--empty journal in UML
 Warning--empty journal in de2001object
 Warning--empty journal in feilkas2009top
+Warning--empty booktitle in kornecki2004approaches
+Warning--empty year in kornecki2004approaches
 Warning--can't use both volume and number fields in lin1987protocol
 Warning--empty journal in liu2000real
 Warning--empty journal in ylonen2006secure
-(There were 3 error messages)
+(There were 4 error messages)

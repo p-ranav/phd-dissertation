@@ -4,6 +4,14 @@
 {Beaglebone Black}.
 \newblock \url{http://beagleboard.org/BLACK/}.
 
+\bibitem{kRPC}
+{Kerbal Remote Procedure Call Server}.
+\newblock \url{https://github.com/djungelorm/krpc/}.
+
+\bibitem{KSP}
+{Kerbal Space Program}.
+\newblock \url{https://kerbalspaceprogram.com/en/}.
+
 \bibitem{CubeSat}
 {NASA CubeSat Launch initiative}.
 \newblock
@@ -209,6 +217,16 @@ M.~Klein, T.~Ralya, B.~Pollak, R.~Obenza, and M.~G. Harbour.
 \newblock {\em A practitioner’s handbook for real-time analysis: guide to
   rate monotonic analysis for real-time systems}.
 \newblock Springer Science \& Business Media, 2012.
+
+\bibitem{airborne_software}
+A.~J. Kornecki.
+\newblock Airborne software: communication and certification.
+\newblock {\em Scalable Computing: Practice and Experience}, 9(1), 2001.
+
+\bibitem{kornecki2004approaches}
+A.~J. Kornecki and K.~Hall.
+\newblock Approaches to assure safety in fly-by-wire systems: Airbus vs.
+  boeing.
 
 \bibitem{Kristensen2000}
 L.~M. Kristensen.

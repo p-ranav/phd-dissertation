@@ -83,21 +83,10 @@ The goal of the ROSMOD system model is to provide a language to precisely model 
 A \emph{System Model} completely describes the hardware architecture of a system onto which the software can be deployed. A ROSMOD Project contains one or more \emph{Systems}. Each System contains one or more \emph{Hosts}, one or more \emph{Users}, one or more \emph{Networks}, and one or more \emph{Links}.  A host can contain one or more \emph{Network Interfaces}, which connect through a link to a network.  On this link the host's interface is assigned an IP address, which matches the subnet and netmask specification of the network. Additionally, a host has a set of references to users, which define the user-name, home directory, and ssh-key location for that user. The host itself has attributes which determine what kind of processor architecture it has, e.g. \emph{armv7l}, what operating system it is running, and lastly a combination of Device ID and Device ID Command which provide an additional means for specifying the type of host (and a way to determine it), for instance specifying the difference between a BeagleBone Black and an NVIDIA Jetson TK1 which both have armv7l architecture but can be separated by looking at the model name in the device tree.  Finally, a host may contain zero or more \emph{Capabilities} to which the component constraints (described in the previous section) are mapped.  The final relevant attribute is the \emph{Network Profile} attribute of a link. Using the network profile, which is specified as a time-series of bandwidth and latency values, we can configure the links of the network using the Linux TC to enforce time-varying bandwidth and latency. This network configuration is useful when running experiments on laboratory hardware for which the network is not representative of the deployed system's
 network.
 
-\subsubsection{Deployment and Experimentation}
-
-\emph{Deployment} refers to the act of starting application processes on candidate hosts, where each host can provide for and satisfy all of the constraints of the processes e.g. general purpose input/output (GPIO) ports, CPU speed etc. Therefore, a deployment is a mapping between application processes and system hosts on which the application processes run. The ROSMOD Deployment Model makes this map a loose coupling to enable rapid testing and experimentation. Each Deployment consists of a set of \emph{Containers}. Each container, conceptually, is a set of processes that need to be
-colocated. Containers also ensure that no process outside a container is deployed along with the container once it has been mapped to a host. Each container, therefore, contains a set of \emph{Nodes} (ROS terminology for processes). In each node, application developers instantiate one or more components previously defined in the Software model. Following the ROSMOD component model, each such instance maps to an executor thread that executes the operations in the component's operation queue.  Note that the same component can be instantiated multiple times even within the same node. Also note the container is not mapped to a specific host within the deployment model, but rather is automatically mapped to a host by the deployment infrastructure within an \emph{Experiment}.
-
-As shown in Figure \ref{fig:ROSMOD_Project}, each project supports a set of \emph{Experiments}. Each experiment has pointers to one System model and one Deployment model. The system model provides the set of available devices and the deployment model provides the set of containers, where each container contains a set of component constraints that need satisfying (the union of all the container's nodes' component constraints). ROSMOD uses these sets to find a suitable mapping and then deploys the containers on the chosen host devices, if a mapping can be found which satisfies all the constraints of all the containers.  When the deployment infrastructure selects hosts from the system model for mapping, it first checks to see which of the system model's hosts are 1) reachable, 2) have valid login credentials, 3) have the correct architecture, operating system, and device ID, and 3) are not currently running any other compilation or experiment processes from any other user.  In the case that there are no available hosts in the system or the deployment's constraints cannot be satisfied, the infrastructure informs the user. Upon successful deployment of the experiment, the infrastructure automatically stores the specific mapping relevant to the deployed experiment for later management and destruction. When such experiments are stopped, ROSMOD retrieves the component logs from the hosts and displays results. 
-
-Such a loose coupling between the deployment model and the system model, along with the infrastructure automatically mapping the containers to valid, unused hosts enables the execution of the same
-deployment onto subsets of a large system, for instance running many instances of the same deployment as separate experiments in parallel on a large cluster of embedded devices.  Additionally such a loose coupling enables redeployment onto a completely different system by simply changing the experiment's system model reference; the infrastructure will automatically verify that the new system meets the constraints of the deployment and has available hosts.
-
 \subsection{Deployment Infrastructure}
 \label{sec:Deployment_Infrastructure}
 
-The workflow for software deployment is as shown Figure \ref{fig:workflow}. After the user has generated and compiled the software model into binary executables, they can run an experiment that has valid deployment model and system model references. Every ROSMOD workspace is generated with an additional \emph{node} package. This builds a generic node executable that can dynamically load libraries. When the software infrastructure generates and compiles the source code for the software model, the components are compiled into dynamically loadable libraries, one for each component
-definition along with a single executable corresponding to the generic node package. The first step the deployment infrastructure performs when running an experiment is generating the XML files which contain metadata about each ROS node modeled in the ROSMOD Deployment Model. This metadata includes the component instances in each node and the appropriate component libraries to be loaded. Based on the XML file supplied to the node executable, the node will behave as one of the ROS nodes in the deployment model. This allows for a reusable framework where a generic executable (1) loads an XML file, (2) identifies the component instances in the node, (3) finds the necessary component libraries to load and (4) spawns the executor threads bound to each component.
+The workflow for software deployment is as shown Figure \ref{fig:workflow}. After the user has generated and compiled the software model into binary executables, they can run an experiment that has valid deployment model and system model references. Every ROSMOD workspace is generated with an additional \emph{node} package. This builds a generic node executable that can dynamically load libraries. When the software infrastructure generates and compiles the source code for the software model, the components are compiled into dynamically loadable libraries, one for each component definition along with a single executable corresponding to the generic node package. The first step the deployment infrastructure performs when running an experiment is generating the XML files which contain metadata about each ROS node modeled in the ROSMOD Deployment Model. This metadata includes the component instances in each node and the appropriate component libraries to be loaded. Based on the XML file supplied to the node executable, the node will behave as one of the ROS nodes in the deployment model. This allows for a reusable framework where a generic executable (1) loads an XML file, (2) identifies the component instances in the node, (3) finds the necessary component libraries to load and (4) spawns the executor threads bound to each component.
 
 \begin{figure}[ht]
 	\centering
@@ -106,42 +95,6 @@ definition along with a single executable corresponding to the generic node pack
 	\label{fig:workflow}
 \end{figure}
 \FloatBarrier
-
-The reason for having the components be libraries that are loaded at run-time by a node executable is 1) to help enforce separation between each component's code, 2) to shorten the compilation time (which may be quite long for embedded processors and complex models), and most importantly 3) to enable the ability for users to change the mapping of component instances to processes without the need to recompile any of the code.  Because ROSMOD is focused on the rapid development and deployment of reusable software components, we designed the infrastructure to allow users to experiment with which components are collocated within processes dynamically and rapidly iterate through several scenarios and experiments without having to wait for code compilations between experiments.  Finally, such a component-based deployment framework enables unit testing and integration testing in a very well-defined manner for the software components.  If an error occurs during the execution of an application on a system, the user can easily and quickly break the deployment down into sub-deployments for unit-testing of only the relevant components to determine the source of the error.
-
-In the above architecture, the deployment needs three primary ingredients: (1) the generic node executable, (2) dynamically loadable component libraries, and (3) an XML file for each ROS node in the
-deployment model. For each new node added to the deployment model, by merely regenerating the XML files, we can establish a new deployment. The ROS workspace is rebuilt only if new component
-definitions are added to the Software Model. This architecture not
-only accelerates the development process but also ensures a separation
-between the Software Model (i.e. the application structure) and
-deployment-specific concerns e.g. component instantiation inside ROS
-nodes.
-
-When the user has selected an experiment to run, the deployment
-infrastructure first determines whether the selected deployment can
-execute on the selected system.  Like the software infrastructure
-described above, the deployment infrastructure queries the selected
-system to validate that the system is reachable, conforms to the
-model, and has available hosts for deployment (i.e. they are not
-currently running any compilation or deployment processes).  Once
-those available hosts have been determined, the infrastructure
-attempts to map the deployment's containers to the available hosts
-based on the constraints and capabilities of the two sets.  If the
-constraints cannot be satisfied by the capabilities of the available
-hosts, the user is informed and the deployment of the experiment is
-halted.  If the capabilities of the hosts do satisfy the constraints
-of the containers and their associated components, the deployment
-infrastructure generates the required XML files for the deployment and
-copies the XML files and the binaries over to the selected hosts,
-before starting the relevant processes.  Finally, if all of those
-steps are successful, the infrastructure saves the mapping into the
-model for user inspection and for later teardown of the experiment.
-
-When the user chooses to end a currently running experiment, the
-deployment infrastructure verifies that the experiment is still
-running before stopping the associated processes, copying the relevant
-log files back, cleaning up the deployment artifacts from the hosts,
-and removing the saved experiment mapping from the model.
 
 \section{Evaluation of Timing Analysis Results}
 
@@ -153,7 +106,7 @@ The remainder of this section presents various primitive interaction patterns an
 
 \subsection{Understanding the CPN Analysis Plots}
 
-By performing state space analysis, we are analyzing a bounded tree of possible component behaviors. By identifying the worst-case execution trace in this tree, we're able to obtain a suitable conservative candidate execution that represents a possible behavior. Once this trace is identified, we plot the execution time behavior of all components in this trace. This pattern is followed in all of the following plots. Figure \ref{fig:understanding-the-plots} describes the analysis plots presented later in this chapter. Each subplot in this figure represents the execution of a component operation. The x axis of this plot represents the analysis time, and the y axis represents the execution time of the operation. Each execution is shown as a rectangular pulse, the amplitude of which is the execution time of the operation. The rising edge of the pulse represents the enqueue time stamp of the operation i.e. the time instant when a request for this operation was enqueued onto the component message queue. The falling edge of the pulse represents the completion time stamp i.e. the time instant when the component executor thread has completed execution of the operation and is ready to service the next request waiting in the queue. Since the execution time of the operation is calculated from the enqueue time instant, the plot can have intersecting pulses, as shown in the second subplot. Here a new operation request is enqueued onto the message queue while an existing instance of the operation request is being executed by the component executor thread. 
+By performing state space analysis, we are analyzing a bounded tree of possible component behaviors. By identifying the worst-case execution trace in this tree, we're able to obtain a suitable conservative candidate execution that represents a possible behavior. Once this trace is identified, we plot the response time behavior of all components in this trace. This pattern is followed in all of the following plots. Figure \ref{fig:understanding-the-plots} describes the analysis plots presented later in this chapter. Each subplot in this figure represents the execution of a component operation. The x axis of this plot represents the analysis time, and the y axis represents the response time of the operation. Each execution is shown as a rectangular pulse, the amplitude of which is the worst-case response time (WCRT) of the operation i.e. the time taken for the operation to complete (response) from when the executor thread was released for execution (trigger). The rising edge of the pulse represents the enqueue time stamp of the operation i.e. the time instant when a request for this operation was enqueued onto the component message queue. The falling edge of the pulse represents the completion time stamp i.e. the time instant when the component executor thread has completed execution of the operation and is ready to service the next request waiting in the queue. Since the response time of the operation is calculated from the enqueue time instant, the plot can have intersecting pulses, as shown in the second subplot. Here a new operation request is enqueued onto the message queue while an existing instance of the operation request is being executed by the component executor thread. 
 
 \begin{figure}[h]
 	\centering
@@ -195,7 +148,7 @@ Table \ref{tbl:client-server} shows a summary of these results. Similar tables a
 \label{tbl:client-server}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}}  & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental \\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}}  & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental \\ WCRT (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCRT (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
 \begin{tabular}[c]{@{}c@{}}Power\\ Operation\end{tabular}          & Server                                                            & 829.155041                                                                                  & 852.0                                                                                                & 2000                                                             \\ \hline
 \begin{tabular}[c]{@{}c@{}}Client\\ Timer\\ Operation\end{tabular} & Client                                                            & 1121.306376                                                                                 & 1152.0                                                                                               & 3000                                                             \\ \hline
 \end{tabular}
@@ -243,7 +196,7 @@ Figure \ref{fig:publish-subscribe} shows our testbed observations and Figure \re
 \label{tbl:publish_subscribe}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental\\ WCRT (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCRT (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
 \begin{tabular}[c]{@{}c@{}}Subscriber\\ Port\\ Operation\end{tabular} & Subscriber & 194.718958 & 200.0 & 1000 \\ \hline
 \begin{tabular}[c]{@{}c@{}}Publisher\\ Timer\\ Operation\end{tabular} & Publisher & 249.2155 & 252.0 & 1000 \\ \hline
 \end{tabular}
@@ -301,7 +254,7 @@ This is a common interaction pattern in Cyber-Physical systems since embedded se
 	\label{tbl:trajectory-planner}
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
-		\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
+		\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental\\ WCRT (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCRT (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
 		\begin{tabular}[c]{@{}c@{}}Sensor\\ Timer\\ Operation\end{tabular} & Sensor & 199.00875 & 199.05 & 400 \\ \hline
 		\begin{tabular}[c]{@{}c@{}}Compute\\ Operation\end{tabular} & Sensor & 445.373417 & 448.95 & 600 \\ \hline
 		\begin{tabular}[c]{@{}c@{}}State\\ Subscriber\\ Operation\end{tabular} & \begin{tabular}[c]{@{}c@{}}Trajectory\\ Planner\end{tabular} & 446.874334 & 450.95 & 1000 \\ \hline
@@ -346,7 +299,7 @@ Since ROSMOD components are associated with a single executor thread and compone
 	\label{tbl:periodic-timers}
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
-		\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCET (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
+		\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental\\ WCRT (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCRT (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
 		Timer\_1                                                          & Component\_1                                                      & 243.160041                                                                & 253.0                                                                        & 300                                                              \\ \hline
 		Timer\_2                                                          & Component\_1                                                      & 122.4165                                                                  & 138.0                                                                        & 150                                                              \\ \hline
 		Timer\_3                                                          & Component\_1                                                      & 62.789916                                                                 & 69.5                                                                         & 75                                                               \\ \hline
@@ -405,242 +358,32 @@ For the CPN analysis, in order to obtain pure execution times of all these opera
 \end{figure}
 \FloatBarrier
 
+\subsection{Integration with Physics Simulators - Cyber-Physical Systems Scenarios}
+
+\subsubsection{Kerbal Space Program}
+
+Kerbal Space Program \cite{KSP} (KSP) is a widely popular space flight simulator for a variety of platforms including Linux, OS X and Windows. In this game, players get to manage a space program, designing and building spacecrafts and exploring celestial bodies. 
+
+While KSP does not provide a perfect simulation of reality, it has been widely praised for its component-based design and development process coupled with aerodynamic, gravitational, and rigid-body interaction and simulation. In this simulation, every man-made object follows Newtonian dynamics. Rocket thrust and aerodynamic forces are accurately applied to the vehicles based on the directions and precise positions in which the force-affected elements are mounted on the vessel. Using KSP, we have modeled scenarios for a variety of flight missions including interplanetary travel. In this section, we briefly describe an aircraft flight controller that was designed and tested using the RCPS testbed and KSP.
+
+This CPS scenario is a flight controller application used to completely control a KSP aircraft from the primary space-plane hanger to a destination airport. The application processes require inputs from KSP e.g. sensor data about pitch, roll, yaw, mean altitude etc. and interfaces to control the flight dynamics e.g. thrust, pitch and heading. If these interfaces are setup, then the processes can periodically retrieve flight telemetry and provide commands for course correction and feedback control.
+
+
+Using an open source project called kRPC \cite{kRPC} (Kerbal Remote Procedure Call Server), the BBB nodes running CPS processes are provided with an interface to the simulation. Figure \ref{fig:ksp} shows the Stearwing A300 aircraft taking off from the space-plane hanger and stabilizing at a cruising altitude of 2000 meters. Each control unit in the aircraft is simulated by a BBB. It is critical to incorporate redundancy in all components and connections to assure that the system can survive runtime failures, especially in airborne software \cite{airborne_software} \cite{kornecki2004approaches}. So, many of the RCPS nodes in our testbed act as redundant sensors, all connected to KSP, receiving and periodically publishing messages. If one of the nodes in the testbed fails, either due to a hardware anomaly or a software fault, then the rest of the nodes are used to arrive at a general agreement regarding the sensor value to be considered for control.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{ksp}
+	\caption{Stearwing A300 PID Control}
+	\label{fig:ksp}
+\end{figure} 
+\FloatBarrier 
+
+\subsubsection{Implementation and Results}
+
 \section{Analysis Limitations}
 
 The business logic abstraction, as presented in Section \ref{sec:BL_Model}, is quite simple. This model represents abstractly how long the different blocks of code in an operation take, but does not fully model its behavior e.g. each non-blocking local code block is represented by a single WCET and no other properties. Since variables local to these functional code blocks are not modeled, this grammar also does not model conditional behavior. So, a high-level controller component that executes an event-driven state machine cannot be sufficiently modeled with the current model. Moreover, depending on the local state of such code blocks, different interaction patterns may be invoked e.g. if this high-level controller was responsible for performing periodic image processing to identify an object, the image processing (and all the associated image processing) would stop once the object was identified. Since this conditional interaction is not modeled in the CPN business logic grammar, the abstraction would assume that the image processing interactions always happen, instead of conditionally. Such abstractions can lead to gross over-estimation of the worst-case execution times of component operations. The primary reason for keeping the business logic grammar to this level of simplicity is to reduce the level of state space explosion i.e. modeling all local variables of an operation, and consequently the state changes for each of these variables would exponentially increase the size of the state space to be analyzed. Also, modeling the local variable state would also require (1) modeling the semantics of language with which the operation code was written, (2) evaluating all expressions using these local variables, and (3) calculating the result of all conditionals used in the business logic at all possible times. Such an analysis would be too refined, hard to implement and susceptible to semantic errors. 
 
 
-
-
-\if 0
-\subsection{Cyber-Physical Systems: Autonomous Ground Support Equipment (AGSE) Robot}
-
-This section briefly describes an Autonomous Ground Support Equipment
-(AGSE) robot that we designed, built, and deployed for the 2014-2015
-NASA Student Launch Competition \cite{NASA_SL}. Special emphasis is
-given to the value of a rapid system prototyping methodology in the
-design process and how it allowed the AGSE to overcome many of the
-challenges and problems encountered during the competition.  We also use
-this example as our cyber-physical system for timing analysis.
-
-The NASA Student Launch Initiative \cite{NASA_SL} is a research-based
-competition partnered with NASA's Centennial Challenges, and aims to
-stimulate rapid, low-cost development of rocket propulsion and space
-exploration systems.  Both collegiate and non-academic teams
-participate in the 8-month competition cycle composed of design,
-fabrication, and testing of flight vehicles, payloads, and ground
-support equipment.
-
-The purpose of the 2014-2015 competition was to simulate a Mars Ascent
-Vehicle (MAV) and to perform a sample recovery from the Martian
-surface. The requirements for this simulation were twofold: (1) Design
-and deploy a system termed the Autonomous Ground Support Equipment
-(AGSE) that independently retrieves a sample off the ground and stores
-it in the payload bay of a rocket, and (2) launch the rocket to an
-altitude of 3000 ft. before safely recovering the sample.
-
-The sample retrieval was accomplished using a robotic arm with
-computer vision to find the sample and identify its orientation. After
-successfully acquiring the sample, the system will then search for the
-payload bay, identify its orientation, and place the sample within it.
-The robot arm itself is a simple crane-style device akin to a
-pick-and-place robot with a four-pronged gripper as the end effector.
-It was designed to have a cylindrical workspace in order to most
-efficiently access the ground around the system and rocket. It starts
-in a known position and incrementally scans its workspace using a
-built in camera. Image processing is performed to identify key
-environmental features such as the sample and payload bay.  The
-control flow in the AGSE software is shown in Figure
-\ref{fig:AGSE-FlowChart}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth]{AGSE-FlowChart.png}
-	\caption{AGSE Control Flow Chart}
-	\label{fig:AGSE-FlowChart}
-\end{figure}
-\FloatBarrier
-
-While the driving requirements of the competition were fixed, many of
-the minor rules regarding AGSE performance, behavior, and safety
-requirements evolved and were augmented throughout the course of the
-competition. The volatile nature of these rules combined with the
-short eight month duration of the build cycle precipitated the need
-for rapidly adjustable design and fabrication processes. As such, an
-iterative, modular, design-build-test approach was implemented in
-order to concurrently develop as many components of the hardware and
-software systems as possible. An initial AGSE prototype was
-conceptualized from off-the-shelf components and the mechanical and
-software systems were built in parallel, integrated, and tested. These
-preliminary results were then used in future development to produce a
-more ideal structure with greater positional accuracy and system
-robustness.  Due to the modular nature of the system's design, it was
-not necessary to immediately build a completely new second system, so
-incremental improvements could be made on a specific subsystem (such
-as the robot's gripper, any single degree of freedom, image
-processing, motor control, etc.) as the design evolved.
-
-\subsubsection{Distributed Deployment}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{AGSE_Deployment.png}
-	\caption{AGSE Package Deployment}
-	\label{fig:AGSE_Deployment}
-\end{figure}
-\FloatBarrier
-
-The AGSE robot is controlled by a distributed set of embedded
-controllers. Figure \ref{fig:AGSE_Deployment} shows the high-level
-design for the deployment architecture. There are three embedded
-devices, each with its own responsibilities.  The reasons for the use
-of multiple embedded controllers cooperating was two-fold: 1) given
-the design decision to fully automate the robot to search the
-workspace for both the sample and the payload bay, we needed an
-embedded processor capable of performing image-based object detection
-and 2) given the design of the robot to search a workspace with the
-given degrees of freedom, we needed an embedded processor with the
-required available General Purpose Input/Output (GPIO) and Special
-Function Input/Output (SFIO) pins. 
-
-To meet the first requirement, we selected the NVIDIA Jetson TK1, which is an embedded ARM controller
-with 4+1 ARM cores and 192 CUDA cores, that consumes 10 W or less.
-We could not use the Jetson to meet the second requirement since it
-does not support enough GPIO to control the linear actuators and
-retrieve feedback from them.  Furthermore, it lacks SFIO for encoder
-pulse decoding.  Therefore, a BeagleBone Black was selected for the
-motor control interface board because it has specific hardware for
-decoding quadrature encoded pulses (QEP) and enough available GPIO for
-controlling the linear actuators and reading limit switches.
-
-Since one of the secondary requirements of the competition governed
-pause control and state feedback to the operator of the AGSE (during
-the competition execution), a second BeagleBone Black was introduced
-which served to provide mechanical safety switches for pausing the
-AGSE, LED panels indicating the state of the AGSE, and a touchscreen
-showing what the AGSE sees as it searches the workspace for the sample
-and the payload bay.  This BeagleBone Black resides the User Interface
-Panel (UIP).
-
-The NVIDIA Jetson TK1 periodically fetches the latest webcam feed,
-performs image processing and high-level path planning, and updates a
-global state machine. The Beaglebone Black (BBB) mounted on top of the
-robot performs power management, low-level motor control and feedback
-processing. Lastly, the User Input Panel (UIP) houses a second
-Beaglebone Black which reacts to user input through switches and
-provides feedback through touchscreen display and LED panel
-display. The UIP also responsible for keeping the user
-informed about the real-time state of the AGSE and the current webcam
-feed. Each of these controllers host multiple ROS nodes with ROSMOD
-component executor threads periodically performing algorithmic
-computations, calculating new robotic paths and communicating to
-coordinate and maintain the AGSE state.
-
-\subsubsection{Software Prototyping with ROSMOD}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{AGSE-Deployment.png}
-	\caption{AGSE Component Assembly}
-	\label{fig:AGSE}
-\end{figure}
-\FloatBarrier
-
-The AGSE software was iteratively designed and rapid prototyped using
-our ROSMOD tool suite. The Software Model consists of 8 components
-spread across three ROS packages - motor control, high-level state
-machine control and image processing. Each package is characterized by
-its local set of messages, service and interacting components. Note
-that just as in ROS, packages can share messages so that components
-can subscribe/publish/provide/require messages/services from other
-packages. Figure \ref{fig:AGSE} shows the component assembly and
-wiring as per the design. The \emph{radialControl} and
-\emph{verticalControl} components are responsible for radial and
-vertical actuation of the AGSE respectively. The
-\emph{rotationControl} component is capable of controlling three servo
-motors: (1) the base rotation servo, (2) the gripper rotation servo,
-and finally the (3) gripper position servo that opens and closes the
-robot gripper. A \emph{Camera} component deployed on the NVIDIA Jetson
-TK1 provides a direct interface to the camera. Using the
-\emph{CaptureImage\_Server}, the \emph{ImageProcessor} component
-receives a snapshot of the camera feed for periodic processing
-needs. This feed is also used by the \emph{userDisplay} component to
-display the feed on the user input panel, as shown in Figure
-\ref{fig:AGSE_Deployment}. The user input panel is the primary
-interface between the ROSMOD applications and the user. The
-\emph{userDisplay} component provides information to the user and the
-\emph{userInputControl} receives data from the user, specifically to
-read the various control switches on the panel e.g. the pause, alarm,
-and debug switches. Lastly, a \emph{HighLevelControl} component
-orchestrates the high-level state transitions and controls the
-operation of the robotic arm. These transitions include commands such
-as \emph{find\_payload\_bay}, \emph{find\_sample},
-\emph{move\_to\_target} etc., each of which publishes messages to
-other components to propagate the motor control commands.
-
-The ROSMOD code generators enabled generation of nearly 60\% (6,000+
-lines) of the total built code. As mentioned before, much of this code
-includes port initialization, build system files, callback skeletons,
-etc. that usually take up a significant amount of development time. As
-developers, we had to fill in the missing pieces - the business logic
-of the callbacks, completing the component interaction loops. This
-code includes architecture-specific control, e.g. GPIO and encoder
-readings, LED and switch settings, camera image acquisition, and
-high-level control.
-
-The final AGSE used in the 2014-2015 NASA SLI competition is shown in
-Figure~\ref{fig:competition_AGSE}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{AGSE_Render.png}
-	\caption{AGSE and rocket used in the 2014-2015 NASA SLI
-		competition.  The UIP is shown in the bottom left of the
-		picture, the Motor Control Board is on the top of the arm of
-		the AGSE, and the NVIDIA Jetson is under the rocket.}
-	\label{fig:competition_AGSE}
-\end{figure}
-\FloatBarrier
-
-\subsubsection{Performance Assessment}
-
-At the competition, the Vanderbilt AGSE was able to complete the
-sample retrieval process in approximately $4.5$ minutes. The recovery
-process, as shown in Figure \ref{fig:AGSE_Operation}, was successful,
-with payload and rocket bay recognition occurring quickly and
-efficiently. The AGSE was able to grasp the payload using only two of
-its four padded end effector phalanges, and successfully deposited the
-payload within the rocket bay. This operation received high marks from
-the NASA officials and earned the competition's \emph{Autonomous
-	Ground Support Equipment Award}.
-
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=\linewidth]{AGSE_Operation.png}
-	\caption{AGSE Calibration and Testing}
-	\label{fig:AGSE_Operation}	
-\end{figure}
-\FloatBarrier
-
-System robustness was validated on the day of competition when a key
-component failed and was able to be quickly replaced with a different
-part with no detriment to system performance. The Dynamixel AX-12A
-servo controlling the base rotational degree of freedom of the AGSE
-suffered an irreparable failure of its gearbox and had to be removed
-from the robot. A backup of the servo was not readily available, and a
-different model servo by the same company had to be swapped in
-instead.  This new model, a Dynamixel MX-28T, while having similar
-performance as the old servo, had a different communication protocol
-and mounting footprint, as well as a more complex control scheme.
-
-The component-based nature of ROSMOD allowed quick modifications of
-the business logic of the \emph{rotation\_controller} component to
-update the system to use the new hardware.  The new control scheme was
-quickly implemented and the control software was updated to account
-for the new physical placement of the servo due to its different
-mounting footprint. After these modifications were made, the AGSE was
-able to perform at its optimal level during its part of the
-competition.
-
-\fi
 
