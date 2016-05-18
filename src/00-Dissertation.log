@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2016.4.30)  17 MAY 2016 11:51
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9) (rev 5238)  (format=lualatex 2016.4.30)  18 MAY 2016 12:04
  restricted \write18 enabled.
 **00-Dissertation.tex
 (./00-Dissertation.tex
@@ -848,7 +848,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
  [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 12.
- <img/sdlc.png, id=513, 647.41875pt x 620.3175pt>
+ <img/sdlc.png, id=521, 647.41875pt x 620.3175pt>
 File: img/sdlc.png Graphic file (type png)
  <use img/sdlc.png>
 Package pdftex.def Info: img/sdlc.png used on input line 20.
@@ -867,7 +867,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.07397pt on input line 21.
 
-<img/big_picture_2.png, id=514, 368.0952pt x 292.9344pt>
+<img/big_picture_2.png, id=522, 368.0952pt x 292.9344pt>
 File: img/big_picture_2.png Graphic file (type png)
 
 <use img/big_picture_2.png>
@@ -886,7 +886,7 @@ orst-case ex-e-cu-tion times (WCET)
 
 [8]) (./03-Related-Research.tex [9]
 CHAPTER III.
-<img/pn.png, id=582, 551.05875pt x 557.08125pt>
+<img/pn.png, id=590, 551.05875pt x 557.08125pt>
 File: img/pn.png Graphic file (type png)
  <use img/pn.png>
 Package pdftex.def Info: img/pn.png used on input line 116.
@@ -903,7 +903,7 @@ LaTeX Warning: Reference `fig:mast' on page 18 undefined on input line 202.
 
 [18] [19]) (./04-DREMS.tex [20]
 CHAPTER IV.
-<img/ROSMOD_Component.png, id=723, 1288.815pt x 649.67719pt>
+<img/ROSMOD_Component.png, id=731, 1288.815pt x 649.67719pt>
 File: img/ROSMOD_Component.png Graphic file (type png)
 
 <use img/ROSMOD_Component.png>
@@ -916,7 +916,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [21
 
 ] [22<./img/ROSMOD_Component.png>] [23]
-<img/cop_execution_semantics.png, id=751, 447.17062pt x 170.13562pt>
+<img/cop_execution_semantics.png, id=759, 447.17062pt x 170.13562pt>
 File: img/cop_execution_semantics.png Graphic file (type png)
 
 <use img/cop_execution_semantics.png>
@@ -931,7 +931,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.43999pt on input line 29.
  [24<./img/cop_execution_semantics.png>]
-<img/partition_scheduling.png, id=762, 1271.5003pt x 582.67688pt>
+<img/partition_scheduling.png, id=770, 1271.5003pt x 582.67688pt>
 File: img/partition_scheduling.png Graphic file (type png)
 
 <use img/partition_scheduling.png>
@@ -958,21 +958,21 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 28.
 ("C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-[30] <img/hlcpn_cropped.jpg, id=814, 819.06pt x 662.475pt>
+[30] <img/hlcpn_cropped.jpg, id=822, 819.06pt x 662.475pt>
 File: img/hlcpn_cropped.jpg Graphic file (type jpg)
 
 <use img/hlcpn_cropped.jpg>
 Package pdftex.def Info: img/hlcpn_cropped.jpg used on input line 34.
 (pdftex.def)             Requested size: 433.62pt x 350.72595pt.
 
-<img/hlcpn_structure.png, id=817, 651.3936pt x 529.4982pt>
+<img/hlcpn_structure.png, id=825, 651.3936pt x 529.4982pt>
 File: img/hlcpn_structure.png Graphic file (type png)
 
 <use img/hlcpn_structure.png>
 Package pdftex.def Info: img/hlcpn_structure.png used on input line 43.
 (pdftex.def)             Requested size: 433.62pt x 352.48352pt.
  [31<./img/hlcpn_cropped.jpg>] [32<./img/hlcpn_structure.png>]
-<img/temporal_partition_schedule.png, id=834, 533.8344pt x 315.579pt>
+<img/temporal_partition_schedule.png, id=842, 533.8344pt x 315.579pt>
 File: img/temporal_partition_schedule.png Graphic file (type png)
 
 <use img/temporal_partition_schedule.png>
@@ -980,7 +980,7 @@ Package pdftex.def Info: img/temporal_partition_schedule.png used on input line
 78.
 (pdftex.def)             Requested size: 303.53267pt x 179.43887pt.
  [33]
-<img/source-thread_execution_cycle.png, id=843, 638.385pt x 454.8192pt>
+<img/source-thread_execution_cycle.png, id=851, 638.385pt x 454.8192pt>
 File: img/source-thread_execution_cycle.png Graphic file (type png)
 
 <use img/source-thread_execution_cycle.png>
@@ -989,21 +989,21 @@ e 97.
 (pdftex.def)             Requested size: 433.62pt x 308.9329pt.
  [34<./img/temporal_partition_schedule.png>] [35<./img/source-thread_execution_c
 ycle.png>]
-<img/cpn_cmq.png, id=858, 627.7854pt x 478.9092pt>
+<img/cpn_cmq.png, id=866, 627.7854pt x 478.9092pt>
 File: img/cpn_cmq.png Graphic file (type png)
  <use img/cpn_cmq.png>
 Package pdftex.def Info: img/cpn_cmq.png used on input line 118.
 (pdftex.def)             Requested size: 433.62pt x 330.78384pt.
 
 [36] [37<./img/cpn_cmq.png>]
-<img/rmi_application.png, id=872, 831.85782pt x 385.44pt>
+<img/rmi_application.png, id=880, 831.85782pt x 385.44pt>
 File: img/rmi_application.png Graphic file (type png)
 
 <use img/rmi_application.png>
 Package pdftex.def Info: img/rmi_application.png used on input line 137.
 (pdftex.def)             Requested size: 433.62pt x 200.9181pt.
  [38<./img/rmi_application.png>]
-<img/cpn_rmi_app_timer_token.png, id=879, 1136.74687pt x 198.7425pt>
+<img/cpn_rmi_app_timer_token.png, id=887, 1136.74687pt x 198.7425pt>
 File: img/cpn_rmi_app_timer_token.png Graphic file (type png)
 
 <use img/cpn_rmi_app_timer_token.png>
@@ -1011,7 +1011,7 @@ Package pdftex.def Info: img/cpn_rmi_app_timer_token.png used on input line 146.
 
 (pdftex.def)             Requested size: 433.62pt x 75.81102pt.
 
-<img/cpn_rmi_app_server_token.png, id=881, 1138.2525pt x 158.09062pt>
+<img/cpn_rmi_app_server_token.png, id=889, 1138.2525pt x 158.09062pt>
 File: img/cpn_rmi_app_server_token.png Graphic file (type png)
 
 <use img/cpn_rmi_app_server_token.png>
@@ -1019,35 +1019,35 @@ Package pdftex.def Info: img/cpn_rmi_app_server_token.png used on input line 155
 .
 (pdftex.def)             Requested size: 433.62pt x 60.22461pt.
  [39<./img/cpn_rmi_app_timer_token.png>]
-<img/component_interactions.jpg, id=890, 685.8122pt x 232.61906pt>
+<img/component_interactions.jpg, id=898, 685.8122pt x 232.61906pt>
 File: img/component_interactions.jpg Graphic file (type jpg)
 
 <use img/component_interactions.jpg>
 Package pdftex.def Info: img/component_interactions.jpg used on input line 175.
 (pdftex.def)             Requested size: 433.62pt x 147.08319pt.
  [40<./img/cpn_rmi_app_server_token.png>]
-<img/cpn_rmi_app_iop.png, id=898, 1197.72469pt x 208.52907pt>
+<img/cpn_rmi_app_iop.png, id=906, 1197.72469pt x 208.52907pt>
 File: img/cpn_rmi_app_iop.png Graphic file (type png)
 
 <use img/cpn_rmi_app_iop.png>
 Package pdftex.def Info: img/cpn_rmi_app_iop.png used on input line 184.
 (pdftex.def)             Requested size: 433.62pt x 75.49359pt.
  [41<./img/component_interactions.jpg><./img/cpn_rmi_app_iop.png>] <img/timers.
-jpg, id=907, 498.36188pt x 356.83313pt>
+jpg, id=915, 498.36188pt x 356.83313pt>
 File: img/timers.jpg Graphic file (type jpg)
 
 <use img/timers.jpg>
 Package pdftex.def Info: img/timers.jpg used on input line 202.
 (pdftex.def)             Requested size: 433.62pt x 310.48586pt.
  [42<./img/timers.jpg>] [43] [44]
-<./img/BL-EBNF.png, id=922, 914.91812pt x 536.50438pt>
+<./img/BL-EBNF.png, id=930, 914.91812pt x 536.50438pt>
 File: ./img/BL-EBNF.png Graphic file (type png)
  <use ./img/BL-EBNF.png>
 Package pdftex.def Info: ./img/BL-EBNF.png used on input line 227.
 (pdftex.def)             Requested size: 433.62pt x 254.26918pt.
 
 [45<./img/BL-EBNF.png>]
-<./img/abstract_business_logic.png, id=933, 402.303pt x 406.1574pt>
+<./img/abstract_business_logic.png, id=941, 402.303pt x 406.1574pt>
 File: ./img/abstract_business_logic.png Graphic file (type png)
 
 <use ./img/abstract_business_logic.png>
@@ -1055,7 +1055,7 @@ Package pdftex.def Info: ./img/abstract_business_logic.png used on input line 23
 8.
 (pdftex.def)             Requested size: 346.89731pt x 350.23676pt.
  [46]
-<./img/cpn_business_logic_token_example.png, id=943, 1187.18532pt x 185.19188pt
+<./img/cpn_business_logic_token_example.png, id=951, 1187.18532pt x 185.19188pt
 >
 File: ./img/cpn_business_logic_token_example.png Graphic file (type png)
  <use ./img/cpn_business_logic_token_example.png>
@@ -1064,13 +1064,13 @@ t line 247.
 (pdftex.def)             Requested size: 433.62pt x 67.64108pt.
  [47<./img/abstract_business_logic.png>] [48<./img/cpn_business_logic_token_exam
 ple.png>] [49]
-<./img/sensors.png, id=968, 1327.96124pt x 437.38406pt>
+<./img/sensors.png, id=976, 1327.96124pt x 437.38406pt>
 File: ./img/sensors.png Graphic file (type png)
 
 <use ./img/sensors.png>
 Package pdftex.def Info: ./img/sensors.png used on input line 267.
 (pdftex.def)             Requested size: 433.62pt x 142.81552pt.
- <./img/cps_bl.png, id=971, 685.43578pt x 266.87202pt>
+ <./img/cps_bl.png, id=979, 685.43578pt x 266.87202pt>
 File: ./img/cps_bl.png Graphic file (type png)
 
 <use ./img/cps_bl.png>
@@ -1080,7 +1080,7 @@ Package pdftex.def Info: ./img/cps_bl.png used on input line 277.
 CHAPTER VI.
 [52
 
-] <./img/state-space-analysis.png, id=988, 540.14297pt x 470.50781pt>
+] <./img/state-space-analysis.png, id=996, 540.14297pt x 470.50781pt>
 File: ./img/state-space-analysis.png Graphic file (type png)
 
 <use ./img/state-space-analysis.png>
@@ -1097,7 +1097,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 21.
 
-<./img/state-space-searching.png, id=1002, 627.7854pt x 349.7868pt>
+<./img/state-space-searching.png, id=1010, 627.7854pt x 349.7868pt>
 File: ./img/state-space-searching.png Graphic file (type png)
 
 <use ./img/state-space-searching.png>
@@ -1106,27 +1106,27 @@ Package pdftex.def Info: ./img/state-space-searching.png used on input line 27.
  [55
 
 <./img/state-space-searching.png>]
-[56] <./img/Deadline_Violations.png, id=1017, 874.01532pt x 310.91156pt>
+[56] <./img/Deadline_Violations.png, id=1025, 874.01532pt x 310.91156pt>
 File: ./img/Deadline_Violations.png Graphic file (type png)
 
 <use ./img/Deadline_Violations.png>
 Package pdftex.def Info: ./img/Deadline_Violations.png used on input line 52.
 (pdftex.def)             Requested size: 433.62pt x 154.25038pt.
  [57<./img/Deadline_Violations.png>]
-<./img/blocked_threads.png, id=1024, 783.3014pt x 347.79938pt>
+<./img/blocked_threads.png, id=1032, 783.3014pt x 347.79938pt>
 File: ./img/blocked_threads.png Graphic file (type png)
 
 <use ./img/blocked_threads.png>
 Package pdftex.def Info: ./img/blocked_threads.png used on input line 66.
 (pdftex.def)             Requested size: 433.62pt x 192.53738pt.
  [58<./img/blocked_threads.png>] [59] [60]
-[61] <./img/clock.png, id=1050, 1228.59pt x 202.7575pt>
+[61] <./img/clock.png, id=1058, 1228.59pt x 202.7575pt>
 File: ./img/clock.png Graphic file (type png)
  <use ./img/clock.png>
 Package pdftex.def Info: ./img/clock.png used on input line 112.
 (pdftex.def)             Requested size: 433.62pt x 71.5602pt.
 
-[62<./img/clock.png>] <./img/time.png, id=1058, 911.65594pt x 537.50812pt>
+[62<./img/clock.png>] <./img/time.png, id=1066, 911.65594pt x 537.50812pt>
 File: ./img/time.png Graphic file (type png)
 
 <use ./img/time.png>
@@ -1136,7 +1136,7 @@ Package pdftex.def Info: ./img/time.png used on input line 125.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[63] [64<./img/time.png>] <./img/dd.png, id=1074, 803.25093pt x 807.7678pt>
+[63] [64<./img/time.png>] <./img/dd.png, id=1082, 803.25093pt x 807.7678pt>
 File: ./img/dd.png Graphic file (type png)
 
 <use ./img/dd.png>
@@ -1154,7 +1154,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 [70
 
-] [71] <img/rcps-architecture.png, id=1138, 1851.16594pt x 1044.15094pt>
+] [71] <img/rcps-architecture.png, id=1146, 1851.16594pt x 1044.15094pt>
 File: img/rcps-architecture.png Graphic file (type png)
 
 <use img/rcps-architecture.png>
@@ -1166,7 +1166,7 @@ Overfull \hbox (0.5207pt too wide) in paragraph at lines 49--50
 ool-suite and DREMS-style com-
  []
 
-[73] <img/ROSMOD-Meta2.png, id=1160, 1169.87062pt x 1382.16376pt>
+[73] <img/ROSMOD-Meta2.png, id=1168, 1169.87062pt x 1382.16376pt>
 File: img/ROSMOD-Meta2.png Graphic file (type png)
 
 <use img/ROSMOD-Meta2.png>
@@ -1175,7 +1175,7 @@ Package pdftex.def Info: img/ROSMOD-Meta2.png used on input line 57.
  [74] [75<./img/ROSMOD-Meta2.png>] [76
 
 ] [77] [78]
-<img/DeploymentInfrastructure.png, id=1198, 652.839pt x 530.4618pt>
+<img/DeploymentInfrastructure.png, id=1206, 652.839pt x 530.4618pt>
 File: img/DeploymentInfrastructure.png Graphic file (type png)
 
 <use img/DeploymentInfrastructure.png>
@@ -1183,7 +1183,7 @@ Package pdftex.def Info: img/DeploymentInfrastructure.png used on input line 93.
 
 (pdftex.def)             Requested size: 433.62pt x 352.34795pt.
  [79] [80<./img/DeploymentInfrastructure.png>] [81] <img/understanding-the-plot
-s.png, id=1221, 622.325pt x 339.2675pt>
+s.png, id=1229, 622.325pt x 339.2675pt>
 File: img/understanding-the-plots.png Graphic file (type png)
 
 <use img/understanding-the-plots.png>
@@ -1194,7 +1194,7 @@ Package pdftex.def Info: img/understanding-the-plots.png used on input line 113.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[82] <img/client-server.png, id=1229, 1463.4675pt x 662.475pt>
+[82] <img/client-server.png, id=1237, 1463.4675pt x 662.475pt>
 File: img/client-server.png Graphic file (type png)
 
 <use img/client-server.png>
@@ -1205,7 +1205,7 @@ Package pdftex.def Info: img/client-server.png used on input line 127.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [83<./img/understanding-the-plots.png>]
-<img/client-server-cpn.png, id=1237, 1435.61343pt x 750.55406pt>
+<img/client-server-cpn.png, id=1245, 1435.61343pt x 750.55406pt>
 File: img/client-server-cpn.png Graphic file (type png)
 
 <use img/client-server-cpn.png>
@@ -1217,7 +1217,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 145.
 
 [84<./img/client-server.png><./img/client-server-cpn.png>]
-<img/client-server-bad-case.png, id=1248, 564.98578pt x 321.45094pt>
+<img/client-server-bad-case.png, id=1256, 564.98578pt x 321.45094pt>
 File: img/client-server-bad-case.png Graphic file (type png)
 
 <use img/client-server-bad-case.png>
@@ -1227,14 +1227,14 @@ Package pdftex.def Info: img/client-server-bad-case.png used on input line 163.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[85] <img/publish-subscribe.png, id=1255, 1439.3775pt x 642.90187pt>
+[85] <img/publish-subscribe.png, id=1263, 1439.3775pt x 642.90187pt>
 File: img/publish-subscribe.png Graphic file (type png)
 
 <use img/publish-subscribe.png>
 Package pdftex.def Info: img/publish-subscribe.png used on input line 177.
 (pdftex.def)             Requested size: 433.62pt x 193.67645pt.
  [86<./img/client-server-bad-case.png>]
-<img/publish-subscribe-cpn.png, id=1264, 1426.57968pt x 764.10469pt>
+<img/publish-subscribe-cpn.png, id=1272, 1426.57968pt x 764.10469pt>
 File: img/publish-subscribe-cpn.png Graphic file (type png)
 
 <use img/publish-subscribe-cpn.png>
@@ -1249,7 +1249,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 193.
 
-<img/publish-subscribe-bad-case.png, id=1271, 572.5139pt x 312.7936pt>
+<img/publish-subscribe-bad-case.png, id=1279, 572.5139pt x 312.7936pt>
 File: img/publish-subscribe-bad-case.png Graphic file (type png)
 
 <use img/publish-subscribe-bad-case.png>
@@ -1258,7 +1258,7 @@ Package pdftex.def Info: img/publish-subscribe-bad-case.png used on input line 2
 (pdftex.def)             Requested size: 433.62pt x 236.90944pt.
  [88<./img/publish-subscribe-cpn.png>]
 [89<./img/publish-subscribe-bad-case.png>]
-<img/trajectory-planner-components.png, id=1287, 851.8224pt x 435.0654pt>
+<img/trajectory-planner-components.png, id=1295, 851.8224pt x 435.0654pt>
 File: img/trajectory-planner-components.png Graphic file (type png)
 
 <use img/trajectory-planner-components.png>
@@ -1266,7 +1266,7 @@ Package pdftex.def Info: img/trajectory-planner-components.png used on input lin
 e 225.
 (pdftex.def)             Requested size: 433.62pt x 221.46881pt.
 
-<img/trajectory-planner.png, id=1291, 1450.6697pt x 842.39719pt>
+<img/trajectory-planner.png, id=1299, 1450.6697pt x 842.39719pt>
 File: img/trajectory-planner.png Graphic file (type png)
 
 <use img/trajectory-planner.png>
@@ -1277,7 +1277,7 @@ Package pdftex.def Info: img/trajectory-planner.png used on input line 235.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [90<./img/trajectory-planner-components.png>]
-<img/trajectory-planner-cpn.png, id=1298, 1428.08531pt x 755.07094pt>
+<img/trajectory-planner-cpn.png, id=1306, 1428.08531pt x 755.07094pt>
 File: img/trajectory-planner-cpn.png Graphic file (type png)
 
 <use img/trajectory-planner-cpn.png>
@@ -1292,7 +1292,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 251.
 
-<img/trajectory-planner-bad-case.png, id=1305, 769.87625pt x 461.22313pt>
+<img/trajectory-planner-bad-case.png, id=1313, 769.87625pt x 461.22313pt>
 File: img/trajectory-planner-bad-case.png Graphic file (type png)
 
 <use img/trajectory-planner-bad-case.png>
@@ -1304,14 +1304,14 @@ Package pdftex.def Info: img/trajectory-planner-bad-case.png used on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [92<./img/trajectory-planner-cpn.png>]
-<img/periodic-timers.png, id=1315, 1446.15282pt x 948.54375pt>
+<img/periodic-timers.png, id=1323, 1446.15282pt x 948.54375pt>
 File: img/periodic-timers.png Graphic file (type png)
 
 <use img/periodic-timers.png>
 Package pdftex.def Info: img/periodic-timers.png used on input line 282.
 (pdftex.def)             Requested size: 433.62pt x 284.40611pt.
  [93<./img/trajectory-planner-bad-case.png>]
-<img/periodic-timers-cpn.png, id=1322, 1431.09656pt x 947.03813pt>
+<img/periodic-timers-cpn.png, id=1330, 1431.09656pt x 947.03813pt>
 File: img/periodic-timers-cpn.png Graphic file (type png)
 
 <use img/periodic-timers-cpn.png>
@@ -1327,7 +1327,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 296.
 
 [95<./img/periodic-timers-cpn.png>]
-<img/lro-semantics.png, id=1335, 1145.78062pt x 542.025pt>
+<img/lro-semantics.png, id=1343, 1145.78062pt x 542.025pt>
 File: img/lro-semantics.png Graphic file (type png)
 
 <use img/lro-semantics.png>
@@ -1337,7 +1337,7 @@ Package pdftex.def Info: img/lro-semantics.png used on input line 322.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[96] <img/three-components-lro-rosmod.png, id=1343, 804.00375pt x 443.40656pt>
+[96] <img/three-components-lro-rosmod.png, id=1351, 804.00375pt x 443.40656pt>
 File: img/three-components-lro-rosmod.png Graphic file (type png)
 
 <use img/three-components-lro-rosmod.png>
@@ -1349,7 +1349,7 @@ Package pdftex.def Info: img/three-components-lro-rosmod.png used on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [97<./img/lro-semantics.png>]
-<img/three-components-lro.png, id=1351, 1432.60219pt x 948.54375pt>
+<img/three-components-lro.png, id=1359, 1432.60219pt x 948.54375pt>
 File: img/three-components-lro.png Graphic file (type png)
 
 <use img/three-components-lro.png>
@@ -1360,7 +1360,7 @@ Package pdftex.def Info: img/three-components-lro.png used on input line 344.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [98<./img/three-components-lro-rosmod.png>]
-<img/three-components-lro-cpn.png, id=1359, 730.60454pt x 500.62032pt>
+<img/three-components-lro-cpn.png, id=1367, 730.60454pt x 500.62032pt>
 File: img/three-components-lro-cpn.png Graphic file (type png)
 
 <use img/three-components-lro-cpn.png>
@@ -1372,7 +1372,7 @@ Package pdftex.def Info: img/three-components-lro-cpn.png used on input line 355
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [99<./img/three-components-lro.png>] [100<./img/three-components-lro-cpn.png>]
-<img/ksp.png, id=1379, 532.23843pt x 526.21594pt>
+<img/ksp.png, id=1387, 532.23843pt x 526.21594pt>
 File: img/ksp.png Graphic file (type png)
  <use img/ksp.png>
 Package pdftex.def Info: img/ksp.png used on input line 376.
@@ -1381,14 +1381,54 @@ Package pdftex.def Info: img/ksp.png used on input line 376.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[101] [102<./img/ksp.png>]) (./08-Future-Work.tex [103]
-CHAPTER VIII.
+[101] <img/ksp_sensor.png, id=1396, 2351.6658pt x 1295.8011pt>
+File: img/ksp_sensor.png Graphic file (type png)
+
+<use img/ksp_sensor.png>
+Package pdftex.def Info: img/ksp_sensor.png used on input line 386.
+(pdftex.def)             Requested size: 433.62pt x 238.92856pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[102<./img/ksp.png>] <img/ksp_hlc.png, id=1403, 2126.9061pt x 1193.1777pt>
+File: img/ksp_hlc.png Graphic file (type png)
+
+<use img/ksp_hlc.png>
+Package pdftex.def Info: img/ksp_hlc.png used on input line 394.
+(pdftex.def)             Requested size: 433.62pt x 243.25574pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[103<./img/ksp_sensor.png><./img/ksp_hlc.png>]
+<img/ksp_pid.png, id=1410, 2305.413pt x 1309.5324pt>
+File: img/ksp_pid.png Graphic file (type png)
+ <use img/ksp_pid.png>
+Package pdftex.def Info: img/ksp_pid.png used on input line 402.
+(pdftex.def)             Requested size: 433.62pt x 246.29602pt.
+
+<img/ksp_actuator.png, id=1411, 2350.2204pt x 1302.3054pt>
+File: img/ksp_actuator.png Graphic file (type png)
+
+<use img/ksp_actuator.png>
+Package pdftex.def Info: img/ksp_actuator.png used on input line 410.
+(pdftex.def)             Requested size: 433.62pt x 240.26697pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [104
 
-] [105]) (./10-Publications.tex [106]
+<./img/ksp_pid.png>] [105<./img/ksp_actuator.png>]) (./08-Future-Work.tex
+[106]
+CHAPTER VIII.
+[107
+
+] [108]) (./10-Publications.tex [109]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
- [107
+ [110
 
 
 ]
@@ -1410,9 +1450,9 @@ Overfull \hbox (7.94211pt too wide) in paragraph at lines 14--15
 it/12 Object/Component/Service-Oriented
  []
 
-[108
+[111
 
-] [109]) (./00-Dissertation.bbl [110]
+] [112]) (./00-Dissertation.bbl [113]
 Underfull \hbox (badness 10000) in paragraph at lines 16--19
 [][]\T1/ptm/m/n/12 NASA Cube-Sat Launch ini-tia-tive.  [][]$\T1/pcr/m/n/12 http
 s : / / www . nasa . gov /
@@ -1458,9 +1498,9 @@ amanian2015drems}) has been already used, duplicate ignored
 \@lbibitem ...2}{}\NAT@bibitem@cont \bibitem@fin }
                                                   \@ifx {\NAT@tmp \@empty }{...
 l.40 \bibitem{balasubramanian2015drems}
-                                      [111
+                                      [114
 
-] [112] [113
+] [115] [116
 Missing character: There is no — (U+2014) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmri8t!
 ]LuaTeX warning (ext4): destination with the same identifier (name{cite.SEUS}) h
@@ -1550,9 +1590,9 @@ LuaTeX warning (ext4): destination with the same identifier (name{cite.kumar201
 \@lbibitem ...2}{}\NAT@bibitem@cont \bibitem@fin }
                                                   \@ifx {\NAT@tmp \@empty }{...
 l.264 \bibitem{kumar2014colored}
-                               [114] [115] [116])
+                               [117] [118] [119])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
- [117
+ [120
 Missing character: There is no — (U+2014) in font ptmr8t!
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
@@ -1569,12 +1609,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
 )
 
 Here is how much of LuaTeX's memory you used:
- 13798 strings out of 494933
+ 13862 strings out of 494933
  100000,383344 words of node,token memory allocated
- 777 words of node memory still in use:
+ 785 words of node memory still in use:
     nodes
-   avail lists: 2:32,3:560,4:970,5:197,6:4496,7:491,8:36,9:246,10:531
- 15809 multiletter control sequences out of 65536+200000
+   avail lists: 2:32,3:568,4:962,5:197,6:4496,7:491,8:36,9:246,10:531
+ 15833 multiletter control sequences out of 65536+200000
  175 fonts using 4894163 bytes
  39i,16n,44p,2651b,817s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.en
@@ -1591,9 +1631,9 @@ rana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><<C:/Us
 ers/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><<C
 :/Users/prana/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on 00-Dissertation.pdf (124 pages, 8312569 bytes).
+Output written on 00-Dissertation.pdf (127 pages, 8951657 bytes).
 
-PDF statistics: 1527 PDF objects out of 1728 (max. 8388607)
- 367 named destinations out of 1000 (max. 131072)
+PDF statistics: 1556 PDF objects out of 1728 (max. 8388607)
+ 375 named destinations out of 1000 (max. 131072)
  513 words of extra memory for PDF output out of 10000 (max. 10000000)
 
