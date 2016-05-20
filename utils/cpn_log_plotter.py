@@ -95,7 +95,7 @@ class CPN_Log_Plotter():
 
         for call in self.unique_callbacks:
             if subnum == 0:
-                ax = fig.add_subplot(110)
+                ax = fig.add_subplot(111)
             if subnum > 0:
                 n = len(fig.axes)
                 for i in range(n):
