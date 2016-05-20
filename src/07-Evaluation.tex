@@ -360,16 +360,21 @@ For the CPN analysis, in order to obtain pure execution times of all these opera
 
 \subsection{Integration with Physics Simulators - Cyber-Physical Systems Scenarios}
 
-\subsubsection{Kerbal Space Program}
-
 Kerbal Space Program \cite{KSP} (KSP) is a widely popular space flight simulator for a variety of platforms including Linux, OS X and Windows. In this game, players get to manage a space program, designing and building spacecrafts and exploring celestial bodies. 
 
 While KSP does not provide a perfect simulation of reality, it has been widely praised for its component-based design and development process coupled with aerodynamic, gravitational, and rigid-body interaction and simulation. In this simulation, every man-made object follows Newtonian dynamics. Rocket thrust and aerodynamic forces are accurately applied to the vehicles based on the directions and precise positions in which the force-affected elements are mounted on the vessel. Using KSP, we have modeled scenarios for a variety of flight missions including interplanetary travel. In this section, we briefly describe an aircraft flight controller that was designed and tested using the RCPS testbed and KSP.
 
-This CPS scenario is a flight controller application used to completely control a KSP aircraft from the primary space-plane hanger to a destination airport. The application processes require inputs from KSP e.g. sensor data about pitch, roll, yaw, mean altitude etc. and interfaces to control the flight dynamics e.g. thrust, pitch and heading. If these interfaces are setup, then the processes can periodically retrieve flight telemetry and provide commands for course correction and feedback control.
+This CPS scenario is a flight controller application used to completely control a KSP aircraft from the primary space-plane hanger to a destination airport. The application processes require inputs from KSP e.g. sensor data about pitch, roll, yaw, mean altitude etc. and interfaces to control the flight dynamics e.g. thrust, pitch and heading. If these interfaces are available, then the processes can periodically retrieve flight telemetry and provide commands for course correction and feedback control.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{ksp_control_stack}
+	\caption{Kerbal Space Program - Flight Control Application - Stack}
+	\label{fig:ksp_control_stack}
+\end{figure} 
+\FloatBarrier 
 
-Using an open source project called kRPC \cite{kRPC} (Kerbal Remote Procedure Call Server), the BBB nodes running CPS processes are provided with an interface to the simulation. Figure \ref{fig:ksp} shows the Stearwing A300 aircraft taking off from the space-plane hanger and stabilizing at a cruising altitude of 2000 meters. Each control unit in the aircraft is simulated by a BBB. It is critical to incorporate redundancy in all components and connections to assure that the system can survive runtime failures, especially in airborne software \cite{airborne_software} \cite{kornecki2004approaches}. So, many of the RCPS nodes in our testbed act as redundant sensors, all connected to KSP, receiving and periodically publishing messages. If one of the nodes in the testbed fails, either due to a hardware anomaly or a software fault, then the rest of the nodes are used to arrive at a general agreement regarding the sensor value to be considered for control.
+Using an open source project called kRPC \cite{kRPC} (Kerbal Remote Procedure Call Server), the BBB nodes running CPS processes are provided with an interface to the simulation. All components that interact with the simulation through kRPC are characterized as \emph{I/O components}. Figure \ref{fig:ksp_control_stack} shows the software stack for this flight control application. This test consists of four components: periodic sensor stream, a high-level controller, a low-level PID controller, and an actuator component. The sensor component interacts with the simulation and receives a stream of sensory information e.g. pitch, roll, yaw, heading, throttle, mean altitude etc. as fast as the kRPC interface can provide it. This stream of data is sampled at a lower frequency (50 ms), packaged as a \emph{Sensor\_State} message and published by the Sensor component. The high-level component receives this sensor information and decides on high-level state changes e.g. take off, cruising, landing etc. Based on the required high-level state changes, this controller component commands the PID component to maneuver the flight to the right altitude and heading. The PID component uses pre-defined gains and calculates new thrust, pitch, roll and yaw values based on the next goal altitude and heading. This actuation command is published by the PID component and handled by the actuator component. The actuator component provides the second interface to KSP for the ROSMOD application by commanding the simulation interface to control the vessel. Figure \ref{fig:ksp} shows the Stearwing A300 aircraft taking off from the space-plane hanger and stabilizing at a cruising altitude of 2000 meters. 
 
 \begin{figure}[h]
 	\centering
@@ -379,7 +384,42 @@ Using an open source project called kRPC \cite{kRPC} (Kerbal Remote Procedure Ca
 \end{figure} 
 \FloatBarrier 
 
-\subsubsection{Implementation and Results}
+Figure \ref{fig:ksp_combined} shows about 5 minutes of execution of the flight control application on the experimental testbed and Figure \ref{fig:ksp_cpn} shows the CPN analysis results for the first 40 seconds of execution. Table \ref{tbl:ksp} compares the response time values for all operations in this application. Many of the component operations in this sample have pure execution times in the order of hundreds of microseconds with spikes in execution times at the end of the test during teardown i.e. the I/O components do not receive prompt responses from the simulation as the experiment is stopped. These delays propagate to other components in the application e.g. actuator control subscriber operation. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{ksp_combined}
+	\caption{Stearwing Flight Control - Experimental Observations}
+	\label{fig:ksp_combined}
+\end{figure} 
+\FloatBarrier 
+
+Figure \ref{fig:ksp_cpn} shows the CPN analysis results for this application. The worst-case pure execution times of all operation steps are calculated over multiple runs of the application and the business logic for all operations are constructed. The generated CPN is executed for a 100,000 steps i.e. about 40 seconds of thread activity. Since the period of the sensor timer is 50 ms, the analysis cover around 800 periods of sensor state changes. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{ksp_cpn}
+	\caption{Stearwing Control - CPN Analysis Results}
+	\label{fig:ksp_cpn}
+\end{figure} 
+\FloatBarrier 
+
+\begin{table}[]
+	\centering
+	\caption{KSP Flight Controller -- Summary of Results}
+	\label{tbl:ksp}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{\begin{tabular}[c]{@{}c@{}}Operation\\ Name\end{tabular}}       & \textbf{\begin{tabular}[c]{@{}c@{}}Component\\ Name\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Experimental\\ WCRT (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Timing Analysis\\ WCRT (ms)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Deadline\\ (ms)\end{tabular}} \\ \hline
+		\begin{tabular}[c]{@{}c@{}}Sensor\\ Timer\end{tabular}                  & Sensor                                                            & 0.220378                                                                  & 0.23                                                                         & 50                                                               \\ \hline
+		\begin{tabular}[c]{@{}c@{}}Actuator\\ Control\\ Subscriber\end{tabular} & Actuator                                                          & 186.404113                                                                & 203.84                                                                       & 400                                                              \\ \hline
+		\begin{tabular}[c]{@{}c@{}}Sensor\\ Subscriber\end{tabular}             & \begin{tabular}[c]{@{}c@{}}High-level\\ Controller\end{tabular}   & 0.0909                                                                    & 1.019                                                                        & 400                                                              \\ \hline
+		\begin{tabular}[c]{@{}c@{}}Flight\\ Control\\ Timer\end{tabular}        & \begin{tabular}[c]{@{}c@{}}High-level\\ Controller\end{tabular}   & 0.170043                                                                  & 0.170                                                                        & 400                                                              \\ \hline
+		\begin{tabular}[c]{@{}c@{}}PID\\ Timer\end{tabular}                     & PID                                                               & 0.1865                                                                    & 4.201                                                                        & 200                                                              \\ \hline
+		\begin{tabular}[c]{@{}c@{}}PID\\ Control\\ Subscriber\end{tabular}      & PID                                                               & 0.162216                                                                  & 1.013                                                                        & 500                                                              \\ \hline
+	\end{tabular}
+\end{table}
+\FloatBarrier
 
 \section{Analysis Limitations}
 
