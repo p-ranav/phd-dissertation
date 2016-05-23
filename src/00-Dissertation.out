@@ -29,36 +29,41 @@
 \BOOKMARK [2][-]{subsection.5.3.3}{Outline of Solution}{section.5.3}% 29
 \BOOKMARK [1][-]{section.5.4}{Modeling Component-based Cyber-Physical Systems}{chapter.V}% 30
 \BOOKMARK [0][-]{chapter.VI}{State Space Analysis and Verification}{}% 31
-\BOOKMARK [1][-]{subsection.6.0.1}{Searching the State Space}{chapter.VI}% 32
-\BOOKMARK [2][-]{subsection.6.0.2}{Deadline Violations}{subsection.6.0.1}% 33
-\BOOKMARK [2][-]{subsection.6.0.3}{System-wide Deadlocks}{subsection.6.0.1}% 34
-\BOOKMARK [2][-]{subsection.6.0.4}{Response-time Analysis}{subsection.6.0.1}% 35
-\BOOKMARK [1][-]{section.6.1}{Modeling and Analysis Improvements}{chapter.VI}% 36
-\BOOKMARK [2][-]{subsection.6.1.1}{Problem Statement}{section.6.1}% 37
-\BOOKMARK [2][-]{subsection.6.1.2}{Outline of Solution}{section.6.1}% 38
-\BOOKMARK [2][-]{subsection.6.1.3}{Handling Time}{section.6.1}% 39
-\BOOKMARK [2][-]{subsection.6.1.4}{Distributed Deployment}{section.6.1}% 40
-\BOOKMARK [1][-]{section.6.2}{Scalability: Investigating Advanced State Space Analysis Methods}{chapter.VI}% 41
+\BOOKMARK [1][-]{section.6.1}{Searching the State Space}{chapter.VI}% 32
+\BOOKMARK [2][-]{subsection.6.1.1}{Deadline Violations}{section.6.1}% 33
+\BOOKMARK [2][-]{subsection.6.1.2}{System-wide Deadlocks}{section.6.1}% 34
+\BOOKMARK [2][-]{subsection.6.1.3}{Response-time Analysis}{section.6.1}% 35
+\BOOKMARK [1][-]{section.6.2}{Modeling and Analysis Improvements}{chapter.VI}% 36
+\BOOKMARK [2][-]{subsection.6.2.1}{Problem Statement}{section.6.2}% 37
+\BOOKMARK [2][-]{subsection.6.2.2}{Outline of Solution}{section.6.2}% 38
+\BOOKMARK [2][-]{subsection.6.2.3}{Handling Time}{section.6.2}% 39
+\BOOKMARK [2][-]{subsection.6.2.4}{Distributed Deployment}{section.6.2}% 40
+\BOOKMARK [1][-]{section.6.3}{Scalability: Investigating Advanced State Space Analysis Methods}{chapter.VI}% 41
 \BOOKMARK [0][-]{chapter.VII}{Experimental Evaluation}{}% 42
-\BOOKMARK [1][-]{subsection.7.0.1}{Challenges}{chapter.VII}% 43
-\BOOKMARK [1][-]{section.7.1}{Resilient Cyber-Physical Systems \(RCPS\) Testbed}{chapter.VII}% 44
-\BOOKMARK [2][-]{subsection.7.1.1}{Architecture}{section.7.1}% 45
-\BOOKMARK [1][-]{section.7.2}{ROSMOD Software Infrastructure}{chapter.VII}% 46
-\BOOKMARK [2][-]{subsection.7.2.1}{Deployment Infrastructure}{section.7.2}% 47
-\BOOKMARK [1][-]{section.7.3}{Evaluation of Timing Analysis Results}{chapter.VII}% 48
-\BOOKMARK [2][-]{subsection.7.3.1}{Understanding the CPN Analysis Plots}{section.7.3}% 49
-\BOOKMARK [2][-]{subsection.7.3.2}{Client-Server Interactions}{section.7.3}% 50
-\BOOKMARK [2][-]{subsection.7.3.3}{Publish-Subscribe Interactions}{section.7.3}% 51
-\BOOKMARK [2][-]{subsection.7.3.4}{Trajectory Planner}{section.7.3}% 52
-\BOOKMARK [2][-]{subsection.7.3.5}{Time-triggered Operations}{section.7.3}% 53
-\BOOKMARK [2][-]{subsection.7.3.6}{Long-Running Operations}{section.7.3}% 54
-\BOOKMARK [2][-]{subsection.7.3.7}{Integration with Physics Simulators - Cyber-Physical Systems Scenarios}{section.7.3}% 55
-\BOOKMARK [1][-]{section.7.4}{Analysis Limitations}{chapter.VII}% 56
-\BOOKMARK [0][-]{chapter.VIII}{Summary and Future Work}{}% 57
-\BOOKMARK [0][-]{section*.11}{Appendices}{}% 58
-\BOOKMARK [0][-]{APPENDIX.A}{Publications}{}% 59
-\BOOKMARK [1][-]{section.1.1}{Workshop Papers}{APPENDIX.A}% 60
-\BOOKMARK [1][-]{section.1.2}{Conference Papers}{APPENDIX.A}% 61
-\BOOKMARK [1][-]{section.1.3}{Journal Papers}{APPENDIX.A}% 62
-\BOOKMARK [2][-]{subsection.1.3.1}{Awaiting Reviews}{section.1.3}% 63
-\BOOKMARK [0][-]{chapter*.12}{REFERENCES}{}% 64
+\BOOKMARK [1][-]{section.7.1}{Challenges}{chapter.VII}% 43
+\BOOKMARK [1][-]{section.7.2}{Resilient Cyber-Physical Systems \(RCPS\) Testbed}{chapter.VII}% 44
+\BOOKMARK [2][-]{subsection.7.2.1}{Architecture}{section.7.2}% 45
+\BOOKMARK [1][-]{section.7.3}{ROSMOD Software Infrastructure}{chapter.VII}% 46
+\BOOKMARK [2][-]{subsection.7.3.1}{ROSMOD Modeling Language}{section.7.3}% 47
+\BOOKMARK [2][-]{subsection.7.3.2}{Motivation for ROSMOD Software Model}{section.7.3}% 48
+\BOOKMARK [2][-]{subsection.7.3.3}{Software Model}{section.7.3}% 49
+\BOOKMARK [2][-]{subsection.7.3.4}{Motivation for ROSMOD System Model}{section.7.3}% 50
+\BOOKMARK [2][-]{subsection.7.3.5}{System Model}{section.7.3}% 51
+\BOOKMARK [2][-]{subsection.7.3.6}{Deployment Infrastructure}{section.7.3}% 52
+\BOOKMARK [1][-]{section.7.4}{Evaluation of Timing Analysis Results}{chapter.VII}% 53
+\BOOKMARK [2][-]{subsection.7.4.1}{Understanding the CPN Analysis Plots}{section.7.4}% 54
+\BOOKMARK [2][-]{subsection.7.4.2}{Client-Server Interactions}{section.7.4}% 55
+\BOOKMARK [2][-]{subsection.7.4.3}{Publish-Subscribe Interactions}{section.7.4}% 56
+\BOOKMARK [2][-]{subsection.7.4.4}{Trajectory Planner}{section.7.4}% 57
+\BOOKMARK [2][-]{subsection.7.4.5}{Time-triggered Operations}{section.7.4}% 58
+\BOOKMARK [2][-]{subsection.7.4.6}{Long-Running Operations}{section.7.4}% 59
+\BOOKMARK [2][-]{subsection.7.4.7}{Integration with Physics Simulators - Cyber-Physical Systems Scenarios}{section.7.4}% 60
+\BOOKMARK [1][-]{section.7.5}{Analysis Limitations}{chapter.VII}% 61
+\BOOKMARK [0][-]{chapter.VIII}{Summary and Future Work}{}% 62
+\BOOKMARK [0][-]{section*.11}{Appendices}{}% 63
+\BOOKMARK [0][-]{APPENDIX.A}{Publications}{}% 64
+\BOOKMARK [1][-]{section.1.1}{Workshop Papers}{APPENDIX.A}% 65
+\BOOKMARK [1][-]{section.1.2}{Conference Papers}{APPENDIX.A}% 66
+\BOOKMARK [1][-]{section.1.3}{Journal Papers}{APPENDIX.A}% 67
+\BOOKMARK [2][-]{subsection.1.3.1}{Awaiting Reviews}{section.1.3}% 68
+\BOOKMARK [0][-]{chapter*.12}{REFERENCES}{}% 69

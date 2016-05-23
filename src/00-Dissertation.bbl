@@ -19,8 +19,7 @@
 
 \bibitem{CubeSat_Mars}
 {NASA CubeSats Mission to Mars}.
-\newblock
-  \url{http://www.nasa.gov/press-release/nasa-prepares-for-first-interplanetary-cubesats-on-agency-s-next-mission-to-mars}.
+\newblock \url{http://www.jpl.nasa.gov/cubesat/missions/marco.php}.
 
 \bibitem{Alpern1989}
 B.~Alpern and F.~B. Schneider.
@@ -31,6 +30,12 @@ B.~Alpern and F.~B. Schneider.
 {ARINC Incorporated}, Annapolis, Maryland, USA.
 \newblock {\em {Document No. 653: Avionics Application Software Standard
   Inteface (Draft 15)}}, Jan. 1997.
+
+\bibitem{aastrom2006advanced}
+K.~J. {\AA}str{\"o}m and T.~H{\"a}gglund.
+\newblock {\em Advanced PID control}.
+\newblock ISA-The Instrumentation, Systems, and Automation Society; Research
+  Triangle Park, NC 27709, 2006.
 
 \bibitem{autosar}
 {Autosar GbR}.
@@ -170,6 +175,10 @@ M.~Gonzalez~Harbour, J.~Gutierrez~Garcia, J.~Palencia~Gutierrez, and
 \newblock In {\em Real-Time Systems, 13th Euromicro Conference on, 2001.},
   pages 125--134, 2001.
 
+\bibitem{hayman2008symmetry}
+J.~Hayman and G.~Winskel.
+\newblock Symmetry in petri nets.
+
 \bibitem{heineman2001component}
 G.~T. Heineman and W.~T. Councill.
 \newblock Component-based software engineering.
@@ -217,16 +226,6 @@ M.~Klein, T.~Ralya, B.~Pollak, R.~Obenza, and M.~G. Harbour.
 \newblock {\em A practitioner’s handbook for real-time analysis: guide to
   rate monotonic analysis for real-time systems}.
 \newblock Springer Science \& Business Media, 2012.
-
-\bibitem{airborne_software}
-A.~J. Kornecki.
-\newblock Airborne software: communication and certification.
-\newblock {\em Scalable Computing: Practice and Experience}, 9(1), 2001.
-
-\bibitem{kornecki2004approaches}
-A.~J. Kornecki and K.~Hall.
-\newblock Approaches to assure safety in fly-by-wire systems: Airbus vs.
-  boeing.
 
 \bibitem{Kristensen2000}
 L.~M. Kristensen.
@@ -480,6 +479,11 @@ R.~Wilhelm, J.~Engblom, A.~Ermedahl, N.~Holsti, S.~Thesing, D.~Whalley,
   survey of tools.
 \newblock {\em ACM Transactions on Embedded Computing Systems (TECS)}, 7(3):36,
   2008.
+
+\bibitem{winskel2009events}
+G.~Winskel.
+\newblock Events, causality and symmetry.
+\newblock {\em The Computer Journal}, page bxp052, 2009.
 
 \bibitem{wolper1993partial}
 P.~Wolper and P.~Godefroid.
