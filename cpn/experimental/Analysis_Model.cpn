@@ -794,11 +794,11 @@ Threads</text>
                  h="48.000000"/>
         <token x="-88.000000"
                y="20.000000"/>
-        <marking x="21.750000"
-                 y="28.750000"
+        <marking x="-27.000000"
+                 y="0.000000"
                  hidden="false">
-          <snap snap_id="0"
-                anchor.horizontal="3"
+          <snap snap_id="4"
+                anchor.horizontal="2"
                 anchor.vertical="2"/>
         </marking>
         <type id="ID1435294849">
@@ -1247,7 +1247,7 @@ THREADS</text>
                  y="-3.000000"/>
         <cond id="ID1435293750">
           <posattr x="-862.000000"
-                   y="-6.000000"/>
+                   y="-14.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2054,7 +2054,7 @@ clocks timers)</text>
         <placeend idref="ID1435294848"/>
         <annot id="ID1435302455">
           <posattr x="-672.000000"
-                   y="-103.000000"/>
+                   y="-101.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -4455,37 +4455,7 @@ TextIO.closeOut writestream</text>
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10008.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10003.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10007.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10005.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10004.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10011.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10002.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4495,19 +4465,19 @@ TextIO.closeOut writestream</text>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10001.enable">
+      <option name="extensions.10002.enable">
         <value>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10007.options.discover">
+      <option name="extensions.10005.enable">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10011.options.disable">
+      <option name="extensions.10001.enable">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="repavg">
@@ -4708,14 +4678,14 @@ TextIO.closeOut writestream</text>
     </options>
     <binders>
       <cpnbinder id="ID2222"
-                 x="170"
-                 y="-41"
+                 x="106"
+                 y="-43"
                  width="1366"
                  height="829">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-1176.995000"
-                    pany="132.436875"
+                    panx="398.845000"
+                    pany="-88.843125"
                     zoom="0.800000"
                     instance="ID2149">
             <zorder>
@@ -4792,21 +4762,9 @@ TextIO.closeOut writestream</text>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-        </IndexNode>
-        <IndexNode expanded="false">
-          <IndexNode expanded="false"/>
-        </IndexNode>
-        <IndexNode expanded="false">
-          <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
+      <IndexNode expanded="false"/>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
